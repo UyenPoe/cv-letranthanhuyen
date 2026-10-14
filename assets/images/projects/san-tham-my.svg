@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg-san-tham-my" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="55%" stop-color="#0B2342"/>
+      <stop offset="100%" stop-color="#091526"/>
+    </linearGradient>
+    <linearGradient id="glow-san-tham-my" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-san-tham-my)"/>
+  <!-- Browser Window Frame -->
+  <rect x="36" y="32" width="728" height="436" rx="16" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="36" y="32" width="728" height="44" rx="16" fill="#1E293B"/>
+  <circle cx="62" cy="54" r="6" fill="#EF4444"/>
+  <circle cx="82" cy="54" r="6" fill="#F59E0B"/>
+  <circle cx="102" cy="54" r="6" fill="#22C55E"/>
+  <!-- URL Bar -->
+  <rect x="130" y="42" width="460" height="24" rx="6" fill="#0F172A"/>
+  <text x="148" y="58" font-family="monospace" font-size="12" fill="#9CA3AF">https://santhammy.com</text>
+  <!-- Content Mockup UI -->
+  <rect x="64" y="102" width="220" height="24" rx="12" fill="rgba(34,197,94,0.15)"/>
+  <text x="78" y="118" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#22C55E">WORDPRESS · CPT & ACF · SILO SEO</text>
+  <text x="64" y="168" font-family="Inter, sans-serif" font-size="34" font-weight="800" fill="#F9FAFB">Sàn Thẩm Mỹ Directory</text>
+  <text x="64" y="202" font-family="Inter, sans-serif" font-size="16" fill="#9CA3AF">Aesthetic Clinic Portal · Multi-Criteria Directory</text>
+  <rect x="64" y="228" width="140" height="38" rx="8" fill="#22C55E"/>
+  <text x="134" y="252" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#052E16" text-anchor="middle">Live Production</text>
+  <rect x="218" y="228" width="150" height="38" rx="8" fill="#162238" stroke="#334155"/>
+  <text x="293" y="252" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#F9FAFB" text-anchor="middle">SEO &amp; CWV Ready</text>
+  <!-- Bottom Feature Cards inside Browser -->
+  <rect x="64" y="296" width="210" height="136" rx="10" fill="#162238" stroke="#1E293B"/>
+  <rect x="80" y="316" width="40" height="8" rx="4" fill="#22C55E"/>
+  <rect x="80" y="336" width="150" height="12" rx="4" fill="#E2E8F0"/>
+  <rect x="80" y="358" width="120" height="10" rx="4" fill="#64748B"/>
+  <rect x="80" y="378" width="165" height="10" rx="4" fill="#64748B"/>
+
+  <rect x="295" y="296" width="210" height="136" rx="10" fill="#162238" stroke="#1E293B"/>
+  <rect x="311" y="316" width="40" height="8" rx="4" fill="#A855F7"/>
+  <rect x="311" y="336" width="155" height="12" rx="4" fill="#E2E8F0"/>
+  <rect x="311" y="358" width="130" height="10" rx="4" fill="#64748B"/>
+  <rect x="311" y="378" width="160" height="10" rx="4" fill="#64748B"/>
+
+  <rect x="526" y="296" width="210" height="136" rx="10" fill="#162238" stroke="#22C55E" stroke-opacity="0.45"/>
+  <text x="631" y="352" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#22C55E" text-anchor="middle">90+ Score</text>
+  <text x="631" y="382" font-family="Inter, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="middle">SEO · Performance · UX</text>
+</svg>

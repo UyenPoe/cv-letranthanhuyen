@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lê Trần Thanh Uyên | Web &amp; SEO Specialist – WordPress · Web Developer · Website Admin</title>
+  <meta name="description" content="CV &amp; Portfolio cá nhân của Lê Trần Thanh Uyên – Chuyên viên Quản trị Website (Website Administrator), SEO Specialist và WordPress Developer. Xem các dự án và Case Study thực tế." />
+  <meta name="keywords" content="Lê Trần Thanh Uyên, Thanh Uyên CV, Website Administrator, SEO Specialist, WordPress Developer, Quản trị website, Chuyên viên SEO, Lập trình WordPress, Laravel" />
+  <meta name="author" content="Lê Trần Thanh Uyên" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="canonical" href="https://uyenpoe.github.io/cv-letranthanhuyen/" />
+
+  <!-- Open Graph / Zalo / Facebook / LinkedIn -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Lê Trần Thanh Uyên | Web &amp; SEO Specialist Portfolio" />
+  <meta property="og:description" content="I build, manage &amp; optimize websites for real growth. Xem hồ sơ năng lực, kinh nghiệm và 6 Case Study dự án thực tế (WordPress, Laravel, Technical SEO)." />
+  <meta property="og:url" content="https://uyenpoe.github.io/cv-letranthanhuyen/" />
+  <meta property="og:image" content="https://uyenpoe.github.io/cv-letranthanhuyen/assets/images/projects/wangsun-luxury.svg" />
+  <meta property="og:locale" content="vi_VN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lê Trần Thanh Uyên | Web &amp; SEO Specialist" />
+  <meta name="twitter:description" content="Website Administrator · SEO Specialist · WordPress Developer – Personal CV &amp; Portfolio." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <!-- Structured Data (Schema.org Person & ProfilePage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Lê Trần Thanh Uyên",
+      "alternateName": "Thanh Uyen",
+      "jobTitle": [
+        "Website Administrator",
+        "SEO Specialist",
+        "WordPress Developer"
+      ],
+      "description": "Web & SEO Specialist specializing in WordPress Development, Laravel, Website Administration, and Technical SEO.",
+      "url": "https://uyenpoe.github.io/cv-letranthanhuyen/",
+      "email": "mailto:thanhuyenletran@gmail.com",
+      "knowsAbout": [
+        "WordPress Development",
+        "Technical SEO",
+        "On-page SEO",
+        "Website Administration",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "PHP",
+        "Laravel",
+        "WooCommerce",
+        "Google Search Console"
+      ],
+      "sameAs": [
+        "https://github.com/UyenPoe"
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Link for Keyboard Accessibility -->
+  <a href="#mainContent" class="skip-link">Chuyển đến nội dung chính / Skip to main content</a>
+
+  <!-- ========================================================================
+       1. HEADER – THANH ĐIỀU HƯỚNG CỐ ĐỊNH
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Lê Trần Thanh Uyên - Trang chủ">
+        <div class="brand-avatar">
+          <img src="assets/images/avatar.svg" alt="Ảnh đại diện Lê Trần Thanh Uyên" width="42" height="42" />
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">THANH UYEN<span class="dot">.</span></span>
+          <span class="brand-role">WEB &amp; SEO SPECIALIST</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-i18n="nav.home">Trang chủ</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">Giới thiệu</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Kỹ năng</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Kinh nghiệm</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Dự án</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Trạng thái sẵn sàng nhận việc (Bật/tắt thủ công) -->
+        <button type="button" class="status-toggle" id="statusToggleBtn" aria-pressed="true" title="Nhấn để bật/tắt trạng thái sẵn sàng nhận cơ hội việc làm">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-text" id="statusText">Sẵn sàng nhận việc</span>
+        </button>
+
+        <!-- Nút chuyển ngôn ngữ Việt / Anh -->
+        <div class="lang-switch" role="group" aria-label="Chuyển đổi ngôn ngữ">
+          <button type="button" class="lang-btn active" data-lang="vi" aria-pressed="true">VI</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <!-- Nút Hamburger trên Mobile -->
+        <button type="button" class="menu-toggle" id="menuToggleBtn" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="mainNav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- ======================================================================
+         2. HERO SECTION – GIỚI THIỆU NỔI BẬT (Chuẩn mẫu Dark Tech Portfolio)
+         ====================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Core Pitch & CTAs -->
+          <div class="hero-content reveal is-visible">
+            <div class="hero-meta-top">
+              <span class="hero-badge-portfolio" data-i18n="hero.badge">PORTFOLIO</span>
+              <span class="hero-pillars" data-i18n="hero.pillars">WORDPRESS · WEB DEVELOPER · SEO</span>
+            </div>
+
+            <p class="hero-identity">
+              <span class="hero-identity-divider" aria-hidden="true"></span>
+              <span data-i18n="hero.greeting">Lê Trần Thanh Uyên — Chuyên viên Web &amp; SEO</span>
+            </p>
+
+            <h1 class="hero-title" data-i18n-html="hero.titleHtml">
+              I <span class="text-accent">build</span>, <span class="text-accent">manage</span> &amp; <span class="text-accent">optimize</span> websites for real growth.
+            </h1>
+
+            <p class="hero-subtitle-tag" data-i18n="hero.subtitleTag">
+              Personal CV &amp; Portfolio Website — Xây dựng, Quản trị &amp; Tối ưu Website tăng trưởng bền vững
+            </p>
+
+            <p class="hero-description" data-i18n="hero.description">
+              Kết hợp tư duy lập trình giao diện (WordPress, Laravel), quản trị hạ tầng hệ thống ổn định và phương pháp SEO kỹ thuật bài bản để giúp doanh nghiệp sở hữu website nhanh, chuẩn SEO và chuyển đổi hiệu quả.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaContact">Contact Me →</a>
+              <a href="#projects" class="btn btn-secondary" data-i18n="hero.ctaWork">View My Work</a>
+              <a href="assets/docs/CV-Le-Tran-Thanh-Uyen.pdf" download class="btn btn-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span data-i18n="hero.ctaDownload">Tải CV (PDF)</span>
+              </a>
+            </div>
+
+            <div class="hero-target-roles">
+              <span class="target-role-label" data-i18n="hero.targetLabel">Vị trí ứng tuyển:</span>
+              <span class="target-role-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="hero.role1">Website Administrator</span>
+              </span>
+              <span class="target-role-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="hero.role2">SEO Specialist</span>
+              </span>
+              <span class="target-role-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="hero.role3">WordPress Developer</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Column: Dark Tech Interactive Card -->
+          <div class="hero-visual reveal is-visible">
+            <div class="tech-showcase-card">
+              <div class="tech-window-bar">
+                <div class="window-dots" aria-hidden="true">
+                  <span class="window-dot red"></span>
+                  <span class="window-dot yellow"></span>
+                  <span class="window-dot green"></span>
+                </div>
+                <span class="window-title">thanh-uyen-portfolio.config.js</span>
+              </div>
+
+              <div class="profile-summary-box">
+                <div class="profile-summary-avatar">
+                  <img src="assets/images/avatar.svg" alt="Lê Trần Thanh Uyên" width="60" height="60" />
+                </div>
+                <div>
+                  <div class="profile-summary-name">Lê Trần Thanh Uyên</div>
+                  <div class="profile-summary-role">WordPress · Web Dev · Technical SEO</div>
+                  <div class="profile-summary-loc">TP. Hồ Chí Minh · GitHub Pages Ready</div>
+                </div>
+              </div>
+
+              <div class="lighthouse-grid" aria-label="Chỉ số mục tiêu kỹ thuật">
+                <div class="lh-metric">
+                  <div class="lh-score">95+</div>
+                  <div class="lh-label">Performance</div>
+                </div>
+                <div class="lh-metric">
+                  <div class="lh-score">100</div>
+                  <div class="lh-label">Technical SEO</div>
+                </div>
+                <div class="lh-metric">
+                  <div class="lh-score">6+</div>
+                  <div class="lh-label">Live Projects</div>
+                </div>
+              </div>
+
+              <div class="code-snippet-box" aria-hidden="true">
+                <div><span class="code-comment">// Core Competencies &amp; Ecosystem</span></div>
+                <div><span class="code-key">const</span> specialist = {</div>
+                <div>&nbsp;&nbsp;cms: [<span class="code-string">"WordPress"</span>, <span class="code-string">"WooCommerce"</span>, <span class="code-string">"CPT/ACF"</span>],</div>
+                <div>&nbsp;&nbsp;code: [<span class="code-string">"HTML5/CSS3"</span>, <span class="code-string">"JS"</span>, <span class="code-string">"PHP/Laravel"</span>],</div>
+                <div>&nbsp;&nbsp;seo: [<span class="code-string">"On-Page"</span>, <span class="code-string">"Schema"</span>, <span class="code-string">"Search Console"</span>],</div>
+                <div>&nbsp;&nbsp;admin: [<span class="code-string">"Hosting/DNS"</span>, <span class="code-string">"Security"</span>, <span class="code-string">"CWV Speed"</span>]</div>
+                <div>};</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+          <a href="#about" class="scroll-indicator-link">
+            <div class="scroll-mouse" aria-hidden="true">
+              <div class="scroll-wheel"></div>
+            </div>
+            <span data-i18n="hero.scrollDown">Cuộn xuống</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. ABOUT ME – GIỚI THIỆU BẢN THÂN
+         ====================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="about.eyebrow">01 · ABOUT ME</span>
+          <h2 class="section-title" data-i18n="about.title">
+            Sự giao thoa giữa Lập trình Web, Quản trị Hệ thống &amp; Tối ưu SEO
+          </h2>
+          <p class="section-subtitle" data-i18n="about.subtitle">
+            Không chỉ dừng lại ở việc tạo ra một giao diện đẹp, mình tập trung vào khả năng vận hành ổn định, tốc độ tải trang và thứ hạng tìm kiếm tự nhiên (Organic Traffic).
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative reveal">
+            <p data-i18n-html="about.p1">
+              Xin chào! Mình là <strong>Lê Trần Thanh Uyên</strong>. Trong quá trình trực tiếp phát triển, vận hành và tối ưu hóa nhiều hệ thống website thuộc các lĩnh vực <strong>Thẩm mỹ viện, Sàn đánh giá &amp; Review làm đẹp, Thương mại điện tử</strong>, mình nhận ra rằng một website thành công cần sự phối hợp chặt chẽ giữa mã nguồn sạch, hạ tầng máy chủ an toàn và cấu trúc SEO chuẩn mực.
+            </p>
+            <p data-i18n-html="about.p2">
+              Với nền tảng vừa hiểu sâu kỹ thuật <strong>WordPress / PHP / Laravel</strong>, vừa nắm vững <strong>On-page &amp; Technical SEO</strong> cùng quy trình <strong>Quản trị Hosting, Domain, Bảo mật &amp; Hiệu năng</strong>, mình có thể đảm nhận trọn vẹn vòng đời của một website hoặc phối hợp nhịp nhàng giữa đội ngũ Kỹ thuật (Dev) và Marketing (SEO/Content).
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <h3 class="pillar-title" data-i18n="about.pillar1Title">Website Administrator – Quản trị Website</h3>
+                <p class="pillar-desc" data-i18n="about.pillar1Desc">
+                  Quản lý Hosting/VPS, Domain/DNS, SSL, sao lưu định kỳ, bảo mật, khắc phục sự cố và tối ưu Core Web Vitals.
+                </p>
+              </div>
+              <div class="pillar-card">
+                <h3 class="pillar-title" data-i18n="about.pillar2Title">SEO Specialist – Chuyên viên SEO Website</h3>
+                <p class="pillar-desc" data-i18n="about.pillar2Desc">
+                  Kiểm toán Technical SEO, cấu trúc Schema JSON-LD, Sitemap, tối ưu On-page, nghiên cứu từ khóa và theo dõi Search Console / GA4.
+                </p>
+              </div>
+              <div class="pillar-card">
+                <h3 class="pillar-title" data-i18n="about.pillar3Title">WordPress Developer – Lập trình viên WordPress</h3>
+                <p class="pillar-desc" data-i18n="about.pillar3Desc">
+                  Tùy biến Theme/Child Theme, xây dựng Custom Post Type, ACF, tích hợp WooCommerce và tối ưu truy vấn cơ sở dữ liệu.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-side-card reveal" aria-label="Thống kê và lĩnh vực chuyên môn">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number" data-i18n="about.stat1Num">6+</div>
+                <div class="stat-label" data-i18n="about.stat1Label">Dự án Website thực tế</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-i18n="about.stat2Num">3</div>
+                <div class="stat-label" data-i18n="about.stat2Label">Mảng chuyên môn cốt lõi</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-i18n="about.stat3Num">90+</div>
+                <div class="stat-label" data-i18n="about.stat3Label">Mục tiêu Lighthouse Score</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-i18n="about.stat4Num">100%</div>
+                <div class="stat-label" data-i18n="about.stat4Label">Chuẩn Responsive &amp; SEO</div>
+              </div>
+            </div>
+
+            <h3 class="domains-box-title" data-i18n="about.domainsTitle">Lĩnh vực đã triển khai thực tế</h3>
+            <div class="domain-tags">
+              <span class="domain-tag" data-i18n="about.domain1">Thẩm mỹ &amp; Phòng khám (Beauty &amp; Clinic)</span>
+              <span class="domain-tag" data-i18n="about.domain2">Thương mại điện tử (E-commerce)</span>
+              <span class="domain-tag" data-i18n="about.domain3">Cổng thông tin &amp; Review đánh giá</span>
+              <span class="domain-tag" data-i18n="about.domain4">Nội thất &amp; Thiết bị cao cấp</span>
+            </div>
+
+            <div class="career-objective-box">
+              <h4 class="career-objective-title" data-i18n="about.objectiveTitle">Định hướng nghề nghiệp</h4>
+              <p class="career-objective-text" data-i18n="about.objectiveText">
+                Trở thành nhân sự nòng cốt trong vai trò Website Administrator / SEO Specialist / WordPress Developer, trực tiếp nâng cao hiệu suất kỹ thuật và tăng trưởng lưu lượng truy cập tự nhiên bền vững cho hệ sinh thái website của doanh nghiệp.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. PROFESSIONAL SKILLS – KỸ NĂNG CHUYÊN MÔN (4 Nhóm, Không dùng % ảo)
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="skills.eyebrow">02 · PROFESSIONAL SKILLS</span>
+          <h2 class="section-title" data-i18n="skills.title">Năng lực Chuyên môn &amp; Công nghệ</h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">
+            Phân nhóm theo 4 trụ cột thực chiến. Đánh giá dựa trên năng lực triển khai dự án thực tế thay vì chỉ số phần trăm cảm tính.
+          </p>
+        </div>
+
+        <div class="filter-bar reveal" id="skillsFilterBar" role="toolbar" aria-label="Bộ lọc nhóm kỹ năng">
+          <button type="button" class="filter-btn active" data-skill-filter="all" data-i18n="skills.filterAll">Tất cả nhóm (4)</button>
+          <button type="button" class="filter-btn" data-skill-filter="web" data-i18n="skills.filterWeb">Website Development</button>
+          <button type="button" class="filter-btn" data-skill-filter="wp" data-i18n="skills.filterWp">WordPress Development</button>
+          <button type="button" class="filter-btn" data-skill-filter="seo" data-i18n="skills.filterSeo">SEO Website</button>
+          <button type="button" class="filter-btn" data-skill-filter="admin" data-i18n="skills.filterAdmin">Website Administration</button>
+        </div>
+
+        <div class="skills-grid reveal" id="skillsGrid" aria-live="polite">
+          <!-- Rendered dynamically by assets/js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. WORK EXPERIENCE – KINH NGHIỆM LÀM VIỆC (Timeline & Expand/Collapse)
+         ====================================================================== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="experience-toolbar reveal">
+          <div class="section-header" style="margin-bottom: 0;">
+            <span class="section-eyebrow" data-i18n="experience.eyebrow">03 · WORK EXPERIENCE</span>
+            <h2 class="section-title" data-i18n="experience.title">Kinh nghiệm Làm việc &amp; Triển khai Dự án</h2>
+            <p class="section-subtitle" data-i18n="experience.subtitle">
+              Lộ trình làm việc thực tế gắn liền với quản trị hệ thống website, phát triển WordPress/Laravel và tối ưu hóa công cụ tìm kiếm.
+            </p>
+          </div>
+          <button type="button" class="timeline-toggle-all" id="toggleAllExpBtn" data-i18n="experience.collapseAll">
+            Thu gọn tất cả
+          </button>
+        </div>
+
+        <div class="timeline reveal" id="experienceTimeline">
+          <!-- Rendered dynamically by assets/js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. FEATURED PROJECTS – DỰ ÁN NỔI BẬT & CASE STUDY
+         ====================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="projects.eyebrow">04 · FEATURED PROJECTS</span>
+          <h2 class="section-title" data-i18n="projects.title">Dự án Thực tế &amp; Case Study Chuyên sâu</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">
+            Danh sách các hệ thống website thực tế đã tham gia xây dựng, quản trị và tối ưu SEO. Nhấn 'View Case Study' để xem chi tiết kiến trúc và giải pháp kỹ thuật.
+          </p>
+        </div>
+
+        <!-- Bộ lọc chuẩn theo tài liệu: All Projects · WordPress · Laravel · SEO · E-commerce -->
+        <div class="filter-bar reveal" id="projectsFilterBar" role="toolbar" aria-label="Bộ lọc dự án">
+          <button type="button" class="filter-btn active" data-project-filter="all" data-i18n="projects.filterAll">All Projects</button>
+          <button type="button" class="filter-btn" data-project-filter="wordpress" data-i18n="projects.filterWp">WordPress</button>
+          <button type="button" class="filter-btn" data-project-filter="laravel" data-i18n="projects.filterLaravel">Laravel</button>
+          <button type="button" class="filter-btn" data-project-filter="seo" data-i18n="projects.filterSeo">SEO</button>
+          <button type="button" class="filter-btn" data-project-filter="ecommerce" data-i18n="projects.filterEcom">E-commerce</button>
+        </div>
+
+        <div class="projects-grid reveal" id="projectsGrid" aria-live="polite">
+          <!-- Rendered dynamically by assets/js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. CONTACT & CV – LIÊN HỆ TUYỂN DỤNG
+         ====================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="contact.eyebrow">05 · CONTACT &amp; CV</span>
+          <h2 class="section-title" data-i18n="contact.title">Liên hệ Tuyển dụng &amp; Hợp tác</h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">
+            Sẵn sàng trao đổi trực tiếp về cơ hội hợp tác ở vị trí Website Administrator, SEO Specialist hoặc WordPress Developer.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Info & Action Buttons -->
+          <div class="reveal">
+            <div class="contact-cards-list">
+              <div class="contact-info-card">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-info-label" data-i18n="contact.emailLabel">Email liên hệ</div>
+                <div class="contact-info-value">
+                  <a href="mailto:thanhuyenletran@gmail.com">thanhuyenletran@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-info-label" data-i18n="contact.phoneLabel">Điện thoại / Zalo</div>
+                <div class="contact-info-value">
+                  <a href="tel:0706700528">0706 700 528</a>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </div>
+                <div class="contact-info-label" data-i18n="contact.zaloLabel">Kênh Zalo</div>
+                <div class="contact-info-value">
+                  <a href="https://zalo.me/0706700528" target="_blank" rel="noopener noreferrer">zalo.me/0706700528</a>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="contact-info-label" data-i18n="contact.githubLabel">GitHub Profile</div>
+                <div class="contact-info-value">
+                  <a href="https://github.com/UyenPoe" target="_blank" rel="noopener noreferrer">github.com/UyenPoe</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons: Send Email, Copy Email, Download CV PDF -->
+            <div class="contact-quick-actions">
+              <a href="mailto:thanhuyenletran@gmail.com?subject=Recruitment%20-%20Web%20%26%20SEO%20Specialist" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span data-i18n="contact.btnSendMail">Gửi Email ngay</span>
+              </a>
+
+              <button type="button" class="btn btn-secondary" id="copyEmailBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span data-i18n="contact.btnCopyMail">Sao chép Email</span>
+              </button>
+
+              <a href="assets/docs/CV-Le-Tran-Thanh-Uyen.pdf" download class="btn btn-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span data-i18n="contact.btnDownloadCv">Tải hồ sơ CV (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Optional Quick Contact Composer -->
+          <div class="contact-form-card reveal">
+            <h3 class="contact-form-title" data-i18n="contact.formTitle">Gửi tin nhắn nhanh cho Thanh Uyên</h3>
+            <p class="contact-form-subtitle" data-i18n="contact.formSubtitle">
+              Điền thông tin bên dưới để mở trình gửi email nhanh với nội dung được định dạng sẵn.
+            </p>
+            <form id="quickContactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label" data-i18n="contact.labelName">Họ tên / Quý công ty</label>
+                <input type="text" id="contactName" class="form-control" required data-i18n-placeholder="contact.placeholderName" placeholder="Nhập tên của bạn hoặc tên doanh nghiệp..." />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label" data-i18n="contact.labelEmail">Email phản hồi</label>
+                <input type="email" id="contactEmail" class="form-control" required data-i18n-placeholder="contact.placeholderEmail" placeholder="hr@company.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactRole" class="form-label" data-i18n="contact.labelRole">Vị trí quan tâm</label>
+                <select id="contactRole" class="form-control">
+                  <option value="Website Administrator" data-i18n="contact.roleOpt1">Website Administrator – Quản trị Website</option>
+                  <option value="SEO Specialist" data-i18n="contact.roleOpt2">SEO Specialist – Chuyên viên SEO</option>
+                  <option value="WordPress Developer" data-i18n="contact.roleOpt3">WordPress Developer – Lập trình viên WordPress</option>
+                  <option value="Other Collaboration" data-i18n="contact.roleOpt4">Trao đổi dự án / Khác</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label" data-i18n="contact.labelMessage">Nội dung trao đổi</label>
+                <textarea id="contactMessage" class="form-control" required data-i18n-placeholder="contact.placeholderMessage" placeholder="Xin chào Thanh Uyên, chúng tôi ấn tượng với hồ sơ của bạn và muốn mời bạn trao đổi thêm về vị trí..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact.btnSubmitForm">
+                Soạn &amp; Gửi Email →
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        © 2026 <strong>Lê Trần Thanh Uyên</strong> · Personal CV &amp; Portfolio (WordPress · Web Developer · SEO).
+      </p>
+      <div class="footer-links">
+        <a href="#home">Top ↑</a>
+        <a href="#projects">Case Studies</a>
+        <a href="assets/docs/CV-Le-Tran-Thanh-Uyen.pdf" download>CV PDF</a>
+        <a href="https://github.com/UyenPoe" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toastMessage">Đã sao chép địa chỉ Email vào bộ nhớ tạm!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

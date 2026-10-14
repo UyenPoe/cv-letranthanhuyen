@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uyenpoe.github.io/cv-letranthanhuyen/sitemap.xml

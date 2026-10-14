@@ -1,0 +1,332 @@
+/* ==========================================================================
+   CASE STUDY PAGE STYLESHEET (CS01 - CS12)
+   Project: Personal CV & Portfolio Landing Page - Lê Trần Thanh Uyên
+   ========================================================================== */
+
+.cs-hero {
+  padding-top: calc(var(--header-height) + 3rem);
+  padding-bottom: 3.5rem;
+  background:
+    radial-gradient(ellipse at 20% 25%, rgba(11, 35, 66, 0.95) 0%, transparent 55%),
+    radial-gradient(circle at 80% 35%, rgba(34, 197, 94, 0.12) 0%, transparent 45%),
+    linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* CS12: Back to Portfolio Breadcrumb */
+.cs-breadcrumb-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cs-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+}
+
+.cs-back-link:hover {
+  background: rgba(34, 197, 94, 0.25);
+  transform: translateX(-3px);
+}
+
+/* CS01: Project Hero */
+.cs-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.cs-badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.cs-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-full);
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+}
+
+.cs-badge.accent {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  color: var(--accent-primary);
+}
+
+.cs-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.cs-lead {
+  font-size: 1.08rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+  line-height: 1.7;
+}
+
+.cs-hero-preview {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  background: var(--bg-primary);
+}
+
+.cs-hero-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Main Content Grid for CS02 - CS10 */
+.cs-main {
+  padding: 4rem 0;
+}
+
+.cs-section-block {
+  background: linear-gradient(165deg, rgba(17, 24, 39, 0.92) 0%, rgba(11, 35, 66, 0.52) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.cs-code-tag {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
+.cs-block-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.1rem;
+}
+
+.cs-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cs-two-col .cs-section-block {
+  margin-bottom: 0;
+  height: 100%;
+}
+
+/* CS05: Key Features with Status Badges (Completed vs In Development) */
+.cs-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
+}
+
+.cs-feature-item {
+  background: rgba(17, 24, 39, 0.75);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+}
+
+.cs-feature-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cs-feature-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cs-status-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.cs-status-pill.done {
+  background: rgba(34, 197, 94, 0.16);
+  color: #86EFAC;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+.cs-status-pill.in-progress {
+  background: rgba(56, 189, 248, 0.16);
+  color: #7DD3FC;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+/* CS06: Challenges & Solutions */
+.cs-challenge-card {
+  background: rgba(17, 24, 39, 0.75);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.cs-challenge-card:last-child {
+  margin-bottom: 0;
+}
+
+.cs-challenge-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.cs-challenge-label.problem {
+  color: #FCA5A5;
+}
+
+.cs-challenge-label.solution {
+  color: var(--accent-primary);
+}
+
+/* CS07: Multi-Device Project Gallery (Desktop, Tablet, Mobile) */
+.cs-gallery-tabs {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cs-gallery-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr 0.65fr;
+  gap: 1.25rem;
+  align-items: end;
+}
+
+.cs-device-card {
+  background: rgba(10, 15, 26, 0.85);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+  text-align: center;
+}
+
+.cs-device-card img {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 0.65rem;
+  width: 100%;
+}
+
+.cs-device-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* CS09: Results Metrics */
+.cs-results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.cs-result-metric {
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.cs-result-value {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+}
+
+.cs-result-caption {
+  font-size: 0.86rem;
+  color: #D1FAE5;
+  margin-top: 0.35rem;
+}
+
+/* CS11: Previous / Next Project Navigation */
+.cs-project-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.cs-nav-card {
+  background: rgba(11, 35, 66, 0.6);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cs-nav-card:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.cs-nav-card.next {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.cs-nav-dir {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-primary);
+}
+
+.cs-nav-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
