@@ -165,4 +165,18 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .back-to-top-btn {
+    bottom: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 44px;
+  }
+
+  .toast-notification {
+    bottom: 4.5rem;
+    right: 1rem;
+    left: 1rem;
+    justify-content: center;
+  }
 }

@@ -368,6 +368,30 @@
       });
     }
 
+    // Back to Top Button with Scroll Progress Ring
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    const progressCircle = document.getElementById("scrollProgressCircle");
+    const circumference = 2 * Math.PI * 18; // ~113.097
+
+    function updateBackToTop() {
+      const scrollY = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (backToTopBtn) {
+        backToTopBtn.classList.toggle("is-visible", scrollY > 280);
+      }
+      if (progressCircle && docHeight > 0) {
+        const progress = Math.min(Math.max(scrollY / docHeight, 0), 1);
+        const offset = circumference - progress * circumference;
+        progressCircle.style.strokeDashoffset = offset;
+      }
+    }
+
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+
     // Sticky Header & Scroll Spy
     const header = document.getElementById("siteHeader");
     const sections = document.querySelectorAll("main section[id]");
@@ -378,6 +402,7 @@
       if (header) {
         header.classList.toggle("is-scrolled", scrollY > 24);
       }
+      updateBackToTop();
 
       if (sections.length && navLinks.length) {
         let currentSectionId = "home";
