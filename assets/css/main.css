@@ -1588,3 +1588,76 @@ textarea.form-control {
   transform: translateY(-2px);
 }
 
+/* ==========================================================================
+   PRINT MEDIA STYLES (@media print)
+   Optimizes web page for printing or direct browser PDF export.
+   ========================================================================== */
+@media print {
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #111827 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  /* Hide interactive / non-printable UI */
+  .site-header,
+  .status-toggle-btn,
+  .lang-switcher,
+  .menu-toggle,
+  .scroll-down-indicator,
+  .filter-bar,
+  .back-to-top-btn,
+  .toast-notification,
+  .contact-form-card,
+  .contact-quick-actions,
+  .btn,
+  .btn-card {
+    display: none !important;
+  }
+
+  .section {
+    padding: 1.5rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+
+  .timeline-details {
+    display: block !important;
+    max-height: none !important;
+    opacity: 1 !important;
+  }
+
+  .timeline-expand-btn {
+    display: none !important;
+  }
+
+  .project-thumb-wrap img {
+    max-height: 180px;
+    object-fit: cover;
+  }
+
+  a {
+    text-decoration: underline !important;
+    color: #0284c7 !important;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 80%;
+    color: #64748b;
+  }
+}
+
+

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Lê Trần Thanh Uyên | Web & SEO Specialist · WordPress Developer · Graphic & UI/UX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #1f2937;
+      font-size: 8.6pt;
+      line-height: 1.38;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      padding: 9mm 12mm 7mm 12mm;
+      box-sizing: border-box;
+      position: relative;
+      background: #ffffff;
+      page-break-after: always;
+      break-after: page;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    /* HEADER */
+    .cv-header {
+      background: linear-gradient(135deg, #0b2342 0%, #111827 100%);
+      color: #ffffff;
+      border-radius: 7px;
+      padding: 13px 18px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 5px solid #22c55e;
+    }
+    .header-main {
+      flex: 1;
+    }
+    .cv-name {
+      font-size: 19pt;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+    .cv-title {
+      font-size: 9.6pt;
+      font-weight: 600;
+      color: #22c55e;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 5px;
+    }
+    .cv-badges {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .badge-role {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #f3f4f6;
+      font-size: 7.2pt;
+      font-weight: 500;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    .contact-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 7.8pt;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 235px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #e5e7eb;
+    }
+    .contact-item a {
+      color: #67e8f9;
+      font-weight: 500;
+    }
+    .contact-item svg {
+      width: 11px;
+      height: 11px;
+      stroke: #22c55e;
+      flex-shrink: 0;
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+      font-size: 9.6pt;
+      font-weight: 700;
+      color: #0b2342;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin: 7px 0 5px 0;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border-bottom: 1.5px solid #e2e8f0;
+      padding-bottom: 2px;
+    }
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 3.5px;
+      height: 10pt;
+      background-color: #22c55e;
+      border-radius: 2px;
+    }
+
+    /* SUMMARY */
+    .summary-text {
+      font-size: 8.2pt;
+      color: #374151;
+      line-height: 1.38;
+      text-align: justify;
+      margin-bottom: 3px;
+    }
+
+    /* SKILLS GRID */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5.5px;
+      margin-bottom: 3px;
+    }
+    .skill-block {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 5px 8px;
+    }
+    .skill-block.full-width {
+      grid-column: span 2;
+    }
+    .skill-title {
+      font-size: 7.9pt;
+      font-weight: 700;
+      color: #0b2342;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .skill-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.5px;
+    }
+    .skill-tag {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      color: #1e293b;
+      font-size: 6.8pt;
+      font-weight: 500;
+      padding: 1px 4.5px;
+      border-radius: 3px;
+    }
+    .skill-tag.highlight {
+      background: #ecfdf5;
+      border-color: #a7f3d0;
+      color: #065f46;
+      font-weight: 600;
+    }
+
+    /* EXPERIENCE TIMELINE */
+    .exp-item {
+      margin-bottom: 7px;
+      padding-left: 9px;
+      border-left: 2px solid #22c55e;
+      position: relative;
+    }
+    .exp-item::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 2px;
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1.5px;
+    }
+    .exp-role {
+      font-size: 8.9pt;
+      font-weight: 700;
+      color: #0b2342;
+    }
+    .exp-period {
+      font-size: 7.4pt;
+      font-weight: 600;
+      color: #0284c7;
+      background: #f0f9ff;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .exp-company {
+      font-size: 7.7pt;
+      font-weight: 600;
+      color: #4b5563;
+      margin-bottom: 1.5px;
+    }
+    .exp-summary {
+      font-size: 7.7pt;
+      color: #374151;
+      margin-bottom: 1.5px;
+    }
+    .exp-bullets {
+      list-style-type: disc;
+      padding-left: 13px;
+      font-size: 7.6pt;
+      color: #4b5563;
+      line-height: 1.34;
+    }
+    .exp-bullets li {
+      margin-bottom: 1.2px;
+    }
+    .exp-results {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      padding: 2.5px 7px;
+      border-radius: 3px;
+      font-size: 7.4pt;
+      margin-top: 2.5px;
+      font-weight: 500;
+    }
+    .exp-tags {
+      display: flex;
+      gap: 3.5px;
+      flex-wrap: wrap;
+      margin-top: 2.5px;
+    }
+    .exp-tag {
+      font-size: 6.5pt;
+      background: #e2e8f0;
+      color: #334155;
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+
+    /* PROJECTS GRID (PAGE 2) */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6.5px;
+      margin-bottom: 5px;
+    }
+    .proj-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 6.5px 8.5px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+    .proj-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2px;
+    }
+    .proj-name {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #0b2342;
+    }
+    .proj-type {
+      font-size: 6.7pt;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      padding: 1px 4px;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+    .proj-url {
+      font-size: 7.1pt;
+      color: #0284c7;
+      display: block;
+      margin-bottom: 2px;
+      font-family: monospace;
+    }
+    .proj-role {
+      font-size: 7.3pt;
+      color: #64748b;
+      font-weight: 600;
+      margin-bottom: 1.5px;
+    }
+    .proj-desc {
+      font-size: 7.4pt;
+      color: #334155;
+      line-height: 1.28;
+      margin-bottom: 3px;
+    }
+    .proj-tech-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5px;
+    }
+    .proj-tech {
+      font-size: 6.4pt;
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid #e2e8f0;
+      padding: 0.5px 3.5px;
+      border-radius: 2px;
+    }
+
+    /* THREE-COLUMN WORKFLOW */
+    .workflow-grid, .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+    }
+    .workflow-card, .edu-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 6px 7.5px;
+    }
+    .workflow-title, .edu-title {
+      font-size: 7.7pt;
+      font-weight: 700;
+      color: #0b2342;
+      margin-bottom: 1.5px;
+    }
+    .edu-sub {
+      font-size: 6.9pt;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 2px;
+    }
+    .workflow-desc, .edu-desc {
+      font-size: 7.1pt;
+      color: #4b5563;
+      line-height: 1.28;
+    }
+
+    /* FOOTER */
+    .cv-footer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 3px;
+      font-size: 6.9pt;
+      color: #64748b;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .cv-footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .cv-footer strong {
+      color: #0b2342;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= PAGE 1 ================= -->
+  <div class="page">
+    <div>
+      <!-- HEADER -->
+      <header class="cv-header">
+        <div class="header-main">
+          <h1 class="cv-name">LÊ TRẦN THANH UYÊN</h1>
+          <div class="cv-title">Web &amp; SEO Specialist · Graphic &amp; UI/UX Designer</div>
+          <div class="cv-badges">
+            <span class="badge-role">Website Administrator</span>
+            <span class="badge-role">SEO Specialist</span>
+            <span class="badge-role">WordPress Developer</span>
+            <span class="badge-role">Graphic &amp; UI/UX Designer</span>
+          </div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Email: <a href="mailto:thanhuyenletran@gmail.com">thanhuyenletran@gmail.com</a></span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Hotline / Zalo: <a href="https://zalo.me/0706700528">0706 700 528</a></span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            <span>Portfolio: <a href="https://uyenpoe.github.io/cv-letranthanhuyen/">uyenpoe.github.io/cv-letranthanhuyen</a></span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>GitHub: <a href="https://github.com/UyenPoe">github.com/UyenPoe</a> | TP. Hồ Chí Minh</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- PROFESSIONAL SUMMARY -->
+      <h2 class="section-title">Tóm tắt Chuyên môn &amp; Mục tiêu Nghề nghiệp</h2>
+      <p class="summary-text">
+        Chuyên viên <strong>Web &amp; SEO Specialist</strong> kết hợp năng lực <strong>Quản trị Website</strong>, <strong>Lập trình WordPress / Laravel</strong> và <strong>Thiết kế Đồ họa (Photoshop, Illustrator) &amp; Web UI/UX</strong>. Với kinh nghiệm thực chiến phát triển, vận hành và tối ưu hóa hệ thống website trong các ngành thẩm mỹ viện, thương mại điện tử và trang đánh giá review, tôi tập trung tạo ra các sản phẩm số vận hành ổn định, tải trang nhanh dưới 2s, giao diện trực quan và tăng trưởng thứ hạng tìm kiếm tự nhiên (Organic Traffic). Định hướng trở thành nhân sự nòng cốt phụ trách toàn diện vòng đời website cho doanh nghiệp.
+      </p>
+
+      <!-- PROFESSIONAL SKILLS (5 PILLARS) -->
+      <h2 class="section-title">Kỹ năng Chuyên môn &amp; Công nghệ (5 Trụ cột Thực chiến)</h2>
+      <div class="skills-container">
+        <div class="skill-block">
+          <div class="skill-title">
+            <span>1. Website Development</span>
+            <span style="font-size:6.8pt;color:#64748b;font-weight:normal;">Frontend &amp; Backend</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">HTML5 / Semantic</span>
+            <span class="skill-tag highlight">CSS3 / Grid / Flexbox</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag highlight">PHP 8.x</span>
+            <span class="skill-tag highlight">Laravel (MVC)</span>
+            <span class="skill-tag">MySQL Database</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Git / GitHub Pages</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-title">
+            <span>2. WordPress Development</span>
+            <span style="font-size:6.8pt;color:#64748b;font-weight:normal;">CMS &amp; E-commerce</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">Custom Theme &amp; Child Theme</span>
+            <span class="skill-tag highlight">WooCommerce</span>
+            <span class="skill-tag">Custom Post Types (CPT)</span>
+            <span class="skill-tag">Advanced Custom Fields (ACF)</span>
+            <span class="skill-tag">Plugin Integration</span>
+            <span class="skill-tag">WP Hooks (Actions/Filters)</span>
+            <span class="skill-tag">Elementor / Flatsome</span>
+            <span class="skill-tag">WP Speed &amp; Security</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-title">
+            <span>3. SEO Website &amp; Analytics</span>
+            <span style="font-size:6.8pt;color:#64748b;font-weight:normal;">On-page &amp; Technical</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">Technical SEO Audit</span>
+            <span class="skill-tag highlight">Schema JSON-LD</span>
+            <span class="skill-tag">On-page SEO (H1-H3)</span>
+            <span class="skill-tag">XML Sitemap &amp; Robots.txt</span>
+            <span class="skill-tag highlight">Google Search Console</span>
+            <span class="skill-tag">Google Analytics 4 (GA4)</span>
+            <span class="skill-tag">Topic Cluster &amp; Internal Link</span>
+            <span class="skill-tag">Core Web Vitals</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-title">
+            <span>4. Website Administration</span>
+            <span style="font-size:6.8pt;color:#64748b;font-weight:normal;">Hosting &amp; Security</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">cPanel / DirectAdmin / VPS</span>
+            <span class="skill-tag highlight">Domain / DNS Cloudflare</span>
+            <span class="skill-tag">SSL / HTTPS Hardening</span>
+            <span class="skill-tag">Automated Backup &amp; Recovery</span>
+            <span class="skill-tag">WebP / Image Caching</span>
+            <span class="skill-tag">Uptime Monitoring</span>
+            <span class="skill-tag">Firewall &amp; Anti-malware</span>
+            <span class="skill-tag">Troubleshooting &amp; Fix Bugs</span>
+          </div>
+        </div>
+
+        <div class="skill-block full-width">
+          <div class="skill-title">
+            <span>5. Graphic &amp; UI/UX Web Design</span>
+            <span style="font-size:6.8pt;color:#065f46;font-weight:600;background:#d1fae5;padding:1px 5px;border-radius:3px;">Thiết kế Đồ họa &amp; Giao diện Web</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">Adobe Photoshop (Banner, Poster, Retouching, Mockups)</span>
+            <span class="skill-tag highlight">Adobe Illustrator (Vector Logo, Icons, Brand Identity)</span>
+            <span class="skill-tag highlight">UI/UX Design Web (Wireframing, Layout, User Flow)</span>
+            <span class="skill-tag">Figma Prototyping</span>
+            <span class="skill-tag">Banner Marketing &amp; Social Media Visuals</span>
+            <span class="skill-tag">Web Graphic Optimization (WebP, SVG)</span>
+            <span class="skill-tag">Design System &amp; Typography</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WORK EXPERIENCE (2 KEY ROLES ON PAGE 1) -->
+      <h2 class="section-title">Kinh nghiệm Làm việc Thực tế</h2>
+      
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Website Administrator &amp; Technical SEO Specialist</span>
+          <span class="exp-period">2024 – Hiện tại</span>
+        </div>
+        <div class="exp-company">Hệ thống Website Thẩm mỹ &amp; Cổng thông tin Đánh giá (TP.HCM)</div>
+        <p class="exp-summary">Chịu trách nhiệm quản trị hệ thống, tối ưu SEO kỹ thuật và thiết kế ấn phẩm đồ họa cho 4 website (WangSun Luxury, Sàn Thẩm Mỹ, Review Làm Đẹp, Đánh Giá Thẩm Mỹ).</p>
+        <ul class="exp-bullets">
+          <li>Quản trị hạ tầng Hosting cPanel/VPS, Cloudflare DNS, thiết lập chứng chỉ SSL, sao lưu database tự động định kỳ và khắc phục sự cố hệ thống.</li>
+          <li>Triển khai cấu trúc dữ liệu Schema JSON-LD chuyên sâu (LocalBusiness, MedicalBusiness, Review, FAQ, Breadcrumbs), tối ưu chỉ mục Google Search Console.</li>
+          <li>Tối ưu tốc độ tải trang Core Web Vitals: nén ảnh định dạng WebP, cấu hình bộ nhớ đệm (caching), loại bỏ CSS/JS không sử dụng, điểm số đạt trên 90.</li>
+          <li>Sử dụng Adobe Photoshop &amp; Illustrator thiết kế banner marketing, xử lý hình ảnh thẩm mỹ viện và tinh chỉnh layout UI/UX trải nghiệm khách hàng.</li>
+        </ul>
+        <div class="exp-results">
+          <strong>Kết quả đạt được:</strong> Tăng 45% lưu lượng truy cập tự nhiên (Organic Traffic), 100% URLs được Google lập chỉ mục nhanh chóng, vận hành ổn định 99.9% uptime.
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">WordPress</span>
+          <span class="exp-tag">Technical SEO</span>
+          <span class="exp-tag">Adobe Photoshop</span>
+          <span class="exp-tag">Adobe Illustrator</span>
+          <span class="exp-tag">UI/UX Web</span>
+          <span class="exp-tag">Schema JSON-LD</span>
+          <span class="exp-tag">cPanel / Cloudflare</span>
+        </div>
+      </div>
+
+      <div class="exp-item" style="margin-bottom:0;">
+        <div class="exp-header">
+          <span class="exp-role">WordPress Developer &amp; E-commerce Operations</span>
+          <span class="exp-period">2023 – 2024</span>
+        </div>
+        <div class="exp-company">Dự án Thương mại điện tử Stone Sinks Vietnam (Chậu đá tự nhiên cao cấp)</div>
+        <p class="exp-summary">Trực tiếp xây dựng website bán hàng WooCommerce, tối ưu On-page SEO sản phẩm và thiết kế hình ảnh nhận diện thương hiệu.</p>
+        <ul class="exp-bullets">
+          <li>Tùy biến Child Theme, thiết lập WooCommerce, xây dựng bộ lọc sản phẩm theo chất liệu, kích thước và màu sắc.</li>
+          <li>Thiết kế banner chương trình, retouch ảnh sản phẩm độ phân giải cao bằng Photoshop và chuyển đổi đồng loạt sang WebP giảm 80% dung lượng.</li>
+          <li>Triển khai cấu trúc Schema Product, tối ưu On-page meta title/description giúp sản phẩm xuất hiện nổi bật trên Google Image &amp; Search.</li>
+        </ul>
+        <div class="exp-results">
+          <strong>Kết quả đạt được:</strong> Tốc độ tải trang dưới 1.8s dù chứa hàng trăm ảnh mẫu độ nét cao; tỷ lệ thoát trang (bounce rate) giảm 30%.
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">WordPress</span>
+          <span class="exp-tag">WooCommerce</span>
+          <span class="exp-tag">Adobe Photoshop</span>
+          <span class="exp-tag">UI/UX Web Design</span>
+          <span class="exp-tag">Product Schema</span>
+          <span class="exp-tag">Hosting Admin</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER PAGE 1 -->
+    <div class="cv-footer">
+      <span>Ứng viên: <strong>Lê Trần Thanh Uyên</strong> | Email: <strong>thanhuyenletran@gmail.com</strong> | SĐT/Zalo: <strong>0706 700 528</strong></span>
+      <span>Trang 1 / 2 · Portfolio: <strong>https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+    </div>
+  </div>
+
+  <!-- ================= PAGE 2 ================= -->
+  <div class="page">
+    <div>
+      <div class="exp-item" style="margin-top:2px;">
+        <div class="exp-header">
+          <span class="exp-role">Junior Web Developer &amp; UI/UX Designer</span>
+          <span class="exp-period">2022 – 2023</span>
+        </div>
+        <div class="exp-company">Dự án Hệ thống Bán lẻ Smartphone E-commerce</div>
+        <p class="exp-summary">Lập trình ứng dụng web bán lẻ điện thoại di động mô hình MVC với PHP / Laravel và cơ sở dữ liệu quan hệ MySQL.</p>
+        <ul class="exp-bullets">
+          <li>Thiết kế kiến trúc CSDL quan hệ MySQL chuẩn hóa (sản phẩm, biến thể thông số, khách hàng, đơn hàng).</li>
+          <li>Xây dựng giao diện Responsive chuẩn UI/UX, hỗ trợ lọc sản phẩm theo thương hiệu, mức giá, RAM/ROM và module giỏ hàng.</li>
+          <li>Phát triển trang Dashboard quản trị cho phép thêm sửa xóa sản phẩm, duyệt đơn hàng và thống kê doanh thu.</li>
+        </ul>
+        <div class="exp-results">
+          <strong>Kết quả đạt được:</strong> Hoàn thành hệ thống đúng tiến độ, kiểm thử luồng đặt hàng chính xác 100%, giao diện thân thiện trên thiết bị di động.
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">PHP</span>
+          <span class="exp-tag">Laravel MVC</span>
+          <span class="exp-tag">MySQL</span>
+          <span class="exp-tag">HTML5/CSS3</span>
+          <span class="exp-tag">JavaScript</span>
+          <span class="exp-tag">Adobe Photoshop</span>
+          <span class="exp-tag">UI/UX Web</span>
+        </div>
+      </div>
+
+      <!-- FEATURED PROJECTS (6 REAL WEBSITES) -->
+      <h2 class="section-title">Dự án Thực tế Đã Triển khai (6 Hệ thống Website Thực tế)</h2>
+      <div class="projects-grid">
+        <!-- Proj 1 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Smartphone E-commerce</span>
+            <span class="proj-type">Laravel / E-com</span>
+          </div>
+          <a class="proj-url" href="http://smartphone.taichinhtaithanh.com" target="_blank">smartphone.taichinhtaithanh.com</a>
+          <div class="proj-role">Vai trò: Fullstack Web Developer &amp; UI/UX</div>
+          <p class="proj-desc">Website thương mại điện tử bán lẻ điện thoại: bộ lọc sản phẩm đa tiêu chí, giỏ hàng, thanh toán và CMS quản trị Admin.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">Laravel (MVC)</span>
+            <span class="proj-tech">PHP</span>
+            <span class="proj-tech">MySQL</span>
+            <span class="proj-tech">UI/UX Design</span>
+            <span class="proj-tech">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Proj 2 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">WangSun Luxury</span>
+            <span class="proj-type">WordPress / Clinic</span>
+          </div>
+          <a class="proj-url" href="https://vienthammywangsun.com" target="_blank">vienthammywangsun.com</a>
+          <div class="proj-role">Vai trò: Web Administrator &amp; SEO Specialist</div>
+          <p class="proj-desc">Viện thẩm mỹ &amp; phòng khám chuyên khoa: thiết kế sang trọng, schema MedicalBusiness, tối ưu từ khóa dịch vụ tại TP.HCM.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">WordPress</span>
+            <span class="proj-tech">Local SEO</span>
+            <span class="proj-tech">Schema JSON-LD</span>
+            <span class="proj-tech">Photoshop</span>
+            <span class="proj-tech">cPanel</span>
+          </div>
+        </div>
+
+        <!-- Proj 3 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Sàn Thẩm Mỹ</span>
+            <span class="proj-type">Directory Portal</span>
+          </div>
+          <a class="proj-url" href="https://santhammy.com" target="_blank">santhammy.com</a>
+          <div class="proj-role">Vai trò: Web Administrator &amp; Technical SEO</div>
+          <p class="proj-desc">Cổng thông tin danh bạ thẩm mỹ viện: cấu trúc Custom Post Type phân cấp theo địa bàn, truy vấn dữ liệu tối ưu mượt mà.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">WordPress CPT</span>
+            <span class="proj-tech">ACF Pro</span>
+            <span class="proj-tech">Technical SEO</span>
+            <span class="proj-tech">Cloudflare</span>
+            <span class="proj-tech">UI/UX</span>
+          </div>
+        </div>
+
+        <!-- Proj 4 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Review Làm Đẹp</span>
+            <span class="proj-type">Magazine / SEO</span>
+          </div>
+          <a class="proj-url" href="http://review-lamdep.com" target="_blank">review-lamdep.com</a>
+          <div class="proj-role">Vai trò: WordPress Developer &amp; On-page SEO</div>
+          <p class="proj-desc">Tạp chí đánh giá mỹ phẩm &amp; spa: kiến trúc Topic Cluster, internal linking khoa học, schema Review, điểm On-page trên 95.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">WordPress</span>
+            <span class="proj-tech">On-page SEO</span>
+            <span class="proj-tech">Review Schema</span>
+            <span class="proj-tech">WebP Image</span>
+            <span class="proj-tech">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Proj 5 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Đánh Giá Thẩm Mỹ</span>
+            <span class="proj-type">Portal / Security</span>
+          </div>
+          <a class="proj-url" href="http://danhgiathammy.com" target="_blank">danhgiathammy.com</a>
+          <div class="proj-role">Vai trò: Website Administrator &amp; Security</div>
+          <p class="proj-desc">Cổng đánh giá phẫu thuật thẩm mỹ: thiết lập hạ tầng cPanel bảo mật cao, chống spam/bot, thời gian phản hồi máy chủ nhanh.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">WordPress</span>
+            <span class="proj-tech">Web Security</span>
+            <span class="proj-tech">cPanel / VPS</span>
+            <span class="proj-tech">SSL / WAF</span>
+            <span class="proj-tech">Backup</span>
+          </div>
+        </div>
+
+        <!-- Proj 6 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Stone Sinks Vietnam</span>
+            <span class="proj-type">WooCommerce / Design</span>
+          </div>
+          <a class="proj-url" href="https://stonesinks.vn" target="_blank">stonesinks.vn</a>
+          <div class="proj-role">Vai trò: WooCommerce Developer &amp; Visual Design</div>
+          <p class="proj-desc">Website thương mại chậu đá tự nhiên: hình ảnh sản phẩm độ phân giải cao nén WebP, Product Schema đầy đủ, chuẩn Google Shopping.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">WooCommerce</span>
+            <span class="proj-tech">Adobe Photoshop</span>
+            <span class="proj-tech">Illustrator</span>
+            <span class="proj-tech">Product SEO</span>
+            <span class="proj-tech">UI/UX</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WORK METHODOLOGY & CORE COMPETENCY -->
+      <h2 class="section-title">Quy trình &amp; Tiêu chuẩn Triển khai Chuyên nghiệp</h2>
+      <div class="workflow-grid">
+        <div class="workflow-card">
+          <div class="workflow-title">1. Quản trị &amp; Hạ tầng Bền vững</div>
+          <p class="workflow-desc">
+            Triển khai máy chủ ổn định, backup tự động hàng ngày, cấu hình SSL/HTTPS, Cloudflare WAF chống DDoS và luôn duy trì Core Web Vitals xanh (LCP &lt; 2.5s, CLS &lt; 0.1).
+          </p>
+        </div>
+        <div class="workflow-card">
+          <div class="workflow-title">2. SEO Kỹ thuật &amp; White-Hat</div>
+          <p class="workflow-desc">
+            Cấu trúc dữ liệu Schema JSON-LD chuẩn xác, sitemap phân lớp, nghiên cứu từ khóa thực tế, tối ưu trải nghiệm đọc và theo dõi liên tục qua Search Console / GA4.
+          </p>
+        </div>
+        <div class="workflow-card">
+          <div class="workflow-title">3. Tư duy Thiết kế &amp; Trải nghiệm (UI/UX)</div>
+          <p class="workflow-desc">
+            Kết hợp Adobe Photoshop &amp; Illustrator để thiết kế ấn phẩm bắt mắt, bố cục web mobile-first chuẩn mực, tăng chuyển đổi cuộc gọi, liên hệ Zalo và form đặt hẹn.
+          </p>
+        </div>
+      </div>
+
+      <!-- EDUCATION, CERTIFICATIONS & KEY COMPETENCIES -->
+      <h2 class="section-title">Đào tạo, Chứng chỉ &amp; Kỹ năng Bổ trợ</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-title">Đào tạo Chuyên ngành</div>
+          <div class="edu-sub">Công nghệ Thông tin / Phát triển Web</div>
+          <p class="edu-desc">Nền tảng vững chắc về cấu trúc dữ liệu, giải thuật, mạng máy tính, cơ sở dữ liệu quan hệ MySQL và kiến trúc web hiện đại.</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-title">Chứng chỉ Chuyên môn</div>
+          <div class="edu-sub">SEO, Google Analytics &amp; Thiết kế</div>
+          <p class="edu-desc">Google Analytics 4 (GA4), Technical SEO &amp; Google Search Console, UI/UX Web Design &amp; Adobe Creative Suite (Photoshop, Illustrator).</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-title">Tác phong &amp; Cam kết</div>
+          <div class="edu-sub">Chủ động · Kỷ luật · Bảo mật</div>
+          <p class="edu-desc">Khả năng độc lập xử lý sự cố (Troubleshooting), bảo mật thông tin tuyệt đối và tinh thần trách nhiệm cao trong từng dự án.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER PAGE 2 -->
+    <div class="cv-footer">
+      <span>Ứng viên: <strong>Lê Trần Thanh Uyên</strong> | Email: <strong>thanhuyenletran@gmail.com</strong> | SĐT/Zalo: <strong>0706 700 528</strong></span>
+      <span>Trang 2 / 2 · Portfolio: <strong>https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+    </div>
+  </div>
+
+</body>
+</html>
