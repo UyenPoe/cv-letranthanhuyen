@@ -9,34 +9,43 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 1355 >>
+<< /Length 1962 >>
 stream
 BT
-/F1 14 Tf
-50 760 Td
-18 TL
+/F1 15 Tf
+50 750 Td
+16 TL
 (LE TRAN THANH UYEN - PERSONAL CV & PORTFOLIO) Tj T*
+/F1 10 Tf
+(Role: Website Administrator | SEO Specialist | WordPress Developer | Graphic & UI/UX Designer) Tj T*
+(Email: thanhuyenletran@gmail.com | Phone: 0706 700 528 | GitHub: github.com/UyenPoe) Tj T*
+(Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/) Tj T*
+(-------------------------------------------------------------------------------------------) Tj T*
+() Tj T*
 /F1 11 Tf
-(Role: Website Administrator | SEO Specialist | WordPress Developer) Tj T*
-(Email: thanhuyenletran@gmail.com | Phone: 0706 700 528) Tj T*
-(--------------------------------------------------------------------) Tj T*
-(SUMMARY:) Tj T*
-(Web & SEO Specialist experienced in building, managing, and optimizing) Tj T*
-(production websites with WordPress, PHP/Laravel, and Technical SEO.) Tj T*
+(PROFESSIONAL SUMMARY:) Tj T*
+/F1 10 Tf
+(Web & SEO Specialist with hands-on expertise in building, managing, and optimizing production) Tj T*
+(websites using WordPress, PHP/Laravel, Technical SEO, and creative Graphic & UI/UX Design.) Tj T*
 () Tj T*
-(CORE SKILLS:) Tj T*
-(1. Website Development: HTML5, CSS3, JavaScript, PHP, Laravel \(MVC\), MySQL) Tj T*
-(2. WordPress Development: Custom Theme, Plugin, CPT, ACF, WooCommerce) Tj T*
-(3. SEO Website: On-page SEO, Technical SEO, Schema JSON-LD, Sitemap, GSC) Tj T*
-(4. Website Administration: Hosting, Domain, Database, Backup, Security, CWV) Tj T*
+/F1 11 Tf
+(CORE TECHNICAL & DESIGN SKILLS:) Tj T*
+/F1 10 Tf
+(1. Website Development: HTML5, CSS3, JavaScript, PHP 8.x, Laravel \(MVC\), MySQL, Git) Tj T*
+(2. WordPress Development: Custom Theme, Plugin Integration, CPT, ACF, WooCommerce, WP Speed) Tj T*
+(3. SEO Website: On-page SEO, Technical SEO, Schema JSON-LD, XML Sitemap, Search Console, GA4) Tj T*
+(4. Website Administration: Hosting/cPanel/VPS, Domain/DNS, Automated Backup, SSL, Core Web Vitals) Tj T*
+(5. Graphic & UI/UX Design: Adobe Photoshop, Adobe Illustrator, UI/UX Web Design, Wireframing) Tj T*
 () Tj T*
-(FEATURED PROJECTS:) Tj T*
-(- Smartphone E-commerce \(smartphone.taichinhtaithanh.com\) - Laravel/MySQL) Tj T*
-(- WangSun Luxury \(vienthammywangsun.com\) - WordPress & SEO) Tj T*
-(- San Tham My \(santhammy.com\) - WordPress Directory & Technical SEO) Tj T*
-(- Review Lam Dep \(review-lamdep.com\) - WordPress & Content/On-page SEO) Tj T*
-(- Danh Gia Tham My \(danhgiathammy.com\) - WordPress & Web Administration) Tj T*
-(- Stone Sinks Vietnam \(stonesinks.vn\) - WordPress, WooCommerce & Image SEO) Tj T*
+/F1 11 Tf
+(FEATURED PRODUCTION PROJECTS:) Tj T*
+/F1 10 Tf
+(- Smartphone E-commerce \(smartphone.taichinhtaithanh.com\) - Laravel MVC, MySQL, Catalog & Cart) Tj T*
+(- WangSun Luxury \(vienthammywangsun.com\) - WordPress, Aesthetics Clinic & Local SEO) Tj T*
+(- San Tham My \(santhammy.com\) - WordPress Directory, Custom Post Types & Technical SEO) Tj T*
+(- Review Lam Dep \(review-lamdep.com\) - WordPress Review Portal, Content Architecture & On-page SEO) Tj T*
+(- Danh Gia Tham My \(danhgiathammy.com\) - WordPress Portal, System Hardening & Performance) Tj T*
+(- Stone Sinks Vietnam \(stonesinks.vn\) - WordPress, WooCommerce & Product Image/UI Optimization) Tj T*
 ET
 endstream
 endobj
@@ -50,9 +59,9 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000241 00000 n 
-0000001647 00000 n 
+0000002254 00000 n 
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-1717
+2324
 %%EOF

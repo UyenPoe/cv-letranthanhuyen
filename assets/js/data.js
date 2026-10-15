@@ -11,8 +11,8 @@ window.PORTFOLIO_DATA = {
   profile: {
     fullName: "Lê Trần Thanh Uyên",
     shortName: "THANH UYEN",
-    roleTitle: "WEB & SEO SPECIALIST",
-    subRoles: "WORDPRESS · WEB DEVELOPER · SEO",
+    roleTitle: "WEB & SEO SPECIALIST · GRAPHIC & UI/UX DESIGN",
+    subRoles: "WORDPRESS · WEB DEVELOPER · SEO · GRAPHIC & UI/UX DESIGN",
     availableByDefault: true, // true: Sẵn sàng nhận việc | false: Đang bận dự án
     email: "thanhuyenletran@gmail.com",
     phone: "0706 700 528",
@@ -42,7 +42,7 @@ window.PORTFOLIO_DATA = {
       },
       hero: {
         badge: "PORTFOLIO",
-        pillars: "WORDPRESS · WEB DEVELOPER · SEO",
+        pillars: "WORDPRESS · WEB DEVELOPER · SEO · GRAPHIC & UI/UX DESIGN",
         greeting: "Lê Trần Thanh Uyên — Chuyên viên Web & SEO",
         titleHtml: "I <span class=\"text-accent\">build</span>, <span class=\"text-accent\">manage</span> &amp; <span class=\"text-accent\">optimize</span> websites for real growth.",
         subtitleTag: "Personal CV & Portfolio Website — Xây dựng, Quản trị & Tối ưu Website tăng trưởng bền vững",
@@ -54,6 +54,7 @@ window.PORTFOLIO_DATA = {
         role1: "Website Administrator",
         role2: "SEO Specialist",
         role3: "WordPress Developer",
+        role4: "Graphic & UI/UX Designer",
         scrollDown: "Cuộn xuống"
       },
       about: {
@@ -68,6 +69,8 @@ window.PORTFOLIO_DATA = {
         pillar2Desc: "Kiểm toán Technical SEO, cấu trúc Schema JSON-LD, Sitemap, tối ưu On-page, nghiên cứu từ khóa và theo dõi Search Console / GA4.",
         pillar3Title: "WordPress Developer – Lập trình viên WordPress",
         pillar3Desc: "Tùy biến Theme/Child Theme, xây dựng Custom Post Type, ACF, tích hợp WooCommerce và tối ưu truy vấn cơ sở dữ liệu.",
+        pillar4Title: "Graphic & UI/UX Design – Thiết kế Đồ họa & Web UI/UX",
+        pillar4Desc: "Thiết kế banner marketing, xử lý ảnh bằng Adobe Photoshop, thiết kế vector/logo bằng Illustrator và xây dựng layout UI/UX website hiện đại, tối ưu trải nghiệm tương tác.",
         stat1Num: "6+",
         stat1Label: "Dự án Website thực tế",
         stat2Num: "3",
@@ -86,13 +89,14 @@ window.PORTFOLIO_DATA = {
       },
       skills: {
         eyebrow: "02 · PROFESSIONAL SKILLS",
-        title: "Năng lực Chuyên môn & Công nghệ",
-        subtitle: "Phân nhóm theo 4 trụ cột thực chiến. Đánh giá dựa trên năng lực triển khai dự án thực tế thay vì chỉ số phần trăm cảm tính.",
-        filterAll: "Tất cả nhóm (4)",
+        title: "Năng lực Chuyên môn, Công nghệ & Thiết kế",
+        subtitle: "Phân nhóm theo 5 trụ cột thực chiến từ Lập trình Web, Quản trị, SEO đến Thiết kế Đồ họa (Photoshop, Illustrator) & UI/UX Web Design.",
+        filterAll: "Tất cả nhóm (5)",
         filterWeb: "Website Development",
         filterWp: "WordPress Development",
         filterSeo: "SEO Website",
-        filterAdmin: "Website Administration"
+        filterAdmin: "Website Administration",
+        filterDesign: "Graphic & UI/UX Design"
       },
       experience: {
         eyebrow: "03 · WORK EXPERIENCE",
@@ -138,7 +142,8 @@ window.PORTFOLIO_DATA = {
         roleOpt1: "Website Administrator – Quản trị Website",
         roleOpt2: "SEO Specialist – Chuyên viên SEO",
         roleOpt3: "WordPress Developer – Lập trình viên WordPress",
-        roleOpt4: "Trao đổi dự án / Khác",
+        roleOpt4: "Graphic & UI/UX Designer – Thiết kế Đồ họa & Web",
+        roleOpt5: "Trao đổi dự án / Khác",
         labelMessage: "Nội dung trao đổi",
         placeholderMessage: "Xin chào Thanh Uyên, chúng tôi ấn tượng với hồ sơ của bạn và muốn mời bạn trao đổi thêm về vị trí...",
         btnSubmitForm: "Soạn & Gửi Email →",
@@ -190,7 +195,7 @@ window.PORTFOLIO_DATA = {
       },
       hero: {
         badge: "PORTFOLIO",
-        pillars: "WORDPRESS · WEB DEVELOPER · SEO",
+        pillars: "WORDPRESS · WEB DEVELOPER · SEO · GRAPHIC & UI/UX DESIGN",
         greeting: "Le Tran Thanh Uyen — Web & SEO Specialist",
         titleHtml: "I <span class=\"text-accent\">build</span>, <span class=\"text-accent\">manage</span> &amp; <span class=\"text-accent\">optimize</span> websites for real growth.",
         subtitleTag: "Personal CV & Portfolio Website",
@@ -202,6 +207,7 @@ window.PORTFOLIO_DATA = {
         role1: "Website Administrator",
         role2: "SEO Specialist",
         role3: "WordPress Developer",
+        role4: "Graphic & UI/UX Designer",
         scrollDown: "Scroll Down"
       },
       about: {
@@ -216,6 +222,8 @@ window.PORTFOLIO_DATA = {
         pillar2Desc: "Executing Technical SEO audits, JSON-LD Schema, XML Sitemaps, On-page optimization, keyword mapping, and Search Console / GA4 tracking.",
         pillar3Title: "WordPress Developer",
         pillar3Desc: "Developing custom themes/child themes, Custom Post Types (CPT), ACF fields, WooCommerce stores, and database query optimization.",
+        pillar4Title: "Graphic & UI/UX Web Design",
+        pillar4Desc: "Designing marketing assets, promotional banners, photo retouching with Adobe Photoshop, vector brand identity with Illustrator, and conversion-focused web UI/UX layouts.",
         stat1Num: "6+",
         stat1Label: "Production Websites",
         stat2Num: "3",
@@ -234,13 +242,14 @@ window.PORTFOLIO_DATA = {
       },
       skills: {
         eyebrow: "02 · PROFESSIONAL SKILLS",
-        title: "Technical Stack & Core Competencies",
-        subtitle: "Organized into 4 practical pillars. Focused on real-world implementation capabilities rather than arbitrary percentage bars.",
-        filterAll: "All Pillars (4)",
+        title: "Technical Stack, Administration & Design",
+        subtitle: "Organized into 5 practical pillars bridging web development, server operations, technical SEO, and creative Graphic (Photoshop, Illustrator) & UI/UX Web Design.",
+        filterAll: "All Pillars (5)",
         filterWeb: "Website Development",
         filterWp: "WordPress Development",
         filterSeo: "SEO Website",
-        filterAdmin: "Website Administration"
+        filterAdmin: "Website Administration",
+        filterDesign: "Graphic & UI/UX Design"
       },
       experience: {
         eyebrow: "03 · WORK EXPERIENCE",
@@ -286,7 +295,8 @@ window.PORTFOLIO_DATA = {
         roleOpt1: "Website Administrator",
         roleOpt2: "SEO Specialist",
         roleOpt3: "WordPress Developer",
-        roleOpt4: "Project Collaboration / Other",
+        roleOpt4: "Graphic & UI/UX Designer",
+        roleOpt5: "Project Collaboration / Other",
         labelMessage: "Message",
         placeholderMessage: "Hi Thanh Uyen, we reviewed your portfolio and would love to schedule an interview for...",
         btnSubmitForm: "Compose & Send Email →",
@@ -410,6 +420,27 @@ window.PORTFOLIO_DATA = {
         "Core Web Vitals (LCP, INP, CLS)",
         "WebP/AVIF Image Optimization & Caching",
         "Uptime Monitoring & Bug Fixing"
+      ]    },
+    {
+      id: "graphic-uiux",
+      category: "design",
+      title: {
+        vi: "Graphic & UI/UX Web Design",
+        en: "Graphic & UI/UX Web Design"
+      },
+      desc: {
+        vi: "Sáng tạo ấn phẩm đồ họa quảng cáo, xử lý hình ảnh sản phẩm với Photoshop/Illustrator và thiết kế giao diện web UI/UX hiện đại, tối ưu trải nghiệm tương tác.",
+        en: "Designing visual brand assets, marketing campaigns, photo manipulation with Photoshop/Illustrator, and modern user-centric web UI/UX layouts."
+      },
+      items: [
+        "Adobe Photoshop (Banner, Poster, Retouching, Mockups)",
+        "Adobe Illustrator (Vector Logo, Icons, Brand Identity)",
+        "UI/UX Design Web (Wireframing, User Flow, Layout Design)",
+        "Responsive & Mobile-First Web Interfaces",
+        "Design System, Color Harmony & Typography Hierarchy",
+        "Banner Marketing & Social Media Visuals",
+        "Web Graphic Optimization (WebP, SVG, CSS Sprites)",
+        "Figma & Interactive Prototyping"
       ]
     }
   ],
@@ -448,7 +479,7 @@ window.PORTFOLIO_DATA = {
         vi: "Hệ thống vận hành ổn định (Uptime > 99.8%), cấu trúc On-page & Schema đạt chuẩn kiểm tra Rich Results, cải thiện rõ rệt tốc độ tải trang trên thiết bị di động.",
         en: "Maintained >99.8% uptime, achieved valid Rich Results Schema across key templates, and significantly improved mobile page load performance."
       },
-      tech: ["WordPress", "Custom Post Type", "ACF", "Technical SEO", "Schema JSON-LD", "Google Search Console", "cPanel / Hosting", "WebP & Core Web Vitals"]
+      tech: ["WordPress", "Technical SEO", "Adobe Photoshop", "Adobe Illustrator", "UI/UX Web Design", "Schema JSON-LD", "cPanel / Hosting", "WebP & Core Web Vitals"]
     },
     {
       id: "exp-2",
@@ -483,7 +514,7 @@ window.PORTFOLIO_DATA = {
         vi: "Hoàn thiện website trưng bày sản phẩm chuyên nghiệp, hiển thị sắc nét hình ảnh chất liệu đá tự nhiên mà vẫn giữ dung lượng trang nhẹ, dễ dàng mở rộng danh mục.",
         en: "Delivered a fast, visually refined e-commerce catalog showcasing high-resolution stone textures while keeping page weight minimal."
       },
-      tech: ["WordPress", "WooCommerce", "PHP", "CSS3", "JavaScript", "Product SEO", "Image Optimization", "Hosting Admin"]
+      tech: ["WordPress", "WooCommerce", "Adobe Photoshop", "UI/UX Web Design", "Product SEO", "Image Optimization", "Hosting Admin"]
     },
     {
       id: "exp-3",
@@ -518,7 +549,7 @@ window.PORTFOLIO_DATA = {
         vi: "Vận hành thành công hệ thống E-commerce thực tế trên tên miền riêng, chứng minh năng lực làm chủ cả mã nguồn MVC (Laravel) lẫn triển khai hạ tầng.",
         en: "Successfully launched a live Laravel e-commerce platform on a custom subdomain, demonstrating end-to-end MVC development and deployment capability."
       },
-      tech: ["Laravel", "PHP", "MySQL", "HTML5/CSS3", "JavaScript", "Bootstrap / Responsive", "Git", "Deployment"]
+      tech: ["Laravel", "PHP", "MySQL", "UI/UX Design", "HTML5/CSS3", "JavaScript", "Adobe Photoshop", "Bootstrap / Responsive", "Git"]
     }
   ],
 
@@ -542,7 +573,7 @@ window.PORTFOLIO_DATA = {
         vi: "Hệ thống website thương mại điện tử bán lẻ điện thoại thông minh, hỗ trợ lọc sản phẩm đa tiêu chí, giỏ hàng, đặt hàng và trang quản trị Admin.",
         en: "Full-featured smartphone e-commerce platform featuring multi-attribute filtering, shopping cart, checkout flow, and an admin management panel."
       },
-      techStack: ["Laravel", "PHP", "MySQL", "JavaScript", "HTML5/CSS3", "RESTful Routing", "cPanel Deployment"],
+      techStack: ["Laravel", "PHP", "MySQL", "UI/UX Web Design", "Adobe Photoshop", "JavaScript", "HTML5/CSS3", "cPanel Deployment"],
       images: {
         hero: "assets/images/projects/smartphone-ecommerce.webp",
         desktop: "assets/images/projects/smartphone-ecommerce.webp",
@@ -649,7 +680,7 @@ window.PORTFOLIO_DATA = {
         vi: "Website thương hiệu Viện Thẩm Mỹ WangSun Luxury – Thiết kế sang trọng, tối ưu tốc độ tải trang, chuẩn SEO dịch vụ thẩm mỹ và thu hút khách hàng tiềm năng.",
         en: "Official brand website for WangSun Luxury Aesthetic Institute — featuring premium UI, fast load times, local/service SEO, and lead conversion forms."
       },
-      techStack: ["WordPress", "Custom Theme / Flatsome", "PHP", "On-page & Technical SEO", "Schema JSON-LD", "Google Search Console", "WebP Optimization"],
+      techStack: ["WordPress", "Custom Theme / Flatsome", "UI/UX Web Design", "Adobe Photoshop", "Adobe Illustrator", "On-page & Technical SEO", "Schema JSON-LD", "WebP Optimization"],
       images: {
         hero: "assets/images/projects/wangsun-luxury.webp",
         desktop: "assets/images/projects/wangsun-luxury.webp",
@@ -843,7 +874,7 @@ window.PORTFOLIO_DATA = {
         vi: "Chuyên trang đánh giá dịch vụ làm đẹp, mỹ phẩm và chia sẻ kinh nghiệm chăm sóc sắc đẹp chuẩn E-E-A-T, tối ưu hóa On-page và tốc độ đọc bài.",
         en: "Beauty & skincare review publication engineered around Google's E-E-A-T guidelines, featuring high-readability layouts and On-page SEO."
       },
-      techStack: ["WordPress", "On-page SEO", "E-E-A-T Optimization", "Schema Review & FAQ", "Google Analytics 4", "Search Console", "Core Web Vitals"],
+      techStack: ["WordPress", "UI/UX Web Design", "Adobe Photoshop", "On-page SEO", "E-E-A-T Optimization", "Schema Review & FAQ", "Core Web Vitals"],
       images: {
         hero: "assets/images/projects/review-lam-dep.webp",
         desktop: "assets/images/projects/review-lam-dep.webp",
@@ -1027,7 +1058,7 @@ window.PORTFOLIO_DATA = {
         vi: "Website thương mại điện tử & каталог trưng bày sản phẩm chậu đá tự nhiên cao cấp (Stone Sinks), tối ưu hình ảnh chất lượng cao và SEO sản phẩm.",
         en: "Luxury natural stone sink e-commerce catalog (stonesinks.vn), combining high-resolution product presentation with WooCommerce and Product SEO."
       },
-      techStack: ["WordPress", "WooCommerce", "PHP", "Custom CSS", "Product Schema", "On-page SEO", "WebP High-Res", "Hosting & Domain"],
+      techStack: ["WordPress", "WooCommerce", "UI/UX Web Design", "Adobe Photoshop", "Product Schema", "On-page SEO", "WebP High-Res", "Hosting & Domain"],
       images: {
         hero: "assets/images/projects/stone-sinks.webp",
         desktop: "assets/images/projects/stone-sinks.webp",
