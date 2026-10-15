@@ -544,10 +544,10 @@ window.PORTFOLIO_DATA = {
       },
       techStack: ["Laravel", "PHP", "MySQL", "JavaScript", "HTML5/CSS3", "RESTful Routing", "cPanel Deployment"],
       images: {
-        hero: "assets/images/projects/smartphone-ecommerce.svg",
-        desktop: "assets/images/projects/smartphone-ecommerce.svg",
-        tablet: "assets/images/projects/smartphone-ecommerce.svg",
-        mobile: "assets/images/projects/smartphone-ecommerce.svg"
+        hero: "assets/images/projects/smartphone-ecommerce.png",
+        desktop: "assets/images/projects/smartphone-ecommerce.png",
+        tablet: "assets/images/projects/smartphone-ecommerce-tablet.png",
+        mobile: "assets/images/projects/smartphone-ecommerce-mobile.png"
       },
       caseStudy: {
         overview: {
@@ -651,10 +651,10 @@ window.PORTFOLIO_DATA = {
       },
       techStack: ["WordPress", "Custom Theme / Flatsome", "PHP", "On-page & Technical SEO", "Schema JSON-LD", "Google Search Console", "WebP Optimization"],
       images: {
-        hero: "assets/images/projects/wangsun-luxury.svg",
-        desktop: "assets/images/projects/wangsun-luxury.svg",
-        tablet: "assets/images/projects/wangsun-luxury.svg",
-        mobile: "assets/images/projects/wangsun-luxury.svg"
+        hero: "assets/images/projects/wangsun-luxury.png",
+        desktop: "assets/images/projects/wangsun-luxury.png",
+        tablet: "assets/images/projects/wangsun-luxury-tablet.png",
+        mobile: "assets/images/projects/wangsun-luxury-mobile.png"
       },
       caseStudy: {
         overview: {
@@ -748,10 +748,10 @@ window.PORTFOLIO_DATA = {
       },
       techStack: ["WordPress", "Custom Post Type", "ACF", "Custom Taxonomies", "Technical SEO", "Schema Markup", "Database Optimization"],
       images: {
-        hero: "assets/images/projects/san-tham-my.svg",
-        desktop: "assets/images/projects/san-tham-my.svg",
-        tablet: "assets/images/projects/san-tham-my.svg",
-        mobile: "assets/images/projects/san-tham-my.svg"
+        hero: "assets/images/projects/san-tham-my.png",
+        desktop: "assets/images/projects/san-tham-my.png",
+        tablet: "assets/images/projects/san-tham-my-tablet.png",
+        mobile: "assets/images/projects/san-tham-my-mobile.png"
       },
       caseStudy: {
         overview: {
@@ -845,10 +845,10 @@ window.PORTFOLIO_DATA = {
       },
       techStack: ["WordPress", "On-page SEO", "E-E-A-T Optimization", "Schema Review & FAQ", "Google Analytics 4", "Search Console", "Core Web Vitals"],
       images: {
-        hero: "assets/images/projects/review-lam-dep.svg",
-        desktop: "assets/images/projects/review-lam-dep.svg",
-        tablet: "assets/images/projects/review-lam-dep.svg",
-        mobile: "assets/images/projects/review-lam-dep.svg"
+        hero: "assets/images/projects/review-lam-dep.png",
+        desktop: "assets/images/projects/review-lam-dep.png",
+        tablet: "assets/images/projects/review-lam-dep-tablet.png",
+        mobile: "assets/images/projects/review-lam-dep-mobile.png"
       },
       caseStudy: {
         overview: {
@@ -937,10 +937,10 @@ window.PORTFOLIO_DATA = {
       },
       techStack: ["WordPress", "PHP", "Custom CSS/JS", "Technical SEO", "Sitemap & Robots", "Cloudflare DNS", "Security & Backup"],
       images: {
-        hero: "assets/images/projects/danh-gia-tham-my.svg",
-        desktop: "assets/images/projects/danh-gia-tham-my.svg",
-        tablet: "assets/images/projects/danh-gia-tham-my.svg",
-        mobile: "assets/images/projects/danh-gia-tham-my.svg"
+        hero: "assets/images/projects/danh-gia-tham-my.png",
+        desktop: "assets/images/projects/danh-gia-tham-my.png",
+        tablet: "assets/images/projects/danh-gia-tham-my-tablet.png",
+        mobile: "assets/images/projects/danh-gia-tham-my-mobile.png"
       },
       caseStudy: {
         overview: {
@@ -1029,10 +1029,10 @@ window.PORTFOLIO_DATA = {
       },
       techStack: ["WordPress", "WooCommerce", "PHP", "Custom CSS", "Product Schema", "On-page SEO", "WebP High-Res", "Hosting & Domain"],
       images: {
-        hero: "assets/images/projects/stone-sinks.svg",
-        desktop: "assets/images/projects/stone-sinks.svg",
-        tablet: "assets/images/projects/stone-sinks.svg",
-        mobile: "assets/images/projects/stone-sinks.svg"
+        hero: "assets/images/projects/stone-sinks.png",
+        desktop: "assets/images/projects/stone-sinks.png",
+        tablet: "assets/images/projects/stone-sinks-tablet.png",
+        mobile: "assets/images/projects/stone-sinks-mobile.png"
       },
       caseStudy: {
         overview: {
