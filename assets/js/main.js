@@ -119,6 +119,14 @@
             )
             .join("")}
         </div>
+        ${group.category === 'seo' ? `
+          <div style="margin-top: 1.1rem; padding-top: 0.85rem; border-top: 1px dashed var(--border-light);">
+            <a href="seo-specialist.html" class="inline-link" style="font-size: 0.85rem; color: var(--accent-green); font-weight: 600; display: inline-flex; align-items: center; gap: 4px;">
+              <span>${currentLang === 'vi' ? 'Xem chi tiết phần công việc SEO Web' : 'View detailed SEO Scope of Work'}</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        ` : ''}
       </article>
     `
       )

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phần Công Việc SEO Web &amp; Chuyên Môn SEO Specialist | Lê Trần Thanh Uyên</title>
+  <meta name="description" content="Chi tiết phần công việc SEO Web, quy trình kiểm toán Technical SEO, On-page, Cấu trúc dữ liệu Schema JSON-LD, Core Web Vitals và 6 Case Study thực tế của Lê Trần Thanh Uyên." />
+  <meta name="keywords" content="SEO Specialist, Công việc SEO Web, Technical SEO, On-page SEO, Schema JSON-LD, Core Web Vitals, Search Console, GA4, Lê Trần Thanh Uyên" />
+  <link rel="canonical" href="https://uyenpoe.github.io/cv-letranthanhuyen/seo-specialist.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Phần Công Việc SEO Web &amp; Chuyên Môn SEO Specialist – Lê Trần Thanh Uyên" />
+  <meta property="og:description" content="Chi tiết quy trình triển khai Technical SEO, On-page, Cấu trúc Schema Entity và các dự án SEO thực tế." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://uyenpoe.github.io/cv-letranthanhuyen/seo-specialist.html" />
+  <meta property="og:image" content="https://uyenpoe.github.io/cv-letranthanhuyen/assets/images/projects/wangsun-luxury.png" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/case-study.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <style>
+    .seo-hero {
+      padding: 7rem 0 3.5rem;
+      background: radial-gradient(circle at 50% 20%, rgba(34, 197, 94, 0.12) 0%, rgba(17, 24, 39, 0) 70%),
+                  linear-gradient(180deg, #0b2342 0%, #111827 100%);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .seo-badge-lead {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: var(--accent-green);
+      font-size: var(--fs-xs);
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    .seo-hero-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 1.25rem;
+    }
+    .seo-hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 820px;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .seo-action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+    .scope-matrix-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .scope-box {
+      background: rgba(17, 24, 39, 0.85);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      transition: transform var(--transition-normal), border-color var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+    }
+    .scope-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent-green);
+    }
+    .scope-box:hover {
+      transform: translateY(-4px);
+      border-color: rgba(34, 197, 94, 0.5);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 0 15px rgba(34, 197, 94, 0.15);
+    }
+    .scope-box-num {
+      font-size: var(--fs-xs);
+      font-family: var(--font-mono);
+      color: var(--accent-green);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .scope-box-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+    .scope-box-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .scope-check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .scope-check-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      line-height: 1.45;
+    }
+    .scope-check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent-green);
+      font-weight: 700;
+    }
+    .step-timeline-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      position: relative;
+    }
+    .step-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: rgba(34, 197, 94, 0.12);
+      color: var(--accent-green);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.75rem;
+    }
+    .step-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .step-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .seo-table-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      overflow-x: auto;
+      margin-top: 2rem;
+    }
+    .seo-schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      text-align: left;
+    }
+    .seo-schedule-table th {
+      background: rgba(11, 35, 66, 0.9);
+      color: var(--text-primary);
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border-light);
+      white-space: nowrap;
+    }
+    .seo-schedule-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    .seo-schedule-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .seo-schedule-table td strong {
+      color: var(--text-primary);
+    }
+    .seo-tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .tool-pill {
+      background: rgba(17, 24, 39, 0.9);
+      border: 1px solid var(--border-light);
+      color: var(--text-primary);
+      font-size: 0.88rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .tool-pill .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-green);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER NAV
+       ====================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <a href="index.html" class="brand" aria-label="Trang chủ Thanh Uyên Portfolio">
+        <div class="avatar-wrap">
+          <span class="avatar-initials">TU</span>
+          <span class="status-indicator-dot" aria-hidden="true"></span>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">THANH UYEN<span class="dot">.</span></span>
+          <span class="brand-role">SEO SPECIALIST</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="mainNav" aria-label="Menu chuyển hướng">
+        <a href="index.html" class="nav-link">Trang chủ CV</a>
+        <a href="index.html#projects" class="nav-link">Dự án</a>
+        <a href="#quy-trinh" class="nav-link">Quy trình SEO</a>
+        <a href="#hang-muc" class="nav-link">Hạng mục công việc</a>
+        <a href="#case-studies" class="nav-link">Case Study SEO</a>
+        <a href="#tai-lieu" class="nav-link">Tải hồ sơ PDF</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">
+          ← Quay về CV Chính
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO SECTION
+         ====================================================================== -->
+    <section class="seo-hero">
+      <div class="container">
+        <div class="seo-badge-lead">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><polyline points="8 11 10 13 14 9"></polyline></svg>
+          <span>CHUYÊN VIÊN SEO WEBSITE &amp; TECHNICAL SEO</span>
+        </div>
+
+        <h1 class="seo-hero-title">
+          Phần Công Việc &amp; Quy Trình Triển Khai <span class="text-accent">SEO Web</span> Toàn Diện
+        </h1>
+
+        <p class="seo-hero-subtitle">
+          Hồ sơ năng lực chuyên sâu dành riêng cho vị trí <strong>SEO Specialist</strong> của <strong>Lê Trần Thanh Uyên</strong>. Kết hợp lợi thế lập trình mã nguồn sạch, cấu trúc dữ liệu thực thể <strong>Schema JSON-LD</strong> và tối ưu hóa <strong>Core Web Vitals</strong> giúp website thu hút lưu lượng truy cập tự nhiên (Organic Traffic) bền vững, sạch và chuyển đổi thành đơn hàng/khách hàng thực tế.
+        </p>
+
+        <div class="seo-action-row">
+          <a href="assets/docs/CV-SEO-Specialist-Le-Tran-Thanh-Uyen.pdf" download class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Tải CV SEO Specialist (PDF)</span>
+          </a>
+
+          <a href="assets/docs/Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.pdf" download class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Tải Kế Hoạch &amp; Hạng Mục SEO (PDF)</span>
+          </a>
+
+          <a href="https://zalo.me/0706700528" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <span>Trao Đổi Qua Zalo: 0706 700 528 ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4 TRỤ CỘT NĂNG LỰC SEO
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">01 · PHẠM VI NĂNG LỰC CỐT LÕI</span>
+          <h2 class="section-title">4 Trụ Cột Công Việc SEO Chuyên Sâu</h2>
+          <p class="section-subtitle">
+            Khác biệt lớn nhất của tôi là khả năng <strong>tự tay can thiệp và xử lý triệt để mã nguồn</strong> (WordPress, PHP, HTML/CSS) và <strong>máy chủ Hosting/Cloudflare</strong>, không phụ thuộc vào đội Dev để khắc phục các lỗi kỹ thuật phức tạp.
+          </p>
+        </div>
+
+        <div class="scope-matrix-grid">
+          <!-- Box 1 -->
+          <div class="scope-box">
+            <div class="scope-box-num">PILLAR 01</div>
+            <h3 class="scope-box-title">Technical SEO &amp; Crawlability</h3>
+            <p class="scope-box-desc">
+              Đảm bảo bot tìm kiếm của Google thu thập dữ liệu nhanh chóng, thuận lợi và lập chỉ mục chính xác 100% nội dung quan trọng mà không lãng phí ngân sách crawl.
+            </p>
+            <ul class="scope-check-list">
+              <li>Kiểm toán toàn diện mã phản hồi HTTP: Xóa sổ triệt để lỗi 404, 500, vòng lặp redirect 301/302.</li>
+              <li>Tối ưu cấu trúc phân cấp file Robots.txt và phân nhánh XML Sitemap tự động cập nhật.</li>
+              <li>Kiểm soát Canonical Tag, ngăn chặn nội dung trùng lặp và thất thoát điểm xếp hạng PageRank.</li>
+              <li>Tối ưu hóa Core Web Vitals (LCP &lt; 2.2s, CLS &lt; 0.1, INP &lt; 200ms) đạt điểm xanh PageSpeed Insights.</li>
+            </ul>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="scope-box">
+            <div class="scope-box-num">PILLAR 02</div>
+            <h3 class="scope-box-title">On-page SEO &amp; Topic Cluster</h3>
+            <p class="scope-box-desc">
+              Xây dựng cấu trúc trang và nội dung bám sát ý định tìm kiếm (Search Intent) của khách hàng, tối ưu trải nghiệm đọc để biến người đọc thành khách hàng tiềm năng.
+            </p>
+            <ul class="scope-check-list">
+              <li>Thiết kế cấu trúc Heading H1–H3 chuẩn Semantic, tối ưu Meta Title và Description thôi miên click (CTR).</li>
+              <li>Quy hoạch kiến trúc Cụm chủ đề (Topic Cluster) và Mô hình Silo tạo thẩm quyền ngành vững chắc.</li>
+              <li>Mạng lưới liên kết nội bộ (Internal Linking Matrix) điều hướng người đọc và dòng sức mạnh PageRank.</li>
+              <li>SEO Hình ảnh: Nén ảnh WebP độ nét cao, đặt tên file không dấu và gắn Alt text chuẩn ngữ nghĩa.</li>
+            </ul>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="scope-box">
+            <div class="scope-box-num">PILLAR 03</div>
+            <h3 class="scope-box-title">Schema JSON-LD &amp; Thực Thể Entity</h3>
+            <p class="scope-box-desc">
+              Giúp Google hiểu rõ thực thể doanh nghiệp, sản phẩm, dịch vụ và bác sĩ chuyên khoa thông qua cấu trúc dữ liệu JSON-LD chuẩn Google Search Central.
+            </p>
+            <ul class="scope-check-list">
+              <li>Schema LocalBusiness &amp; MedicalBusiness: Khai báo địa bàn hoạt động, số điện thoại, kinh độ/vĩ độ.</li>
+              <li>Schema Product &amp; Offer: Hiển thị giá cả, tình trạng còn hàng và review trên Google Merchant.</li>
+              <li>Schema Review &amp; AggregateRating: Kích hoạt hiển thị xếp hạng sao vàng nổi bật tăng mạnh CTR.</li>
+              <li>Schema FAQPage &amp; BreadcrumbList: Tăng diện tích hiển thị trên trang nhất kết quả tìm kiếm.</li>
+            </ul>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="scope-box">
+            <div class="scope-box-num">PILLAR 04</div>
+            <h3 class="scope-box-title">Search Console, GA4 &amp; Đo Lường</h3>
+            <p class="scope-box-desc">
+              Vận hành công cụ đo lường chuyên sâu để theo dõi từng biến động thứ hạng, lưu lượng truy cập và hành vi chuyển đổi tạo ra doanh thu thực tế cho doanh nghiệp.
+            </p>
+            <ul class="scope-check-list">
+              <li>Giám sát chỉ mục Google Search Console hàng ngày, xử lý lỗi Crawled/Discovered currently not indexed.</li>
+              <li>Theo dõi CTR, Impressions, Clicks và Position để liên tục cải tiến nội dung có tiềm năng tăng thứ hạng.</li>
+              <li>Cấu hình Google Analytics 4 (GA4): Đo lường sự kiện gọi điện thoại, click chat Zalo, gửi form tư vấn.</li>
+              <li>Báo cáo định kỳ minh bạch, trực quan với số liệu chứng minh hiệu quả đầu tư SEO (ROI).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         QUY TRÌNH 6 BƯỚC TRIỂN KHAI
+         ====================================================================== -->
+    <section class="section section-alt" id="quy-trinh">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">02 · PHƯƠNG PHÁP TRIỂN KHAI</span>
+          <h2 class="section-title">Quy Trình 6 Bước Triển Khai SEO Chuẩn Quốc Tế</h2>
+          <p class="section-subtitle">
+            Mọi dự án SEO đều được thực hiện theo quy trình bài bản, minh bạch và hoàn toàn White-Hat (tuân thủ nghiêm ngặt nguyên tắc Google Search Essentials).
+          </p>
+        </div>
+
+        <div class="step-timeline-wrap">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <span class="step-badge">BƯỚC 01</span>
+            <h3 class="step-title">Khảo Sát &amp; Technical Audit</h3>
+            <p class="step-desc">
+              Quét toàn bộ website bằng Screaming Frog, kiểm tra cấu hình hosting, robots.txt, sitemap và thống kê toàn bộ các rào cản kỹ thuật đang kìm hãm chỉ mục.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <span class="step-badge">BƯỚC 02</span>
+            <h3 class="step-title">Nghiên Cứu Từ Khóa &amp; Intent</h3>
+            <p class="step-desc">
+              Phân loại từ khóa theo phễu tìm kiếm (Nhận thức, So sánh, Mua hàng), phân tích khoảng trống từ khóa so với đối thủ và thiết lập bản đồ Keyword Mapping.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <span class="step-badge">BƯỚC 03</span>
+            <h3 class="step-title">Quy Hoạch On-page &amp; Cluster</h3>
+            <p class="step-desc">
+              Chuẩn hóa cấu trúc Heading H1–H3, tối ưu tiêu đề Meta Title/Description, quy hoạch các trang Pillar Page và bài viết vệ tinh theo mô hình Topic Cluster.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <span class="step-badge">BƯỚC 04</span>
+            <h3 class="step-title">Khai Báo Dữ Liệu Thực Thể Schema</h3>
+            <p class="step-desc">
+              Viết mã JSON-LD khai báo thực thể thương hiệu, sản phẩm, địa điểm và đánh giá review. Kiểm thử hợp lệ qua Schema Markup Validator và Google Rich Test.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-card">
+            <span class="step-badge">BƯỚC 05</span>
+            <h3 class="step-title">Tối Ưu Tốc Độ &amp; Core Web Vitals</h3>
+            <p class="step-desc">
+              Nén toàn bộ ảnh sang WebP, cấu hình bộ nhớ đệm WP Rocket / Redis, bật Cloudflare CDN và loại bỏ mã CSS/JS thừa để đạt điểm hiệu năng xanh (&gt; 90).
+            </p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="step-card">
+            <span class="step-badge">BƯỚC 06</span>
+            <h3 class="step-title">Theo Dõi GSC, GA4 &amp; Đo Lường CRO</h3>
+            <p class="step-desc">
+              Giám sát hiệu suất trên Google Search Console và GA4, theo dõi tỷ lệ chuyển đổi cuộc gọi/Zalo, liên tục tinh chỉnh các trang đang ở trang 2–3 để vào Top 1–10.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         BẢNG PHÂN CÔNG HẠNG MỤC CÔNG VIỆC (SCOPE OF WORK)
+         ====================================================================== -->
+    <section class="section" id="hang-muc">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">03 · BẢN PHÂN CÔNG CÔNG VIỆC THỰC TẾ</span>
+          <h2 class="section-title">Hạng Mục Công Việc Chi Tiết Theo Định Kỳ (Scope of Work)</h2>
+          <p class="section-subtitle">
+            Kế hoạch hành động rõ ràng giúp nhà quản lý hoặc chủ doanh nghiệp dễ dàng kiểm soát tiến độ và chất lượng công việc của nhân sự SEO.
+          </p>
+        </div>
+
+        <div class="seo-table-card">
+          <table class="seo-schedule-table">
+            <thead>
+              <tr>
+                <th style="width: 20%;">Chu Kỳ</th>
+                <th style="width: 50%;">Nội Dung Hạng Mục Công Việc</th>
+                <th style="width: 30%;">Tiêu Chuẩn Hoàn Thành (KPI)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hàng Ngày (Daily)</strong></td>
+                <td>
+                  - Giám sát Google Search Console: Kiểm tra cảnh báo lỗi thu thập, lỗi bảo mật, sụt giảm đột biến.<br/>
+                  - Gửi yêu cầu lập chỉ mục (Request Indexing) ngay khi xuất bản bài viết hoặc dịch vụ mới.<br/>
+                  - Theo dõi tình trạng hoạt động (Uptime) và tốc độ phản hồi của máy chủ hosting.
+                </td>
+                <td>
+                  - 100% cảnh báo được phản hồi trong 2 giờ.<br/>
+                  - Bài mới được Google bot crawl trong 24h.<br/>
+                  - Uptime website duy trì trên 99.9%.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Hàng Tuần (Weekly)</strong></td>
+                <td>
+                  - Quét lỗi kỹ thuật định kỳ qua Screaming Frog (lỗi link gãy 404, ảnh lỗi, redirect thừa).<br/>
+                  - Kiểm tra thứ hạng từ khóa mục tiêu (Rank Tracking), ghi nhận biến động từ khóa Top 1–10.<br/>
+                  - Rà soát các bài viết có Impressions cao nhưng CTR thấp để cập nhật lại tiêu đề và meta description.<br/>
+                  - Tối ưu liên kết nội bộ bổ sung cho các bài viết mới đăng.
+                </td>
+                <td>
+                  - Không để phát sinh lỗi 404 quá 48h.<br/>
+                  - Danh sách từ khóa Top 10 duy trì ổn định.<br/>
+                  - CTR của trang đích tối ưu tăng từ 10–25%.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Hàng Tháng (Monthly)</strong></td>
+                <td>
+                  - Báo cáo tổng kết lưu lượng truy cập tự nhiên (Organic Traffic) từ GA4 so với tháng trước.<br/>
+                  - Báo cáo tỷ lệ chuyển đổi: Số cuộc gọi, số tin nhắn Zalo, số lượt gửi form đăng ký.<br/>
+                  - Phân tích đối thủ cạnh tranh: Tìm kiếm cơ hội từ khóa mới mà đối thủ vừa chiếm lĩnh.<br/>
+                  - Tái kiểm toán hiệu năng Core Web Vitals (LCP, INP, CLS) trên thiết bị di động.
+                </td>
+                <td>
+                  - Báo cáo PDF minh bạch gửi đúng ngày 01–03 hàng tháng.<br/>
+                  - Tăng trưởng Organic Traffic trung bình 15–30%/tháng.<br/>
+                  - Điểm số Core Web Vitals đạt chuẩn "Tốt".
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Hàng Quý (Quarterly)</strong></td>
+                <td>
+                  - Đánh giá lại toàn diện cấu trúc website và hành trình khách hàng.<br/>
+                  - Làm mới các bài viết cũ (Content Refresh) để củng cố thứ hạng bền vững.<br/>
+                  - Mở rộng thêm các Cụm chủ đề (Topic Cluster) mới phục vụ mở rộng kinh doanh.
+                </td>
+                <td>
+                  - Tối ưu và cập nhật mới ít nhất 20 bài viết cũ.<br/>
+                  - Xây dựng thành công 1 Cụm chủ đề mới.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6 CASE STUDY SEO THỰC TẾ
+         ====================================================================== -->
+    <section class="section section-alt" id="case-studies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">04 · MINH CHỨNG THỰC TẾ</span>
+          <h2 class="section-title">6 Dự Án SEO Đã Trực Tiếp Triển Khai</h2>
+          <p class="section-subtitle">
+            Dữ liệu thực tế chứng minh năng lực triển khai kỹ thuật và tăng trưởng thứ hạng tìm kiếm tự nhiên.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Case 1 -->
+          <article class="project-card">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/projects/wangsun-luxury.webp" alt="WangSun Luxury SEO" loading="lazy" />
+              <span class="project-type-badge">Local &amp; Clinic SEO</span>
+              <span class="project-domain-pill">vienthammywangsun.com</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Viện Thẩm Mỹ WangSun Luxury</h3>
+              <p class="project-role">Vai trò: Chuyên viên SEO &amp; Quản trị Hệ thống</p>
+              <p class="project-desc">
+                Triển khai Schema MedicalBusiness &amp; LocalBusiness, tối ưu bộ từ khóa thẩm mỹ viện tại TP.HCM. Tối ưu ảnh WebP giúp tải trang dưới 1.8s, từ khóa lọt Top 10 Google.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-mini-tag">Medical Schema</span>
+                <span class="tech-mini-tag">Local SEO</span>
+                <span class="tech-mini-tag">PageSpeed 95+</span>
+                <span class="tech-mini-tag">SSL Cloudflare</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects/wangsun-luxury.html" class="btn-card btn-primary">
+                  <span>Xem Case Study Chi Tiết</span>
+                </a>
+                <a href="https://vienthammywangsun.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-secondary">
+                  <span>Live Site ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 2 -->
+          <article class="project-card">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/projects/san-tham-my.webp" alt="Sàn Thẩm Mỹ SEO" loading="lazy" />
+              <span class="project-type-badge">Directory Portal SEO</span>
+              <span class="project-domain-pill">santhammy.com</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sàn Thẩm Mỹ (santhammy.com)</h3>
+              <p class="project-role">Vai trò: Technical SEO &amp; Cấu trúc Dữ liệu CPT</p>
+              <p class="project-desc">
+                Xây dựng cấu trúc danh bạ Custom Post Types chuẩn SEO địa phương, tối ưu truy vấn cơ sở dữ liệu MySQL, giúp Googlebot lập chỉ mục 100% URLs danh mục quận/huyện.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-mini-tag">CPT Schema</span>
+                <span class="tech-mini-tag">100% Indexing</span>
+                <span class="tech-mini-tag">TTFB &lt; 0.4s</span>
+                <span class="tech-mini-tag">Internal Linking</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects/san-tham-my.html" class="btn-card btn-primary">
+                  <span>Xem Case Study Chi Tiết</span>
+                </a>
+                <a href="https://santhammy.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-secondary">
+                  <span>Live Site ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3 -->
+          <article class="project-card">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/projects/review-lam-dep.webp" alt="Review Làm Đẹp SEO" loading="lazy" />
+              <span class="project-type-badge">Content Silo &amp; Review SEO</span>
+              <span class="project-domain-pill">review-lamdep.com</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Review Làm Đẹp (review-lamdep.com)</h3>
+              <p class="project-role">Vai trò: On-page SEO &amp; Topic Cluster</p>
+              <p class="project-desc">
+                Quy hoạch mạng lưới nội dung cụm chuyên sâu về mỹ phẩm và spa, khai báo Review Schema và FAQ Rich Snippets, điểm kiểm toán On-page đạt trên 95 điểm.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-mini-tag">Topic Cluster</span>
+                <span class="tech-mini-tag">Review Schema</span>
+                <span class="tech-mini-tag">On-page 95+</span>
+                <span class="tech-mini-tag">FAQ Snippets</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects/review-lam-dep.html" class="btn-card btn-primary">
+                  <span>Xem Case Study Chi Tiết</span>
+                </a>
+                <a href="http://review-lamdep.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-secondary">
+                  <span>Live Site ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 4 -->
+          <article class="project-card">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/projects/stone-sinks.webp" alt="Stone Sinks SEO" loading="lazy" />
+              <span class="project-type-badge">E-commerce &amp; Image SEO</span>
+              <span class="project-domain-pill">stonesinks.vn</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Stone Sinks Vietnam (stonesinks.vn)</h3>
+              <p class="project-role">Vai trò: WooCommerce &amp; Product SEO</p>
+              <p class="project-desc">
+                Khai báo Product Schema chuẩn Google Merchant Center, nén WebP hình ảnh chậu đá độ phân giải cao giúp chiếm lĩnh trang nhất Google Image Search.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-mini-tag">Product Schema</span>
+                <span class="tech-mini-tag">Image SEO</span>
+                <span class="tech-mini-tag">Google Merchant</span>
+                <span class="tech-mini-tag">WebP High-Res</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects/stone-sinks.html" class="btn-card btn-primary">
+                  <span>Xem Case Study Chi Tiết</span>
+                </a>
+                <a href="https://stonesinks.vn" target="_blank" rel="noopener noreferrer" class="btn-card btn-secondary">
+                  <span>Live Site ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 5 -->
+          <article class="project-card">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/projects/danh-gia-tham-my.webp" alt="Đánh Giá Thẩm Mỹ SEO" loading="lazy" />
+              <span class="project-type-badge">Security &amp; Ranking Lead</span>
+              <span class="project-domain-pill">danhgiathammy.com</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Đánh Giá Thẩm Mỹ (danhgiathammy.com)</h3>
+              <p class="project-role">Vai trò: Technical &amp; System Hardening</p>
+              <p class="project-desc">
+                Bảo vệ thứ hạng website khỏi bot độc hại và brute force qua tường lửa WAF Cloudflare, duy trì uptime 99.9% đảm bảo điểm uy tín tên miền không bị sụt giảm.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-mini-tag">Uptime 99.9%</span>
+                <span class="tech-mini-tag">WAF Firewall</span>
+                <span class="tech-mini-tag">Anti-Spam Bot</span>
+                <span class="tech-mini-tag">Crawl Budget</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects/danh-gia-tham-my.html" class="btn-card btn-primary">
+                  <span>Xem Case Study Chi Tiết</span>
+                </a>
+                <a href="http://danhgiathammy.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-secondary">
+                  <span>Live Site ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 6 -->
+          <article class="project-card">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/projects/smartphone-ecommerce.webp" alt="Smartphone E-commerce SEO" loading="lazy" />
+              <span class="project-type-badge">Architecture &amp; URL SEO</span>
+              <span class="project-domain-pill">smartphone.taichinhtaithanh.com</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smartphone E-commerce</h3>
+              <p class="project-role">Vai trò: Clean Slugs &amp; Semantic HTML</p>
+              <p class="project-desc">
+                Thiết kế URL thân thiện không tham số động, Semantic Heading H1-H3 chuẩn hóa và hỗ trợ bộ lọc nhanh giúp bot tìm kiếm phân loại sản phẩm điện thoại chuẩn xác.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-mini-tag">Clean Slugs</span>
+                <span class="tech-mini-tag">Semantic HTML5</span>
+                <span class="tech-mini-tag">Mobile-First</span>
+                <span class="tech-mini-tag">Fast Filter</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects/smartphone-ecommerce.html" class="btn-card btn-primary">
+                  <span>Xem Case Study Chi Tiết</span>
+                </a>
+                <a href="http://smartphone.taichinhtaithanh.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-secondary">
+                  <span>Live Site ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         BỘ CÔNG CỤ SEO SỬ DỤNG
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">05 · TOOLKIT</span>
+          <h2 class="section-title">Hệ Sinh Thái Công Cụ SEO Sử Dụng Thành Thạo</h2>
+        </div>
+
+        <div class="seo-tools-grid">
+          <span class="tool-pill"><span class="dot"></span>Google Search Console</span>
+          <span class="tool-pill"><span class="dot"></span>Google Analytics 4 (GA4)</span>
+          <span class="tool-pill"><span class="dot"></span>Screaming Frog SEO Spider</span>
+          <span class="tool-pill"><span class="dot"></span>PageSpeed Insights</span>
+          <span class="tool-pill"><span class="dot"></span>Schema Markup Validator</span>
+          <span class="tool-pill"><span class="dot"></span>Google Rich Results Test</span>
+          <span class="tool-pill"><span class="dot"></span>Ahrefs Webmaster Tools</span>
+          <span class="tool-pill"><span class="dot"></span>SEMrush</span>
+          <span class="tool-pill"><span class="dot"></span>Google Keyword Planner</span>
+          <span class="tool-pill"><span class="dot"></span>Microsoft Clarity Heatmaps</span>
+          <span class="tool-pill"><span class="dot"></span>Rank Math SEO Pro</span>
+          <span class="tool-pill"><span class="dot"></span>Yoast SEO Premium</span>
+          <span class="tool-pill"><span class="dot"></span>Cloudflare CDN &amp; WAF</span>
+          <span class="tool-pill"><span class="dot"></span>Adobe Photoshop (Ảnh chuẩn SEO)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TẢI TÀI LIỆU PDF & LIÊN HỆ
+         ====================================================================== -->
+    <section class="section section-alt" id="tai-lieu">
+      <div class="container">
+        <div class="contact-form-card" style="max-width: 900px; margin: 0 auto; text-align: center;">
+          <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.75rem;">
+            Tải Bộ Hồ Sơ Chuyên Biệt Về <span class="text-accent">SEO Web</span>
+          </h2>
+          <p style="font-size: 1rem; color: var(--text-secondary); max-width: 680px; margin: 0 auto 2rem; line-height: 1.6;">
+            Tôi đã chuẩn bị sẵn 2 bản tài liệu định dạng PDF chuẩn in ấn A4 để bạn dễ dàng lưu trữ, đính kèm email tuyển dụng hoặc gửi cho ban lãnh đạo:
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
+            <a href="assets/docs/CV-SEO-Specialist-Le-Tran-Thanh-Uyen.pdf" download class="btn btn-primary" style="padding: 0.75rem 1.4rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Tải CV SEO Specialist (PDF)</span>
+            </a>
+
+            <a href="assets/docs/Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.pdf" download class="btn btn-secondary" style="padding: 0.75rem 1.4rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Tải Kế Hoạch &amp; Hạng Mục SEO (PDF)</span>
+            </a>
+
+            <a href="assets/docs/Portfolio-Le-Tran-Thanh-Uyen.pdf" download class="btn btn-outline" style="padding: 0.75rem 1.4rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>Tải Portfolio Dự Án Đầy Đủ (PDF)</span>
+            </a>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; font-size: 0.95rem; color: var(--text-secondary);">
+            <div>Email: <a href="mailto:thanhuyenletran@gmail.com" style="color: var(--accent-green); font-weight: 600;">thanhuyenletran@gmail.com</a></div>
+            <div>Hotline / Zalo: <a href="https://zalo.me/0706700528" style="color: var(--accent-green); font-weight: 600;">0706 700 528</a></div>
+            <div>GitHub: <a href="https://github.com/UyenPoe" target="_blank" rel="noopener noreferrer" style="color: var(--accent-green); font-weight: 600;">github.com/UyenPoe</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        © 2026 <strong>Lê Trần Thanh Uyên</strong> · SEO Specialist &amp; Web Administrator.
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Trang chủ CV</a>
+        <a href="index.html#projects">Dự án</a>
+        <a href="assets/docs/CV-SEO-Specialist-Le-Tran-Thanh-Uyen.pdf" download>Tải CV SEO (PDF)</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

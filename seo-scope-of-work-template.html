@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bản Kế Hoạch &amp; Hạng Mục Công Việc SEO Web - Lê Trần Thanh Uyên</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #1f2937;
+      font-size: 8.5pt;
+      line-height: 1.36;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      padding: 9mm 12mm 7mm 12mm;
+      box-sizing: border-box;
+      position: relative;
+      background: #ffffff;
+      page-break-after: always;
+      break-after: page;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    /* HEADER */
+    .doc-header {
+      background: linear-gradient(135deg, #0b2342 0%, #111827 100%);
+      color: #ffffff;
+      border-radius: 7px;
+      padding: 12px 18px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 5px solid #22c55e;
+    }
+    .doc-title {
+      font-size: 14pt;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+    .doc-sub {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #22c55e;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .doc-author {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 7.6pt;
+      color: #e5e7eb;
+      text-align: right;
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+      font-size: 9.6pt;
+      font-weight: 700;
+      color: #0b2342;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin: 6px 0 4px 0;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border-bottom: 1.5px solid #e2e8f0;
+      padding-bottom: 2px;
+    }
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 3.5px;
+      height: 10pt;
+      background-color: #22c55e;
+      border-radius: 2px;
+    }
+
+    /* WORK SCOPE CARD */
+    .scope-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 6px 9px;
+      margin-bottom: 6px;
+    }
+    .scope-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3px;
+    }
+    .scope-card-title {
+      font-size: 8.8pt;
+      font-weight: 700;
+      color: #0b2342;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .scope-badge {
+      font-size: 6.8pt;
+      font-weight: 600;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .scope-list {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 7.8pt;
+      color: #334155;
+    }
+    .scope-list li {
+      position: relative;
+      padding-left: 12px;
+      margin-bottom: 2px;
+      line-height: 1.35;
+    }
+    .scope-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #22c55e;
+      font-size: 7pt;
+    }
+    .scope-deliverable {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      padding: 2.5px 6px;
+      border-radius: 3px;
+      font-size: 7.2pt;
+      color: #0369a1;
+      font-weight: 500;
+      margin-top: 3px;
+    }
+
+    /* TWO COLUMN GRID */
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+    }
+
+    /* TIMELINE TABLE */
+    .plan-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin-top: 3px;
+      margin-bottom: 5px;
+    }
+    .plan-table th {
+      background: #0b2342;
+      color: #ffffff;
+      padding: 4px 6px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 7.6pt;
+    }
+    .plan-table td {
+      border: 1px solid #e2e8f0;
+      padding: 4px 6px;
+      vertical-align: top;
+      color: #334155;
+    }
+    .plan-table tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    /* FOOTER */
+    .doc-footer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 3px;
+      font-size: 6.9pt;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .doc-footer strong {
+      color: #0b2342;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= PAGE 1 ================= -->
+  <div class="page">
+    <div>
+      <header class="doc-header">
+        <div>
+          <h1 class="doc-title">HẠNG MỤC CÔNG VIỆC SEO WEBSITE (SEO SCOPE OF WORK)</h1>
+          <div class="doc-sub">Quy Trình &amp; Bản Phân Công Nhiệm Vụ Chuyên Viên SEO Website</div>
+        </div>
+        <div class="doc-author">
+          <div>Chuyên viên: <strong>Lê Trần Thanh Uyên</strong></div>
+          <div>Vị trí: <strong>SEO Specialist &amp; Technical SEO</strong></div>
+          <div>Liên hệ: <strong>0706 700 528</strong> · <strong>thanhuyenletran@gmail.com</strong></div>
+        </div>
+      </header>
+
+      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:5px; padding:5px 9px; margin-bottom:6px; font-size:7.6pt; color:#166534; line-height:1.32;">
+        <strong>MỤC TIÊU TÀI LIỆU:</strong> Văn bản xác lập toàn diện phạm vi công việc, tiêu chuẩn kỹ thuật và các đầu việc thực tế mà chuyên viên SEO (Lê Trần Thanh Uyên) đảm nhiệm trong quá trình vận hành, phát triển và tối ưu hóa hệ thống website cho doanh nghiệp.
+      </div>
+
+      <!-- GIAI ĐOẠN 1: TECHNICAL SEO AUDIT -->
+      <h2 class="section-title">Giai đoạn 1: Khảo sát, Kiểm toán Kỹ thuật (Technical SEO Audit)</h2>
+      <div class="scope-card">
+        <div class="scope-card-header">
+          <span class="scope-card-title">1.1. Kiểm toán Khả năng Thu thập Dữ liệu &amp; Lập chỉ mục (Crawlability &amp; Indexing)</span>
+          <span class="scope-badge">Tuần 1 · Thiết yếu</span>
+        </div>
+        <ul class="scope-list">
+          <li><strong>Cấu hình File Robots.txt:</strong> Phân quyền chính xác cho Googlebot, chặn thu thập các thư mục quản trị (/wp-admin, /cart, /checkout, search queries) để tối ưu ngân sách crawl (Crawl Budget).</li>
+          <li><strong>Tạo lập &amp; Phân tầng XML Sitemap:</strong> Chia nhỏ sitemap theo post type (post-sitemap, page-sitemap, product-sitemap, category-sitemap), khai báo chuẩn xác trong Search Console.</li>
+          <li><strong>Kiểm soát Thẻ Meta Robots &amp; Canonical:</strong> Rà soát triệt để thẻ <code>noindex</code>, <code>nofollow</code> vô tình chặn trang quan trọng; thiết lập thẻ <code>rel="canonical"</code> chống trùng lặp nội dung.</li>
+          <li><strong>Xử lý Lỗi Mã Phản Hồi HTTP:</strong> Quét toàn bộ website qua Screaming Frog để sửa các mã 404 (Not Found), 500 (Server Error) và gỡ bỏ các chuỗi chuyển hướng vòng lặp (Redirect Chains 301/302).</li>
+        </ul>
+        <div class="scope-deliverable">
+          <strong>Sản phẩm bàn giao:</strong> Bảng báo cáo Technical Audit 100+ yếu tố &amp; Hồ sơ sửa lỗi kỹ thuật hoàn tất.
+        </div>
+      </div>
+
+      <div class="scope-card">
+        <div class="scope-card-header">
+          <span class="scope-card-title">1.2. Tối ưu Hiệu năng &amp; Trải nghiệm Người dùng (Core Web Vitals)</span>
+          <span class="scope-badge">Tuần 1–2 · Kỹ thuật cao</span>
+        </div>
+        <ul class="scope-list">
+          <li><strong>Tối ưu Largest Contentful Paint (LCP &lt; 2.5s):</strong> Nén toàn bộ ảnh sang định dạng WebP/AVIF, cấu hình pre-connect font chữ, tối ưu hóa CSS quan trọng (Critical CSS).</li>
+          <li><strong>Tối ưu Cumulative Layout Shift (CLS &lt; 0.1):</strong> Cố định kích thước width/height cho tất cả khung hình và banner quảng cáo, chống giật vỡ layout khi trang đang tải.</li>
+          <li><strong>Tối ưu Interaction to Next Paint (INP &lt; 200ms):</strong> Tinh giản mã JavaScript bên thứ ba, trì hoãn nạp script không cần thiết (defer/async), giải phóng luồng xử lý chính.</li>
+          <li><strong>Cấu hình Bộ nhớ đệm &amp; CDN:</strong> Thiết lập Cloudflare CDN, kích hoạt nén Gzip/Brotli, tối ưu bộ nhớ đệm trình duyệt (Browser Caching) đạt điểm xanh PageSpeed Insights 90+.</li>
+        </ul>
+        <div class="scope-deliverable">
+          <strong>Sản phẩm bàn giao:</strong> Báo cáo tốc độ PageSpeed Insights &amp; Search Console Core Web Vitals đạt chuẩn "Tốt" (Màu xanh).
+        </div>
+      </div>
+
+      <!-- GIAI ĐOẠN 2: ON-PAGE SEO & ENTITY -->
+      <h2 class="section-title">Giai đoạn 2: Tối ưu On-page &amp; Cấu trúc Thực thể (Schema Entity)</h2>
+      <div class="two-col-grid">
+        <div class="scope-card">
+          <div class="scope-card-header">
+            <span class="scope-card-title">2.1. Cấu trúc On-page &amp; Nội dung</span>
+            <span class="scope-badge">Liên tục</span>
+          </div>
+          <ul class="scope-list">
+            <li><strong>Chuẩn hóa Heading H1–H3:</strong> Đảm bảo duy nhất 1 thẻ H1 chứa từ khóa chính, các thẻ H2–H3 phân tầng logic.</li>
+            <li><strong>Tối ưu Title &amp; Meta Description:</strong> Viết thẻ tiêu đề chuẩn độ dài (55–60 ký tự), thêm yếu tố kích thích tỷ lệ click CTR (con số, ưu đãi, năm cập nhật).</li>
+            <li><strong>Cấu trúc URL Thân thiện:</strong> Rút gọn đường dẫn ngắn gọn, chứa từ khóa mục tiêu, không chứa ký tự đặc biệt.</li>
+            <li><strong>Tối ưu SEO Hình ảnh:</strong> Đặt tên file tiếng Việt không dấu, gắn thẻ Alt text chuẩn ngữ nghĩa hỗ trợ tìm kiếm ảnh.</li>
+          </ul>
+        </div>
+
+        <div class="scope-card">
+          <div class="scope-card-header">
+            <span class="scope-card-title">2.2. Dữ liệu có Cấu trúc (Schema JSON-LD)</span>
+            <span class="scope-badge">Thực thể uy tín</span>
+          </div>
+          <ul class="scope-list">
+            <li><strong>LocalBusiness / MedicalBusiness:</strong> Khai báo địa chỉ, số điện thoại, giờ mở cửa, định vị kinh độ vĩ độ.</li>
+            <li><strong>Product &amp; Offer Schema:</strong> Hiển thị giá tiền, tình trạng còn hàng, thương hiệu cho website bán hàng.</li>
+            <li><strong>Review &amp; AggregateRating:</strong> Kích hoạt hiển thị xếp hạng sao đánh giá vàng nổi bật trên kết quả tìm kiếm.</li>
+            <li><strong>FAQPage &amp; BreadcrumbList:</strong> Mở rộng diện tích hiển thị câu hỏi thường gặp và đường dẫn phân cấp trang.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Tài liệu: Quy trình &amp; Hạng mục Công việc SEO Website · Chuyên viên: <strong>Lê Trần Thanh Uyên</strong></span>
+      <span>Trang <strong>1 / 2</strong> · Xem Portfolio: <strong>https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+    </div>
+  </div>
+
+  <!-- ================= PAGE 2 ================= -->
+  <div class="page">
+    <div>
+      <!-- GIAI ĐOẠN 3: CHIẾN LƯỢC TỪ KHÓA & NỘI DUNG -->
+      <h2 class="section-title">Giai đoạn 3: Nghiên cứu Từ khóa &amp; Kiến trúc Cụm Chủ đề (Topic Cluster)</h2>
+      <div class="two-col-grid">
+        <div class="scope-card">
+          <div class="scope-card-header">
+            <span class="scope-card-title">3.1. Nghiên cứu &amp; Phân tầng Từ khóa</span>
+            <span class="scope-badge">Chiến lược</span>
+          </div>
+          <ul class="scope-list">
+            <li><strong>Phân loại Search Intent:</strong> Nhận diện đúng ý định người dùng (Thông tin, Điều hướng, So sánh, Mua hàng).</li>
+            <li><strong>Nghiên cứu Từ khóa Dài (Long-tail):</strong> Tập trung từ khóa có tỷ lệ chuyển đổi cao, độ cạnh tranh vừa phải để lên top nhanh.</li>
+            <li><strong>Phân tích Đối thủ Trực tiếp:</strong> Dùng Ahrefs/SEMrush tìm kiếm khoảng trống từ khóa (Content Gap) mà đối thủ bỏ sót.</li>
+            <li><strong>Lập Bản đồ Từ khóa (Keyword Mapping):</strong> Gán mỗi nhóm từ khóa cho đúng 1 URL đích duy nhất, tránh tình trạng ăn thịt từ khóa (Keyword Cannibalization).</li>
+          </ul>
+        </div>
+
+        <div class="scope-card">
+          <div class="scope-card-header">
+            <span class="scope-card-title">3.2. Mô hình Cụm Chủ đề (Topic Cluster)</span>
+            <span class="scope-badge">Xây dựng Thẩm quyền</span>
+          </div>
+          <ul class="scope-list">
+            <li><strong>Trang Trụ Cột (Pillar Page):</strong> Xây dựng các trang nội dung toàn diện bao quát chủ đề cốt lõi của doanh nghiệp.</li>
+            <li><strong>Bài viết Vệ tinh (Cluster Content):</strong> Khai thác sâu từng khía cạnh chi tiết, giải đáp mọi thắc mắc của khách hàng.</li>
+            <li><strong>Mạng lưới Liên kết Nội bộ (Internal Links):</strong> Kết nối 2 chiều giữa Pillar và Cluster, giữ chân người dùng và truyền sức mạnh thứ hạng (PageRank Flow).</li>
+            <li><strong>Kiểm soát Anchor Text:</strong> Đa dạng hóa từ khóa neo tự nhiên, tránh tối ưu hóa quá liều (Over-optimization).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GIAI ĐOẠN 4: ĐO LƯỜNG, BẢO TRÌ & BÁO CÁO -->
+      <h2 class="section-title">Giai đoạn 4: Quản trị Search Console, GA4 &amp; Báo cáo Định kỳ</h2>
+      <div class="scope-card">
+        <div class="scope-card-header">
+          <span class="scope-card-title">4.1. Vận hành Google Search Console &amp; Google Analytics 4 (Hàng tuần &amp; Hàng tháng)</span>
+          <span class="scope-badge">Đo lường &amp; Tối ưu liên tục</span>
+        </div>
+        <ul class="scope-list">
+          <li><strong>Giám sát Tình trạng Chỉ mục (Indexing / Coverage):</strong> Xử lý ngay khi phát hiện URL bị lỗi "Discovered - currently not indexed" hoặc "Crawled - currently not indexed". Yêu cầu lập chỉ mục ngay khi xuất bản bài viết mới.</li>
+          <li><strong>Phân tích Hiệu suất Tìm kiếm (Search Performance):</strong> Theo dõi biến động Tổng số lượt nhấp (Clicks), Lượt hiển thị (Impressions), Tỷ lệ CTR trung bình và Vị trí trung bình của từng nhóm từ khóa.</li>
+          <li><strong>Tối ưu Tỷ lệ CTR cho Top 10–20:</strong> Xác định các từ khóa có lượt hiển thị cao nhưng CTR thấp để viết lại tiêu đề hấp dẫn hơn nhằm gia tăng traffic tức thì mà không cần đẩy thêm link.</li>
+          <li><strong>Thiết lập Chuyển đổi trên GA4 (Conversion Tracking):</strong> Đo lường chính xác các hành động tạo ra doanh thu: click gọi hotline, click chat Zalo, gửi form đăng ký tư vấn và hoàn tất đơn hàng.</li>
+        </ul>
+      </div>
+
+      <!-- BẢNG LỘ TRÌNH TRIỂN KHAI THEO TUẦN / THÁNG -->
+      <h2 class="section-title">Bảng Kế hoạch Phân bổ Công việc Chi tiết (Action Roadmap)</h2>
+      <table class="plan-table">
+        <thead>
+          <tr>
+            <th style="width:18%;">Giai đoạn</th>
+            <th style="width:52%;">Nội dung Công việc Thực hiện</th>
+            <th style="width:30%;">Kết quả Đầu ra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Tháng 1:<br/>Nền tảng &amp; Technical</strong></td>
+            <td>
+              - Kiểm toán toàn diện website (Audit lỗi 404, redirect, canonical, robots.txt, sitemap).<br/>
+              - Tối ưu Core Web Vitals (nén ảnh WebP, caching, bật Cloudflare CDN).<br/>
+              - Khai báo Schema JSON-LD thực thể doanh nghiệp &amp; BreadcrumbList.
+            </td>
+            <td>
+              - Website hết sạch lỗi kỹ thuật.<br/>
+              - Tốc độ tải trang &lt; 2s (PageSpeed 90+).<br/>
+              - Search Console kết nối 100% sạch.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Tháng 2:<br/>On-page &amp; Nội dung</strong></td>
+            <td>
+              - Nghiên cứu từ khóa, lập Keyword Mapping theo Search Intent.<br/>
+              - Chuẩn hóa Heading H1–H3, Title, Meta Description các trang dịch vụ/sản phẩm chính.<br/>
+              - Triển khai mô hình Topic Cluster đầu tiên cho mảng chủ lực.
+            </td>
+            <td>
+              - Hoàn thành bảng Keyword Master.<br/>
+              - Tối ưu 100% trang dịch vụ chính.<br/>
+              - Cụm nội dung đầu tiên được xuất bản.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Tháng 3–6:<br/>Tăng trưởng &amp; Chuyển đổi</strong></td>
+            <td>
+              - Đẩy mạnh sản xuất bài viết vệ tinh, xây dựng mạng lưới Internal Linking.<br/>
+              - Tối ưu trải nghiệm chuyển đổi (CRO): Call, Zalo, Form đăng ký.<br/>
+              - Báo cáo định kỳ phân tích từ khóa Top 1–10, tối ưu CTR và xử lý từ khóa chững hạng.
+            </td>
+            <td>
+              - Organic Traffic tăng trưởng đều đặn.<br/>
+              - Bộ từ khóa chính vào Top 1–10 Google.<br/>
+              - Tỷ lệ chuyển đổi khách hàng tăng rõ rệt.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- CAM KẾT VÀ NGUYÊN TẮC LÀM VIỆC -->
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:5px; padding:6px 10px; font-size:7.4pt; color:#334155; line-height:1.32;">
+        <strong>NGUYÊN TẮC NGHỀ NGHIỆP CỦA LÊ TRẦN THANH UYÊN:</strong> 
+        100% phương pháp SEO Mũ Trắng (White-Hat SEO), phát triển bền vững theo hướng dẫn của Google Search Essentials. Không dùng thủ thuật thao túng thứ hạng tạm thời gây nguy cơ phạt thuật toán. Luôn minh bạch số liệu đo lường trên Google Search Console &amp; GA4.
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Tài liệu: Quy trình &amp; Hạng mục Công việc SEO Website · Chuyên viên: <strong>Lê Trần Thanh Uyên</strong> · <strong>0706 700 528</strong></span>
+      <span>Trang <strong>2 / 2</strong> · Xem Portfolio: <strong>https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+    </div>
+  </div>
+
+</body>
+</html>
