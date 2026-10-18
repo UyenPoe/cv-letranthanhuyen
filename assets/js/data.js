@@ -370,6 +370,7 @@ window.PORTFOLIO_DATA = {
         en: "Customizing and engineering WordPress ecosystems: custom themes, Custom Post Types, ACF schemas, and WooCommerce stores."
       },
       items: [
+        "Custom Plugin Dev (Tối ưu Content SEO & Schema)",
         "Custom Theme & Child Theme",
         "Plugin Integration & Customization",
         "Custom Post Type (CPT) & Taxonomies",
@@ -388,10 +389,11 @@ window.PORTFOLIO_DATA = {
         en: "SEO Website"
       },
       desc: {
-        vi: "Tối ưu toàn diện On-page & Technical SEO, giúp công cụ tìm kiếm thu thập dữ liệu nhanh và xếp hạng bền vững.",
-        en: "Comprehensive On-page and Technical SEO execution to maximize crawlability, indexation, and organic search rankings."
+        vi: "Tối ưu toàn diện On-page & Technical SEO, tự phát triển Plugin WordPress tối ưu hóa nội dung giúp website đạt thứ hạng bền vững.",
+        en: "Comprehensive On-page and Technical SEO execution, developing custom WordPress plugins for content optimization to maximize organic search rankings."
       },
       items: [
+        "Lập trình Plugin Tối ưu Content SEO (Auto TOC & Score)",
         "On-page SEO & Heading Architecture (H1–H3)",
         "Technical SEO Audit & Crawlability",
         "Schema Markup (JSON-LD: Person, Product, FAQ, LocalBusiness)",

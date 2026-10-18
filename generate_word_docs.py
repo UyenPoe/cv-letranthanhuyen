@@ -162,19 +162,20 @@ def build_cv_seo_docx():
     create_callout(
         doc,
         "Định hướng nghề nghiệp:",
-        "Chuyên viên SEO & Quản trị Website với hơn 3 năm kinh nghiệm thực chiến trong việc tối ưu hóa công cụ tìm kiếm (White-Hat SEO), kỹ thuật lập chỉ mục (Technical SEO), tối ưu tốc độ Core Web Vitals và thiết kế kiến trúc thông tin Topic Cluster. Thế mạnh vượt trội nhờ nền tảng kết hợp giữa tư duy SEO dữ liệu (Google Search Console, GA4) và năng lực can thiệp trực tiếp mã nguồn web (HTML, CSS, JavaScript, WordPress, PHP) giúp triển khai đề xuất kỹ thuật nhanh chóng, chính xác mà không phụ thuộc dev.",
+        "Chuyên viên SEO & Quản trị Website với hơn 3 năm kinh nghiệm thực chiến trong việc tối ưu hóa công cụ tìm kiếm (White-Hat SEO), kỹ thuật lập chỉ mục (Technical SEO), tối ưu tốc độ Core Web Vitals và thiết kế kiến trúc thông tin Topic Cluster. Thế mạnh độc đáo nhờ năng lực tự lập trình WordPress Plugin tối ưu Content SEO và can thiệp trực tiếp mã nguồn web (HTML, CSS, JavaScript, WordPress, PHP) giúp triển khai đề xuất kỹ thuật nhanh chóng, chính xác mà không phụ thuộc dev.",
         bg_hex="F0FDF4",
         border_color="16A34A"
     )
     
     # Kỹ năng cốt lõi
     add_styled_heading(doc, "Năng Lực & Kỹ Năng Cốt Lõi (Core Skills)")
-    add_bullet_item(doc, "Technical SEO", "Kiểm toán cấu trúc crawl, xử lý lỗi robots.txt, XML Sitemap, Canonical URL, chuyển hướng 301/302, mã phản hồi 404/500, tối ưu ngân sách thu thập dữ liệu (Crawl Budget).")
+    add_bullet_item(doc, "Phát triển WordPress Plugin Tối Ưu Content SEO", "Tự tay lập trình plugin PHP thuần tích hợp trình soạn thảo WordPress (Gutenberg & Classic): Đo mật độ từ khóa thời gian thực (1.5–2%), tự động sinh mục lục (Table of Contents - TOC) chuẩn Semantic Anchor, gợi ý liên kết nội bộ (Internal Links) theo Cụm chủ đề và tự động nhúng Schema FAQ/Article JSON-LD. Giúp đội ngũ viết bài tiết kiệm 40% thời gian duyệt bài và đạt chuẩn On-page 100% trước khi xuất bản.")
+    add_bullet_item(doc, "Technical SEO & Crawlability", "Kiểm toán cấu trúc crawl, xử lý lỗi robots.txt, XML Sitemap, Canonical URL, chuyển hướng 301/302, mã phản hồi 404/500, tối ưu ngân sách thu thập dữ liệu (Crawl Budget).")
     add_bullet_item(doc, "Tối ưu Hiệu năng (Core Web Vitals)", "Đạt điểm xanh PageSpeed Insights (LCP < 2.5s, CLS < 0.1, INP < 200ms) bằng kỹ thuật nén WebP/AVIF, trì hoãn JS (defer/async), nén Gzip/Brotli, cấu hình bộ nhớ đệm và CDN Cloudflare.")
     add_bullet_item(doc, "Cấu trúc Thực thể (Schema JSON-LD)", "Khai báo thực thể chuẩn Google (Organization, LocalBusiness, MedicalBusiness, Product, Review/AggregateRating, FAQPage, BreadcrumbList) nhằm tăng hiển thị đoạn trích chi tiết (Rich Snippets).")
     add_bullet_item(doc, "Nghiên cứu Từ khóa & Content Cluster", "Phân tích Search Intent, xây dựng Topic Cluster hoàn chỉnh (Trang trụ cột Pillar Page kết hợp bài vệ tinh Cluster Posts), xây dựng cấu trúc liên kết nội bộ (Internal Links) logic.")
     add_bullet_item(doc, "Công cụ chuyên ngành", "Google Search Console, Google Analytics 4, Screaming Frog SEO Spider, Ahrefs, SEMrush, Google Tag Manager, PageSpeed Insights, Rank Math SEO, Yoast SEO.")
-    add_bullet_item(doc, "Kỹ năng lập trình & Thiết kế bổ trợ", "WordPress, Elementor, HTML5, CSS3, JavaScript, PHP cơ bản; Thiết kế đồ họa & Banner website chuẩn UX với Adobe Photoshop, Illustrator, Figma.")
+    add_bullet_item(doc, "Kỹ năng lập trình & Thiết kế bổ trợ", "WordPress Plugin Development, PHP, HTML5, CSS3, JavaScript; Thiết kế đồ họa & Banner website chuẩn UX với Adobe Photoshop, Illustrator, Figma.")
 
     # Kinh nghiệm làm việc
     add_styled_heading(doc, "Kinh Nghiệm Thực Chiến (Professional Experience)")
@@ -194,6 +195,7 @@ def build_cv_seo_docx():
     r_time1.font.italic = True
     r_time1.font.color.rgb = COLOR_MUTED
     
+    add_bullet_item(doc, "Phát triển Plugin tối ưu Content SEO", "Tự lập trình công cụ WordPress Plugin In-house hỗ trợ đo mật độ từ khóa, tự động tạo TOC và chèn Schema FAQ, chuẩn hóa 100% bài viết xuất bản và tiết kiệm 40% thời gian duyệt bài của trưởng nhóm.")
     add_bullet_item(doc, "Kiểm toán & Xử lý Technical", "Thực hiện Technical Audit định kỳ bằng Screaming Frog cho 5+ website doanh nghiệp, giải quyết dứt điểm các lỗi chỉ mục (Index Coverage), trùng lặp nội dung, lỗi liên kết gãy và chuỗi chuyển hướng vòng lặp.")
     add_bullet_item(doc, "Tối ưu hóa tốc độ tải trang", "Tái cấu trúc hình ảnh và tài nguyên frontend, đưa chỉ số Core Web Vitals từ mức Cảnh báo đỏ sang mức 'Tốt' (Màu xanh), giảm thời gian tải trang trung bình từ 4.8s xuống dưới 1.8s.")
     add_bullet_item(doc, "Xây dựng chiến lược nội dung SEO", "Nghiên cứu bộ từ khóa ngành 500+ từ khóa dài, phân bổ Topic Cluster và triển khai hơn 120+ bài viết chuẩn SEO, giúp tổng lượng tìm kiếm tự nhiên (Organic Traffic) tăng trưởng hơn 180% sau 6 tháng.")
@@ -220,6 +222,7 @@ def build_cv_seo_docx():
     # Các dự án tiêu biểu
     add_styled_heading(doc, "Dự Án Tiêu Biểu & Thành Tựu Thực Tế (Featured Case Studies)")
     
+    add_bullet_item(doc, "Sản phẩm công nghệ: Custom WordPress Plugin Tối Ưu Content SEO", "Tự code giải pháp in-house siêu nhẹ (Zero Bloatware) tích hợp trực tiếp WordPress Editor: chấm điểm On-page thời gian thực, sinh mục lục bài viết kèm anchor text và tự nhúng Schema FAQ JSON-LD hợp lệ 100% Rich Results Test.")
     add_bullet_item(doc, "Dự án 1: Cổng thông tin & Thương mại Dược - Sức khỏe", "Tối ưu Technical Audit, triển khai Schema MedicalBusiness & Product, viết lại 40 bài viết chủ lực theo Topic Cluster. Kết quả: Tăng trưởng Organic Clicks 210%, lọt Top 3 Google 35+ từ khóa ngành dược phẩm.")
     add_bullet_item(doc, "Dự án 2: Website Doanh nghiệp Nội thất & Thiết kế Nhà phố", "Tối ưu hóa hình ảnh độ phân giải cao sang WebP, giảm dung lượng trang từ 12MB xuống 1.5MB. Lập bản đồ từ khóa tập trung vào cụm 'báo giá thi công nội thất'. Kết quả: Lượng liên hệ gọi điện và chat Zalo tăng 65% sau 3 tháng.")
     add_bullet_item(doc, "Dự án 3: Hệ thống Bán lẻ & Bất động sản", "Triển khai cấu trúc URL ngắn gọn, thiết lập Breadcrumbs phân cấp và xử lý triệt để 200+ liên kết 404 gãy sau khi nâng cấp hệ thống web.")
@@ -331,6 +334,7 @@ def build_ke_hoach_seo_docx():
     # Giai đoạn 2: On-page & Entity
     add_styled_heading(doc, "Giai Đoạn 2: Tối Ưu Hóa On-Page & Cấu Trúc Thực Thể (Schema JSON-LD)")
     
+    add_bullet_item(doc, "Triển khai Plugin Tối Ưu Content SEO", "Cài đặt WordPress Plugin in-house do chuyên viên tự lập trình để tự động đo lường mật độ từ khóa thời gian thực, sinh mục lục bài viết (Table of Contents - TOC) chuẩn Semantic và tự xuất Schema FAQPage.")
     add_bullet_item(doc, "Chuẩn hóa Heading H1–H3", "Đảm bảo duy nhất 1 thẻ H1 chứa từ khóa trọng tâm, cấu trúc H2–H3 phân bổ logic và mạch lạc.")
     add_bullet_item(doc, "Thẻ Title & Meta Description", "Viết tiêu đề chuẩn 55–60 ký tự, bổ sung các yếu tố kích thích click CTR (con số, ưu đãi, năm cập nhật).")
     add_bullet_item(doc, "Cấu trúc URL chuẩn SEO", "Đường dẫn ngắn gọn, chứa từ khóa, không dấu, phân cấp rõ ràng theo danh mục.")
@@ -495,7 +499,7 @@ def build_cv_general_docx():
 
     # Kỹ năng
     add_styled_heading(doc, "Kỹ Năng Chuyên Môn (Professional Skills)")
-    add_bullet_item(doc, "Quản Trị & Phát Triển Web", "WordPress chuyên sâu, Elementor, WooCommerce, tối ưu mã nguồn HTML5, CSS3, JavaScript, PHP, MySQL, cấu hình Hosting/cPanel, Cloudflare, SSL.")
+    add_bullet_item(doc, "Quản Trị & Phát Triển Web", "WordPress chuyên sâu, Elementor, WooCommerce, tự code WordPress Plugin tùy biến tối ưu Content SEO & Schema JSON-LD, tối ưu mã nguồn HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare.")
     add_bullet_item(doc, "SEO Website & Digital Marketing", "Technical SEO, kiểm toán Screaming Frog, Core Web Vitals, Schema JSON-LD, Topic Cluster, Content SEO, Google Search Console, Google Analytics 4, Rank Math.")
     add_bullet_item(doc, "Thiết Kế Đồ Họa & UI/UX Design", "Adobe Photoshop (chỉnh sửa ảnh, thiết kế banner, poster, ấn phẩm mạng xã hội), Adobe Illustrator (thiết kế vector, logo, bộ nhận diện thương hiệu), Figma (thiết kế UI/UX giao diện website, responsive wireframe).")
 
@@ -515,6 +519,7 @@ def build_cv_general_docx():
     r_t1.font.italic = True
     r_t1.font.color.rgb = COLOR_MUTED
 
+    add_bullet_item(doc, "Phát triển công cụ & Tối ưu SEO", "Tự lập trình WordPress Plugin tối ưu Content SEO (chấm điểm on-page theo thời gian thực, tự sinh mục lục TOC và chèn Schema FAQ), giúp chuẩn hóa 100% bài viết và đưa hơn 30+ từ khóa vào Top 5 Google.")
     add_bullet_item(doc, "Triển khai & Vận hành Website", "Xây dựng và quản trị hơn 8+ website doanh nghiệp và bán hàng trên nền tảng WordPress. Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
     add_bullet_item(doc, "Thực hiện Chiến dịch SEO", "Lên kế hoạch bộ từ khóa, tối ưu On-page và Technical SEO, giúp website tăng trưởng lượng truy cập tự nhiên hơn 180% và đưa hơn 30+ từ khóa vào Top 5 Google.")
     add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện", "Thiết kế toàn bộ banner trang chủ, hình ảnh bài viết và ấn phẩm truyền thông mạng xã hội bằng Photoshop và Illustrator.")
