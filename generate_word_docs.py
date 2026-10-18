@@ -223,9 +223,9 @@ def build_cv_seo_docx():
     add_styled_heading(doc, "Dự Án Tiêu Biểu & Thành Tựu Thực Tế (Featured Case Studies)")
     
     add_bullet_item(doc, "Sản phẩm công nghệ: Custom WordPress Plugin Tối Ưu Content SEO", "Tự code giải pháp in-house siêu nhẹ (Zero Bloatware) tích hợp trực tiếp WordPress Editor: chấm điểm On-page thời gian thực, sinh mục lục bài viết kèm anchor text và tự nhúng Schema FAQ JSON-LD hợp lệ 100% Rich Results Test.")
-    add_bullet_item(doc, "Dự án 1: Cổng thông tin & Thương mại Dược - Sức khỏe", "Tối ưu Technical Audit, triển khai Schema MedicalBusiness & Product, viết lại 40 bài viết chủ lực theo Topic Cluster. Kết quả: Tăng trưởng Organic Clicks 210%, lọt Top 3 Google 35+ từ khóa ngành dược phẩm.")
-    add_bullet_item(doc, "Dự án 2: Website Doanh nghiệp Nội thất & Thiết kế Nhà phố", "Tối ưu hóa hình ảnh độ phân giải cao sang WebP, giảm dung lượng trang từ 12MB xuống 1.5MB. Lập bản đồ từ khóa tập trung vào cụm 'báo giá thi công nội thất'. Kết quả: Lượng liên hệ gọi điện và chat Zalo tăng 65% sau 3 tháng.")
-    add_bullet_item(doc, "Dự án 3: Hệ thống Bán lẻ & Bất động sản", "Triển khai cấu trúc URL ngắn gọn, thiết lập Breadcrumbs phân cấp và xử lý triệt để 200+ liên kết 404 gãy sau khi nâng cấp hệ thống web.")
+    add_bullet_item(doc, "Dự án Cổng thông tin Sàn Thẩm Mỹ (santhammy.com - Laravel MVC & Directory SEO)", "Xây dựng cổng thông tin danh bạ thẩm mỹ viện trên nền tảng Laravel (PHP & MySQL): thiết kế kiến trúc MVC, tối ưu bộ định tuyến Routing phân tầng quận/huyện và chuyên khoa thẩm mỹ, tối ưu truy vấn cơ sở dữ liệu đạt TTFB < 0.4s, giúp Googlebot lập chỉ mục 100% URLs danh bạ.")
+    add_bullet_item(doc, "Dự án Viện Thẩm Mỹ WangSun Luxury (vienthammywangsun.com)", "Tối ưu Technical Audit, triển khai Schema MedicalBusiness & LocalBusiness, nén ảnh WebP tải trang < 1.8s. Kết quả: Tăng trưởng Organic Clicks 210%, lọt Top 10 Google từ khóa dịch vụ làm đẹp tại TP.HCM.")
+    add_bullet_item(doc, "Dự án Thương mại Stone Sinks Vietnam (stonesinks.vn)", "Khai báo Product Schema chuẩn Google Merchant Center, nén WebP hình ảnh độ nét cao. Kết quả: Tỷ lệ hiển thị trên Google Image tăng 60%, từ khóa sản phẩm chiếm lĩnh trang nhất Google.")
 
     # Phương châm làm việc
     add_styled_heading(doc, "Nguyên Tắc & Cam Kết Nghề Nghiệp")
@@ -520,7 +520,7 @@ def build_cv_general_docx():
     r_t1.font.color.rgb = COLOR_MUTED
 
     add_bullet_item(doc, "Phát triển công cụ & Tối ưu SEO", "Tự lập trình WordPress Plugin tối ưu Content SEO (chấm điểm on-page theo thời gian thực, tự sinh mục lục TOC và chèn Schema FAQ), giúp chuẩn hóa 100% bài viết và đưa hơn 30+ từ khóa vào Top 5 Google.")
-    add_bullet_item(doc, "Triển khai & Vận hành Website", "Xây dựng và quản trị hơn 8+ website doanh nghiệp và bán hàng trên nền tảng WordPress. Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
+    add_bullet_item(doc, "Triển khai & Vận hành Web WordPress & Laravel", "Xây dựng và quản trị 8+ website doanh nghiệp trên WordPress và cổng danh bạ Sàn Thẩm Mỹ (santhammy.com) trên Laravel MVC (PHP & MySQL). Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
     add_bullet_item(doc, "Thực hiện Chiến dịch SEO", "Lên kế hoạch bộ từ khóa, tối ưu On-page và Technical SEO, giúp website tăng trưởng lượng truy cập tự nhiên hơn 180% và đưa hơn 30+ từ khóa vào Top 5 Google.")
     add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện", "Thiết kế toàn bộ banner trang chủ, hình ảnh bài viết và ấn phẩm truyền thông mạng xã hội bằng Photoshop và Illustrator.")
 

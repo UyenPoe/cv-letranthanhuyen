@@ -768,20 +768,20 @@ window.PORTFOLIO_DATA = {
       domain: "santhammy.com",
       liveUrl: "https://santhammy.com",
       githubUrl: "https://github.com/UyenPoe",
-      categories: ["wordpress", "seo"],
+      categories: ["laravel", "seo", "web"],
       badge: {
-        vi: "WordPress · Directory · SEO",
-        en: "WordPress · Directory · SEO"
+        vi: "Laravel · Directory Portal · SEO",
+        en: "Laravel · Directory Portal · SEO"
       },
       role: {
-        vi: "WordPress Developer · SEO Specialist · Website Admin",
-        en: "WordPress Developer · SEO Specialist · Website Admin"
+        vi: "Laravel Developer · Technical SEO Specialist · Web Admin",
+        en: "Laravel Developer · Technical SEO Specialist · Web Admin"
       },
       shortDesc: {
-        vi: "Cổng thông tin & sàn tổng hợp các cơ sở thẩm mỹ viện, bệnh viện thẩm mỹ và dịch vụ làm đẹp uy tín, tối ưu cấu trúc dữ liệu lớn và SEO tổng thể.",
-        en: "Comprehensive directory & portal aggregating aesthetic clinics, cosmetic hospitals, and beauty services with scalable taxonomy architecture and holistic SEO."
+        vi: "Cổng thông tin & sàn tổng hợp các cơ sở thẩm mỹ viện, bệnh viện thẩm mỹ và dịch vụ làm đẹp uy tín, xây dựng trên nền tảng Laravel Framework, tối ưu cấu trúc dữ liệu lớn và SEO tổng thể.",
+        en: "Comprehensive directory portal aggregating aesthetic clinics and beauty services built on Laravel Framework, optimized for large-scale data architecture and holistic SEO."
       },
-      techStack: ["WordPress", "Custom Post Type", "ACF", "Custom Taxonomies", "Technical SEO", "Schema Markup", "Database Optimization"],
+      techStack: ["Laravel Framework", "PHP", "MySQL", "MVC Architecture", "REST API", "Technical SEO", "Schema Markup", "Database Optimization"],
       images: {
         hero: "assets/images/projects/san-tham-my.webp",
         desktop: "assets/images/projects/san-tham-my.webp",
@@ -790,71 +790,71 @@ window.PORTFOLIO_DATA = {
       },
       caseStudy: {
         overview: {
-          vi: "Sàn Thẩm Mỹ (santhammy.com) được định vị là chuyên trang kết nối và tra cứu thông tin về các thẩm mỹ viện, phòng khám và dịch vụ làm đẹp trên toàn quốc. Dự án đòi hỏi cách tổ chức dữ liệu khoa học (theo Khu vực/Tỉnh thành, Nhóm dịch vụ, Thương hiệu) để người dùng dễ tìm kiếm và công cụ tìm kiếm dễ dàng lập chỉ mục hàng trăm trang nội dung.",
-          en: "San Tham My (santhammy.com) serves as a centralized directory connecting users with verified aesthetic clinics and beauty services nationwide. The platform required a scalable taxonomy architecture (by Location, Service Category, and Brand) for both user discovery and large-scale search engine indexation."
+          vi: "Sàn Thẩm Mỹ (santhammy.com) được định vị là chuyên trang kết nối và tra cứu thông tin về các thẩm mỹ viện, phòng khám và dịch vụ làm đẹp trên toàn quốc. Dự án được phát triển trên nền tảng Laravel Framework với kiến trúc MVC chuẩn mực, đòi hỏi cách tổ chức cơ sở dữ liệu MySQL khoa học (theo Khu vực/Tỉnh thành, Nhóm dịch vụ, Thương hiệu) để người dùng dễ tìm kiếm và công cụ tìm kiếm dễ dàng lập chỉ mục hàng ngàn trang nội dung.",
+          en: "San Tham My (santhammy.com) serves as a centralized directory connecting users with verified aesthetic clinics and beauty services nationwide. Engineered on Laravel Framework with structured MVC architecture, the platform required a scalable database taxonomy (by Location, Service Category, and Brand) for both user discovery and large-scale search engine indexation."
         },
         myRole: {
           vi: [
-            "Thiết kế kiến trúc thông tin (Information Architecture), xây dựng Custom Post Type và Custom Taxonomy cho danh bạ cơ sở thẩm mỹ.",
-            "Tối ưu hóa chiến lược Internal Linking (Liên kết nội bộ) theo mô hình Topic Cluster giữa bài viết kiến thức và trang hồ sơ cơ sở thẩm mỹ.",
-            "Quản trị hệ thống cơ sở dữ liệu, kiểm soát tốc độ tải trang và theo dõi tăng trưởng từ khóa trên Google Search Console."
+            "Xây dựng kiến trúc backend MVC trên nền tảng Laravel Framework, thiết kế mô hình cơ sở dữ liệu MySQL phân cấp cho danh bạ cơ sở thẩm mỹ.",
+            "Tối ưu hệ thống Routing chuẩn SEO, loại bỏ tham số động, xây dựng liên kết nội bộ theo mô hình Topic Cluster giữa bài viết kiến thức và hồ sơ cơ sở thẩm mỹ.",
+            "Tối ưu truy vấn cơ sở dữ liệu MySQL, cấu hình caching giúp phản hồi máy chủ TTFB < 0.4s và theo dõi tăng trưởng từ khóa trên Google Search Console."
           ],
           en: [
-            "Architected the site's Information Architecture using Custom Post Types and hierarchical taxonomies for clinic listings.",
-            "Implemented Topic Cluster internal linking connecting educational beauty guides with clinic profile pages.",
-            "Managed database performance, caching policies, and tracked keyword visibility via Google Search Console."
+            "Architected backend MVC structure on Laravel Framework, designing scalable MySQL database models for nationwide clinic directory listings.",
+            "Engineered SEO-friendly clean routing, eliminated dynamic query strings, and implemented Topic Cluster internal links connecting beauty guides with clinic profiles.",
+            "Optimized MySQL database queries and caching to maintain fast server response TTFB < 0.4s while tracking visibility via Google Search Console."
           ]
         },
         features: [
           {
-            name: { vi: "Hệ thống Danh bạ Cơ sở Thẩm mỹ (Directory)", en: "Aesthetic Clinic Directory System" },
-            desc: { vi: "Hồ sơ chi tiết từng viện thẩm mỹ: địa chỉ, dịch vụ thế mạnh, giấy phép, bảng giá tham khảo và đánh giá.", en: "Detailed clinic profiles featuring locations, core services, licensing info, pricing guides, and user reviews." },
+            name: { vi: "Hệ thống Danh bạ Cơ sở Thẩm mỹ (Laravel Directory)", en: "Aesthetic Clinic Directory System (Laravel)" },
+            desc: { vi: "Hồ sơ chi tiết từng viện thẩm mỹ: địa chỉ, dịch vụ thế mạnh, giấy phép, bảng giá tham khảo và đánh giá được tổ chức trên cơ sở dữ liệu phân cấp.", en: "Detailed clinic profiles featuring locations, core services, licensing info, pricing guides, and user reviews organized on structured relational database." },
             status: "done"
           },
           {
             name: { vi: "Phân loại Đa chiều theo Khu vực & Dịch vụ", en: "Multi-Faceted Location & Service Taxonomies" },
-            desc: { vi: "Tra cứu nhanh cơ sở làm đẹp theo Quận/Huyện, Tỉnh/Thành phố và nhóm dịch vụ chuyên sâu.", en: "Filter and browse clinics by city/district and specialized treatment categories." },
+            desc: { vi: "Tra cứu nhanh cơ sở làm đẹp theo Quận/Huyện, Tỉnh/Thành phố và nhóm dịch vụ chuyên sâu với bộ định tuyến (Routing) chuẩn SEO.", en: "Filter and browse clinics by city/district and specialized treatment categories via clean SEO-friendly routing." },
             status: "done"
           },
           {
-            name: { vi: "Bố cục So sánh & Xếp hạng Top Уy tín", en: "Top-Rated Comparison & Ranking Templates" },
+            name: { vi: "Bố cục So sánh & Xếp hạng Top Uy tín", en: "Top-Rated Comparison & Ranking Templates" },
             desc: { vi: "Mẫu bài viết chuẩn hóa cho dạng 'Top N địa chỉ thẩm mỹ...' giúp tăng tỷ lệ nhấp (CTR) và thời gian onsite.", en: "Standardized 'Top N Clinics' templates engineered for high organic CTR and dwell time." },
             status: "done"
           },
           {
-            name: { vi: "Bộ lọc Nâng cao AJAX (Đang mở rộng)", en: "Advanced AJAX Multi-Filter" },
-            desc: { vi: "Nâng cấp trải nghiệm lọc kết hợp nhiều tiêu chí không cần tải lại trang.", en: "Enhancing multi-criteria filtering without full page reloads." },
-            status: "in-progress"
+            name: { vi: "Bộ lọc Nâng cao AJAX & Caching", en: "Advanced AJAX Multi-Filter & Caching" },
+            desc: { vi: "Nâng cấp trải nghiệm lọc kết hợp nhiều tiêu chí nhanh chóng, tối ưu truy vấn không làm nghẽn máy chủ.", en: "Enhancing multi-criteria filtering with optimized database queries and low server overhead." },
+            status: "done"
           }
         ],
         challenges: [
           {
             problem: {
-              vi: "Website dạng cổng thông tin có nhiều danh mục và thẻ (tags) rất dễ bị trùng lặp nội dung (Duplicate Content) hoặc lãng phí Crawl Budget.",
-              en: "Directory portals with numerous categories and tags often suffer from thin/duplicate archive pages and crawl budget waste."
+              vi: "Website dạng cổng thông tin có hàng ngàn URL phân cấp theo tỉnh thành/quận huyện rất dễ bị trùng lặp nội dung hoặc lãng phí Crawl Budget.",
+              en: "Directory portals with thousands of location/service URLs often suffer from thin/duplicate archive pages and crawl budget waste."
             },
             solution: {
-              vi: "Thiết lập quy tắc Canonical URL chặt chẽ, noindex các trang tag mỏng nội dung và tập trung sức mạnh SEO vào các trang danh mục chính có nội dung hướng dẫn hữu ích.",
-              en: "Enforced strict Canonical URLs, applied noindex to thin tag archives, and enriched core category pages with unique editorial guides."
+              vi: "Xử lý Canonical URL động theo logic phân tầng trong Laravel Controller, loại bỏ URL rác và gắn Schema ItemList / LocalBusiness giúp Googlebot lập chỉ mục 100% trang chính.",
+              en: "Generated dynamic Canonical URLs via Laravel Controller logic, eliminated redundant archive parameters, and implemented ItemList / LocalBusiness Schema for 100% clean indexation."
             }
           }
         ],
         seoPerformance: {
           vi: [
-            "Xây dựng cấu trúc Silo / Topic Cluster rõ ràng cho từng nhóm dịch vụ thẩm mỹ.",
-            "Tối ưu hóa Breadcrumb và Schema ItemList cho các trang danh sách xếp hạng.",
-            "Kiểm soát lỗi 404, chuyển hướng 301 hợp lý và tối ưu tốc độ phản hồi máy chủ (TTFB)."
+            "Xây dựng cấu trúc Silo / Topic Cluster rõ ràng cho từng nhóm dịch vụ thẩm mỹ trên nền tảng Laravel Routing.",
+            "Tối ưu hóa Breadcrumbs tự động và Schema ItemList cho các trang danh sách xếp hạng cơ sở thẩm mỹ.",
+            "Kiểm soát lỗi 404, xử lý chuyển hướng 301 tự động và tối ưu tốc độ phản hồi máy chủ (TTFB < 0.4s)."
           ],
           en: [
-            "Built Silo / Topic Cluster architectures across major aesthetic service verticals.",
-            "Implemented BreadcrumbList and ItemList Schema for directory ranking pages.",
-            "Monitored 404 logs, managed 301 redirects, and reduced server Time to First Byte (TTFB)."
+            "Built Silo / Topic Cluster architectures across major aesthetic service verticals using clean Laravel Routing.",
+            "Implemented automated BreadcrumbList and ItemList Schema for directory ranking pages.",
+            "Monitored 404 logs, automated 301 redirects, and maintained fast server Time to First Byte (TTFB < 0.4s)."
           ]
         },
         results: [
           { value: "Silo SEO", caption: { vi: "Kiến trúc danh mục chuẩn SEO tổng thể", en: "Scalable Silo SEO site architecture" } },
-          { value: "CPT + ACF", caption: { vi: "Quản lý dữ liệu cơ sở thẩm mỹ tập trung", en: "Structured clinic data via CPT & ACF" } },
-          { value: "Fast UI", caption: { vi: "Tối ưu trải nghiệm đọc trên Mobile", en: "Optimized mobile reading experience" } }
+          { value: "Laravel MVC", caption: { vi: "Quản lý dữ liệu cổng thông tin trên Laravel", en: "Structured directory portal on Laravel MVC" } },
+          { value: "TTFB < 0.4s", caption: { vi: "Tốc độ phản hồi máy chủ cực nhanh", en: "Ultra-fast server response time" } }
         ]
       }
     },
