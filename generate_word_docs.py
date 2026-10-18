@@ -1,0 +1,532 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Script to generate professional Microsoft Word (.docx) documents:
+1. CV-SEO-Specialist-Le-Tran-Thanh-Uyen.docx
+2. Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.docx
+3. CV-Le-Tran-Thanh-Uyen.docx
+
+All documents use large, legible typography (11-12pt body, 14-20pt headings)
+and professional modern layout with deep navy & green accent styling.
+"""
+
+import os
+from docx import Document
+from docx.shared import Inches, Pt, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
+from docx.oxml import OxmlElement, parse_xml
+from docx.oxml.ns import nsdecls, qn
+
+DOCS_DIR = os.path.join(os.path.dirname(__file__), "assets", "docs")
+os.makedirs(DOCS_DIR, exist_ok=True)
+
+# Color Palette
+COLOR_NAVY = RGBColor(11, 35, 66)      # #0B2342
+COLOR_GREEN = RGBColor(22, 163, 74)    # #16A34A (Dark Emerald)
+COLOR_TEXT = RGBColor(31, 41, 55)      # #1F2937 (Body Dark)
+COLOR_MUTED = RGBColor(75, 85, 99)     # #4B5563 (Gray)
+HEX_LIGHT_BG = "F3F4F6"
+HEX_NAVY_BG = "0B2342"
+HEX_BORDER = "CBD5E1"
+HEX_GREEN_LIGHT = "ECFDF5"
+
+def set_cell_background(cell, hex_color):
+    shading_elm = parse_xml(f'<w:shd {nsdecls("w")} w:fill="{hex_color}"/>')
+    cell._tc.get_or_add_tcPr().append(shading_elm)
+
+def set_cell_margins(cell, top=120, bottom=120, left=150, right=150):
+    tcPr = cell._tc.get_or_add_tcPr()
+    tcMar = parse_xml(f'<w:tcMar {nsdecls("w")}><w:top w:w="{top}" w:type="dxa"/><w:bottom w:w="{bottom}" w:type="dxa"/><w:left w:w="{left}" w:type="dxa"/><w:right w:w="{right}" w:type="dxa"/></w:tcMar>')
+    tcPr.append(tcMar)
+
+def add_styled_heading(doc, text, level=1):
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(14)
+    p.paragraph_format.space_after = Pt(4)
+    p.paragraph_format.keep_with_next = True
+    
+    run = p.add_run(f"■  {text.upper()}")
+    run.font.name = "Arial"
+    run.font.size = Pt(13.5 if level == 1 else 12)
+    run.font.bold = True
+    run.font.color.rgb = COLOR_NAVY
+    
+    # Bottom border simulation via underline / bottom border XML
+    pBdr = parse_xml(f'<w:pBdr {nsdecls("w")}><w:bottom w:val="single" w:sz="8" w:space="4" w:color="22C55E"/></w:pBdr>')
+    p._p.get_or_add_pPr().append(pBdr)
+    return p
+
+def add_bullet_item(doc, title, content, level=0):
+    p = doc.add_paragraph(style='List Bullet')
+    p.paragraph_format.space_before = Pt(2)
+    p.paragraph_format.space_after = Pt(3)
+    p.paragraph_format.line_spacing = 1.2
+    
+    if title:
+        r_title = p.add_run(f"{title}: ")
+        r_title.font.name = "Arial"
+        r_title.font.size = Pt(11)
+        r_title.font.bold = True
+        r_title.font.color.rgb = COLOR_TEXT
+        
+    r_content = p.add_run(content)
+    r_content.font.name = "Arial"
+    r_content.font.size = Pt(11)
+    r_content.font.color.rgb = COLOR_TEXT
+    return p
+
+def create_callout(doc, title, text, bg_hex="F0FDF4", border_color="22C55E"):
+    tbl = doc.add_table(rows=1, cols=1)
+    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl.autofit = False
+    cell = tbl.cell(0, 0)
+    cell.width = Inches(6.8)
+    set_cell_background(cell, bg_hex)
+    set_cell_margins(cell, top=140, bottom=140, left=180, right=180)
+    
+    # Left thick border
+    tcPr = cell._tc.get_or_add_tcPr()
+    borders = parse_xml(f'<w:tcBorders {nsdecls("w")}><w:left w:val="single" w:sz="24" w:space="0" w:color="{border_color}"/><w:top w:val="none"/><w:right w:val="none"/><w:bottom w:val="none"/></w:tcBorders>')
+    tcPr.append(borders)
+    
+    p = cell.paragraphs[0]
+    p.paragraph_format.space_before = Pt(2)
+    p.paragraph_format.space_after = Pt(2)
+    p.paragraph_format.line_spacing = 1.25
+    
+    if title:
+        rt = p.add_run(f"{title} ")
+        rt.font.name = "Arial"
+        rt.font.size = Pt(11)
+        rt.font.bold = True
+        rt.font.color.rgb = COLOR_NAVY
+        
+    rc = p.add_run(text)
+    rc.font.name = "Arial"
+    rc.font.size = Pt(11)
+    rc.font.color.rgb = COLOR_TEXT
+
+# ==============================================================================
+# 1. BUILD CV SEO SPECIALIST (.DOCX)
+# ==============================================================================
+def build_cv_seo_docx():
+    doc = Document()
+    
+    # Page setup: A4, 0.7 inch margins
+    for section in doc.sections:
+        section.page_width = Inches(8.27)
+        section.page_height = Inches(11.69)
+        section.top_margin = Inches(0.7)
+        section.bottom_margin = Inches(0.7)
+        section.left_margin = Inches(0.75)
+        section.right_margin = Inches(0.75)
+        
+    # Header block
+    tbl_hdr = doc.add_table(rows=1, cols=1)
+    tbl_hdr.alignment = WD_TABLE_ALIGNMENT.CENTER
+    c_hdr = tbl_hdr.cell(0, 0)
+    c_hdr.width = Inches(6.77)
+    set_cell_background(c_hdr, "0B2342")
+    set_cell_margins(c_hdr, top=200, bottom=200, left=240, right=240)
+    
+    p_name = c_hdr.paragraphs[0]
+    p_name.paragraph_format.space_before = Pt(0)
+    p_name.paragraph_format.space_after = Pt(2)
+    r_name = p_name.add_run("LÊ TRẦN THANH UYÊN")
+    r_name.font.name = "Arial"
+    r_name.font.size = Pt(21)
+    r_name.font.bold = True
+    r_name.font.color.rgb = RGBColor(255, 255, 255)
+    
+    p_role = c_hdr.add_paragraph()
+    p_role.paragraph_format.space_before = Pt(0)
+    p_role.paragraph_format.space_after = Pt(8)
+    r_role = p_role.add_run("SEO SPECIALIST · TECHNICAL SEO · QUẢN TRỊ WEBSITE")
+    r_role.font.name = "Arial"
+    r_role.font.size = Pt(12)
+    r_role.font.bold = True
+    r_role.font.color.rgb = RGBColor(34, 197, 94) # Green
+    
+    p_contact = c_hdr.add_paragraph()
+    p_contact.paragraph_format.space_before = Pt(0)
+    p_contact.paragraph_format.space_after = Pt(0)
+    p_contact.paragraph_format.line_spacing = 1.3
+    r_c = p_contact.add_run("📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
+    r_c.font.name = "Arial"
+    r_c.font.size = Pt(10.5)
+    r_c.font.color.rgb = RGBColor(229, 231, 235)
+    
+    # Tóm tắt chuyên môn
+    add_styled_heading(doc, "Tóm Tắt Chuyên Môn (Executive Summary)")
+    create_callout(
+        doc,
+        "Định hướng nghề nghiệp:",
+        "Chuyên viên SEO & Quản trị Website với hơn 3 năm kinh nghiệm thực chiến trong việc tối ưu hóa công cụ tìm kiếm (White-Hat SEO), kỹ thuật lập chỉ mục (Technical SEO), tối ưu tốc độ Core Web Vitals và thiết kế kiến trúc thông tin Topic Cluster. Thế mạnh vượt trội nhờ nền tảng kết hợp giữa tư duy SEO dữ liệu (Google Search Console, GA4) và năng lực can thiệp trực tiếp mã nguồn web (HTML, CSS, JavaScript, WordPress, PHP) giúp triển khai đề xuất kỹ thuật nhanh chóng, chính xác mà không phụ thuộc dev.",
+        bg_hex="F0FDF4",
+        border_color="16A34A"
+    )
+    
+    # Kỹ năng cốt lõi
+    add_styled_heading(doc, "Năng Lực & Kỹ Năng Cốt Lõi (Core Skills)")
+    add_bullet_item(doc, "Technical SEO", "Kiểm toán cấu trúc crawl, xử lý lỗi robots.txt, XML Sitemap, Canonical URL, chuyển hướng 301/302, mã phản hồi 404/500, tối ưu ngân sách thu thập dữ liệu (Crawl Budget).")
+    add_bullet_item(doc, "Tối ưu Hiệu năng (Core Web Vitals)", "Đạt điểm xanh PageSpeed Insights (LCP < 2.5s, CLS < 0.1, INP < 200ms) bằng kỹ thuật nén WebP/AVIF, trì hoãn JS (defer/async), nén Gzip/Brotli, cấu hình bộ nhớ đệm và CDN Cloudflare.")
+    add_bullet_item(doc, "Cấu trúc Thực thể (Schema JSON-LD)", "Khai báo thực thể chuẩn Google (Organization, LocalBusiness, MedicalBusiness, Product, Review/AggregateRating, FAQPage, BreadcrumbList) nhằm tăng hiển thị đoạn trích chi tiết (Rich Snippets).")
+    add_bullet_item(doc, "Nghiên cứu Từ khóa & Content Cluster", "Phân tích Search Intent, xây dựng Topic Cluster hoàn chỉnh (Trang trụ cột Pillar Page kết hợp bài vệ tinh Cluster Posts), xây dựng cấu trúc liên kết nội bộ (Internal Links) logic.")
+    add_bullet_item(doc, "Công cụ chuyên ngành", "Google Search Console, Google Analytics 4, Screaming Frog SEO Spider, Ahrefs, SEMrush, Google Tag Manager, PageSpeed Insights, Rank Math SEO, Yoast SEO.")
+    add_bullet_item(doc, "Kỹ năng lập trình & Thiết kế bổ trợ", "WordPress, Elementor, HTML5, CSS3, JavaScript, PHP cơ bản; Thiết kế đồ họa & Banner website chuẩn UX với Adobe Photoshop, Illustrator, Figma.")
+
+    # Kinh nghiệm làm việc
+    add_styled_heading(doc, "Kinh Nghiệm Thực Chiến (Professional Experience)")
+    
+    p_job1 = doc.add_paragraph()
+    p_job1.paragraph_format.space_before = Pt(8)
+    p_job1.paragraph_format.space_after = Pt(2)
+    r_j1 = p_job1.add_run("Chuyên viên SEO & Quản trị Website | Doanh nghiệp & Dự án Thực chiến")
+    r_j1.font.name = "Arial"
+    r_j1.font.size = Pt(12)
+    r_j1.font.bold = True
+    r_j1.font.color.rgb = COLOR_NAVY
+    
+    r_time1 = p_job1.add_run("   (2022 – Hiện tại)")
+    r_time1.font.name = "Arial"
+    r_time1.font.size = Pt(11)
+    r_time1.font.italic = True
+    r_time1.font.color.rgb = COLOR_MUTED
+    
+    add_bullet_item(doc, "Kiểm toán & Xử lý Technical", "Thực hiện Technical Audit định kỳ bằng Screaming Frog cho 5+ website doanh nghiệp, giải quyết dứt điểm các lỗi chỉ mục (Index Coverage), trùng lặp nội dung, lỗi liên kết gãy và chuỗi chuyển hướng vòng lặp.")
+    add_bullet_item(doc, "Tối ưu hóa tốc độ tải trang", "Tái cấu trúc hình ảnh và tài nguyên frontend, đưa chỉ số Core Web Vitals từ mức Cảnh báo đỏ sang mức 'Tốt' (Màu xanh), giảm thời gian tải trang trung bình từ 4.8s xuống dưới 1.8s.")
+    add_bullet_item(doc, "Xây dựng chiến lược nội dung SEO", "Nghiên cứu bộ từ khóa ngành 500+ từ khóa dài, phân bổ Topic Cluster và triển khai hơn 120+ bài viết chuẩn SEO, giúp tổng lượng tìm kiếm tự nhiên (Organic Traffic) tăng trưởng hơn 180% sau 6 tháng.")
+    add_bullet_item(doc, "Theo dõi & Báo cáo dữ liệu", "Thiết lập sự kiện đo lường chuyển đổi (Click Zalo, Click Gọi điện, Điền Form) trên GA4 qua Google Tag Manager; định kỳ báo cáo hiệu suất từ khóa và tỷ lệ CTR hàng tuần.")
+    
+    p_job2 = doc.add_paragraph()
+    p_job2.paragraph_format.space_before = Pt(10)
+    p_job2.paragraph_format.space_after = Pt(2)
+    r_j2 = p_job2.add_run("Quản trị Web & Thiết kế Đồ họa / UI UX | Dự án Tự do & Doanh nghiệp")
+    r_j2.font.name = "Arial"
+    r_j2.font.size = Pt(12)
+    r_j2.font.bold = True
+    r_j2.font.color.rgb = COLOR_NAVY
+    
+    r_time2 = p_job2.add_run("   (2021 – 2022)")
+    r_time2.font.name = "Arial"
+    r_time2.font.size = Pt(11)
+    r_time2.font.italic = True
+    r_time2.font.color.rgb = COLOR_MUTED
+    
+    add_bullet_item(doc, "Thiết kế & Tối ưu UI/UX", "Thiết kế wireframe, banner quảng cáo, giao diện website bằng Photoshop, Illustrator và Figma; cải thiện trải nghiệm điều hướng trên di động giúp giảm tỷ lệ thoát (Bounce Rate) 25%.")
+    add_bullet_item(doc, "Phát triển Website WordPress", "Xây dựng và bàn giao hệ thống website WordPress chuẩn SEO, tối ưu bảo mật, chống spam và cấu hình tự động sao lưu định kỳ.")
+
+    # Các dự án tiêu biểu
+    add_styled_heading(doc, "Dự Án Tiêu Biểu & Thành Tựu Thực Tế (Featured Case Studies)")
+    
+    add_bullet_item(doc, "Dự án 1: Cổng thông tin & Thương mại Dược - Sức khỏe", "Tối ưu Technical Audit, triển khai Schema MedicalBusiness & Product, viết lại 40 bài viết chủ lực theo Topic Cluster. Kết quả: Tăng trưởng Organic Clicks 210%, lọt Top 3 Google 35+ từ khóa ngành dược phẩm.")
+    add_bullet_item(doc, "Dự án 2: Website Doanh nghiệp Nội thất & Thiết kế Nhà phố", "Tối ưu hóa hình ảnh độ phân giải cao sang WebP, giảm dung lượng trang từ 12MB xuống 1.5MB. Lập bản đồ từ khóa tập trung vào cụm 'báo giá thi công nội thất'. Kết quả: Lượng liên hệ gọi điện và chat Zalo tăng 65% sau 3 tháng.")
+    add_bullet_item(doc, "Dự án 3: Hệ thống Bán lẻ & Bất động sản", "Triển khai cấu trúc URL ngắn gọn, thiết lập Breadcrumbs phân cấp và xử lý triệt để 200+ liên kết 404 gãy sau khi nâng cấp hệ thống web.")
+
+    # Phương châm làm việc
+    add_styled_heading(doc, "Nguyên Tắc & Cam Kết Nghề Nghiệp")
+    create_callout(
+        doc,
+        "Cam kết 100% White-Hat SEO:",
+        "Tuân thủ nghiêm ngặt nguyên tắc chỉ dẫn quản trị trang web của Google (Google Search Essentials). Tập trung vào giá trị trải nghiệm người dùng, tốc độ tải trang và tính chân thực của thông tin. Tuyệt đối không sử dụng thủ thuật mũ đen hoặc PBN kém chất lượng gây nguy cơ phạt thuật toán.",
+        bg_hex="F8FAFC",
+        border_color="0B2342"
+    )
+
+    out_path = os.path.join(DOCS_DIR, "CV-SEO-Specialist-Le-Tran-Thanh-Uyen.docx")
+    doc.save(out_path)
+    print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+
+
+# ==============================================================================
+# 2. BUILD KE HOACH CONG VIEC SEO (.DOCX)
+# ==============================================================================
+def build_ke_hoach_seo_docx():
+    doc = Document()
+    
+    for section in doc.sections:
+        section.page_width = Inches(8.27)
+        section.page_height = Inches(11.69)
+        section.top_margin = Inches(0.7)
+        section.bottom_margin = Inches(0.7)
+        section.left_margin = Inches(0.75)
+        section.right_margin = Inches(0.75)
+
+    # Header block
+    tbl_hdr = doc.add_table(rows=1, cols=1)
+    tbl_hdr.alignment = WD_TABLE_ALIGNMENT.CENTER
+    c_hdr = tbl_hdr.cell(0, 0)
+    c_hdr.width = Inches(6.77)
+    set_cell_background(c_hdr, "0B2342")
+    set_cell_margins(c_hdr, top=180, bottom=180, left=240, right=240)
+    
+    p_name = c_hdr.paragraphs[0]
+    p_name.paragraph_format.space_before = Pt(0)
+    p_name.paragraph_format.space_after = Pt(2)
+    r_name = p_name.add_run("BẢN HẠNG MỤC CÔNG VIỆC SEO WEBSITE (SEO SCOPE OF WORK)")
+    r_name.font.name = "Arial"
+    r_name.font.size = Pt(17)
+    r_name.font.bold = True
+    r_name.font.color.rgb = RGBColor(255, 255, 255)
+    
+    p_sub = c_hdr.add_paragraph()
+    p_sub.paragraph_format.space_before = Pt(0)
+    p_sub.paragraph_format.space_after = Pt(6)
+    r_sub = p_sub.add_run("QUY TRÌNH TIÊU CHUẨN & BẢN PHÂN CÔNG NHIỆM VỤ CHUYÊN VIÊN SEO")
+    r_sub.font.name = "Arial"
+    r_sub.font.size = Pt(11.5)
+    r_sub.font.bold = True
+    r_sub.font.color.rgb = RGBColor(34, 197, 94)
+    
+    p_c = c_hdr.add_paragraph()
+    p_c.paragraph_format.space_before = Pt(0)
+    p_c.paragraph_format.space_after = Pt(0)
+    r_c = p_c.add_run("Chuyên viên: Lê Trần Thanh Uyên   |   Vị trí: SEO Specialist & Technical SEO\nLiên hệ: 0706 700 528   |   Email: thanhuyenletran@gmail.com   |   Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/")
+    r_c.font.name = "Arial"
+    r_c.font.size = Pt(10.5)
+    r_c.font.color.rgb = RGBColor(229, 231, 235)
+    
+    # Mục tiêu tài liệu
+    add_styled_heading(doc, "Mục Tiêu & Phạm Vi Tài Liệu")
+    create_callout(
+        doc,
+        "Mục tiêu tài liệu:",
+        "Văn bản này xác lập chi tiết toàn bộ các đầu mục công việc, tiêu chuẩn kỹ thuật và quy trình thực hiện mà Chuyên viên SEO (Lê Trần Thanh Uyên) đảm nhiệm trong quá trình vận hành, phát triển và tối ưu hóa thứ hạng công cụ tìm kiếm cho hệ thống website của doanh nghiệp.",
+        bg_hex="F0FDF4",
+        border_color="16A34A"
+    )
+    
+    # Giai đoạn 1: Technical SEO Audit
+    add_styled_heading(doc, "Giai Đoạn 1: Khảo Sát & Kiểm Toán Kỹ Thuật (Technical SEO Audit)")
+    
+    p_s1 = doc.add_paragraph()
+    p_s1.paragraph_format.space_before = Pt(4)
+    p_s1.paragraph_format.space_after = Pt(2)
+    r_s1 = p_s1.add_run("1.1. Kiểm soát Khả năng Thu thập dữ liệu & Lập chỉ mục (Crawlability & Indexing)")
+    r_s1.font.name = "Arial"
+    r_s1.font.size = Pt(12)
+    r_s1.font.bold = True
+    r_s1.font.color.rgb = COLOR_NAVY
+    
+    add_bullet_item(doc, "Cấu hình Robots.txt", "Phân quyền chính xác cho Googlebot, chặn các trang quản trị (/wp-admin, /cart, /checkout, search queries) để bảo toàn Crawl Budget.")
+    add_bullet_item(doc, "Phân tầng XML Sitemap", "Tách sitemap theo post type (post-sitemap, page-sitemap, product-sitemap, category-sitemap), khai báo chuẩn xác trong Search Console.")
+    add_bullet_item(doc, "Kiểm soát Meta Robots & Canonical", "Rà soát thẻ noindex/nofollow tránh chặn nhầm trang quan trọng; thiết lập rel=\"canonical\" chống trùng lặp nội dung.")
+    add_bullet_item(doc, "Xử lý lỗi HTTP & Redirects", "Quét Screaming Frog định kỳ để sửa mã 404, 500 và loại bỏ các chuỗi chuyển hướng vòng lặp (Redirect Chains 301/302).")
+    
+    p_s2 = doc.add_paragraph()
+    p_s2.paragraph_format.space_before = Pt(6)
+    p_s2.paragraph_format.space_after = Pt(2)
+    r_s2 = p_s2.add_run("1.2. Tối ưu Hiệu năng & Trải nghiệm Người dùng (Core Web Vitals)")
+    r_s2.font.name = "Arial"
+    r_s2.font.size = Pt(12)
+    r_s2.font.bold = True
+    r_s2.font.color.rgb = COLOR_NAVY
+    
+    add_bullet_item(doc, "Tối ưu LCP (< 2.5s)", "Chuyển đổi hình ảnh sang định dạng WebP/AVIF, cấu hình font-display: swap, tối ưu Critical CSS.")
+    add_bullet_item(doc, "Tối ưu CLS (< 0.1)", "Thiết lập cố định kích thước width/height cho hình ảnh, khung video và banner quảng cáo, triệt tiêu hiện tượng giật vỡ layout.")
+    add_bullet_item(doc, "Tối ưu INP (< 200ms)", "Trì hoãn (defer/async) các đoạn mã JavaScript không cần thiết, giải phóng luồng xử lý chính của trình duyệt.")
+    add_bullet_item(doc, "Bộ nhớ đệm & CDN", "Kích hoạt nén Brotli/Gzip, thiết lập Cloudflare CDN và cấu hình bộ nhớ đệm trình duyệt (Browser Caching).")
+
+    # Giai đoạn 2: On-page & Entity
+    add_styled_heading(doc, "Giai Đoạn 2: Tối Ưu Hóa On-Page & Cấu Trúc Thực Thể (Schema JSON-LD)")
+    
+    add_bullet_item(doc, "Chuẩn hóa Heading H1–H3", "Đảm bảo duy nhất 1 thẻ H1 chứa từ khóa trọng tâm, cấu trúc H2–H3 phân bổ logic và mạch lạc.")
+    add_bullet_item(doc, "Thẻ Title & Meta Description", "Viết tiêu đề chuẩn 55–60 ký tự, bổ sung các yếu tố kích thích click CTR (con số, ưu đãi, năm cập nhật).")
+    add_bullet_item(doc, "Cấu trúc URL chuẩn SEO", "Đường dẫn ngắn gọn, chứa từ khóa, không dấu, phân cấp rõ ràng theo danh mục.")
+    add_bullet_item(doc, "SEO Hình ảnh chuyên sâu", "Tên file chuẩn không dấu, nén dưới 150KB, gắn thẻ Alt Text mô tả sát ngữ cảnh.")
+    add_bullet_item(doc, "Khai báo Schema Entity", "Cài đặt Schema JSON-LD hoàn chỉnh: Organization, LocalBusiness, MedicalBusiness, Product, Review, FAQPage, BreadcrumbList.")
+
+    # Giai đoạn 3: Topic Cluster & Nội dung
+    add_styled_heading(doc, "Giai Đoạn 3: Nghiên Cứu Từ Khóa & Kiến Trúc Cụm Chủ Đề (Topic Cluster)")
+    
+    add_bullet_item(doc, "Nghiên cứu Search Intent", "Phân loại ý định tìm kiếm (Thông tin, So sánh, Mua hàng) để xây dựng nội dung đúng kỳ vọng của người dùng.")
+    add_bullet_item(doc, "Mô hình Topic Cluster", "Xây dựng Trang Trụ Cột (Pillar Page) bao quát chủ đề chính và các bài viết vệ tinh (Cluster Content) phân tích chuyên sâu.")
+    add_bullet_item(doc, "Mạng lưới Internal Linking", "Kết nối liên kết nội bộ chặt chẽ 2 chiều giữa Pillar và Cluster, giữ chân người dùng và điều hướng dòng sức mạnh PageRank.")
+    add_bullet_item(doc, "Bản đồ Từ khóa (Keyword Mapping)", "Gán đúng từ khóa cho đúng URL đích duy nhất, triệt tiêu hiện tượng tự ăn thịt từ khóa (Keyword Cannibalization).")
+
+    # Giai đoạn 4: Search Console & GA4
+    add_styled_heading(doc, "Giai Đoạn 4: Vận Hành Google Search Console, GA4 & Báo Cáo")
+    
+    add_bullet_item(doc, "Giám sát Indexing Coverage", "Kiểm tra hằng tuần mục 'Trang' trên Search Console, khắc phục ngay các trang bị lỗi loại trừ lập chỉ mục.")
+    add_bullet_item(doc, "Phân tích Hiệu suất Tìm kiếm", "Theo dõi biến động Tổng số lượt nhấp (Clicks), Lượt hiển thị (Impressions), CTR trung bình và Vị trí thứ hạng từ khóa.")
+    add_bullet_item(doc, "Đo lường Chuyển đổi GA4", "Cài đặt tracking các sự kiện then chốt: Click gọi hotline, click Zalo, nộp form đăng ký tư vấn và giỏ hàng.")
+    add_bullet_item(doc, "Báo cáo định kỳ minh bạch", "Cung cấp báo cáo tuần/tháng rõ ràng về thứ hạng từ khóa, tăng trưởng traffic và tỷ lệ chuyển đổi khách hàng tiềm năng.")
+
+    # Lộ trình triển khai (Table)
+    add_styled_heading(doc, "Bảng Lộ Trình Phân Bổ Công Việc Thực Tế (Action Roadmap)")
+    
+    table = doc.add_table(rows=4, cols=3)
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = False
+    
+    col_widths = [Inches(1.5), Inches(3.2), Inches(2.07)]
+    headers = ["Giai Đoạn", "Nội Dung Công Việc Chi Tiết", "Kết Quả Đầu Ra Bàn Giao"]
+    
+    # Header row
+    hdr_cells = table.rows[0].cells
+    for i, h_text in enumerate(headers):
+        hdr_cells[i].width = col_widths[i]
+        set_cell_background(hdr_cells[i], "0B2342")
+        set_cell_margins(hdr_cells[i], top=100, bottom=100, left=120, right=120)
+        p = hdr_cells[i].paragraphs[0]
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
+        r = p.add_run(h_text)
+        r.font.name = "Arial"
+        r.font.size = Pt(11)
+        r.font.bold = True
+        r.font.color.rgb = RGBColor(255, 255, 255)
+        
+    data = [
+        (
+            "Tháng 1:\nNền tảng & Technical",
+            "• Kiểm toán toàn diện website (Audit lỗi 404, redirect, canonical, robots.txt, sitemap)\n• Tối ưu Core Web Vitals (nén WebP, caching, CDN)\n• Khai báo Schema JSON-LD doanh nghiệp & Breadcrumbs",
+            "✔ Website sạch lỗi kỹ thuật\n✔ Tốc độ tải < 2.0s (PageSpeed 90+)\n✔ Search Console chỉ mục sạch"
+        ),
+        (
+            "Tháng 2:\nOn-Page & Nội Dung",
+            "• Nghiên cứu từ khóa & lập Keyword Mapping theo Search Intent\n• Chuẩn hóa Heading H1–H3, Title, Meta Description các trang dịch vụ chủ lực\n• Triển khai cụm Topic Cluster đầu tiên",
+            "✔ Hoàn thành bảng Keyword Master\n✔ Tối ưu 100% trang dịch vụ chính\n✔ Cụm nội dung đầu tiên lên trang"
+        ),
+        (
+            "Tháng 3 – 6:\nTăng Trưởng & Chuyển Đổi",
+            "• Đẩy mạnh sản xuất bài viết vệ tinh & Internal Linking\n• Tối ưu trải nghiệm chuyển đổi (CRO): Call, Zalo, Form\n• Báo cáo định kỳ phân tích từ khóa Top 1–10, tối ưu CTR và xử lý từ khóa chững hạng",
+            "✔ Organic Traffic tăng trưởng đều đặn\n✔ Bộ từ khóa chính vào Top 1–10\n✔ Tăng mạnh tỷ lệ chuyển đổi khách hàng"
+        ),
+    ]
+    
+    for row_idx, (c0, c1, c2) in enumerate(data, start=1):
+        row_cells = table.rows[row_idx].cells
+        bg = "F9FAFB" if row_idx % 2 == 1 else "FFFFFF"
+        for i, val in enumerate([c0, c1, c2]):
+            row_cells[i].width = col_widths[i]
+            set_cell_background(row_cells[i], bg)
+            set_cell_margins(row_cells[i], top=100, bottom=100, left=120, right=120)
+            
+            # borders
+            tcPr = row_cells[i]._tc.get_or_add_tcPr()
+            bdr = parse_xml(f'<w:tcBorders {nsdecls("w")}><w:top w:val="single" w:sz="4" w:space="0" w:color="E2E8F0"/><w:bottom w:val="single" w:sz="4" w:space="0" w:color="E2E8F0"/><w:left w:val="single" w:sz="4" w:space="0" w:color="E2E8F0"/><w:right w:val="single" w:sz="4" w:space="0" w:color="E2E8F0"/></w:tcBorders>')
+            tcPr.append(bdr)
+            
+            p = row_cells[i].paragraphs[0]
+            p.paragraph_format.space_before = Pt(0)
+            p.paragraph_format.space_after = Pt(0)
+            p.paragraph_format.line_spacing = 1.25
+            r = p.add_run(val)
+            r.font.name = "Arial"
+            r.font.size = Pt(10.5)
+            r.font.color.rgb = COLOR_TEXT
+            if i == 0:
+                r.font.bold = True
+
+    # Cam kết nghề nghiệp
+    add_styled_heading(doc, "Cam Kết & Nguyên Tắc Nghề Nghiệp")
+    create_callout(
+        doc,
+        "Nguyên tắc làm việc của Lê Trần Thanh Uyên:",
+        "100% kỹ thuật SEO Mũ Trắng (White-Hat SEO), phát triển bền vững theo đúng hướng dẫn của Google Search Essentials. Không dùng thủ thuật thao túng thứ hạng tạm thời gây nguy cơ phạt thuật toán. Luôn minh bạch và cung cấp đầy đủ quyền truy cập số liệu đo lường thực tế trên Google Search Console & GA4.",
+        bg_hex="F8FAFC",
+        border_color="0B2342"
+    )
+
+    out_path = os.path.join(DOCS_DIR, "Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.docx")
+    doc.save(out_path)
+    print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+
+
+# ==============================================================================
+# 3. BUILD CV TỔNG HỢP (.DOCX)
+# ==============================================================================
+def build_cv_general_docx():
+    doc = Document()
+    
+    for section in doc.sections:
+        section.page_width = Inches(8.27)
+        section.page_height = Inches(11.69)
+        section.top_margin = Inches(0.7)
+        section.bottom_margin = Inches(0.7)
+        section.left_margin = Inches(0.75)
+        section.right_margin = Inches(0.75)
+
+    # Header block
+    tbl_hdr = doc.add_table(rows=1, cols=1)
+    tbl_hdr.alignment = WD_TABLE_ALIGNMENT.CENTER
+    c_hdr = tbl_hdr.cell(0, 0)
+    c_hdr.width = Inches(6.77)
+    set_cell_background(c_hdr, "0B2342")
+    set_cell_margins(c_hdr, top=200, bottom=200, left=240, right=240)
+    
+    p_name = c_hdr.paragraphs[0]
+    p_name.paragraph_format.space_before = Pt(0)
+    p_name.paragraph_format.space_after = Pt(2)
+    r_name = p_name.add_run("LÊ TRẦN THANH UYÊN")
+    r_name.font.name = "Arial"
+    r_name.font.size = Pt(21)
+    r_name.font.bold = True
+    r_name.font.color.rgb = RGBColor(255, 255, 255)
+    
+    p_role = c_hdr.add_paragraph()
+    p_role.paragraph_format.space_before = Pt(0)
+    p_role.paragraph_format.space_after = Pt(8)
+    r_role = p_role.add_run("WEB ADMINISTRATOR · WORDPRESS DEVELOPER · SEO SPECIALIST · GRAPHIC & UI/UX")
+    r_role.font.name = "Arial"
+    r_role.font.size = Pt(11.5)
+    r_role.font.bold = True
+    r_role.font.color.rgb = RGBColor(34, 197, 94)
+    
+    p_c = c_hdr.add_paragraph()
+    p_c.paragraph_format.space_before = Pt(0)
+    p_c.paragraph_format.space_after = Pt(0)
+    r_c = p_c.add_run("📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Website Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
+    r_c.font.name = "Arial"
+    r_c.font.size = Pt(10.5)
+    r_c.font.color.rgb = RGBColor(229, 231, 235)
+
+    # Giới thiệu
+    add_styled_heading(doc, "Giới Thiệu Bản Thân (About Me)")
+    create_callout(
+        doc,
+        "Hồ sơ năng lực:",
+        "Hơn 3 năm kinh nghiệm thực tế trong phát triển website WordPress, quản trị hạ tầng web, triển khai SEO On-page/Technical và thiết kế đồ họa / giao diện UI/UX. Khả năng tự chủ trọn vẹn từ khâu phác thảo ý tưởng thiết kế đồ họa (Photoshop, Illustrator, Figma), dựng mã nguồn website chuẩn Responsive đến tối ưu hóa thứ hạng công cụ tìm kiếm và đo lường chuyển đổi thực tế.",
+        bg_hex="F0FDF4",
+        border_color="16A34A"
+    )
+
+    # Kỹ năng
+    add_styled_heading(doc, "Kỹ Năng Chuyên Môn (Professional Skills)")
+    add_bullet_item(doc, "Quản Trị & Phát Triển Web", "WordPress chuyên sâu, Elementor, WooCommerce, tối ưu mã nguồn HTML5, CSS3, JavaScript, PHP, MySQL, cấu hình Hosting/cPanel, Cloudflare, SSL.")
+    add_bullet_item(doc, "SEO Website & Digital Marketing", "Technical SEO, kiểm toán Screaming Frog, Core Web Vitals, Schema JSON-LD, Topic Cluster, Content SEO, Google Search Console, Google Analytics 4, Rank Math.")
+    add_bullet_item(doc, "Thiết Kế Đồ Họa & UI/UX Design", "Adobe Photoshop (chỉnh sửa ảnh, thiết kế banner, poster, ấn phẩm mạng xã hội), Adobe Illustrator (thiết kế vector, logo, bộ nhận diện thương hiệu), Figma (thiết kế UI/UX giao diện website, responsive wireframe).")
+
+    # Kinh nghiệm
+    add_styled_heading(doc, "Kinh Nghiệm Làm Việc (Work Experience)")
+    p_j1 = doc.add_paragraph()
+    p_j1.paragraph_format.space_before = Pt(8)
+    p_j1.paragraph_format.space_after = Pt(2)
+    r_j1 = p_j1.add_run("Web Administrator, SEO Specialist & Designer | Tự do & Doanh nghiệp")
+    r_j1.font.name = "Arial"
+    r_j1.font.size = Pt(12)
+    r_j1.font.bold = True
+    r_j1.font.color.rgb = COLOR_NAVY
+    r_t1 = p_j1.add_run("   (2022 – Hiện tại)")
+    r_t1.font.name = "Arial"
+    r_t1.font.size = Pt(11)
+    r_t1.font.italic = True
+    r_t1.font.color.rgb = COLOR_MUTED
+
+    add_bullet_item(doc, "Triển khai & Vận hành Website", "Xây dựng và quản trị hơn 8+ website doanh nghiệp và bán hàng trên nền tảng WordPress. Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
+    add_bullet_item(doc, "Thực hiện Chiến dịch SEO", "Lên kế hoạch bộ từ khóa, tối ưu On-page và Technical SEO, giúp website tăng trưởng lượng truy cập tự nhiên hơn 180% và đưa hơn 30+ từ khóa vào Top 5 Google.")
+    add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện", "Thiết kế toàn bộ banner trang chủ, hình ảnh bài viết và ấn phẩm truyền thông mạng xã hội bằng Photoshop và Illustrator.")
+
+    out_path = os.path.join(DOCS_DIR, "CV-Le-Tran-Thanh-Uyen.docx")
+    doc.save(out_path)
+    print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+
+
+if __name__ == "__main__":
+    print("Generating Word (.docx) documents...")
+    build_cv_seo_docx()
+    build_ke_hoach_seo_docx()
+    build_cv_general_docx()
+    print("All documents created successfully!")
