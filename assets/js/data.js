@@ -11,6 +11,8 @@ window.PORTFOLIO_DATA = {
   profile: {
     fullName: "Lê Trần Thanh Uyên",
     shortName: "THANH UYEN",
+    birthDate: "18/01/1986",
+    birthYear: "1986",
     roleTitle: "WEB & SEO SPECIALIST · GRAPHIC & UI/UX DESIGN",
     subRoles: "WORDPRESS · WEB DEVELOPER · SEO · GRAPHIC & UI/UX DESIGN",
     availableByDefault: true, // true: Sẵn sàng nhận việc | false: Đang bận dự án
@@ -71,7 +73,7 @@ window.PORTFOLIO_DATA = {
         pillar3Desc: "Tùy biến Theme/Child Theme, xây dựng Custom Post Type, ACF, tích hợp WooCommerce và tối ưu truy vấn cơ sở dữ liệu.",
         pillar4Title: "Graphic & UI/UX Design – Thiết kế Đồ họa & Web UI/UX",
         pillar4Desc: "Thiết kế banner marketing, xử lý ảnh bằng Adobe Photoshop, thiết kế vector/logo bằng Illustrator và xây dựng layout UI/UX website hiện đại, tối ưu trải nghiệm tương tác.",
-        stat1Num: "6+",
+        stat1Num: "7+",
         stat1Label: "Dự án Website thực tế",
         stat2Num: "3",
         stat2Label: "Mảng chuyên môn cốt lõi",
@@ -84,6 +86,7 @@ window.PORTFOLIO_DATA = {
         domain2: "Thương mại điện tử (E-commerce)",
         domain3: "Cổng thông tin & Review đánh giá",
         domain4: "Nội thất & Thiết bị cao cấp",
+        domain5: "Tài chính & Vay tín chấp (Finance & Loans)",
         objectiveTitle: "Định hướng nghề nghiệp",
         objectiveText: "Trở thành nhân sự nòng cốt trong vai trò Website Administrator / SEO Specialist / WordPress Developer, trực tiếp nâng cao hiệu suất kỹ thuật và tăng trưởng lưu lượng truy cập tự nhiên bền vững cho hệ sinh thái website của doanh nghiệp."
       },
@@ -118,6 +121,7 @@ window.PORTFOLIO_DATA = {
         filterLaravel: "Laravel",
         filterSeo: "SEO",
         filterEcom: "E-commerce",
+        filterLanding: "Landing Page",
         btnCaseStudy: "View Case Study",
         btnLiveSite: "Live Website ↗"
       },
@@ -125,6 +129,7 @@ window.PORTFOLIO_DATA = {
         eyebrow: "05 · CONTACT & CV",
         title: "Liên hệ Tuyển dụng & Hợp tác",
         subtitle: "Sẵn sàng trao đổi trực tiếp về cơ hội hợp tác ở vị trí Website Administrator, SEO Specialist hoặc WordPress Developer.",
+        birthLabel: "Ngày sinh",
         emailLabel: "Email liên hệ",
         phoneLabel: "Điện thoại / Zalo",
         zaloLabel: "Kênh Zalo",
@@ -225,7 +230,7 @@ window.PORTFOLIO_DATA = {
         pillar3Desc: "Developing custom themes/child themes, Custom Post Types (CPT), ACF fields, WooCommerce stores, and database query optimization.",
         pillar4Title: "Graphic & UI/UX Web Design",
         pillar4Desc: "Designing marketing assets, promotional banners, photo retouching with Adobe Photoshop, vector brand identity with Illustrator, and conversion-focused web UI/UX layouts.",
-        stat1Num: "6+",
+        stat1Num: "7+",
         stat1Label: "Production Websites",
         stat2Num: "3",
         stat2Label: "Core Specializations",
@@ -238,6 +243,7 @@ window.PORTFOLIO_DATA = {
         domain2: "E-commerce & Retail",
         domain3: "Review & Directory Portals",
         domain4: "Luxury Interior & Stone Sinks",
+        domain5: "Finance & Quick Loans",
         objectiveTitle: "Career Objective",
         objectiveText: "To contribute as a dedicated Website Administrator, SEO Specialist, or WordPress Developer—improving technical reliability, page speed, and long-term organic search growth."
       },
@@ -272,6 +278,7 @@ window.PORTFOLIO_DATA = {
         filterLaravel: "Laravel",
         filterSeo: "SEO",
         filterEcom: "E-commerce",
+        filterLanding: "Landing Page",
         btnCaseStudy: "View Case Study",
         btnLiveSite: "Live Website ↗"
       },
@@ -279,6 +286,7 @@ window.PORTFOLIO_DATA = {
         eyebrow: "05 · CONTACT & CV",
         title: "Let's Connect for Opportunities",
         subtitle: "Open for interviews and discussions regarding Website Administrator, SEO Specialist, or WordPress Developer roles.",
+        birthLabel: "Date of Birth",
         emailLabel: "Email Address",
         phoneLabel: "Phone / Zalo",
         zaloLabel: "Zalo Chat",
@@ -528,21 +536,23 @@ window.PORTFOLIO_DATA = {
         en: "Full-stack Web Developer (Laravel & Frontend)"
       },
       company: {
-        vi: "Dự án Website Thương mại điện tử Smartphone (smartphone.taichinhtaithanh.com)",
-        en: "Smartphone E-commerce Platform (smartphone.taichinhtaithanh.com)"
+        vi: "Hệ sinh thái Tài Chính Tài Thành (taichinhtaithanh.com & smartphone.taichinhtaithanh.com)",
+        en: "Tai Chinh Tai Thanh Web Ecosystem (taichinhtaithanh.com & smartphone.taichinhtaithanh.com)"
       },
       summary: {
-        vi: "Phát triển hệ thống website thương mại điện tử chuyên doanh điện thoại di động và phụ kiện theo mô hình MVC với Laravel & MySQL.",
-        en: "Developed a full-featured smartphone and accessories e-commerce web application following the MVC pattern with PHP Laravel & MySQL."
+        vi: "Phát triển hệ thống website thương mại điện tử chuyên doanh điện thoại di động (Laravel) và Landing Page tư vấn tài chính (Blogspot).",
+        en: "Developed the smartphone e-commerce web platform (Laravel MVC) and financial consultation landing page (Google Blogspot)."
       },
       responsibilities: {
         vi: [
+          "Thiết kế Landing Page taichinhtaithanh.com bằng Google Blogspot (Custom XML / CSS3 / JS) tối ưu chuyển đổi (CRO), bảng tính khoản vay tương tác và lead form.",
           "Thiết kế cơ sở dữ liệu MySQL và xây dựng các phân hệ quản lý sản phẩm, danh mục thương hiệu, biến thể dung lượng/màu sắc bằng Laravel.",
           "Lập trình giao diện người dùng (Frontend) hiển thị danh sách điện thoại, tìm kiếm, lọc theo mức giá, giỏ hàng và đặt hàng trực tuyến.",
           "Xây dựng trang quản trị (Admin Dashboard) phục vụ cập nhật giá bán, tồn kho, banner khuyến mãi và quản lý đơn hàng.",
           "Triển khai mã nguồn lên hosting thực tế (smartphone.taichinhtaithanh.com), cấu hình cơ sở dữ liệu và kiểm thử luồng người dùng."
         ],
         en: [
+          "Designed the high-converting financial landing page taichinhtaithanh.com on Google Blogspot with an interactive loan calculator and lead capture forms.",
           "Designed relational MySQL schemas and built product, brand category, and storage/color variant modules using Laravel MVC.",
           "Developed responsive frontend views for smartphone listings, price/brand filtering, shopping cart, and order checkout.",
           "Created the Admin Dashboard for managing inventory, pricing, promotional banners, and customer orders.",
@@ -550,14 +560,124 @@ window.PORTFOLIO_DATA = {
         ]
       },
       results: {
-        vi: "Vận hành thành công hệ thống E-commerce thực tế trên tên miền riêng, chứng minh năng lực làm chủ cả mã nguồn MVC (Laravel) lẫn triển khai hạ tầng.",
-        en: "Successfully launched a live Laravel e-commerce platform on a custom subdomain, demonstrating end-to-end MVC development and deployment capability."
+        vi: "Vận hành thành công cả hệ sinh thái gồm Landing Page Blogspot và E-commerce Laravel trên tên miền riêng, chứng minh năng lực toàn diện.",
+        en: "Successfully launched the dual-platform web ecosystem (Blogspot Landing Page & Laravel E-commerce) on custom domains."
       },
-      tech: ["Laravel", "PHP", "MySQL", "UI/UX Design", "HTML5/CSS3", "JavaScript", "Adobe Photoshop", "Bootstrap / Responsive", "Git"]
+      tech: ["Blogspot XML", "Laravel", "PHP", "MySQL", "UI/UX Design", "HTML5/CSS3", "JavaScript", "Adobe Photoshop", "Responsive", "Git"]
     }
   ],
 
   projects: [
+    {
+      slug: "tai-chinh-tai-thanh",
+      title: "Tài Chính Tài Thành",
+      domain: "taichinhtaithanh.com",
+      liveUrl: "https://www.taichinhtaithanh.com",
+      githubUrl: "https://github.com/UyenPoe",
+      categories: ["web", "seo", "landingpage"],
+      badge: {
+        vi: "Blogspot · Landing Page",
+        en: "Blogspot · Landing Page"
+      },
+      role: {
+        vi: "Frontend Developer (Blogspot XML / HTML / CSS) & CRO Specialist",
+        en: "Frontend Developer (Blogspot XML / HTML / CSS) & CRO Specialist"
+      },
+      shortDesc: {
+        vi: "Landing Page tài chính & vay tín chấp nhanh 24h xây dựng trên Google Blogspot: thiết kế giao diện tối ưu chuyển đổi (CRO), bảng tính khoản vay tương tác và lead form trực tuyến.",
+        en: "High-converting financial loan consultation landing page built on Google Blogspot featuring an interactive loan calculator, lead capture forms, and mobile-first responsive design."
+      },
+      techStack: ["Blogspot / Blogger", "Custom XML", "HTML5/CSS3", "JavaScript", "CRO Landing Page", "Loan Calculator", "Google CDN", "On-Page SEO"],
+      images: {
+        hero: "assets/images/projects/tai-chinh-tai-thanh.webp",
+        desktop: "assets/images/projects/tai-chinh-tai-thanh.webp",
+        tablet: "assets/images/projects/tai-chinh-tai-thanh-tablet.webp",
+        mobile: "assets/images/projects/tai-chinh-tai-thanh-mobile.webp"
+      },
+      caseStudy: {
+        overview: {
+          vi: "Tài Chính Tài Thành (taichinhtaithanh.com) là dự án thiết kế và triển khai Landing Page tư vấn giải pháp tài chính và vay tín chấp nhanh 24h. Nền tảng được xây dựng bằng cách tùy biến sâu template XML của Google Blogspot (Blogger), tận dụng hạ tầng máy chủ Google Server Engine (GSE) miễn phí trọn đời nhưng có tốc độ tải trang cực nhanh, chứng chỉ bảo mật SSL tự động và uptime 100%. Trọng tâm của landing page là tối ưu hóa tỷ lệ chuyển đổi (CRO), thu hút khách hàng để lại thông tin tư vấn và ước tính khoản vay trực tiếp.",
+          en: "Tai Chinh Tai Thanh (taichinhtaithanh.com) is a high-converting financial and personal loan landing page. Developed by customizing Google Blogspot's XML template, it leverages Google's global CDN and server infrastructure for lightning-fast loading, automatic SSL, and 100% uptime. The design focuses on Conversion Rate Optimization (CRO), lead generation, and interactive loan estimations."
+        },
+        myRole: {
+          vi: [
+            "Thiết kế cấu trúc giao diện Landing Page chuyên nghiệp, phối màu theo tone Xanh Tài Chính (#0b5bb5) và Vàng Amber (#f59e0b) tạo độ uy tín cao.",
+            "Tùy biến mã nguồn Google Blogspot XML Template, viết HTML5/CSS3 tùy biến sạch và tích hợp JavaScript cho các hiệu ứng tương tác.",
+            "Lập trình module Ước tính khoản vay (Loan Calculator) và Biểu mẫu đăng ký tư vấn (Lead Form) gửi dữ liệu tức thì.",
+            "Tối ưu On-page SEO cho các từ khóa dịch vụ tài chính, gắn thẻ Canonical, Open Graph và cấu hình tên miền riêng www.taichinhtaithanh.com trỏ về Blogspot qua DNS CNAME."
+          ],
+          en: [
+            "Designed a conversion-centric financial landing page layout using trust-building blue (#0b5bb5) and amber (#f59e0b) color palettes.",
+            "Customized Google Blogspot XML templates with clean semantic HTML5, modular CSS3, and lightweight vanilla JavaScript.",
+            "Programmed the interactive Loan Calculator widget and lead capture consultation form.",
+            "Optimized On-page SEO, canonical URLs, social Open Graph tags, and custom domain DNS mapping on Blogspot."
+          ]
+        },
+        features: [
+          {
+            name: { vi: "Biểu mẫu Đăng ký Tư vấn (Lead Capture Form)", en: "Lead Capture Consultation Form" },
+            desc: { vi: "Biểu mẫu thu thập nhu cầu vay và thông tin liên hệ được tối ưu vị trí (Above the Fold & Sticky CTA) giúp tối đa hóa tỷ lệ chuyển đổi.", en: "Conversion-optimized lead capture form positioned above-the-fold with sticky call-to-action triggers." },
+            status: "done"
+          },
+          {
+            name: { vi: "Công cụ Ước tính Khoản vay (Loan Calculator)", en: "Interactive Loan Calculator" },
+            desc: { vi: "Tiện ích tính toán số tiền trả góp hàng tháng theo thời gian vay và lãi suất thực tế bằng JavaScript mượt mà.", en: "Dynamic client-side loan estimation widget calculating monthly installment payments and interest rates." },
+            status: "done"
+          },
+          {
+            name: { vi: "Quy trình Giải ngân 4 Bước Minh bạch", en: "Transparent 4-Step Loan Process" },
+            desc: { vi: "Trình bày trực quan lộ trình xét duyệt hồ sơ từ Đăng ký, Thẩm định, Duyệt hạn mức đến Nhận tiền trong 24h.", en: "Step-by-step visual roadmap from application to disbursement within 24 hours." },
+            status: "done"
+          },
+          {
+            name: { vi: "Hạ tầng Google Cloud & Tên miền Riêng", en: "Google CDN & Custom Domain Mapping" },
+            desc: { vi: "Cấu hình tên miền taichinhtaithanh.com trỏ về Blogspot qua DNS CNAME/A Records, kích hoạt HTTPS miễn phí và uptime tuyệt đối.", en: "Custom domain DNS CNAME mapping to Google Blogspot with automatic SSL certificates and 100% uptime." },
+            status: "done"
+          }
+        ],
+        challenges: [
+          {
+            problem: {
+              vi: "Mẫu giao diện mặc định của Blogspot chứa nhiều mã nguồn thừa, CSS/JS widget nặng làm giảm điểm hiệu năng PageSpeed.",
+              en: "Default Blogspot XML templates contain legacy widgets and unoptimized CSS/JS assets degrading Core Web Vitals."
+            },
+            solution: {
+              vi: "Tự viết lại template XML Blogspot từ đầu (Clean Slate XML), loại bỏ hoàn toàn các widget không cần thiết và tối ưu hóa CSS nội dòng.",
+              en: "Built a custom lightweight XML template from scratch, purging bloatware widgets and inlining critical CSS."
+            }
+          },
+          {
+            problem: {
+              vi: "Nền tảng Blogspot không có backend PHP để xử lý lưu trữ form đăng ký tư vấn của khách hàng vào database riêng.",
+              en: "Google Blogspot lacks native server-side scripting to process and store custom contact form leads in a database."
+            },
+            solution: {
+              vi: "Tích hợp JavaScript chuyển hướng dữ liệu form về webhook/Google Sheets tự động và hỗ trợ nút gọi Hotline / Zalo tức thì.",
+              en: "Integrated client-side JavaScript routing form submissions to secure webhooks / Google Sheets alongside direct Zalo/Hotline CTAs."
+            }
+          }
+        ],
+        seoPerformance: {
+          vi: [
+            "Tối ưu On-page SEO cho các từ khóa cốt lõi: 'vay tín chấp nhanh', 'giải pháp tài chính', 'vay tiêu dùng 24h'.",
+            "Cấu trúc thẻ tiêu đề chuẩn mực (H1 Hero, H2 cho các gói vay, H3 cho câu hỏi thường gặp FAQ).",
+            "Tốc độ tải trang đạt 95+ trên Google PageSpeed Insights nhờ hạ tầng máy chủ toàn cầu của Google (GSE).",
+            "Cấu hình Canonical URL và thẻ meta Open Graph tối ưu hiển thị khi chia sẻ liên kết trên Zalo/Facebook."
+          ],
+          en: [
+            "On-page optimization for target search terms: quick personal loan, flexible financial solutions, 24h consultation.",
+            "Semantic heading hierarchy (H1 Hero, H2 for loan packages, H3 for FAQ items).",
+            "PageSpeed score 95+ backed by Google Server Engine (GSE) edge network.",
+            "Configured Canonical URLs and Open Graph social preview meta tags for Zalo and Facebook sharing."
+          ]
+        },
+        results: [
+          { value: "100%", caption: { vi: "Uptime tuyệt đối nhờ hạ tầng Google", en: "100% Uptime backed by Google Infrastructure" } },
+          { value: "95+", caption: { vi: "Điểm PageSpeed Mobile & Desktop", en: "PageSpeed Insights Score on Mobile & Desktop" } },
+          { value: "CRO", caption: { vi: "Tối ưu hóa tỷ lệ chuyển đổi khách hàng", en: "Conversion-optimized lead capture layout" } }
+        ]
+      }
+    },
     {
       slug: "smartphone-ecommerce",
       title: "Smartphone E-commerce",

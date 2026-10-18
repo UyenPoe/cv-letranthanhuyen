@@ -152,7 +152,7 @@ def build_cv_seo_docx():
     p_contact.paragraph_format.space_before = Pt(0)
     p_contact.paragraph_format.space_after = Pt(0)
     p_contact.paragraph_format.line_spacing = 1.3
-    r_c = p_contact.add_run("📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
+    r_c = p_contact.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
     r_c.font.name = "Arial"
     r_c.font.size = Pt(10.5)
     r_c.font.color.rgb = RGBColor(229, 231, 235)
@@ -285,7 +285,7 @@ def build_ke_hoach_seo_docx():
     p_c = c_hdr.add_paragraph()
     p_c.paragraph_format.space_before = Pt(0)
     p_c.paragraph_format.space_after = Pt(0)
-    r_c = p_c.add_run("Chuyên viên: Lê Trần Thanh Uyên   |   Vị trí: SEO Specialist & Technical SEO\nLiên hệ: 0706 700 528   |   Email: thanhuyenletran@gmail.com   |   Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/")
+    r_c = p_c.add_run("Chuyên viên: Lê Trần Thanh Uyên   |   Ngày sinh: 18/01/1986   |   Vị trí: SEO Specialist & Technical SEO\nLiên hệ: 0706 700 528   |   Email: thanhuyenletran@gmail.com   |   Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/")
     r_c.font.name = "Arial"
     r_c.font.size = Pt(10.5)
     r_c.font.color.rgb = RGBColor(229, 231, 235)
@@ -482,7 +482,7 @@ def build_cv_general_docx():
     p_c = c_hdr.add_paragraph()
     p_c.paragraph_format.space_before = Pt(0)
     p_c.paragraph_format.space_after = Pt(0)
-    r_c = p_c.add_run("📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Website Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
+    r_c = p_c.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Website Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
     r_c.font.name = "Arial"
     r_c.font.size = Pt(10.5)
     r_c.font.color.rgb = RGBColor(229, 231, 235)
@@ -499,7 +499,7 @@ def build_cv_general_docx():
 
     # Kỹ năng
     add_styled_heading(doc, "Kỹ Năng Chuyên Môn (Professional Skills)")
-    add_bullet_item(doc, "Quản Trị & Phát Triển Web", "WordPress chuyên sâu, Elementor, WooCommerce, tự code WordPress Plugin tùy biến tối ưu Content SEO & Schema JSON-LD, tối ưu mã nguồn HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare.")
+    add_bullet_item(doc, "Quản Trị & Phát Triển Web", "WordPress chuyên sâu, Elementor, WooCommerce, Google Blogspot (Custom XML & CRO), tự code WordPress Plugin tùy biến tối ưu Content SEO & Schema JSON-LD, tối ưu mã nguồn HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare.")
     add_bullet_item(doc, "SEO Website & Digital Marketing", "Technical SEO, kiểm toán Screaming Frog, Core Web Vitals, Schema JSON-LD, Topic Cluster, Content SEO, Google Search Console, Google Analytics 4, Rank Math.")
     add_bullet_item(doc, "Thiết Kế Đồ Họa & UI/UX Design", "Adobe Photoshop (chỉnh sửa ảnh, thiết kế banner, poster, ấn phẩm mạng xã hội), Adobe Illustrator (thiết kế vector, logo, bộ nhận diện thương hiệu), Figma (thiết kế UI/UX giao diện website, responsive wireframe).")
 
@@ -520,7 +520,7 @@ def build_cv_general_docx():
     r_t1.font.color.rgb = COLOR_MUTED
 
     add_bullet_item(doc, "Phát triển công cụ & Tối ưu SEO", "Tự lập trình WordPress Plugin tối ưu Content SEO (chấm điểm on-page theo thời gian thực, tự sinh mục lục TOC và chèn Schema FAQ), giúp chuẩn hóa 100% bài viết và đưa hơn 30+ từ khóa vào Top 5 Google.")
-    add_bullet_item(doc, "Triển khai & Vận hành Web WordPress & Laravel", "Xây dựng và quản trị 8+ website doanh nghiệp trên WordPress và cổng danh bạ Sàn Thẩm Mỹ (santhammy.com) trên Laravel MVC (PHP & MySQL). Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
+    add_bullet_item(doc, "Triển khai & Vận hành Web WordPress, Laravel & Blogspot", "Xây dựng và quản trị các website doanh nghiệp trên WordPress, hệ thống thương mại & danh bạ trên Laravel MVC (smartphone.taichinhtaithanh.com, santhammy.com), và Landing Page tư vấn tài chính trên Google Blogspot (taichinhtaithanh.com). Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
     add_bullet_item(doc, "Thực hiện Chiến dịch SEO", "Lên kế hoạch bộ từ khóa, tối ưu On-page và Technical SEO, giúp website tăng trưởng lượng truy cập tự nhiên hơn 180% và đưa hơn 30+ từ khóa vào Top 5 Google.")
     add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện", "Thiết kế toàn bộ banner trang chủ, hình ảnh bài viết và ấn phẩm truyền thông mạng xã hội bằng Photoshop và Illustrator.")
 

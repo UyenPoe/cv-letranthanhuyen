@@ -132,6 +132,11 @@
       gap: 12px;
       align-items: flex-start;
     }
+    .pf-proj-card.compact {
+      padding: 5px 8px;
+      margin-bottom: 4.5px;
+      gap: 10px;
+    }
     .pf-proj-img {
       width: 72mm;
       height: 48mm;
@@ -141,6 +146,19 @@
       border: 1px solid #cbd5e1;
       background: #0b2342;
       flex-shrink: 0;
+    }
+    .pf-proj-card.compact .pf-proj-img {
+      width: 58mm;
+      height: 35mm;
+    }
+    .pf-proj-card.compact .pf-proj-desc {
+      font-size: 7.2pt;
+      line-height: 1.25;
+      margin-bottom: 3px;
+    }
+    .pf-proj-card.compact .pf-proj-results {
+      padding: 2px 6px;
+      font-size: 7.1pt;
     }
     .pf-proj-content {
       flex: 1;
@@ -236,39 +254,40 @@
           <div class="pf-subtitle">Hồ Sơ Năng Lực Dự Án (Project Portfolio Showcase)</div>
         </div>
         <div class="pf-contact">
-          <div>Email: <strong>thanhuyenletran@gmail.com</strong></div>
-          <div>Hotline / Zalo: <strong>0706 700 528</strong></div>
+          <div>Ngày sinh: <strong>18/01/1986</strong> | TP. Hồ Chí Minh</div>
+          <div>Email: <strong>thanhuyenletran@gmail.com</strong> | Zalo: <strong>0706 700 528</strong></div>
           <div>Portfolio: <strong>https://uyenpoe.github.io/cv-letranthanhuyen/</strong></div>
         </div>
       </header>
 
       <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:5px; padding:6px 10px; margin-bottom:7px; font-size:7.8pt; color:#166534; line-height:1.35;">
-        <strong>TỔNG QUAN NĂNG LỰC DỰ ÁN:</strong> Hồ sơ tổng hợp 6 hệ thống website thực tế đã trực tiếp lập trình, quản trị hạ tầng, thiết kế đồ họa (Photoshop, Illustrator), giao diện UI/UX và tối ưu hóa SEO kỹ thuật. Mỗi dự án đều kèm website thực tế đang hoạt động và số liệu đo lường cụ thể.
+        <strong>TỔNG QUAN NĂNG LỰC DỰ ÁN:</strong> Hồ sơ tổng hợp 7 hệ thống website thực tế đã trực tiếp lập trình, quản trị hạ tầng, thiết kế đồ họa (Photoshop, Illustrator), giao diện UI/UX và tối ưu hóa SEO kỹ thuật. Mỗi dự án đều kèm website thực tế đang hoạt động và số liệu đo lường cụ thể.
       </div>
 
-      <h2 class="section-title">Dự án 01 &amp; 02: Thương mại điện tử &amp; Viện thẩm mỹ</h2>
+      <h2 class="section-title">Dự án 01 &amp; 02: Dịch Vụ Tài Chính (Blogspot CRO) &amp; Viện Thẩm Mỹ (WordPress)</h2>
 
       <!-- Proj 1 -->
       <div class="pf-proj-card">
-        <img src="assets/images/projects/smartphone-ecommerce.webp" alt="Smartphone E-commerce" class="pf-proj-img" />
+        <img src="assets/images/projects/tai-chinh-tai-thanh.webp" alt="Tài Chính Tài Thành" class="pf-proj-img" />
         <div class="pf-proj-content">
           <div class="pf-proj-top">
-            <span class="pf-proj-name">1. Smartphone E-commerce</span>
-            <span class="pf-proj-badge">Laravel / E-commerce</span>
+            <span class="pf-proj-name">1. Tài Chính Tài Thành (taichinhtaithanh.com)</span>
+            <span class="pf-proj-badge">Blogspot / Landing Page CRO</span>
           </div>
-          <a class="pf-proj-link" href="http://smartphone.taichinhtaithanh.com" target="_blank">http://smartphone.taichinhtaithanh.com</a>
-          <div class="pf-proj-role">Vai trò: Fullstack Web Developer &amp; UI/UX Designer</div>
-          <p class="pf-proj-desc">Hệ thống website thương mại điện tử chuyên bán lẻ điện thoại di động thông minh: xây dựng module lọc sản phẩm đa thuộc tính (thương hiệu, RAM/ROM, phân khúc giá), quản lý giỏ hàng, đặt hàng thanh toán và trang quản trị Admin CRUD toàn diện.</p>
+          <a class="pf-proj-link" href="https://www.taichinhtaithanh.com" target="_blank">https://www.taichinhtaithanh.com</a>
+          <div class="pf-proj-role">Vai trò: Blogspot Frontend Developer &amp; CRO Specialist</div>
+          <p class="pf-proj-desc">Landing Page tư vấn tài chính &amp; vay tín chấp nhanh 24h: tùy biến sâu XML Template của Google Blogspot, tối ưu vị trí biểu mẫu thu thập thông tin khách hàng (Lead Capture Form), tích hợp bảng tính ước lượng khoản vay tương tác bằng JavaScript và tối ưu On-page SEO.</p>
           <div class="pf-proj-techs">
-            <span class="pf-tech-badge">PHP</span>
-            <span class="pf-tech-badge">Laravel Framework</span>
-            <span class="pf-tech-badge">MySQL</span>
-            <span class="pf-tech-badge">HTML5 / CSS3 / JS</span>
-            <span class="pf-tech-badge">Adobe Photoshop</span>
-            <span class="pf-tech-badge">UI/UX Web</span>
+            <span class="pf-tech-badge">Google Blogspot</span>
+            <span class="pf-tech-badge">Custom XML</span>
+            <span class="pf-tech-badge">HTML5 / CSS3</span>
+            <span class="pf-tech-badge">JavaScript</span>
+            <span class="pf-tech-badge">CRO Lead Form</span>
+            <span class="pf-tech-badge">Loan Calculator</span>
+            <span class="pf-tech-badge">Google CDN</span>
           </div>
           <div class="pf-proj-results">
-            <strong>Kết quả &amp; Đóng góp:</strong> Kiểm thử đơn hàng đạt độ chính xác 100%, thiết kế mobile-first tối ưu cho người dùng mua sắm trên smartphone.
+            <strong>Kết quả &amp; Đóng góp:</strong> Uptime 100% nhờ máy chủ Google Server Engine, tốc độ tải trang 95+ trên di động, tối đa hóa tỷ lệ khách đăng ký tư vấn.
           </div>
         </div>
       </div>
@@ -308,14 +327,39 @@
   <!-- ================= PAGE 2 ================= -->
   <div class="page">
     <div>
-      <h2 class="section-title">Dự án 03 &amp; 04: Cổng thông tin &amp; Tạp chí Review Đánh giá</h2>
+      <h2 class="section-title">Dự án 03 &amp; 04: Hệ Thống Web Lập Trình Laravel MVC (E-commerce &amp; Sàn Danh Bạ)</h2>
 
       <!-- Proj 3 -->
+      <div class="pf-proj-card">
+        <img src="assets/images/projects/smartphone-ecommerce.webp" alt="Smartphone E-commerce" class="pf-proj-img" />
+        <div class="pf-proj-content">
+          <div class="pf-proj-top">
+            <span class="pf-proj-name">3. Smartphone E-commerce</span>
+            <span class="pf-proj-badge">Laravel / E-commerce</span>
+          </div>
+          <a class="pf-proj-link" href="http://smartphone.taichinhtaithanh.com" target="_blank">http://smartphone.taichinhtaithanh.com</a>
+          <div class="pf-proj-role">Vai trò: Fullstack Web Developer &amp; UI/UX Designer</div>
+          <p class="pf-proj-desc">Hệ thống website thương mại điện tử chuyên bán lẻ điện thoại di động thông minh: xây dựng module lọc sản phẩm đa thuộc tính (thương hiệu, RAM/ROM, phân khúc giá), quản lý giỏ hàng, đặt hàng thanh toán và trang quản trị Admin CRUD toàn diện.</p>
+          <div class="pf-proj-techs">
+            <span class="pf-tech-badge">PHP</span>
+            <span class="pf-tech-badge">Laravel Framework</span>
+            <span class="pf-tech-badge">MySQL</span>
+            <span class="pf-tech-badge">HTML5 / CSS3 / JS</span>
+            <span class="pf-tech-badge">Adobe Photoshop</span>
+            <span class="pf-tech-badge">UI/UX Web</span>
+          </div>
+          <div class="pf-proj-results">
+            <strong>Kết quả &amp; Đóng góp:</strong> Kiểm thử đơn hàng đạt độ chính xác 100%, thiết kế mobile-first tối ưu cho người dùng mua sắm trên smartphone.
+          </div>
+        </div>
+      </div>
+
+      <!-- Proj 4 -->
       <div class="pf-proj-card">
         <img src="assets/images/projects/san-tham-my.webp" alt="Sàn Thẩm Mỹ" class="pf-proj-img" />
         <div class="pf-proj-content">
           <div class="pf-proj-top">
-            <span class="pf-proj-name">3. Sàn Thẩm Mỹ (santhammy.com)</span>
+            <span class="pf-proj-name">4. Sàn Thẩm Mỹ (santhammy.com)</span>
             <span class="pf-proj-badge">Laravel Directory Portal</span>
           </div>
           <a class="pf-proj-link" href="https://santhammy.com" target="_blank">https://santhammy.com</a>
@@ -334,31 +378,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Proj 4 -->
-      <div class="pf-proj-card">
-        <img src="assets/images/projects/review-lam-dep.webp" alt="Review Làm Đẹp" class="pf-proj-img" />
-        <div class="pf-proj-content">
-          <div class="pf-proj-top">
-            <span class="pf-proj-name">4. Review Làm Đẹp (review-lamdep.com)</span>
-            <span class="pf-proj-badge">Magazine / On-page SEO</span>
-          </div>
-          <a class="pf-proj-link" href="http://review-lamdep.com" target="_blank">http://review-lamdep.com</a>
-          <div class="pf-proj-role">Vai trò: WordPress Developer &amp; On-page SEO</div>
-          <p class="pf-proj-desc">Tạp chí đánh giá mỹ phẩm, spa và dịch vụ làm đẹp: xây dựng kiến trúc Topic Cluster, liên kết nội bộ (Internal Linking) khoa học, gắn schema Review &amp; FAQ chuẩn xác, xử lý đồ họa banner bằng Photoshop và chuyển đổi toàn bộ ảnh sang WebP.</p>
-          <div class="pf-proj-techs">
-            <span class="pf-tech-badge">WordPress</span>
-            <span class="pf-tech-badge">On-page SEO</span>
-            <span class="pf-tech-badge">Review Schema</span>
-            <span class="pf-tech-badge">Topic Cluster</span>
-            <span class="pf-tech-badge">Adobe Photoshop</span>
-            <span class="pf-tech-badge">Speed Tuning</span>
-          </div>
-          <div class="pf-proj-results">
-            <strong>Kết quả &amp; Đóng góp:</strong> Điểm số On-page đạt trên 95 điểm, tỷ lệ cuộn đọc bài viết (read-through rate) tăng đáng kể nhờ giao diện thoáng đãng.
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="pf-footer">
@@ -370,19 +389,44 @@
   <!-- ================= PAGE 3 ================= -->
   <div class="page">
     <div>
-      <h2 class="section-title">Dự án 05 &amp; 06: Bảo mật Hệ thống &amp; Thương mại Cao cấp</h2>
+      <h2 class="section-title">Dự án 05, 06 &amp; 07: Tạp Chí Review, An Ninh Web &amp; Thương Mại Cao Cấp</h2>
 
       <!-- Proj 5 -->
-      <div class="pf-proj-card">
+      <div class="pf-proj-card compact">
+        <img src="assets/images/projects/review-lam-dep.webp" alt="Review Làm Đẹp" class="pf-proj-img" />
+        <div class="pf-proj-content">
+          <div class="pf-proj-top">
+            <span class="pf-proj-name">5. Review Làm Đẹp (review-lamdep.com)</span>
+            <span class="pf-proj-badge">Magazine / On-page SEO</span>
+          </div>
+          <a class="pf-proj-link" href="http://review-lamdep.com" target="_blank">http://review-lamdep.com</a>
+          <div class="pf-proj-role">Vai trò: WordPress Developer &amp; On-page SEO</div>
+          <p class="pf-proj-desc">Tạp chí đánh giá mỹ phẩm, spa và dịch vụ làm đẹp: xây dựng kiến trúc Topic Cluster, liên kết nội bộ khoa học, gắn schema Review &amp; FAQ chuẩn xác, xử lý đồ họa banner bằng Photoshop và chuyển đổi toàn bộ ảnh sang WebP.</p>
+          <div class="pf-proj-techs">
+            <span class="pf-tech-badge">WordPress</span>
+            <span class="pf-tech-badge">On-page SEO</span>
+            <span class="pf-tech-badge">Review Schema</span>
+            <span class="pf-tech-badge">Topic Cluster</span>
+            <span class="pf-tech-badge">Adobe Photoshop</span>
+            <span class="pf-tech-badge">Speed Tuning</span>
+          </div>
+          <div class="pf-proj-results">
+            <strong>Kết quả &amp; Đóng góp:</strong> Điểm số On-page đạt trên 95 điểm, tỷ lệ cuộn đọc bài viết (read-through rate) tăng đáng kể.
+          </div>
+        </div>
+      </div>
+
+      <!-- Proj 6 -->
+      <div class="pf-proj-card compact">
         <img src="assets/images/projects/danh-gia-tham-my.webp" alt="Đánh Giá Thẩm Mỹ" class="pf-proj-img" />
         <div class="pf-proj-content">
           <div class="pf-proj-top">
-            <span class="pf-proj-name">5. Đánh Giá Thẩm Mỹ (danhgiathammy.com)</span>
+            <span class="pf-proj-name">6. Đánh Giá Thẩm Mỹ (danhgiathammy.com)</span>
             <span class="pf-proj-badge">Security &amp; Web Admin</span>
           </div>
           <a class="pf-proj-link" href="http://danhgiathammy.com" target="_blank">http://danhgiathammy.com</a>
           <div class="pf-proj-role">Vai trò: Website Administrator &amp; Security Lead</div>
-          <p class="pf-proj-desc">Hệ thống đánh giá chuyên sâu bác sĩ và cơ sở phẫu thuật: thiết lập hạ tầng cPanel bảo mật cao, cài đặt tường lửa chống brute force và tấn công spam, sao lưu cơ sở dữ liệu định kỳ phòng chống sự cố mất mát dữ liệu.</p>
+          <p class="pf-proj-desc">Hệ thống đánh giá bác sĩ và cơ sở phẫu thuật: hạ tầng cPanel bảo mật cao, cài đặt tường lửa chống brute force và tấn công spam, sao lưu cơ sở dữ liệu định kỳ phòng chống sự cố.</p>
           <div class="pf-proj-techs">
             <span class="pf-tech-badge">WordPress</span>
             <span class="pf-tech-badge">Linux cPanel / VPS</span>
@@ -396,17 +440,17 @@
         </div>
       </div>
 
-      <!-- Proj 6 -->
-      <div class="pf-proj-card">
+      <!-- Proj 7 -->
+      <div class="pf-proj-card compact">
         <img src="assets/images/projects/stone-sinks.webp" alt="Stone Sinks Vietnam" class="pf-proj-img" />
         <div class="pf-proj-content">
           <div class="pf-proj-top">
-            <span class="pf-proj-name">6. Stone Sinks Vietnam (stonesinks.vn)</span>
+            <span class="pf-proj-name">7. Stone Sinks Vietnam (stonesinks.vn)</span>
             <span class="pf-proj-badge">WooCommerce / Design</span>
           </div>
           <a class="pf-proj-link" href="https://stonesinks.vn" target="_blank">https://stonesinks.vn</a>
           <div class="pf-proj-role">Vai trò: WooCommerce Developer &amp; Visual Design</div>
-          <p class="pf-proj-desc">Catalog &amp; website bán lẻ chậu đá tự nhiên cao cấp: tùy biến Child Theme, thiết kế banner và retouch ảnh chậu đá bằng Adobe Photoshop &amp; Illustrator, tối ưu hóa WebP độ phân giải cao và cấu hình Product Schema chuẩn Google Merchant.</p>
+          <p class="pf-proj-desc">Catalog &amp; website bán lẻ chậu đá tự nhiên: tùy biến Child Theme, thiết kế banner và retouch ảnh chậu đá bằng Photoshop &amp; Illustrator, tối ưu WebP độ phân giải cao và Product Schema.</p>
           <div class="pf-proj-techs">
             <span class="pf-tech-badge">WordPress</span>
             <span class="pf-tech-badge">WooCommerce</span>
@@ -416,18 +460,18 @@
             <span class="pf-tech-badge">UI/UX Web</span>
           </div>
           <div class="pf-proj-results">
-            <strong>Kết quả &amp; Đóng góp:</strong> Tốc độ tải trang dưới 1.8s dù trưng bày hàng trăm ảnh mẫu đá tự nhiên chất lượng cao; tỷ lệ thoát trang giảm 30%.
+            <strong>Kết quả &amp; Đóng góp:</strong> Tốc độ tải trang dưới 1.8s dù trưng bày hàng trăm ảnh mẫu đá chất lượng cao; tỷ lệ thoát trang giảm 30%.
           </div>
         </div>
       </div>
 
       <!-- SUMMARY & CONTACT -->
-      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:10px 14px; margin-top:6px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:8px 12px; margin-top:5px; display:flex; justify-content:space-between; align-items:center;">
         <div>
-          <div style="font-size:9.5pt; font-weight:700; color:#0b2342; margin-bottom:2px;">LIÊN HỆ PHỎNG VẤN &amp; HỢP TÁC TRỰC TIẾP</div>
-          <div style="font-size:7.5pt; color:#475569;">Sẵn sàng đảm nhận các vị trí: Website Administrator · SEO Specialist · WordPress Developer · Graphic &amp; UI/UX</div>
+          <div style="font-size:9pt; font-weight:700; color:#0b2342; margin-bottom:1px;">LIÊN HỆ PHỎNG VẤN &amp; HỢP TÁC TRỰC TIẾP</div>
+          <div style="font-size:7.2pt; color:#475569;">Vị trí: Website Administrator · SEO Specialist · WordPress Developer · Graphic &amp; UI/UX</div>
         </div>
-        <div style="font-size:8pt; text-align:right;">
+        <div style="font-size:7.8pt; text-align:right;">
           <div>Email: <strong style="color:#0284c7;">thanhuyenletran@gmail.com</strong></div>
           <div>Điện thoại / Zalo: <strong style="color:#0284c7;">0706 700 528</strong></div>
         </div>

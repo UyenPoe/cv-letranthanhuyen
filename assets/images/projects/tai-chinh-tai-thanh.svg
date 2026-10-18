@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg-tai-chinh-tai-thanh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1E38"/>
+      <stop offset="55%" stop-color="#073F80"/>
+      <stop offset="100%" stop-color="#052650"/>
+    </linearGradient>
+    <linearGradient id="glow-tai-chinh-tai-thanh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-tai-chinh-tai-thanh)"/>
+  <!-- Browser Window Frame -->
+  <rect x="36" y="32" width="728" height="436" rx="16" fill="#0A192F" stroke="#1E3A5F" stroke-width="2"/>
+  <rect x="36" y="32" width="728" height="44" rx="16" fill="#132B4C"/>
+  <circle cx="62" cy="54" r="6" fill="#EF4444"/>
+  <circle cx="82" cy="54" r="6" fill="#F59E0B"/>
+  <circle cx="102" cy="54" r="6" fill="#22C55E"/>
+  <!-- URL Bar -->
+  <rect x="130" y="42" width="460" height="24" rx="6" fill="#0A192F"/>
+  <text x="148" y="58" font-family="monospace" font-size="12" fill="#94A3B8">https://www.taichinhtaithanh.com</text>
+  <!-- Content Mockup UI -->
+  <rect x="64" y="102" width="250" height="24" rx="12" fill="rgba(245,158,11,0.18)"/>
+  <text x="78" y="118" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#F59E0B">BLOGSPOT · GOOGLE BLOGGER · LANDING PAGE</text>
+  <text x="64" y="168" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#F9FAFB">Tài Chính Tài Thành</text>
+  <text x="64" y="202" font-family="Inter, sans-serif" font-size="16" fill="#94A3B8">Giải Pháp Tài Chính Linh Hoạt · Vay Tín Chấp Nhanh 24H · Lead Form</text>
+  <rect x="64" y="228" width="150" height="38" rx="8" fill="#F59E0B"/>
+  <text x="139" y="252" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#0B1E38" text-anchor="middle">Live Production</text>
+  <rect x="228" y="228" width="170" height="38" rx="8" fill="#0F2D54" stroke="#2563EB"/>
+  <text x="313" y="252" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#38BDF8" text-anchor="middle">Blogspot Custom XML</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(64, 300)">
+    <rect width="156" height="84" rx="10" fill="#071E3D" stroke="#1E3A5F"/>
+    <text x="16" y="32" font-family="Inter, sans-serif" font-size="11" fill="#94A3B8">Nền tảng</text>
+    <text x="16" y="62" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#38BDF8">Blogspot</text>
+  </g>
+  <g transform="translate(236, 300)">
+    <rect width="156" height="84" rx="10" fill="#071E3D" stroke="#1E3A5F"/>
+    <text x="16" y="32" font-family="Inter, sans-serif" font-size="11" fill="#94A3B8">Mục tiêu Landing</text>
+    <text x="16" y="62" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#F59E0B">Lead Gen CRO</text>
+  </g>
+  <g transform="translate(408, 300)">
+    <rect width="156" height="84" rx="10" fill="#071E3D" stroke="#1E3A5F"/>
+    <text x="16" y="32" font-family="Inter, sans-serif" font-size="11" fill="#94A3B8">Hạ tầng Cloud</text>
+    <text x="16" y="62" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#22C55E">Google CDN</text>
+  </g>
+</svg>
