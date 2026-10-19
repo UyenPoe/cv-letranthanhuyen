@@ -529,9 +529,141 @@ def build_cv_general_docx():
     print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
 
 
+def build_cv_graphic_docx():
+    """Tạo CV Chuyên Viên Thiết Kế Đồ Họa & Web UI/UX Designer dạng Word với font to rõ ràng."""
+    doc = Document()
+    
+    # Page setup: A4, 0.7 inch margins
+    for section in doc.sections:
+        section.page_width = Inches(8.27)
+        section.page_height = Inches(11.69)
+        section.top_margin = Inches(0.7)
+        section.bottom_margin = Inches(0.7)
+        section.left_margin = Inches(0.75)
+        section.right_margin = Inches(0.75)
+
+    # Header block
+    tbl_hdr = doc.add_table(rows=1, cols=1)
+    tbl_hdr.alignment = WD_TABLE_ALIGNMENT.CENTER
+    c_hdr = tbl_hdr.cell(0, 0)
+    c_hdr.width = Inches(6.77)
+    set_cell_background(c_hdr, "0B2342")
+    set_cell_margins(c_hdr, top=200, bottom=200, left=240, right=240)
+    
+    p_name = c_hdr.paragraphs[0]
+    p_name.paragraph_format.space_before = Pt(0)
+    p_name.paragraph_format.space_after = Pt(2)
+    r_name = p_name.add_run("LÊ TRẦN THANH UYÊN")
+    r_name.font.name = "Arial"
+    r_name.font.size = Pt(21)
+    r_name.font.bold = True
+    r_name.font.color.rgb = RGBColor(255, 255, 255)
+    
+    p_role = c_hdr.add_paragraph()
+    p_role.paragraph_format.space_before = Pt(0)
+    p_role.paragraph_format.space_after = Pt(8)
+    r_role = p_role.add_run("GRAPHIC DESIGNER · WEB UI/UX SPECIALIST · ADOBE SUITE")
+    r_role.font.name = "Arial"
+    r_role.font.size = Pt(12)
+    r_role.font.bold = True
+    r_role.font.color.rgb = RGBColor(34, 197, 94)
+    
+    p_contact = c_hdr.add_paragraph()
+    p_contact.paragraph_format.space_before = Pt(0)
+    p_contact.paragraph_format.space_after = Pt(0)
+    p_contact.paragraph_format.line_spacing = 1.3
+    r_c = p_contact.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
+    r_c.font.name = "Arial"
+    r_c.font.size = Pt(10.5)
+    r_c.font.color.rgb = RGBColor(229, 231, 235)
+
+    # Tóm tắt
+    add_styled_heading(doc, "Tóm Tắt Năng Lực Thiết Kế (Design Executive Summary)")
+    p_sum = doc.add_paragraph()
+    p_sum.paragraph_format.space_after = Pt(8)
+    p_sum.paragraph_format.line_spacing = 1.3
+    r_sum = p_sum.add_run(
+        "Chuyên viên Graphic Designer & Web UI/UX Specialist với hơn 3 năm kinh nghiệm thực chiến thành thạo "
+        "bộ công cụ Adobe Creative Suite (Adobe Photoshop, Adobe Illustrator) kết hợp tư duy thiết kế trải nghiệm "
+        "người dùng (UI/UX) và kiến thức lập trình giao diện web. Trực tiếp thiết kế bộ nhận diện thương hiệu, "
+        "hệ thống banner marketing quảng cáo, xử lý retouching hình ảnh thẩm mỹ viện / sản phẩm cao cấp, và xây dựng "
+        "layout website chuẩn responsive tối ưu chuyển đổi (CRO). Am hiểu sâu sắc kỹ thuật tối ưu đồ họa web "
+        "(WebP, SVG, nén ảnh chống vỡ layout) giúp sản phẩm số luôn giữ độ sắc nét đỉnh cao cùng tốc độ tải trang dưới 2s."
+    )
+    r_sum.font.name = "Arial"
+    r_sum.font.size = Pt(11)
+    r_sum.font.color.rgb = COLOR_TEXT
+
+    # 5 Trụ cột kỹ năng
+    add_styled_heading(doc, "Kỹ Năng Thiết Kế Chuyên Nghiệp (5 Trụ Cột Thực Chiến)")
+    add_bullet_item(doc, "1. Adobe Photoshop Chuyên Sâu", "Retouching chân dung & thẩm mỹ viện, xử lý ảnh sản phẩm sắc nét (E-commerce), thiết kế Banner quảng cáo Google/Facebook, Poster & Standee sự kiện, phối cảnh Mockups sản phẩm chân thực, Color Grading và ánh sáng nghệ thuật.")
+    add_bullet_item(doc, "2. Adobe Illustrator & Vector Design", "Thiết kế Logo & Brand Guidelines, hệ thống Iconography Vector (SVG), Infographic & biểu đồ trực quan, Typography & bố cục chữ nghệ thuật, ấn phẩm in ấn (Namecard, Brochure, Flyer), xuất file in ấn CMYK và Digital RGB chuẩn nét.")
+    add_bullet_item(doc, "3. Thiết Kế Giao Diện Web UI/UX", "Wireframing & Prototype (Figma), bố cục Mobile-First Responsive, thiết kế Landing Page tài chính/thẩm mỹ, tối ưu tỷ lệ chuyển đổi (CRO Lead Form), Design System & bảng màu chuẩn web, Micro-interactions.")
+    add_bullet_item(doc, "4. Tối Ưu Đồ Họa Web & Hiệu Năng", "Nén ảnh định dạng WebP chất lượng cao, tối ưu mã nguồn SVG siêu nhẹ, cố định tỷ lệ Aspect Ratio chống CLS, xuất ảnh đa độ phân giải Retina 2x/3x, phối hợp Semantic HTML5 & CSS3 Flexbox/Grid, Core Web Vitals chuẩn xanh.")
+    add_bullet_item(doc, "5. Ứng Dụng Thực Chiến Vào Hệ Thống Web", "Thiết kế trọn gói giao diện & banner cho Viện thẩm mỹ WangSun Luxury, xây dựng Landing Page tài chính Tài Chính Tài Thành (taichinhtaithanh.com) tối ưu chuyển đổi CRO, Visual Design cho sàn thương mại điện tử chậu đá Stone Sinks Vietnam, giao diện cổng danh bạ Sàn Thẩm Mỹ (santhammy.com).")
+
+    # Kinh nghiệm
+    add_styled_heading(doc, "Kinh Nghiệm Thiết Kế Đồ Họa & UI/UX Thực Tế (Experience)")
+    
+    # Role 1
+    p_j1 = doc.add_paragraph()
+    p_j1.paragraph_format.space_before = Pt(8)
+    p_j1.paragraph_format.space_after = Pt(2)
+    r_j1 = p_j1.add_run("Lead Graphic & Web UI/UX Designer | Cụm Website Thẩm Mỹ & Đánh Giá TP.HCM")
+    r_j1.font.name = "Arial"
+    r_j1.font.size = Pt(12)
+    r_j1.font.bold = True
+    r_j1.font.color.rgb = COLOR_NAVY
+    r_t1 = p_j1.add_run("   (2024 – Hiện tại)")
+    r_t1.font.name = "Arial"
+    r_t1.font.size = Pt(11)
+    r_t1.font.italic = True
+    r_t1.font.color.rgb = COLOR_MUTED
+
+    add_bullet_item(doc, "Thiết kế Bộ nhận diện & Banner", "Sử dụng Illustrator và Photoshop sáng tạo hệ thống banner trang chủ, poster dịch vụ điều trị da, phẫu thuật thẩm mỹ theo phong cách sang trọng đẳng cấp cho Viện thẩm mỹ WangSun Luxury, Sàn Thẩm Mỹ, Review Làm Đẹp.")
+    add_bullet_item(doc, "Retouching ảnh thẩm mỹ chuyên sâu", "Xử lý hình ảnh trước/sau liệu trình (Before/After), khử khuyết điểm làn da tự nhiên, cân bằng ánh sáng và màu sắc đạt chuẩn y khoa thẩm mỹ.")
+    add_bullet_item(doc, "Thiết kế Giao diện UI/UX Web", "Xây dựng bố cục wireframe và layout hoàn chỉnh cho website phòng khám và cổng danh bạ, tối ưu trải nghiệm đọc trên mobile và tăng tỷ lệ click gọi tư vấn.")
+    add_bullet_item(doc, "Tối ưu hóa hình ảnh web", "Chuyển đổi toàn bộ thư viện ảnh sang định dạng WebP, giảm 75% dung lượng tải trang mà vẫn giữ nguyên độ nét chi tiết cao.")
+
+    # Role 2
+    p_j2 = doc.add_paragraph()
+    p_j2.paragraph_format.space_before = Pt(8)
+    p_j2.paragraph_format.space_after = Pt(2)
+    r_j2 = p_j2.add_run("Visual Product Designer & E-commerce UI/UX | Stone Sinks Vietnam (stonesinks.vn)")
+    r_j2.font.name = "Arial"
+    r_j2.font.size = Pt(12)
+    r_j2.font.bold = True
+    r_j2.font.color.rgb = COLOR_NAVY
+    r_t2 = p_j2.add_run("   (2023 – 2024)")
+    r_t2.font.name = "Arial"
+    r_t2.font.size = Pt(11)
+    r_t2.font.italic = True
+    r_t2.font.color.rgb = COLOR_MUTED
+
+    add_bullet_item(doc, "Retouch ảnh sản phẩm cao cấp", "Cắt lọc nền, chỉnh sửa vân đá tự nhiên, xử lý độ bóng và đổ bóng thực tế cho hàng trăm mẫu chậu đá granite, đá cuội bằng Photoshop.")
+    add_bullet_item(doc, "Thiết kế Banner & Catalog số", "Thiết kế banner trượt homepage, catalogue sản phẩm điện tử và hình ảnh minh họa thông số kỹ thuật chi tiết bằng Illustrator.")
+    add_bullet_item(doc, "Thiết kế Giao diện Giỏ hàng & Bộ lọc", "Tinh chỉnh trải nghiệm người dùng trang chi tiết sản phẩm, bộ lọc theo vân đá và luồng thanh toán nhanh gọn.")
+
+    # Minh chứng 6 dự án
+    add_styled_heading(doc, "Minh Chứng Hiệu Quả Thiết Kế Qua 6 Dự Án Thực Tế (Featured Projects)")
+    add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Thiết kế phong cách thẩm mỹ viện hoàng gia, phối màu vàng kim & xanh ngọc, retouching ảnh bác sĩ và khách hàng trước sau liệu trình sắc nét.")
+    add_bullet_item(doc, "Tài Chính Tài Thành (taichinhtaithanh.com)", "Thiết kế Landing Page tài chính vay tiêu dùng: bố cục trực quan, biểu tượng vector tài chính, công cụ tính khoản vay tương tác, form đăng ký tối ưu chuyển đổi CRO.")
+    add_bullet_item(doc, "Stone Sinks Vietnam (stonesinks.vn)", "Xử lý ánh sáng và chất liệu đá tự nhiên cho hàng trăm sản phẩm chậu đá, thiết kế catalogue số và banner quảng bá chương trình ưu đãi.")
+    add_bullet_item(doc, "Smartphone E-commerce (smartphone.taichinhtaithanh.com)", "Thiết kế giao diện mua sắm điện thoại công nghệ hiện đại: phân cấp thông tin rõ ràng, thẻ sản phẩm tinh tế, bộ icon tính năng chi tiết chuẩn vector.")
+    add_bullet_item(doc, "Sàn Thẩm Mỹ (santhammy.com)", "Thiết kế hệ thống cổng danh bạ thẩm mỹ viện: layout danh sách cơ sở, huy hiệu chứng nhận uy tín, thanh tìm kiếm thông minh và bản đồ định vị.")
+    add_bullet_item(doc, "Review Làm Đẹp (review-lamdep.com)", "Thiết kế phong cách tạp chí làm đẹp thanh lịch: typography tinh tế, khung ảnh review chân thực, huy hiệu chấm điểm sao vàng nổi bật.")
+
+    out_path = os.path.join(DOCS_DIR, "CV-Graphic-UIUX-Designer-Le-Tran-Thanh-Uyen.docx")
+    doc.save(out_path)
+    print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+
+
 if __name__ == "__main__":
     print("Generating Word (.docx) documents...")
     build_cv_seo_docx()
     build_ke_hoach_seo_docx()
     build_cv_general_docx()
+    build_cv_graphic_docx()
     print("All documents created successfully!")
+
+

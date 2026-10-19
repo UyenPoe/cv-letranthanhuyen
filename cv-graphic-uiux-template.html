@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Lê Trần Thanh Uyên | Chuyên Viên Thiết Kế Đồ Họa &amp; Web UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #1f2937;
+      font-size: 9.5pt;
+      line-height: 1.36;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      padding: 6mm 11mm 5mm 11mm;
+      box-sizing: border-box;
+      position: relative;
+      background: #ffffff;
+      page-break-after: always;
+      break-after: page;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    /* HEADER */
+    .cv-header {
+      background: linear-gradient(135deg, #0b2342 0%, #111827 100%);
+      color: #ffffff;
+      border-radius: 7px;
+      padding: 10px 16px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 5px solid #22c55e;
+    }
+    .header-main {
+      flex: 1;
+    }
+    .cv-name {
+      font-size: 20pt;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+    .cv-title {
+      font-size: 10.8pt;
+      font-weight: 700;
+      color: #22c55e;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 4px;
+    }
+    .cv-badges {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .badge-role {
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: #86efac;
+      font-size: 8.0pt;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 3px;
+    }
+    .contact-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 8.5pt;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+      min-width: 250px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #e5e7eb;
+    }
+    .contact-item a {
+      color: #67e8f9;
+      font-weight: 600;
+    }
+    .contact-item svg {
+      width: 12px;
+      height: 12px;
+      stroke: #22c55e;
+      flex-shrink: 0;
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0b2342;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin: 5px 0 4px 0;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border-bottom: 1.5px solid #e2e8f0;
+      padding-bottom: 2px;
+    }
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 3.5px;
+      height: 10.5pt;
+      background-color: #22c55e;
+      border-radius: 2px;
+    }
+
+    /* SUMMARY */
+    .summary-text {
+      font-size: 9.2pt;
+      color: #374151;
+      line-height: 1.38;
+      text-align: justify;
+      margin-bottom: 3px;
+    }
+
+    /* SKILLS GRID */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      margin-bottom: 3px;
+    }
+    .skill-block {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 5px 8px;
+    }
+    .skill-block.full-width {
+      grid-column: span 2;
+    }
+    .skill-title {
+      font-size: 8.9pt;
+      font-weight: 700;
+      color: #0b2342;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .skill-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.5px;
+    }
+    .skill-tag {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      color: #1e293b;
+      font-size: 7.9pt;
+      font-weight: 500;
+      padding: 1.2px 5px;
+      border-radius: 3px;
+    }
+    .skill-tag.highlight {
+      background: #ecfdf5;
+      border-color: #a7f3d0;
+      color: #065f46;
+      font-weight: 600;
+    }
+
+    /* EXPERIENCE TIMELINE */
+    .exp-item {
+      margin-bottom: 5px;
+      padding-left: 10px;
+      border-left: 2px solid #22c55e;
+      position: relative;
+    }
+    .exp-item::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 3px;
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1.5px;
+    }
+    .exp-role {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #0b2342;
+    }
+    .exp-period {
+      font-size: 8.3pt;
+      font-weight: 600;
+      color: #0284c7;
+      background: #f0f9ff;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+    .exp-company {
+      font-size: 8.6pt;
+      font-weight: 600;
+      color: #4b5563;
+      margin-bottom: 1.5px;
+    }
+    .exp-summary {
+      font-size: 8.6pt;
+      color: #374151;
+      margin-bottom: 1.5px;
+    }
+    .exp-bullets {
+      list-style-type: disc;
+      padding-left: 14px;
+      font-size: 8.4pt;
+      color: #4b5563;
+      line-height: 1.34;
+    }
+    .exp-bullets li {
+      margin-bottom: 1.2px;
+    }
+    .exp-results {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      padding: 2.5px 7px;
+      border-radius: 3px;
+      font-size: 8.4pt;
+      margin-top: 2.5px;
+      font-weight: 600;
+    }
+    .exp-tags {
+      display: flex;
+      gap: 3.5px;
+      flex-wrap: wrap;
+      margin-top: 2.5px;
+    }
+    .exp-tag {
+      font-size: 7.5pt;
+      background: #e2e8f0;
+      color: #334155;
+      padding: 1px 4.5px;
+      border-radius: 2px;
+    }
+
+    /* PROJECTS GRID (PAGE 2) */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      margin-bottom: 4px;
+    }
+    .proj-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 5.5px 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+    .proj-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2px;
+    }
+    .proj-name {
+      font-size: 9.4pt;
+      font-weight: 700;
+      color: #0b2342;
+    }
+    .proj-type {
+      font-size: 7.6pt;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      padding: 1px 5px;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+    .proj-url {
+      font-size: 8.0pt;
+      color: #0284c7;
+      display: block;
+      margin-bottom: 2px;
+      font-family: monospace;
+    }
+    .proj-role {
+      font-size: 8.1pt;
+      color: #64748b;
+      font-weight: 600;
+      margin-bottom: 1.5px;
+    }
+    .proj-desc {
+      font-size: 8.2pt;
+      color: #334155;
+      line-height: 1.28;
+      margin-bottom: 2.5px;
+    }
+    .proj-tech-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5px;
+    }
+    .proj-tech {
+      font-size: 7.3pt;
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid #e2e8f0;
+      padding: 0.5px 4px;
+      border-radius: 2px;
+    }
+
+    /* THREE-COLUMN WORKFLOW & TOOLS */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-top: 2.5px;
+      margin-bottom: 3.5px;
+    }
+    .tools-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 5px 7px;
+    }
+    .tools-title {
+      font-size: 8.7pt;
+      font-weight: 700;
+      color: #0b2342;
+      margin-bottom: 1.5px;
+    }
+    .tools-sub {
+      font-size: 7.8pt;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 2px;
+    }
+    .tools-desc {
+      font-size: 7.9pt;
+      color: #4b5563;
+      line-height: 1.28;
+    }
+
+    /* FOOTER */
+    .cv-footer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 3px;
+      font-size: 7.8pt;
+      color: #64748b;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .cv-footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .cv-footer strong {
+      color: #0b2342;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TRANG 1 ================= -->
+  <div class="page">
+    <div>
+      <!-- HEADER -->
+      <header class="cv-header">
+        <div class="header-main">
+          <h1 class="cv-name">LÊ TRẦN THANH UYÊN</h1>
+          <div class="cv-title">Graphic Designer &amp; Web UI/UX Specialist</div>
+          <div class="cv-badges">
+            <span class="badge-role">Adobe Photoshop</span>
+            <span class="badge-role">Adobe Illustrator</span>
+            <span class="badge-role">Web UI/UX Design</span>
+            <span class="badge-role">Branding &amp; Marketing Visuals</span>
+          </div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Email: <a href="mailto:thanhuyenletran@gmail.com">thanhuyenletran@gmail.com</a></span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Hotline / Zalo: <a href="https://zalo.me/0706700528">0706 700 528</a></span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            <span>Portfolio: <a href="https://uyenpoe.github.io/cv-letranthanhuyen/">uyenpoe.github.io/cv-letranthanhuyen</a></span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Ngày sinh: <strong>18/01/1986</strong> | TP. Hồ Chí Minh</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>GitHub: <a href="https://github.com/UyenPoe">github.com/UyenPoe</a></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- TÓM TẮT NĂNG LỰC THIẾT KẾ -->
+      <h2 class="section-title">Tóm tắt Năng lực Chuyên môn Thiết kế &amp; UI/UX</h2>
+      <p class="summary-text">
+        Chuyên viên <strong>Graphic Designer &amp; Web UI/UX Specialist</strong> thành thạo bộ công cụ <strong>Adobe Photoshop</strong>, <strong>Adobe Illustrator</strong> kết hợp tư duy thiết kế trải nghiệm người dùng (UI/UX) và kiến thức lập trình giao diện web. Hơn 3 năm kinh nghiệm trực tiếp thiết kế bộ nhận diện thương hiệu, hệ thống banner marketing truyền thông, xử lý retouch hình ảnh thẩm mỹ viện / sản phẩm cao cấp, và xây dựng layout website chuẩn responsive tối ưu chuyển đổi (CRO). Am hiểu sâu sắc kỹ thuật tối ưu đồ họa web (WebP, SVG, nén ảnh chống vỡ layout) giúp sản phẩm số luôn giữ độ sắc nét đỉnh cao cùng tốc độ tải trang dưới 2s.
+      </p>
+
+      <!-- 5 TRỤ CỘT KỸ NĂNG THIẾT KẾ -->
+      <h2 class="section-title">Kỹ năng Thiết kế Chuyên nghiệp (5 Trụ cột Thực chiến)</h2>
+      <div class="skills-container">
+        <!-- Trụ cột 1 -->
+        <div class="skill-block">
+          <div class="skill-title">
+            <span>1. Adobe Photoshop Chuyên sâu</span>
+            <span style="font-size:7.2pt;color:#065f46;font-weight:600;background:#d1fae5;padding:1px 5px;border-radius:2px;">Digital Art &amp; Retouch</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">Retouching chân dung &amp; thẩm mỹ viện</span>
+            <span class="skill-tag highlight">Xử lý ảnh sản phẩm sắc nét (E-com)</span>
+            <span class="skill-tag">Thiết kế Banner quảng cáo Google / Facebook</span>
+            <span class="skill-tag">Poster &amp; Standee sự kiện</span>
+            <span class="skill-tag">Phối cảnh Mockups sản phẩm chân thực</span>
+            <span class="skill-tag">Color Grading &amp; Ánh sáng nghệ thuật</span>
+          </div>
+        </div>
+
+        <!-- Trụ cột 2 -->
+        <div class="skill-block">
+          <div class="skill-title">
+            <span>2. Adobe Illustrator &amp; Vector Design</span>
+            <span style="font-size:7.2pt;color:#065f46;font-weight:600;background:#d1fae5;padding:1px 5px;border-radius:2px;">Branding &amp; Vector</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">Thiết kế Logo &amp; Brand Guidelines</span>
+            <span class="skill-tag highlight">Hệ thống Iconography Vector (SVG)</span>
+            <span class="skill-tag">Infographic &amp; Biểu đồ trực quan</span>
+            <span class="skill-tag">Typography &amp; Bố cục chữ nghệ thuật</span>
+            <span class="skill-tag">Ấn phẩm in ấn (Namecard, Brochure, Flyer)</span>
+            <span class="skill-tag">Xuất file in ấn CMYK &amp; Digital RGB chuẩn nét</span>
+          </div>
+        </div>
+
+        <!-- Trụ cột 3 -->
+        <div class="skill-block">
+          <div class="skill-title">
+            <span>3. Thiết kế Giao diện Web UI/UX</span>
+            <span style="font-size:7.2pt;color:#065f46;font-weight:600;background:#d1fae5;padding:1px 5px;border-radius:2px;">Trải nghiệm người dùng</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">Wireframing &amp; Prototype (Figma)</span>
+            <span class="skill-tag highlight">Bố cục Mobile-First Responsive</span>
+            <span class="skill-tag">Thiết kế Landing Page tài chính, thẩm mỹ</span>
+            <span class="skill-tag">Tối ưu tỷ lệ chuyển đổi (CRO Lead Form)</span>
+            <span class="skill-tag">Design System &amp; Color Palette chuẩn web</span>
+            <span class="skill-tag">Micro-interactions &amp; Nút bấm kêu gọi CTA</span>
+          </div>
+        </div>
+
+        <!-- Trụ cột 4 -->
+        <div class="skill-block">
+          <div class="skill-title">
+            <span>4. Tối ưu Đồ họa Web &amp; Hiệu năng</span>
+            <span style="font-size:7.2pt;color:#065f46;font-weight:600;background:#d1fae5;padding:1px 5px;border-radius:2px;">Kỹ thuật Web &amp; Tốc độ</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">Nén ảnh định dạng WebP chất lượng cao</span>
+            <span class="skill-tag highlight">Tối ưu mã nguồn SVG siêu nhẹ</span>
+            <span class="skill-tag">Cố định tỷ lệ Aspect Ratio (chống CLS)</span>
+            <span class="skill-tag">Xuất ảnh đa độ phân giải (Retina @2x, @3x)</span>
+            <span class="skill-tag">Phối hợp Semantic HTML5 &amp; CSS3 Flex/Grid</span>
+            <span class="skill-tag">Tối ưu Core Web Vitals đạt chuẩn xanh</span>
+          </div>
+        </div>
+
+        <!-- Trụ cột 5: Full Width -->
+        <div class="skill-block full-width">
+          <div class="skill-title">
+            <span>5. Ứng dụng Thực chiến Đồ họa vào Hệ thống Website Thực tế</span>
+            <span style="font-size:7.2pt;color:#065f46;font-weight:600;background:#d1fae5;padding:1px 5px;border-radius:2px;">Thực tế triển khai</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-tag highlight">Thiết kế trọn gói giao diện &amp; banner cho Viện thẩm mỹ WangSun Luxury</span>
+            <span class="skill-tag highlight">Xây dựng Landing Page tài chính Tài Chính Tài Thành tối ưu chuyển đổi CRO</span>
+            <span class="skill-tag highlight">Visual Design cho sàn thương mại điện tử chậu đá Stone Sinks Vietnam</span>
+            <span class="skill-tag">Thiết kế UI/UX cổng danh bạ Sàn Thẩm Mỹ và tạp chí Review Làm Đẹp</span>
+            <span class="skill-tag">Phối hợp chặt chẽ giữa thiết kế đồ họa và mã nguồn thực tế, đảm bảo 100% tính khả thi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- KINH NGHIỆM THIẾT KẾ THỰC TẾ -->
+      <h2 class="section-title">Kinh nghiệm Thiết kế Đồ họa &amp; UI/UX Thực tế</h2>
+      
+      <div class="exp-item" style="margin-bottom:0;">
+        <div class="exp-header">
+          <span class="exp-role">Lead Graphic &amp; Web UI/UX Designer</span>
+          <span class="exp-period">2024 – Hiện tại</span>
+        </div>
+        <div class="exp-company">Hệ thống Website Thẩm mỹ viện &amp; Cổng thông tin Đánh giá (TP.HCM)</div>
+        <p class="exp-summary">Chịu trách nhiệm toàn bộ hình ảnh nhận diện, ấn phẩm marketing và thiết kế giao diện web cho 4 dự án lớn (WangSun Luxury, Sàn Thẩm Mỹ, Review Làm Đẹp, Đánh Giá Thẩm Mỹ).</p>
+        <ul class="exp-bullets">
+          <li><strong>Thiết kế Bộ nhận diện &amp; Banner:</strong> Sử dụng Illustrator và Photoshop sáng tạo hệ thống banner trang chủ, poster dịch vụ điều trị da, phẫu thuật thẩm mỹ theo phong cách sang trọng đẳng cấp.</li>
+          <li><strong>Retouching ảnh thẩm mỹ chuyên sâu:</strong> Xử lý hình ảnh trước/sau liệu trình (Before/After), khử khuyết điểm làn da tự nhiên, cân bằng ánh sáng và màu sắc đạt chuẩn y khoa thẩm mỹ.</li>
+          <li><strong>Thiết kế Giao diện UI/UX Web:</strong> Xây dựng bố cục wireframe và layout hoàn chỉnh cho website phòng khám và cổng danh bạ, tối ưu trải nghiệm đọc trên mobile và tăng tỷ lệ click gọi tư vấn.</li>
+          <li><strong>Tối ưu hóa hình ảnh web:</strong> Chuyển đổi toàn bộ thư viện ảnh sang định dạng WebP, giảm 75% dung lượng tải trang mà vẫn giữ nguyên độ nét chi tiết cao.</li>
+        </ul>
+        <div class="exp-results">
+          <strong>Kết quả đo lường:</strong> Tỷ lệ giữ chân người dùng (Time on site) tăng 50%; tỷ lệ nhấp nút đặt hẹn tư vấn tăng 38%; giao diện được khách hàng và ban lãnh đạo đánh giá cao.
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">Adobe Photoshop</span>
+          <span class="exp-tag">Adobe Illustrator</span>
+          <span class="exp-tag">UI/UX Web Design</span>
+          <span class="exp-tag">Retouching</span>
+          <span class="exp-tag">Branding Visuals</span>
+          <span class="exp-tag">WebP Graphic</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER PAGE 1 -->
+    <div class="cv-footer">
+      <div class="cv-footer-row">
+        <span>Ứng viên: <strong>Lê Trần Thanh Uyên</strong> · Vị trí: <strong>Graphic Designer &amp; Web UI/UX Specialist</strong> · Hotline: <strong>0706 700 528</strong></span>
+        <span>Trang <strong>1 / 2</strong></span>
+      </div>
+      <div class="cv-footer-row">
+        <span>Email: <strong style="color:#0284c7;">thanhuyenletran@gmail.com</strong> · Hồ sơ năng lực Thiết kế Đồ họa chuyên biệt</span>
+        <span>Portfolio online: <strong style="color:#0284c7;">https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TRANG 2 ================= -->
+  <div class="page">
+    <div>
+      <div class="exp-item" style="margin-top:2px;">
+        <div class="exp-header">
+          <span class="exp-role">Visual Product Designer &amp; E-commerce UI/UX</span>
+          <span class="exp-period">2023 – 2024</span>
+        </div>
+        <div class="exp-company">Dự án Thương mại điện tử Stone Sinks Vietnam (Chậu đá tự nhiên cao cấp)</div>
+        <p class="exp-summary">Đảm nhiệm toàn diện phần hình ảnh sản phẩm, banner thương hiệu và trải nghiệm mua sắm trực tuyến.</p>
+        <ul class="exp-bullets">
+          <li><strong>Retouch ảnh sản phẩm cao cấp:</strong> Cắt lọc nền, chỉnh sửa vân đá tự nhiên, xử lý độ bóng và đổ bóng thực tế cho hàng trăm mẫu chậu đá granite, đá cuội bằng Photoshop.</li>
+          <li><strong>Thiết kế Banner &amp; Catalog số:</strong> Thiết kế banner trượt homepage, catalogue sản phẩm điện tử và hình ảnh minh họa thông số kỹ thuật chi tiết bằng Illustrator.</li>
+          <li><strong>Thiết kế Giao diện Giỏ hàng &amp; Bộ lọc:</strong> Tinh chỉnh trải nghiệm người dùng trang chi tiết sản phẩm, bộ lọc theo vân đá và luồng thanh toán nhanh gọn.</li>
+        </ul>
+        <div class="exp-results">
+          <strong>Kết quả đo lường:</strong> Hình ảnh chậu đá sắc nét chân thực giúp tăng 60% lượt xem trên Google Image; tỷ lệ chuyển đổi đơn hàng tăng 25%.
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">Product Retouch</span>
+          <span class="exp-tag">Photoshop E-com</span>
+          <span class="exp-tag">Illustrator Vector</span>
+          <span class="exp-tag">E-commerce UI/UX</span>
+          <span class="exp-tag">Catalog Design</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">UI/UX Designer &amp; Frontend Web Creator</span>
+          <span class="exp-period">2022 – 2023</span>
+        </div>
+        <div class="exp-company">Dự án Smartphone E-commerce &amp; Landing Page Bán lẻ</div>
+        <p class="exp-summary">Thiết kế wireframe, prototype và trực tiếp xây dựng giao diện ứng dụng web bán lẻ điện thoại di động.</p>
+        <ul class="exp-bullets">
+          <li>Thiết kế hệ thống component giao diện người dùng: Card sản phẩm, bộ lọc đa tiêu chí, thanh điều hướng và giao diện quản trị Admin trực quan.</li>
+          <li>Thiết kế banner flash sale, icon thông số kỹ thuật (chip, pin, camera, màn hình) chuẩn vector bằng Illustrator.</li>
+        </ul>
+        <div class="exp-results">
+          <strong>Kết quả đo lường:</strong> Bản thiết kế được lập trình chính xác 100% pixel-perfect, đạt chuẩn trải nghiệm người dùng mượt mà trên mọi màn hình.
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">UI/UX Wireframing</span>
+          <span class="exp-tag">Vector Icon</span>
+          <span class="exp-tag">Responsive Grid</span>
+          <span class="exp-tag">Banner Marketing</span>
+        </div>
+      </div>
+
+      <!-- 6 DỰ ÁN THIẾT KẾ THỰC TẾ -->
+      <h2 class="section-title">Minh chứng Năng lực Thiết kế qua 6 Dự án Thực tế</h2>
+      <div class="projects-grid">
+        <!-- Proj 1 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">WangSun Luxury</span>
+            <span class="proj-type">Luxury Clinic UI/UX</span>
+          </div>
+          <a class="proj-url" href="https://vienthammywangsun.com" target="_blank">vienthammywangsun.com</a>
+          <div class="proj-role">Nhiệm vụ: Lead Visual &amp; UI/UX Designer</div>
+          <p class="proj-desc">Thiết kế phong cách thẩm mỹ viện hoàng gia, phối màu vàng kim &amp; xanh ngọc, retouching ảnh bác sĩ và khách hàng trước sau liệu trình sắc nét.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">Photoshop Retouch</span>
+            <span class="proj-tech">Luxury Branding</span>
+            <span class="proj-tech">Banner Ads</span>
+            <span class="proj-tech">UI/UX Web</span>
+          </div>
+        </div>
+
+        <!-- Proj 2 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Tài Chính Tài Thành</span>
+            <span class="proj-type">CRO Landing Page</span>
+          </div>
+          <a class="proj-url" href="https://www.taichinhtaithanh.com" target="_blank">taichinhtaithanh.com</a>
+          <div class="proj-role">Nhiệm vụ: Landing Page Designer &amp; CRO Lead</div>
+          <p class="proj-desc">Thiết kế Landing Page tài chính vay tiêu dùng: bố cục trực quan, biểu tượng vector tài chính, công cụ tính khoản vay tương tác, form đăng ký nổi bật.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">CRO Lead Form</span>
+            <span class="proj-tech">Vector Illustration</span>
+            <span class="proj-tech">Landing Page UI</span>
+            <span class="proj-tech">Google Blogspot</span>
+          </div>
+        </div>
+
+        <!-- Proj 3 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Stone Sinks Vietnam</span>
+            <span class="proj-type">E-commerce Visuals</span>
+          </div>
+          <a class="proj-url" href="https://stonesinks.vn" target="_blank">stonesinks.vn</a>
+          <div class="proj-role">Nhiệm vụ: Product Visual &amp; UI Designer</div>
+          <p class="proj-desc">Xử lý ánh sáng và chất liệu đá tự nhiên cho hàng trăm sản phẩm chậu đá, thiết kế catalogue số và banner quảng bá chương trình ưu đãi.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">Product Mockups</span>
+            <span class="proj-tech">WebP Graphics</span>
+            <span class="proj-tech">Photoshop Retouch</span>
+            <span class="proj-tech">Illustrator Ads</span>
+          </div>
+        </div>
+
+        <!-- Proj 4 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Smartphone E-commerce</span>
+            <span class="proj-type">Tech Retail UI/UX</span>
+          </div>
+          <a class="proj-url" href="http://smartphone.taichinhtaithanh.com" target="_blank">smartphone.taichinhtaithanh.com</a>
+          <div class="proj-role">Nhiệm vụ: UI/UX Designer &amp; Graphics Lead</div>
+          <p class="proj-desc">Thiết kế giao diện mua sắm điện thoại công nghệ hiện đại: phân cấp thông tin rõ ràng, thẻ sản phẩm tinh tế, bộ icon tính năng chi tiết.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">UI Component</span>
+            <span class="proj-tech">Vector Specs Icon</span>
+            <span class="proj-tech">Banner Promotion</span>
+            <span class="proj-tech">Mobile-First</span>
+          </div>
+        </div>
+
+        <!-- Proj 5 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Sàn Thẩm Mỹ</span>
+            <span class="proj-type">Directory Portal UI</span>
+          </div>
+          <a class="proj-url" href="https://santhammy.com" target="_blank">santhammy.com</a>
+          <div class="proj-role">Nhiệm vụ: Portal UI/UX Designer</div>
+          <p class="proj-desc">Thiết kế hệ thống cổng danh bạ thẩm mỹ viện: layout danh sách cơ sở, huy hiệu chứng nhận uy tín, thanh tìm kiếm thông minh và bản đồ định vị.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">Portal UI Layout</span>
+            <span class="proj-tech">Badge Iconography</span>
+            <span class="proj-tech">Filter System</span>
+            <span class="proj-tech">Brand Identity</span>
+          </div>
+        </div>
+
+        <!-- Proj 6 -->
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">Review Làm Đẹp</span>
+            <span class="proj-type">Magazine Typography</span>
+          </div>
+          <a class="proj-url" href="http://review-lamdep.com" target="_blank">review-lamdep.com</a>
+          <div class="proj-role">Nhiệm vụ: Editorial Graphic &amp; Web Layout</div>
+          <p class="proj-desc">Thiết kế phong cách tạp chí làm đẹp thanh lịch: typography tinh tế, khung ảnh review chân thực, huy hiệu chấm điểm sao vàng nổi bật.</p>
+          <div class="proj-tech-wrap">
+            <span class="proj-tech">Editorial Layout</span>
+            <span class="proj-tech">Review Badges</span>
+            <span class="proj-tech">Social Graphics</span>
+            <span class="proj-tech">Typography</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BỘ CÔNG CỤ & QUY TRÌNH THIẾT KẾ CHUYÊN NGHIỆP -->
+      <h2 class="section-title">Bộ Công cụ &amp; Quy trình Sáng tạo Thiết kế Chuẩn mực</h2>
+      <div class="tools-grid">
+        <div class="tools-card">
+          <div class="tools-title">Phần mềm Thiết kế Cốt lõi</div>
+          <div class="tools-sub">Adobe Suite &amp; Prototyping</div>
+          <p class="tools-desc">Adobe Photoshop (retouching, manipulation), Adobe Illustrator (vector logo, typography), Figma (wireframe, UI prototype), Canva Pro.</p>
+        </div>
+        <div class="tools-card">
+          <div class="tools-title">Đồ họa Số &amp; Tối ưu Web</div>
+          <div class="tools-sub">Web Performance &amp; Formats</div>
+          <p class="tools-desc">Cwebp, Squoosh, SVGO, TinyPNG, Responsive Image Generator, kiểm tra độ tương phản màu chuẩn WCAG, Retina Display 2x/3x.</p>
+        </div>
+        <div class="tools-card">
+          <div class="tools-title">Tư duy Phối hợp Kỹ thuật</div>
+          <div class="tools-sub">Khả thi khi Lập trình</div>
+          <p class="tools-desc">Am hiểu HTML5 Semantic, CSS3 Grid/Flexbox, WordPress Themes giúp chuyển đổi từ bản vẽ đồ họa sang sản phẩm web sống động chuẩn xác 100%.</p>
+        </div>
+      </div>
+
+      <!-- CAM KẾT & PHONG CÁCH LÀM VIỆC -->
+      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:5px; padding:6px 10px; margin-top:4px; font-size:7.8pt; color:#166534; line-height:1.32;">
+        <strong>TRIẾT LÝ THIẾT KẾ CỦA LÊ TRẦN THANH UYÊN:</strong> Thiết kế không chỉ để đẹp mà phải phục vụ mục tiêu kinh doanh và mang lại trải nghiệm tiện dụng tối đa cho người dùng thực tế. Luôn đặt tính thẩm mỹ, sự nhất quán của thương hiệu và hiệu năng tốc độ tải trang lên hàng đầu.
+      </div>
+    </div>
+
+    <!-- FOOTER PAGE 2 -->
+    <div class="cv-footer">
+      <div class="cv-footer-row">
+        <span>Ứng viên: <strong>Lê Trần Thanh Uyên</strong> · Email: <strong style="color:#0284c7;">thanhuyenletran@gmail.com</strong> · Hotline / Zalo: <strong>0706 700 528</strong></span>
+        <span>Trang <strong>2 / 2</strong></span>
+      </div>
+      <div class="cv-footer-row">
+        <span>Bản CV Graphic &amp; Web UI/UX Designer Chuyên Sâu (Font Rõ Ràng) · Cập nhật mới nhất</span>
+        <span>Portfolio online: <strong style="color:#0284c7;">https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
