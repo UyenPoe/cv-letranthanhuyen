@@ -564,6 +564,43 @@ window.PORTFOLIO_DATA = {
         en: "Successfully launched the dual-platform web ecosystem (Blogspot Landing Page & Laravel E-commerce) on custom domains."
       },
       tech: ["Blogspot XML", "Laravel", "PHP", "MySQL", "UI/UX Design", "HTML5/CSS3", "JavaScript", "Adobe Photoshop", "Responsive", "Git"]
+    },
+    {
+      id: "exp-4",
+      period: "2017 – 2022",
+      role: {
+        vi: "Senior SEO Specialist & Industrial Web Administrator",
+        en: "Senior SEO Specialist & Industrial Web Administrator"
+      },
+      company: {
+        vi: "Cụm Doanh Nghiệp Cơ Khí Thới An & Cân Hoàng Thiên (cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com)",
+        en: "Thoi An Mechanical & Hoang Thien Scale Enterprise Network (cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com)"
+      },
+      summary: {
+        vi: "Phụ trách chiến lược SEO tổng thể, quản trị website và thiết kế ấn phẩm B2B cho 4 website chuyên ngành thiết bị nâng hạ công nghiệp (cầu trục, cổng trục, palang) và hệ thống cân điện tử (trạm cân ô tô xe tải 20-120 tấn, cân sàn, cân bồn, loadcell).",
+        en: "Spearheaded end-to-end B2B SEO strategies, web infrastructure, and digital catalog designs for 4 industrial machinery websites specializing in heavy lifting overhead cranes, hoists, and electronic truck scale systems."
+      },
+      responsibilities: {
+        vi: [
+          "Xây dựng ma trận từ khóa B2B kỹ thuật cao (cầu trục dầm đơn/dầm đôi, cổng trục, pa lăng xích/cáp, trạm cân xe tải 80-100 tấn, cân sàn điện tử, cảm biến lực loadcell).",
+          "Tối ưu On-page & Technical SEO: cấu trúc danh mục sản phẩm chuẩn hóa, tối ưu tốc độ tải trang, khai báo Schema Organization / Product và chuẩn hóa sitemap phân nhánh.",
+          "Triển khai Local SEO Google Maps / Google Business Profile cho cả 2 doanh nghiệp tại Quận 12 (TP.HCM), phủ sóng tiếp cận khách hàng nhà máy tại TP.HCM, Bình Dương, Đồng Nai, Long An.",
+          "Chụp ảnh thực tế tại nhà xưởng, sử dụng Photoshop & Illustrator thiết kế catalogue thông số kỹ thuật (Spec Sheets), banner khuyến mãi và hồ sơ năng lực công ty tham gia đấu thầu.",
+          "Quản trị hạ tầng hosting cPanel, bảo mật WordPress, xử lý chứng chỉ SSL và duy trì vận hành ổn định liên tục trong 5 năm."
+        ],
+        en: [
+          "Developed comprehensive B2B keyword taxonomy targeting heavy industrial equipment (overhead cranes, gantry cranes, electric hoists, 80-120T truck scales, industrial floor scales, loadcells).",
+          "Executed On-page & Technical SEO: structured product specs hierarchy, Core Web Vitals, JSON-LD Organization/Product schemas, and optimized crawl budgets.",
+          "Managed Google Business Profile / Local SEO optimization for facilities in District 12 (HCMC), capturing industrial plant leads across HCMC, Binh Duong, Dong Nai, and Long An.",
+          "Captured on-site workshop photos; utilized Photoshop & Illustrator to design technical spec catalogs, B2B banners, and company bidding credentials.",
+          "Administered cPanel hosting infrastructure, WordPress security hardening, SSL compliance, and system stability across 5 continuous years."
+        ]
+      },
+      results: {
+        vi: "Đưa hơn 150+ từ khóa cốt lõi ngành cầu trục và cân điện tử lọt Top 1 – Top 5 Google Search, duy trì thứ hạng bền vững suốt 5 năm, tạo nguồn khách hàng B2B và hợp đồng lắp đặt trạm cân giá trị cao.",
+        en: "Ranked 150+ primary industrial keywords into Google Top 1–5, maintaining sustained organic visibility over 5 years and generating high-value B2B enterprise inquiries."
+      },
+      tech: ["WordPress", "B2B Technical SEO", "Local SEO Google Maps", "Adobe Photoshop", "Adobe Illustrator", "Product Catalog", "Hosting cPanel", "Keyword Research"]
     }
   ],
 
@@ -1251,6 +1288,106 @@ window.PORTFOLIO_DATA = {
           { value: "B2B & B2C", caption: { vi: "Đáp ứng cả bán lẻ & báo giá dự án", en: "Supports both retail & B2B project quotes" } },
           { value: "Image SEO", caption: { vi: "Hiển thị sắc nét, tối ưu tìm kiếm hình ảnh", en: "High-clarity visuals optimized for Google Images" } },
           { value: "Woo", caption: { vi: "Quản lý kho & sản phẩm dễ dàng", en: "Streamlined WooCommerce catalog management" } }
+        ]
+      }
+    },
+    {
+      slug: "cautruc-thietbican-b2b",
+      title: "Cầu Trục Thới An & Cân Điện Tử Hoàng Thiên",
+      domain: "cautructhoian.vn · hoangthienscale.com",
+      liveUrl: "https://cautructhoian.vn",
+      githubUrl: "https://github.com/UyenPoe",
+      categories: ["web", "seo"],
+      badge: {
+        vi: "B2B Industrial & Technical SEO",
+        en: "B2B Industrial & Technical SEO"
+      },
+      role: {
+        vi: "Senior SEO Specialist & Industrial Web Administrator",
+        en: "Senior SEO Specialist & Industrial Web Administrator"
+      },
+      shortDesc: {
+        vi: "Quản trị hệ thống và triển khai chiến dịch SEO B2B tổng thể cho cụm 4 website thiết bị nâng hạ & cân điện tử công nghiệp: cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com. Đưa hơn 150+ từ khóa cốt lõi vào Top 1–5 Google.",
+        en: "Managed web systems and executed full-scale B2B SEO campaigns across 4 industrial websites (cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com), ranking 150+ core keywords into Google Top 1–5."
+      },
+      techStack: ["WordPress", "Technical SEO", "Local SEO Maps", "Schema Markup", "Adobe Photoshop", "Illustrator", "B2B Catalog", "cPanel"],
+      images: {
+        hero: "assets/images/projects/hoangthien-scale.webp",
+        desktop: "assets/images/projects/cautruc-thoian.webp",
+        tablet: "assets/images/projects/can-hoangthien.webp",
+        mobile: "assets/images/projects/thoian-scale.webp"
+      },
+      caseStudy: {
+        overview: {
+          vi: "Dự án quản trị kỹ thuật và triển khai chiến dịch SEO B2B tổng thể cho cụm 2 doanh nghiệp công nghiệp nặng tại Quận 12, TP.HCM: Công ty TNHH Cơ Khí & Thiết Bị Công Nghiệp Thới An (cautructhoian.vn, thoianscale.com) và Công ty TNHH Thiết Bị Công Nghiệp và Tự Động Hóa Hoàng Thiên (hoangthienscale.com, canhoangthien.com). Đặc thù ngành B2B thiết bị công nghiệp đòi hỏi độ chính xác cao về mặt kỹ thuật, nội dung chuẩn xác và tối ưu tìm kiếm địa phương (Local SEO) để tiếp cận các nhà máy, xí nghiệp tại các khu công nghiệp trọng điểm phía Nam.",
+          en: "Technical administration and comprehensive B2B SEO execution for two heavy machinery enterprises in District 12, HCMC: Thoi An Mechanical & Industrial Equipment (cautructhoian.vn, thoianscale.com) and Hoang Thien Industrial & Automation Equipment (hoangthienscale.com, canhoangthien.com). B2B SEO required high technical precision and targeted Local SEO for factories across southern industrial parks."
+        },
+        myRole: {
+          vi: [
+            "Quy hoạch kiến trúc website, danh mục sản phẩm thiết bị nâng hạ (cầu trục dầm đơn/dầm đôi, cổng trục, bán cổng trục, pa lăng cáp/xích) và cân điện tử (trạm cân xe tải 20-120 tấn, cân sàn, cân bồn, loadcell).",
+            "Thực hiện Technical SEO toàn diện: tối ưu Crawl Budget, khắc phục liên kết gãy 404, tối ưu tốc độ tải trang, cấu hình thẻ Canonical và Sitemap.",
+            "Tối ưu Local SEO Google Maps / Google My Business tại TP.HCM, nâng cao tỷ lệ hiển thị trên Google Map Pack khu vực các KCN phía Nam.",
+            "Trực tiếp chụp ảnh thực tế tại xưởng gia công cơ khí, retouching ảnh lắp dựng cầu trục và trạm cân bằng Photoshop; thiết kế catalogue thông số kỹ thuật bằng Illustrator.",
+            "Quản trị hạ tầng máy chủ cPanel, sao lưu cơ sở dữ liệu định kỳ và bảo mật hệ thống vận hành liên tục 5 năm (2017 – 2022)."
+          ],
+          en: [
+            "Structured website taxonomy for lifting machinery (overhead cranes, gantry cranes, hoists) and electronic scales (20-120T truck scales, floor scales, loadcells).",
+            "Executed full Technical SEO: crawl budget optimization, fixing 404 errors, load speed acceleration, canonicalization, and XML sitemaps.",
+            "Optimized Local SEO / Google Business Profile, dominating Google Map Pack for manufacturing hubs across southern Vietnam.",
+            "Captured factory workshop photos, retouched crane/scale installation visuals with Photoshop, and designed technical spec sheets in Illustrator.",
+            "Administered cPanel hosting, database backups, and security hardening throughout 5 years (2017–2022)."
+          ]
+        },
+        features: [
+          {
+            name: { vi: "Hệ thống Danh mục Thiết bị Nâng hạ & Cân B2B", en: "B2B Lifting Machinery & Scale Catalog" },
+            desc: { vi: "Phân cấp danh mục khoa học theo tải trọng (1T-50T), khẩu độ dầm, thông số kỹ thuật chi tiết giúp khách hàng doanh nghiệp dễ dàng tra cứu.", en: "Hierarchical classification by capacity (1T-50T), span width, and technical specs for enterprise procurement." },
+            status: "done"
+          },
+          {
+            name: { vi: "Tối ưu Local SEO Google Maps cho Nhà Xưởng", en: "Local SEO Google Maps for Industrial Workshops" },
+            desc: { vi: "Xác minh và tối ưu hồ sơ Google Business Profile tại KDC Thới An, Quận 12; thu hút khách hàng tìm kiếm dịch vụ cơ khí & lắp đặt trạm cân tại chỗ.", en: "Verified and optimized Google Business Profiles in District 12, driving factory inquiries and localized inbound calls." },
+            status: "done"
+          },
+          {
+            name: { vi: "Ấn phẩm Catalogue & Bản vẽ Thông số Kỹ thuật", en: "Digital Spec Catalog & Technical Drawings" },
+            desc: { vi: "Thiết kế bộ ấn phẩm catalogue sản phẩm, tài liệu hồ sơ chào thầu sắc nét bằng Illustrator & Photoshop, tích hợp bản xem PDF tải về nhanh.", en: "Designed crisp downloadable product catalogs and tender proposal documents using Illustrator & Photoshop." },
+            status: "done"
+          },
+          {
+            name: { vi: "Hạ tầng Vận hành Bền vững 5 Năm", en: "5-Year High Availability Web Infrastructure" },
+            desc: { vi: "Quản trị cPanel, sao lưu tự động định kỳ, duy trì uptime trên 99.9% cho cả 4 website công nghiệp suốt giai đoạn 2017 - 2022.", en: "Maintained >99.9% uptime with automated database backups across all 4 industrial websites throughout 2017–2022." },
+            status: "done"
+          }
+        ],
+        challenges: [
+          {
+            problem: {
+              vi: "Ngành thiết bị cơ khí công nghiệp nặng có chu kỳ mua hàng dài, khách hàng B2B đòi hỏi thông số kỹ thuật khắt khe và độ tin cậy tuyệt đối trước khi liên hệ.",
+              en: "Heavy industrial equipment involves long procurement cycles, demanding high technical accuracy and proven credibility."
+            },
+            solution: {
+              vi: "Xây dựng các trang nội dung chuyên sâu với hình ảnh công trình thực tế, bảng thông số kỹ thuật tiêu chuẩn TCVN/ISO, bảng giá ước tính và chứng chỉ xuất xứ linh kiện rõ ràng.",
+              en: "Created in-depth product pages showcasing actual on-site installation photos, TCVN/ISO standard spec tables, and clear component origin certifications."
+            }
+          }
+        ],
+        seoPerformance: {
+          vi: [
+            "Đưa hơn 150+ từ khóa cốt lõi (cầu trục dầm đơn, cầu trục dầm đôi, cổng trục, trạm cân xe tải, cân sàn điện tử, loadcell...) vào Top 1–5 Google.",
+            "Duy trì thứ hạng ổn định liên tục qua nhiều bản cập nhật thuật toán lớn của Google từ 2017 đến 2022.",
+            "Tỷ lệ truy cập tự nhiên (Organic Traffic) mang lại 80% số lượng khách hàng liên hệ báo giá làm cầu trục và trạm cân xe tải mới."
+          ],
+          en: [
+            "Ranked 150+ core keywords (overhead cranes, gantry cranes, truck scales, floor scales, loadcells) into Google Top 1–5.",
+            "Maintained ranking resilience across numerous Google Core Algorithm updates from 2017 to 2022.",
+            "Organic Search delivered 80% of new inbound quotation requests for crane systems and truck scale installations."
+          ]
+        },
+        results: [
+          { value: "150+ Top", caption: { vi: "Từ khóa thiết bị công nghiệp Top 1-5", en: "Industrial keywords in Top 1-5" } },
+          { value: "5 Năm", caption: { vi: "Duy trì thứ hạng bền vững 2017 - 2022", en: "Sustained high rankings 2017 - 2022" } },
+          { value: "4 Sites", caption: { vi: "Quản trị & tối ưu đồng bộ 4 website B2B", en: "Simultaneously managed 4 B2B websites" } }
         ]
       }
     }

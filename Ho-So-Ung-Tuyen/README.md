@@ -12,11 +12,11 @@
 
 ## 📁 Danh Mục Toàn Bộ Tài Liệu Ứng Tuyển
 
-Thư mục này tổng hợp đầy đủ các tài liệu định dạng **PDF** (chuẩn in ấn A4, typography to rõ nét, màu sắc chuyên nghiệp) và **Microsoft Word (.docx)** (dễ dàng chỉnh sửa, font chữ to rõ ràng 11–12pt).
+Thư mục này tổng hợp đầy đủ các tài liệu định dạng **PDF** (chuẩn in ấn A4, typography to rõ nét, màu sắc chuyên nghiệp) và **Microsoft Word (.docx)** (dễ dàng chỉnh sửa, font chữ to rõ ràng 11–12pt). Tất cả các tài liệu đã được cập nhật đầy đủ kinh nghiệm 2017 – 2022 và dự án cụm 4 website B2B thiết bị công nghiệp nặng & trạm cân điện tử (`cautructhoian.vn`, `hoangthienscale.com`, `thoianscale.com`, `canhoangthien.com`).
 
 ### 🌟 1. Hồ Sơ Xuất Riêng 1 File Duy Nhất (All-In-One Master PDF)
 - **`Ho-So-Ung-Tuyen-All-In-One-Le-Tran-Thanh-Uyen.pdf`** (5 Trang A4)
-  - *Mô tả:* File PDF trọn gói chuyên nghiệp gồm: **Trang 1-2** là CV Tổng hợp năng lực Full-Stack (Web Administrator, WordPress/Laravel/Blogspot, SEO Technical & Graphic/UI-UX Designer) + **Trang 3-5** là Portfolio chi tiết minh chứng 6 dự án thực tế kèm hình ảnh giao diện.
+  - *Mô tả:* File PDF trọn gói chuyên nghiệp gồm: **Trang 1-2** là CV Tổng hợp năng lực Full-Stack (Web Administrator, WordPress/Laravel/Blogspot, SEO Technical & Graphic/UI-UX Designer qua các giai đoạn 2017 – 2022 và 2022 – Hiện tại) + **Trang 3-5** là Portfolio chi tiết minh chứng 8 dự án thực tế kèm hình ảnh giao diện.
   - *Mục đích:* Dành gửi nhanh cho Nhà tuyển dụng / Đối tác cần một tài liệu đầy đủ, toàn diện nhất chỉ với 1 cú click.
 
 ---
@@ -25,22 +25,22 @@ Thư mục này tổng hợp đầy đủ các tài liệu định dạng **PDF*
 
 | Tên File PDF | Số Trang | Định Dạng | Mô Tả & Mục Đích Sử Dụng |
 | :--- | :---: | :---: | :--- |
-| **`CV-Le-Tran-Thanh-Uyen.pdf`** | 2 Trang | A4 Portrait | **CV Tổng Hợp** (Web Admin / WordPress & Laravel Dev / SEO Specialist / Graphic & UI/UX Designer / Blogspot). Dành cho vị trí Quản trị web, Trưởng nhóm kỹ thuật số, Full-stack webmaster. |
-| **`CV-SEO-Specialist-Le-Tran-Thanh-Uyen.pdf`** | 2 Trang | A4 Portrait | **CV Chuyên Viên Kỹ Thuật SEO Website** (Technical SEO, Content SEO Plugin Dev, Core Web Vitals, On-Page, Schema Markup, Off-page E-E-A-T). Dành riêng cho vị trí SEO Leader / Specialist. |
-| **`Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.pdf`** | 2 Trang | A4 Portrait | **Kế Hoạch & Phạm Vi Công Việc SEO Chuẩn Hóa** (Quy trình 6 giai đoạn: Audit kỹ thuật, Nghiên cứu từ khóa, On-page, Content SEO Plugin, Off-page Entity, Đo lường GSC/GA4). Dành nộp kèm CV hoặc gửi khách hàng/sếp duyệt kế hoạch SEO. |
-| **`CV-Graphic-UIUX-Designer-Le-Tran-Thanh-Uyen.pdf`** | 2 Trang | A4 Portrait | **CV Chuyên Viên Thiết Kế Đồ Họa & Web UI/UX Designer** (Photoshop retouching & banner, Illustrator vector & logo/branding, Figma web layout, CRO, minh chứng 6 dự án). Dành riêng cho vị trí Graphic Designer, UI/UX Designer. |
-| **`Portfolio-Le-Tran-Thanh-Uyen.pdf`** | 3 Trang | A4 Portrait | **Hồ Sơ Năng Lực Dự Án (Portfolio)** chi tiết 6 dự án tiêu biểu: WangSun Luxury, Tài Chính Tài Thành, Stone Sinks VN, Smartphone E-commerce, Sàn Thẩm Mỹ, Review Làm Đẹp. |
+| **`CV-Le-Tran-Thanh-Uyen.pdf`** | 2 Trang | A4 Portrait | **CV Tổng Hợp** (Web Admin / WordPress & Laravel Dev / SEO Specialist / Graphic & UI/UX Designer / Blogspot / B2B Industrial Web). Dành cho vị trí Quản trị web, Trưởng nhóm kỹ thuật số, Full-stack webmaster. |
+| **`CV-SEO-Specialist-Le-Tran-Thanh-Uyen.pdf`** | 2 Trang | A4 Portrait | **CV Chuyên Viên Kỹ Thuật SEO Website** (Technical SEO, Content SEO Plugin Dev, Core Web Vitals, On-Page, Schema Markup, 150+ Top 1-5 B2B Industrial SEO 2017-2022). Dành riêng cho vị trí SEO Leader / Specialist. |
+| **`Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.pdf`** | 2 Trang | A4 Portrait | **Kế Hoạch & Phạm Vi Công Việc SEO Chuẩn Hóa** (Quy trình 6 giai đoạn: Audit kỹ thuật, Nghiên cứu từ khóa, On-page, Content SEO Plugin, Off-page Entity, Đo lường GSC/GA4, kiểm chứng thành công trên B2C & B2B). |
+| **`CV-Graphic-UIUX-Designer-Le-Tran-Thanh-Uyen.pdf`** | 2 Trang | A4 Portrait | **CV Chuyên Viên Thiết Kế Đồ Họa & Web UI/UX Designer** (Photoshop retouching & banner, Illustrator vector & logo/branding, B2B spec catalog, Figma web layout, CRO, minh chứng 7 dự án). |
+| **`Portfolio-Le-Tran-Thanh-Uyen.pdf`** | 3 Trang | A4 Portrait | **Hồ Sơ Năng Lực Dự Án (Portfolio)** chi tiết các dự án tiêu biểu: Cầu Trục Thới An & Cân Hoàng Thiên (B2B Industrial), WangSun Luxury, Tài Chính Tài Thành, Stone Sinks VN, Smartphone E-commerce, Sàn Thẩm Mỹ, Review Làm Đẹp. |
 
 ---
 
 ### 📝 3. Hồ Sơ Định Dạng Microsoft Word (.docx) - Font Chữ To Rõ Ràng
 
-| Tên File Word | Định Dạng | Đặc Điểm Typography |
+| Tên File Word | Định Dạng | Đặc Điểm Typography & Nội Dung |
 | :--- | :---: | :--- |
-| **`CV-Le-Tran-Thanh-Uyen.docx`** | Microsoft Word | Body 11–12pt, Tiêu đề 14–20pt, bảng kỹ năng rõ ràng, chuẩn phong cách hiện đại. |
-| **`CV-SEO-Specialist-Le-Tran-Thanh-Uyen.docx`** | Microsoft Word | Tối ưu cấu trúc nội dung kỹ thuật SEO, bố cục mạch lạc, font chữ lớn, dễ scan. |
-| **`Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.docx`** | Microsoft Word | Bảng phân bổ 6 giai đoạn rõ ràng, có ghi chú cam kết chuẩn Google Search Essentials. |
-| **`CV-Graphic-UIUX-Designer-Le-Tran-Thanh-Uyen.docx`** | Microsoft Word | Chi tiết năng lực Photoshop, Illustrator, UI/UX và 6 dự án thực tế. |
+| **`CV-Le-Tran-Thanh-Uyen.docx`** | Microsoft Word | Body 11–12pt, Tiêu đề 14–20pt, bổ sung kinh nghiệm 2017-2022 và dự án B2B công nghiệp. |
+| **`CV-SEO-Specialist-Le-Tran-Thanh-Uyen.docx`** | Microsoft Word | Tối ưu cấu trúc nội dung kỹ thuật SEO, bổ sung case study 150+ từ khóa Top 1-5 Google ngành cầu trục & cân điện tử. |
+| **`Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.docx`** | Microsoft Word | Bảng phân bổ 6 giai đoạn rõ ràng, có ghi chú cam kết chuẩn Google Search Essentials và kinh nghiệm thực chiến B2B. |
+| **`CV-Graphic-UIUX-Designer-Le-Tran-Thanh-Uyen.docx`** | Microsoft Word | Chi tiết năng lực Photoshop, Illustrator, UI/UX và thiết kế ấn phẩm catalogue máy móc B2B. |
 
 ---
 

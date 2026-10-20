@@ -228,11 +228,31 @@ def build_cv_seo_docx():
     add_bullet_item(doc, "Thiết kế & Tối ưu UI/UX", "Thiết kế wireframe, banner quảng cáo, giao diện website bằng Photoshop, Illustrator và Figma; cải thiện trải nghiệm điều hướng trên di động giúp giảm tỷ lệ thoát (Bounce Rate) 25%.")
     add_bullet_item(doc, "Phát triển Website WordPress", "Xây dựng và bàn giao hệ thống website WordPress chuẩn SEO, tối ưu bảo mật, chống spam và cấu hình tự động sao lưu định kỳ.")
 
+    p_job3 = doc.add_paragraph()
+    p_job3.paragraph_format.space_before = Pt(10)
+    p_job3.paragraph_format.space_after = Pt(2)
+    r_j3 = p_job3.add_run("Senior SEO Specialist & Industrial Web Administrator | Cụm Doanh Nghiệp Cơ Khí Thới An & Cân Hoàng Thiên")
+    r_j3.font.name = "Arial"
+    r_j3.font.size = Pt(12)
+    r_j3.font.bold = True
+    r_j3.font.color.rgb = COLOR_NAVY
+    
+    r_time3 = p_job3.add_run("   (2017 – 2022)")
+    r_time3.font.name = "Arial"
+    r_time3.font.size = Pt(11)
+    r_time3.font.italic = True
+    r_time3.font.color.rgb = COLOR_MUTED
+    
+    add_bullet_item(doc, "Chiến lược từ khóa B2B kỹ thuật cao", "Xây dựng ma trận từ khóa chuyên ngành cơ khí nâng hạ & trạm cân điện tử (cầu trục dầm đơn/đôi, cổng trục, palang, trạm cân xe tải 20-120 tấn, cân sàn, loadcell), đưa hơn 150+ từ khóa cốt lõi lọt Top 1 – Top 5 Google Search.")
+    add_bullet_item(doc, "Local SEO & Duy trì thứ hạng 5 năm", "Tối ưu hóa Google Business Profile tại Quận 12 phủ sóng các KCN phía Nam; thiết kế catalog thông số kỹ thuật (Spec Sheets) bằng Illustrator; duy trì thứ hạng bền vững liên tục qua nhiều bản cập nhật thuật toán lớn (2017 – 2022).")
+    add_bullet_item(doc, "Quản trị hạ tầng kỹ thuật 4 website", "Quản trị cPanel, sao lưu tự động định kỳ, bảo mật hệ thống vận hành ổn định 99.9% uptime cho 4 website: cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com.")
+
     # Các dự án tiêu biểu
     add_styled_heading(doc, "Dự Án Tiêu Biểu & Thành Tựu Thực Tế (Featured Case Studies)")
     
     add_bullet_item(doc, "Sản phẩm công nghệ: Custom WordPress Plugin Tối Ưu Content SEO", "Tự code giải pháp in-house siêu nhẹ (Zero Bloatware) tích hợp trực tiếp WordPress Editor: chấm điểm On-page thời gian thực, sinh mục lục bài viết kèm anchor text và tự nhúng Schema FAQ JSON-LD hợp lệ 100% Rich Results Test.")
     add_bullet_item(doc, "Dự án Cổng thông tin Sàn Thẩm Mỹ (santhammy.com - Laravel MVC & Directory SEO)", "Xây dựng cổng thông tin danh bạ thẩm mỹ viện trên nền tảng Laravel (PHP & MySQL): thiết kế kiến trúc MVC, tối ưu bộ định tuyến Routing phân tầng quận/huyện và chuyên khoa thẩm mỹ, tối ưu truy vấn cơ sở dữ liệu đạt TTFB < 0.4s, giúp Googlebot lập chỉ mục 100% URLs danh bạ.")
+    add_bullet_item(doc, "Dự án Cụm B2B Thiết Bị Nâng Hạ & Cân Điện Tử (cautructhoian.vn · hoangthienscale.com · canhoangthien.com · thoianscale.com)", "Quản trị kỹ thuật & SEO tổng thể: 150+ từ khóa kỹ thuật Top 1-5 Google, Local Maps phủ sóng KCN phía Nam, mang lại nguồn khách hàng doanh nghiệp B2B ổn định liên tục suốt 5 năm (2017 – 2022).")
     add_bullet_item(doc, "Dự án Viện Thẩm Mỹ WangSun Luxury (vienthammywangsun.com)", "Tối ưu Technical Audit, triển khai Schema MedicalBusiness & LocalBusiness, nén ảnh WebP tải trang < 1.8s. Kết quả: Tăng trưởng Organic Clicks 210%, lọt Top 10 Google từ khóa dịch vụ làm đẹp tại TP.HCM.")
     add_bullet_item(doc, "Dự án Thương mại Stone Sinks Vietnam (stonesinks.vn)", "Khai báo Product Schema chuẩn Google Merchant Center, nén WebP hình ảnh độ nét cao. Kết quả: Tỷ lệ hiển thị trên Google Image tăng 60%, từ khóa sản phẩm chiếm lĩnh trang nhất Google.")
 
@@ -436,7 +456,7 @@ def build_ke_hoach_seo_docx():
     create_callout(
         doc,
         "Nguyên tắc làm việc của Lê Trần Thanh Uyên:",
-        "100% kỹ thuật SEO Mũ Trắng (White-Hat SEO), phát triển bền vững theo đúng hướng dẫn của Google Search Essentials. Không dùng thủ thuật thao túng thứ hạng tạm thời gây nguy cơ phạt thuật toán. Luôn minh bạch và cung cấp đầy đủ quyền truy cập số liệu đo lường thực tế trên Google Search Console & GA4.",
+        "100% kỹ thuật SEO Mũ Trắng (White-Hat SEO), phát triển bền vững theo đúng hướng dẫn của Google Search Essentials. Đã được kiểm chứng thực tế thành công qua cả ngành B2C (Thẩm mỹ viện, thương mại điện tử) lẫn B2B công nghiệp kỹ thuật cao (cautructhoian.vn, hoangthienscale.com, canhoangthien.com, thoianscale.com duy trì Top 1-5 bền vững suốt 5 năm). Luôn minh bạch và cung cấp đầy đủ quyền truy cập số liệu đo lường thực tế trên Google Search Console & GA4.",
         bg_hex="F8FAFC",
         border_color="0B2342"
     )
@@ -528,6 +548,32 @@ def build_cv_general_docx():
     add_bullet_item(doc, "Triển khai & Vận hành Web WordPress, Laravel & Blogspot", "Xây dựng và quản trị các website doanh nghiệp trên WordPress, hệ thống thương mại & danh bạ trên Laravel MVC (smartphone.taichinhtaithanh.com, santhammy.com), và Landing Page tư vấn tài chính trên Google Blogspot (taichinhtaithanh.com). Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
     add_bullet_item(doc, "Thực hiện Chiến dịch SEO", "Lên kế hoạch bộ từ khóa, tối ưu On-page và Technical SEO, giúp website tăng trưởng lượng truy cập tự nhiên hơn 180% và đưa hơn 30+ từ khóa vào Top 5 Google.")
     add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện", "Thiết kế toàn bộ banner trang chủ, hình ảnh bài viết và ấn phẩm truyền thông mạng xã hội bằng Photoshop và Illustrator.")
+
+    p_j2 = doc.add_paragraph()
+    p_j2.paragraph_format.space_before = Pt(10)
+    p_j2.paragraph_format.space_after = Pt(2)
+    r_j2 = p_j2.add_run("Senior SEO Specialist & Industrial Web Administrator | Cụm Doanh Nghiệp Cơ Khí Thới An & Cân Hoàng Thiên")
+    r_j2.font.name = "Arial"
+    r_j2.font.size = Pt(12)
+    r_j2.font.bold = True
+    r_j2.font.color.rgb = COLOR_NAVY
+    r_t2 = p_j2.add_run("   (2017 – 2022)")
+    r_t2.font.name = "Arial"
+    r_t2.font.size = Pt(11)
+    r_t2.font.italic = True
+    r_t2.font.color.rgb = COLOR_MUTED
+
+    add_bullet_item(doc, "Quản trị hệ thống & SEO B2B tổng thể", "Phụ trách toàn bộ kỹ thuật và SEO cho 4 website công nghiệp nặng (cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com). Đưa hơn 150+ từ khóa ngành cầu trục, cổng trục, palang, trạm cân ô tô xe tải và cảm biến lực loadcell lọt Top 1 – Top 5 Google suốt 5 năm.")
+    add_bullet_item(doc, "Local SEO & Ấn phẩm Thiết kế B2B", "Tối ưu hóa Google Business Profile tại Quận 12 phủ sóng tiếp cận khách hàng doanh nghiệp tại TP.HCM và các KCN phía Nam; thiết kế trọn bộ catalogue thông số kỹ thuật (Spec Sheets) bằng Photoshop và Illustrator; vận hành cPanel bền vững.")
+
+    # Dự án tiêu biểu
+    add_styled_heading(doc, "Dự Án Tiêu Biểu Đã Triển Khai (Featured Projects)")
+    add_bullet_item(doc, "Cầu Trục Thới An & Cân Hoàng Thiên (cautructhoian.vn · hoangthienscale.com)", "Cụm 4 website B2B thiết bị công nghiệp nặng: 150+ từ khóa Top 1-5 Google bền vững suốt 5 năm (2017-2022), Local Maps, catalogue thông số kỹ thuật.")
+    add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Website phòng khám thẩm mỹ viện: thiết kế sang trọng, schema MedicalBusiness, tối ưu từ khóa dịch vụ tại TP.HCM, điểm PageSpeed 95+.")
+    add_bullet_item(doc, "Tài Chính Tài Thành (taichinhtaithanh.com)", "Landing Page tài chính & vay tiêu dùng 24h trên Google Blogspot: công cụ tính khoản vay tương tác, form đăng ký tối ưu CRO, tên miền riêng.")
+    add_bullet_item(doc, "Sàn Thẩm Mỹ (santhammy.com)", "Cổng danh bạ thẩm mỹ viện xây dựng trên Laravel MVC (PHP & MySQL): phân cấp quận/huyện, TTFB < 0.4s, lập chỉ mục 100% URLs trên Search Console.")
+    add_bullet_item(doc, "Smartphone E-commerce (smartphone.taichinhtaithanh.com)", "Hệ thống bán lẻ điện thoại Laravel MVC: bộ lọc sản phẩm đa tiêu chí, giỏ hàng, thanh toán và trang quản trị Admin.")
+    add_bullet_item(doc, "Stone Sinks Vietnam (stonesinks.vn)", "Website thương mại chậu đá tự nhiên: hình ảnh nén WebP sắc nét, Product Schema chuẩn Google Merchant, tốc độ tải trang dưới 1.8s.")
 
     save_document(doc, "CV-Le-Tran-Thanh-Uyen.docx")
 
@@ -647,8 +693,27 @@ def build_cv_graphic_docx():
     add_bullet_item(doc, "Thiết kế Banner & Catalog số", "Thiết kế banner trượt homepage, catalogue sản phẩm điện tử và hình ảnh minh họa thông số kỹ thuật chi tiết bằng Illustrator.")
     add_bullet_item(doc, "Thiết kế Giao diện Giỏ hàng & Bộ lọc", "Tinh chỉnh trải nghiệm người dùng trang chi tiết sản phẩm, bộ lọc theo vân đá và luồng thanh toán nhanh gọn.")
 
-    # Minh chứng 6 dự án
-    add_styled_heading(doc, "Minh Chứng Hiệu Quả Thiết Kế Qua 6 Dự Án Thực Tế (Featured Projects)")
+    # Role 3
+    p_j3 = doc.add_paragraph()
+    p_j3.paragraph_format.space_before = Pt(8)
+    p_j3.paragraph_format.space_after = Pt(2)
+    r_j3 = p_j3.add_run("Industrial Graphic & Spec Catalog Designer | Cụm Doanh Nghiệp Cơ Khí Thới An & Cân Hoàng Thiên")
+    r_j3.font.name = "Arial"
+    r_j3.font.size = Pt(12)
+    r_j3.font.bold = True
+    r_j3.font.color.rgb = COLOR_NAVY
+    r_t3 = p_j3.add_run("   (2017 – 2022)")
+    r_t3.font.name = "Arial"
+    r_t3.font.size = Pt(11)
+    r_t3.font.italic = True
+    r_t3.font.color.rgb = COLOR_MUTED
+
+    add_bullet_item(doc, "Retouch ảnh máy móc & công trình công nghiệp", "Trực tiếp chụp ảnh thực tế tại nhà xưởng, sử dụng Photoshop tách nền, khử tạp âm hình ảnh, xử lý ánh sáng và đổ bóng cho thiết bị cầu trục, pa lăng và trạm cân xe tải sắc nét.")
+    add_bullet_item(doc, "Thiết kế Catalogue B2B & Sơ đồ Kỹ thuật", "Sử dụng Illustrator vẽ sơ đồ cấu tạo cơ khí, bản vẽ kích thước dầm cầu trục, bảng thông số kỹ thuật (Spec Sheets) và profile công ty phục vụ nộp hồ sơ tham gia dự thầu.")
+
+    # Minh chứng 7 dự án
+    add_styled_heading(doc, "Minh Chứng Hiệu Quả Thiết Kế Qua 7 Dự Án Thực Tế (Featured Projects)")
+    add_bullet_item(doc, "Cầu Trục Thới An & Cân Hoàng Thiên (cautructhoian.vn · hoangthienscale.com)", "Xử lý hình ảnh thiết bị xưởng cơ khí, thi công cầu trục & trạm cân xe tải bằng Photoshop; thiết kế trọn bộ catalogue thông số kỹ thuật B2B sắc nét bằng Illustrator (2017-2022).")
     add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Thiết kế phong cách thẩm mỹ viện hoàng gia, phối màu vàng kim & xanh ngọc, retouching ảnh bác sĩ và khách hàng trước sau liệu trình sắc nét.")
     add_bullet_item(doc, "Tài Chính Tài Thành (taichinhtaithanh.com)", "Thiết kế Landing Page tài chính vay tiêu dùng: bố cục trực quan, biểu tượng vector tài chính, công cụ tính khoản vay tương tác, form đăng ký tối ưu chuyển đổi CRO.")
     add_bullet_item(doc, "Stone Sinks Vietnam (stonesinks.vn)", "Xử lý ánh sáng và chất liệu đá tự nhiên cho hàng trăm sản phẩm chậu đá, thiết kế catalogue số và banner quảng bá chương trình ưu đãi.")
