@@ -19,7 +19,16 @@ from docx.oxml import OxmlElement, parse_xml
 from docx.oxml.ns import nsdecls, qn
 
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "assets", "docs")
+HO_SO_DIR = os.path.join(os.path.dirname(__file__), "Ho-So-Ung-Tuyen")
 os.makedirs(DOCS_DIR, exist_ok=True)
+os.makedirs(HO_SO_DIR, exist_ok=True)
+
+def save_document(doc, filename):
+    for directory in (DOCS_DIR, HO_SO_DIR):
+        target = os.path.join(directory, filename)
+        doc.save(target)
+        print(f"[OK] Saved: {target} ({os.path.getsize(target)} bytes)")
+
 
 # Color Palette
 COLOR_NAVY = RGBColor(11, 35, 66)      # #0B2342
@@ -237,9 +246,7 @@ def build_cv_seo_docx():
         border_color="0B2342"
     )
 
-    out_path = os.path.join(DOCS_DIR, "CV-SEO-Specialist-Le-Tran-Thanh-Uyen.docx")
-    doc.save(out_path)
-    print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+    save_document(doc, "CV-SEO-Specialist-Le-Tran-Thanh-Uyen.docx")
 
 
 # ==============================================================================
@@ -434,9 +441,7 @@ def build_ke_hoach_seo_docx():
         border_color="0B2342"
     )
 
-    out_path = os.path.join(DOCS_DIR, "Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.docx")
-    doc.save(out_path)
-    print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+    save_document(doc, "Ke-Hoach-Cong-Viec-SEO-Le-Tran-Thanh-Uyen.docx")
 
 
 # ==============================================================================
@@ -524,9 +529,7 @@ def build_cv_general_docx():
     add_bullet_item(doc, "Thực hiện Chiến dịch SEO", "Lên kế hoạch bộ từ khóa, tối ưu On-page và Technical SEO, giúp website tăng trưởng lượng truy cập tự nhiên hơn 180% và đưa hơn 30+ từ khóa vào Top 5 Google.")
     add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện", "Thiết kế toàn bộ banner trang chủ, hình ảnh bài viết và ấn phẩm truyền thông mạng xã hội bằng Photoshop và Illustrator.")
 
-    out_path = os.path.join(DOCS_DIR, "CV-Le-Tran-Thanh-Uyen.docx")
-    doc.save(out_path)
-    print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+    save_document(doc, "CV-Le-Tran-Thanh-Uyen.docx")
 
 
 def build_cv_graphic_docx():
@@ -653,9 +656,7 @@ def build_cv_graphic_docx():
     add_bullet_item(doc, "Sàn Thẩm Mỹ (santhammy.com)", "Thiết kế hệ thống cổng danh bạ thẩm mỹ viện: layout danh sách cơ sở, huy hiệu chứng nhận uy tín, thanh tìm kiếm thông minh và bản đồ định vị.")
     add_bullet_item(doc, "Review Làm Đẹp (review-lamdep.com)", "Thiết kế phong cách tạp chí làm đẹp thanh lịch: typography tinh tế, khung ảnh review chân thực, huy hiệu chấm điểm sao vàng nổi bật.")
 
-    out_path = os.path.join(DOCS_DIR, "CV-Graphic-UIUX-Designer-Le-Tran-Thanh-Uyen.docx")
-    doc.save(out_path)
-    print(f"[OK] Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+    save_document(doc, "CV-Graphic-UIUX-Designer-Le-Tran-Thanh-Uyen.docx")
 
 
 if __name__ == "__main__":
