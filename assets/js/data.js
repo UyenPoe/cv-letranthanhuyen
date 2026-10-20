@@ -532,38 +532,38 @@ window.PORTFOLIO_DATA = {
       id: "exp-3",
       period: "2022 – 2023",
       role: {
-        vi: "Full-stack Web Developer (Laravel & Frontend)",
-        en: "Full-stack Web Developer (Laravel & Frontend)"
+        vi: "WordPress Developer (Tự Code Theme từ đầu) & UI/UX Designer",
+        en: "WordPress Developer (Custom Theme from scratch) & UI/UX Designer"
       },
       company: {
         vi: "Hệ sinh thái Tài Chính Tài Thành (taichinhtaithanh.com & smartphone.taichinhtaithanh.com)",
         en: "Tai Chinh Tai Thanh Web Ecosystem (taichinhtaithanh.com & smartphone.taichinhtaithanh.com)"
       },
       summary: {
-        vi: "Phát triển hệ thống website thương mại điện tử chuyên doanh điện thoại di động (Laravel) và Landing Page tư vấn tài chính (Blogspot).",
-        en: "Developed the smartphone e-commerce web platform (Laravel MVC) and financial consultation landing page (Google Blogspot)."
+        vi: "Trực tiếp tự lập trình toàn bộ giao diện (Custom WordPress Theme từ đầu, không dùng theme dựng sẵn) cho website bán lẻ điện thoại smartphone.taichinhtaithanh.com và thiết kế Landing Page tài chính Blogspot taichinhtaithanh.com.",
+        en: "Engineered a custom WordPress theme from scratch (no bloated pre-built themes) for smartphone retail portal smartphone.taichinhtaithanh.com and crafted the high-converting Blogspot landing page taichinhtaithanh.com."
       },
       responsibilities: {
         vi: [
+          "Tự lập trình Theme WordPress từ đầu (Custom Theme Development) chuẩn mã nguồn sạch, tối ưu hóa tốc độ tải trang và trải nghiệm người dùng Mobile-first.",
+          "Xây dựng các chức năng lọc điện thoại theo hãng, mức giá, bộ nhớ RAM/ROM, module giỏ hàng và đặt hàng trực tuyến.",
           "Thiết kế Landing Page taichinhtaithanh.com bằng Google Blogspot (Custom XML / CSS3 / JS) tối ưu chuyển đổi (CRO), bảng tính khoản vay tương tác và lead form.",
-          "Thiết kế cơ sở dữ liệu MySQL và xây dựng các phân hệ quản lý sản phẩm, danh mục thương hiệu, biến thể dung lượng/màu sắc bằng Laravel.",
-          "Lập trình giao diện người dùng (Frontend) hiển thị danh sách điện thoại, tìm kiếm, lọc theo mức giá, giỏ hàng và đặt hàng trực tuyến.",
-          "Xây dựng trang quản trị (Admin Dashboard) phục vụ cập nhật giá bán, tồn kho, banner khuyến mãi và quản lý đơn hàng.",
-          "Triển khai mã nguồn lên hosting thực tế (smartphone.taichinhtaithanh.com), cấu hình cơ sở dữ liệu và kiểm thử luồng người dùng."
+          "Thiết kế banner flash sale, icon thông số kỹ thuật chuẩn vector bằng Illustrator và Photoshop.",
+          "Triển khai mã nguồn lên hosting cPanel thực tế (smartphone.taichinhtaithanh.com), tối ưu On-page SEO và kiểm thử luồng người dùng."
         ],
         en: [
+          "Engineered a lightweight custom WordPress theme from scratch with clean, semantic markup and mobile-first responsive architecture.",
+          "Implemented e-commerce catalog filtering by brand, price range, RAM/ROM specs, shopping cart, and quick ordering flow.",
           "Designed the high-converting financial landing page taichinhtaithanh.com on Google Blogspot with an interactive loan calculator and lead capture forms.",
-          "Designed relational MySQL schemas and built product, brand category, and storage/color variant modules using Laravel MVC.",
-          "Developed responsive frontend views for smartphone listings, price/brand filtering, shopping cart, and order checkout.",
-          "Created the Admin Dashboard for managing inventory, pricing, promotional banners, and customer orders.",
-          "Deployed the application to production hosting (smartphone.taichinhtaithanh.com), configured the database, and conducted end-to-end testing."
+          "Designed promotional flash sale banners and vector spec iconography using Illustrator and Photoshop.",
+          "Deployed the custom theme to production cPanel hosting (smartphone.taichinhtaithanh.com) and performed end-to-end QA testing."
         ]
       },
       results: {
-        vi: "Vận hành thành công cả hệ sinh thái gồm Landing Page Blogspot và E-commerce Laravel trên tên miền riêng, chứng minh năng lực toàn diện.",
-        en: "Successfully launched the dual-platform web ecosystem (Blogspot Landing Page & Laravel E-commerce) on custom domains."
+        vi: "Vận hành thành công website bán lẻ điện thoại với theme tự code siêu nhẹ, đạt điểm PageSpeed 90+ và Landing Page Blogspot tối ưu chuyển đổi cao.",
+        en: "Successfully launched the retail storefront powered by a bloat-free custom WordPress theme achieving 90+ PageSpeed alongside the high-converting Blogspot landing page."
       },
-      tech: ["Blogspot XML", "Laravel", "PHP", "MySQL", "UI/UX Design", "HTML5/CSS3", "JavaScript", "Adobe Photoshop", "Responsive", "Git"]
+      tech: ["WordPress Custom Theme", "PHP", "MySQL", "WooCommerce", "Blogspot XML", "UI/UX Design", "HTML5/CSS3", "JavaScript", "Adobe Photoshop", "Illustrator"]
     },
     {
       id: "exp-4",
@@ -721,20 +721,20 @@ window.PORTFOLIO_DATA = {
       domain: "smartphone.taichinhtaithanh.com",
       liveUrl: "https://smartphone.taichinhtaithanh.com",
       githubUrl: "https://github.com/UyenPoe",
-      categories: ["laravel", "ecommerce"],
+      categories: ["wordpress", "ecommerce"],
       badge: {
-        vi: "Laravel · E-commerce",
-        en: "Laravel · E-commerce"
+        vi: "WordPress · Tự Code Theme",
+        en: "WordPress · Custom Theme"
       },
       role: {
-        vi: "Web Developer (Laravel & Frontend) · Triển khai Hosting",
-        en: "Web Developer (Laravel & Frontend) · Hosting Deployment"
+        vi: "WordPress Developer (Tự Code Theme từ đầu) & UI/UX Designer",
+        en: "WordPress Developer (Custom Theme from scratch) & UI/UX Designer"
       },
       shortDesc: {
-        vi: "Hệ thống website thương mại điện tử bán lẻ điện thoại thông minh, hỗ trợ lọc sản phẩm đa tiêu chí, giỏ hàng, đặt hàng và trang quản trị Admin.",
-        en: "Full-featured smartphone e-commerce platform featuring multi-attribute filtering, shopping cart, checkout flow, and an admin management panel."
+        vi: "Hệ thống website thương mại điện tử bán lẻ điện thoại thông minh được tự lập trình toàn bộ WordPress Theme từ đầu: mã nguồn sạch, tối ưu bộ lọc thông số, giỏ hàng, đặt hàng và đạt điểm PageSpeed 90+.",
+        en: "Full-featured smartphone e-commerce platform with a 100% custom-coded WordPress theme from scratch, featuring multi-attribute filtering, shopping cart, and 90+ PageSpeed score."
       },
-      techStack: ["Laravel", "PHP", "MySQL", "UI/UX Web Design", "Adobe Photoshop", "JavaScript", "HTML5/CSS3", "cPanel Deployment"],
+      techStack: ["WordPress", "Custom Theme", "PHP", "MySQL", "WooCommerce", "UI/UX Web Design", "Adobe Photoshop", "Adobe Illustrator", "JavaScript", "HTML5/CSS3"],
       images: {
         hero: "assets/images/projects/smartphone-ecommerce.webp",
         desktop: "assets/images/projects/smartphone-ecommerce.webp",
@@ -743,19 +743,21 @@ window.PORTFOLIO_DATA = {
       },
       caseStudy: {
         overview: {
-          vi: "Smartphone E-commerce (smartphone.taichinhtaithanh.com) là dự án xây dựng hệ thống website bán lẻ thiết bị di động trực tuyến. Mục tiêu của dự án là tạo ra một nền tảng thương mại điện tử có cấu trúc dữ liệu rõ ràng theo mô hình MVC, giúp khách hàng dễ dàng tra cứu cấu hình, so sánh giá bán theo dung lượng/màu sắc và đặt mua nhanh chóng trên cả máy tính lẫn điện thoại.",
-          en: "Smartphone E-commerce (smartphone.taichinhtaithanh.com) is an online mobile retail platform engineered with the MVC architecture. Its goal is to provide customers with fast specification lookup, price comparison across storage/color variants, and a streamlined mobile-first checkout experience."
+          vi: "Smartphone E-commerce (smartphone.taichinhtaithanh.com) là dự án xây dựng hệ thống website bán lẻ thiết bị di động trực tuyến trên nền tảng WordPress với toàn bộ Theme được tự lập trình từ đầu (Custom WordPress Theme Development). Việc tự code theme hoàn toàn từ đầu giúp loại bỏ mã nguồn thừa, tối đa hóa hiệu năng và mang lại trải nghiệm mua sắm mượt mà trên cả máy tính lẫn điện thoại.",
+          en: "Smartphone E-commerce (smartphone.taichinhtaithanh.com) is an online mobile retail platform built on WordPress with a 100% custom-coded theme from scratch. Avoiding bloated off-the-shelf themes ensured zero bloatware, maximum performance, and a streamlined mobile-first checkout experience."
         },
         myRole: {
           vi: [
-            "Phân tích yêu cầu chức năng và thiết kế lược đồ cơ sở dữ liệu MySQL (Sản phẩm, Thương hiệu, Danh mục, Đơn hàng, Chi tiết đơn hàng).",
-            "Lập trình Backend bằng PHP / Laravel Framework và xây dựng giao diện chuẩn Responsive.",
-            "Triển khai hệ thống lên môi trường Hosting thực tế, cấu hình tên miền phụ, kết nối cơ sở dữ liệu và tối ưu tốc độ phản hồi."
+            "Tự thiết kế và lập trình toàn bộ mã nguồn giao diện (Custom WordPress Theme) chuẩn HTML5/CSS3/JavaScript kết hợp template PHP tùy biến.",
+            "Tích hợp WooCommerce, cấu hình biến thể sản phẩm (màu sắc, bộ nhớ dung lượng), bộ lọc thuộc tính kỹ thuật và luồng giỏ hàng/thanh toán mượt mà.",
+            "Tối ưu hóa tốc độ tải trang Core Web Vitals, nén ảnh WebP và cấu hình bộ nhớ đệm giúp website tải dưới 1.5s.",
+            "Thiết kế banner chương trình khuyến mãi, logo và icon thông số kỹ thuật (chip, pin, camera) chuẩn vector bằng Illustrator."
           ],
           en: [
-            "Analyzed functional requirements and designed the MySQL relational schema (Products, Brands, Categories, Orders, Order Items).",
-            "Engineered backend controllers and models with PHP Laravel and built responsive frontend templates.",
-            "Deployed the application to live hosting, configured subdomain DNS, connected production databases, and tuned response times."
+            "Architected and coded the entire custom WordPress theme from scratch using clean PHP templates, modular CSS3, and lightweight JavaScript.",
+            "Integrated WooCommerce with variable products (colors, storage options), specification filtering, and frictionless checkout flows.",
+            "Optimized Core Web Vitals with WebP asset pipelines and caching, achieving sub-1.5s load times.",
+            "Designed promotional banners and vector spec iconography using Adobe Illustrator & Photoshop."
           ]
         },
         features: [
@@ -830,18 +832,18 @@ window.PORTFOLIO_DATA = {
       githubUrl: "https://github.com/UyenPoe",
       categories: ["wordpress", "seo"],
       badge: {
-        vi: "WordPress · SEO · Quản trị Web",
-        en: "WordPress · SEO · Web Admin"
+        vi: "WordPress · Flatsome Theme",
+        en: "WordPress · Flatsome Theme"
       },
       role: {
-        vi: "WordPress Developer · Website Administrator · SEO Specialist",
-        en: "WordPress Developer · Website Administrator · SEO Specialist"
+        vi: "WordPress Developer (Flatsome Child Theme) · Web Admin · SEO Specialist",
+        en: "WordPress Developer (Flatsome Child Theme) · Web Admin · SEO Specialist"
       },
       shortDesc: {
-        vi: "Website thương hiệu Viện Thẩm Mỹ WangSun Luxury – Thiết kế sang trọng, tối ưu tốc độ tải trang, chuẩn SEO dịch vụ thẩm mỹ và thu hút khách hàng tiềm năng.",
-        en: "Official brand website for WangSun Luxury Aesthetic Institute — featuring premium UI, fast load times, local/service SEO, and lead conversion forms."
+        vi: "Website thương hiệu Viện Thẩm Mỹ WangSun Luxury – Tùy biến chuyên sâu Flatsome Child Theme sang trọng, tối ưu tốc độ tải trang, chuẩn SEO dịch vụ thẩm mỹ.",
+        en: "Official brand website for WangSun Luxury Aesthetic Institute — deeply customized Flatsome Child Theme, fast load times, local/service SEO, and lead conversion forms."
       },
-      techStack: ["WordPress", "Custom Theme / Flatsome", "UI/UX Web Design", "Adobe Photoshop", "Adobe Illustrator", "On-page & Technical SEO", "Schema JSON-LD", "WebP Optimization"],
+      techStack: ["WordPress", "Flatsome Theme (Child Theme)", "UI/UX Web Design", "Adobe Photoshop", "Adobe Illustrator", "On-page & Technical SEO", "Schema JSON-LD", "WebP Optimization"],
       images: {
         hero: "assets/images/projects/wangsun-luxury.webp",
         desktop: "assets/images/projects/wangsun-luxury.webp",
@@ -850,17 +852,17 @@ window.PORTFOLIO_DATA = {
       },
       caseStudy: {
         overview: {
-          vi: "WangSun Luxury (vienthammywangsun.com) là website chính thức của Viện Thẩm Mỹ WangSun, nơi giới thiệu các công nghệ làm đẹp, đội ngũ chuyên gia và kết quả khách hàng thực tế. Yêu cầu cốt lõi là xây dựng hình ảnh thương hiệu cao cấp (Luxury), tốc độ tải cực nhanh trên di động (do phần lớn khách hàng truy cập từ quảng cáo và tìm kiếm trên điện thoại) và cấu trúc chuẩn SEO để lên top các từ khóa dịch vụ thẩm mỹ.",
-          en: "WangSun Luxury (vienthammywangsun.com) is the official web presence for WangSun Aesthetic Clinic, showcasing beauty technologies, medical specialists, and client transformations. Key objectives included a luxury brand experience, fast mobile speed, and strong local/service SEO."
+          vi: "WangSun Luxury (vienthammywangsun.com) là website chính thức của Viện Thẩm Mỹ WangSun, nơi giới thiệu các công nghệ làm đẹp, đội ngũ chuyên gia và kết quả khách hàng thực tế. Dự án sử dụng nền tảng WordPress kết hợp tùy biến chuyên sâu Child Theme trên Flatsome Theme (theme duy nhất trong hệ thống dùng Flatsome để tối ưu UX Builder và tốc độ dựng trang sang trọng), tối ưu tốc độ tải cực nhanh trên di động và cấu trúc chuẩn SEO dịch vụ thẩm mỹ.",
+          en: "WangSun Luxury (vienthammywangsun.com) is the official web presence for WangSun Aesthetic Clinic, showcasing beauty technologies, medical specialists, and client transformations. Built on WordPress with an in-depth custom Flatsome Child Theme (the sole project utilizing Flatsome for its luxury UX Builder layout capabilities), optimized for fast mobile speed and local/service SEO."
         },
         myRole: {
           vi: [
-            "Phát triển, tùy biến giao diện WordPress theo nhận diện thương hiệu WangSun Luxury và quản trị toàn bộ hệ thống Hosting/Domain.",
+            "Tùy biến chuyên sâu giao diện Flatsome Theme (Child Theme) theo nhận diện thương hiệu WangSun Luxury hoàng gia và quản trị toàn bộ hệ thống Hosting/Domain.",
             "Cấu trúc hóa danh mục dịch vụ thẩm mỹ, landing page chuyển đổi và tích hợp nút gọi nhanh / Zalo / form đăng ký tư vấn.",
             "Thực hiện tối ưu On-page SEO, Technical SEO, khai báo Schema MedicalClinic / LocalBusiness và theo dõi hiệu suất trên Google Search Console."
           ],
           en: [
-            "Customized the WordPress theme to match WangSun Luxury brand guidelines and managed hosting/domain infrastructure.",
+            "Deeply customized the Flatsome Child Theme to match WangSun Luxury brand guidelines and managed hosting/domain infrastructure.",
             "Structured service landing pages, before/after galleries, and integrated instant call/Zalo/consultation lead capture.",
             "Executed On-page and Technical SEO, deployed MedicalClinic/LocalBusiness Schema, and monitored search performance in GSC."
           ]
@@ -1024,18 +1026,18 @@ window.PORTFOLIO_DATA = {
       githubUrl: "https://github.com/UyenPoe",
       categories: ["wordpress", "seo"],
       badge: {
-        vi: "WordPress · Content SEO",
-        en: "WordPress · Content SEO"
+        vi: "WordPress (Tự Code Theme) · Content SEO",
+        en: "WordPress (Custom Theme) · Content SEO"
       },
       role: {
-        vi: "SEO Specialist · WordPress Developer · Website Admin",
-        en: "SEO Specialist · WordPress Developer · Website Admin"
+        vi: "WordPress Developer (Tự Code Theme) · SEO Specialist",
+        en: "WordPress Developer (Custom Theme) · SEO Specialist"
       },
       shortDesc: {
-        vi: "Chuyên trang đánh giá dịch vụ làm đẹp, mỹ phẩm và chia sẻ kinh nghiệm chăm sóc sắc đẹp chuẩn E-E-A-T, tối ưu hóa On-page và tốc độ đọc bài.",
-        en: "Beauty & skincare review publication engineered around Google's E-E-A-T guidelines, featuring high-readability layouts and On-page SEO."
+        vi: "Chuyên trang đánh giá dịch vụ làm đẹp và mỹ phẩm chuẩn E-E-A-T với theme tự lập trình siêu nhẹ, tối ưu hóa On-page và tốc độ đọc bài.",
+        en: "Beauty & skincare review publication with custom-coded lightweight theme engineered around Google's E-E-A-T guidelines."
       },
-      techStack: ["WordPress", "UI/UX Web Design", "Adobe Photoshop", "On-page SEO", "E-E-A-T Optimization", "Schema Review & FAQ", "Core Web Vitals"],
+      techStack: ["WordPress", "Custom Theme", "UI/UX Web Design", "Adobe Photoshop", "On-page SEO", "E-E-A-T Optimization", "Schema Review & FAQ", "Core Web Vitals"],
       images: {
         hero: "assets/images/projects/review-lam-dep.webp",
         desktop: "assets/images/projects/review-lam-dep.webp",
@@ -1044,17 +1046,17 @@ window.PORTFOLIO_DATA = {
       },
       caseStudy: {
         overview: {
-          vi: "Review Làm Đẹp (review-lamdep.com) là website chuyên cung cấp thông tin đánh giá khách quan về các xu hướng thẩm mỹ, mỹ phẩm và kinh nghiệm làm đẹp. Trong lĩnh vực YMYL (Your Money Your Life) liên quan đến sức khỏe và sắc đẹp, dự án tập trung mạnh vào tiêu chuẩn E-E-A-T của Google, giao diện đọc bài rõ ràng và tốc độ tải trang tức thì.",
-          en: "Review Lam Dep (review-lamdep.com) is an editorial beauty review platform covering aesthetic treatments, skincare, and beauty tips. Operating in a YMYL-adjacent niche, the project prioritizes Google's E-E-A-T signals, clean typography, and instant page loads."
+          vi: "Review Làm Đẹp (review-lamdep.com) là website chuyên cung cấp thông tin đánh giá khách quan về các xu hướng thẩm mỹ, mỹ phẩm và kinh nghiệm làm đẹp. Website sử dụng theme WordPress tự code từ đầu để tối ưu điểm Core Web Vitals, tập trung mạnh vào tiêu chuẩn E-E-A-T của Google, giao diện đọc bài rõ ràng và tốc độ tải trang tức thì.",
+          en: "Review Lam Dep (review-lamdep.com) is an editorial beauty review platform with a custom-coded theme from scratch prioritizing Core Web Vitals, Google's E-E-A-T signals, and instant page loads."
         },
         myRole: {
           vi: [
-            "Thiết lập cấu trúc giao diện bài viết chuẩn SEO, hộp thông tin tác giả/người kiểm duyệt nội dung (Author Box) tăng độ tin cậy E-E-A-T.",
+            "Tự lập trình giao diện bài viết chuẩn SEO (Custom WordPress Theme), hộp thông tin tác giả/người kiểm duyệt nội dung (Author Box) tăng độ tin cậy E-E-A-T.",
             "Nghiên cứu từ khóa, lập kế hoạch cấu trúc nội dung (Content Outline) và kiểm duyệt tiêu chuẩn On-page trước khi xuất bản.",
             "Quản trị kỹ thuật WordPress, tối ưu hóa cơ sở dữ liệu và khắc phục các vấn đề thu thập dữ liệu trên Google Search Console."
           ],
           en: [
-            "Configured SEO-friendly article templates, including Author/Reviewer attribution boxes to reinforce E-E-A-T signals.",
+            "Engineered custom WordPress theme templates for review articles, including Author/Reviewer attribution boxes to reinforce E-E-A-T signals.",
             "Conducted keyword research, structured content outlines, and audited On-page SEO compliance prior to publication.",
             "Maintained WordPress core/plugins, optimized database tables, and resolved indexing issues in Google Search Console."
           ]
@@ -1116,18 +1118,18 @@ window.PORTFOLIO_DATA = {
       githubUrl: "https://github.com/UyenPoe",
       categories: ["wordpress", "seo"],
       badge: {
-        vi: "WordPress · Review Portal · SEO",
-        en: "WordPress · Review Portal · SEO"
+        vi: "WordPress (Tự Code Theme) · SEO",
+        en: "WordPress (Custom Theme) · SEO"
       },
       role: {
-        vi: "Website Administrator · WordPress Developer · SEO Specialist",
-        en: "Website Administrator · WordPress Developer · SEO Specialist"
+        vi: "WordPress Developer (Tự Code Theme) · Web Admin · SEO Specialist",
+        en: "WordPress Developer (Custom Theme) · Web Admin · SEO Specialist"
       },
       shortDesc: {
-        vi: "Nền tảng tổng hợp đánh giá, phản hồi và phân tích chất lượng dịch vụ thẩm mỹ – Tối ưu cấu trúc chuyên mục, tốc độ truy cập và quản trị bảo mật.",
-        en: "Aesthetic service review and rating portal — engineered for fast category navigation, structured review presentation, and secure hosting operations."
+        vi: "Nền tảng tổng hợp đánh giá chất lượng dịch vụ thẩm mỹ với theme tự lập trình tối ưu cấu trúc chuyên mục, tốc độ truy cập và quản trị bảo mật.",
+        en: "Aesthetic service review and rating portal with custom-coded theme — engineered for fast navigation, structured reviews, and secure hosting operations."
       },
-      techStack: ["WordPress", "PHP", "Custom CSS/JS", "Technical SEO", "Sitemap & Robots", "Cloudflare DNS", "Security & Backup"],
+      techStack: ["WordPress", "Custom Theme", "PHP", "Technical SEO", "Sitemap & Robots", "Cloudflare DNS", "Security & Backup"],
       images: {
         hero: "assets/images/projects/danh-gia-tham-my.webp",
         desktop: "assets/images/projects/danh-gia-tham-my.webp",
@@ -1208,18 +1210,18 @@ window.PORTFOLIO_DATA = {
       githubUrl: "https://github.com/UyenPoe",
       categories: ["wordpress", "ecommerce", "seo"],
       badge: {
-        vi: "WordPress · WooCommerce · SEO",
-        en: "WordPress · WooCommerce · SEO"
+        vi: "WordPress (Tự Code Theme) · WooCommerce",
+        en: "WordPress (Custom Theme) · WooCommerce"
       },
       role: {
-        vi: "WordPress / WooCommerce Developer · SEO Specialist",
-        en: "WordPress / WooCommerce Developer · SEO Specialist"
+        vi: "WordPress Developer (Tự Code Theme) · WooCommerce · SEO Specialist",
+        en: "WordPress Developer (Custom Theme) · WooCommerce · SEO Specialist"
       },
       shortDesc: {
-        vi: "Website thương mại điện tử & каталог trưng bày sản phẩm chậu đá tự nhiên cao cấp (Stone Sinks), tối ưu hình ảnh chất lượng cao và SEO sản phẩm.",
-        en: "Luxury natural stone sink e-commerce catalog (stonesinks.vn), combining high-resolution product presentation with WooCommerce and Product SEO."
+        vi: "Website thương mại điện tử & catalog trưng bày sản phẩm chậu đá tự nhiên cao cấp (Stone Sinks) tự lập trình theme từ đầu, tối ưu hình ảnh sắc nét và SEO sản phẩm.",
+        en: "Luxury natural stone sink e-commerce catalog (stonesinks.vn) with custom-coded theme from scratch, combining high-resolution product presentation with WooCommerce and Product SEO."
       },
-      techStack: ["WordPress", "WooCommerce", "UI/UX Web Design", "Adobe Photoshop", "Product Schema", "On-page SEO", "WebP High-Res", "Hosting & Domain"],
+      techStack: ["WordPress", "Custom Theme", "WooCommerce", "UI/UX Web Design", "Adobe Photoshop", "Product Schema", "On-page SEO", "WebP High-Res", "Hosting & Domain"],
       images: {
         hero: "assets/images/projects/stone-sinks.webp",
         desktop: "assets/images/projects/stone-sinks.webp",
@@ -1299,18 +1301,18 @@ window.PORTFOLIO_DATA = {
       githubUrl: "https://github.com/UyenPoe",
       categories: ["web", "seo"],
       badge: {
-        vi: "B2B Industrial & Technical SEO",
-        en: "B2B Industrial & Technical SEO"
+        vi: "WordPress (Tự Code Theme B2B) · SEO",
+        en: "WordPress (Custom Theme B2B) · SEO"
       },
       role: {
         vi: "Senior SEO Specialist & Industrial Web Administrator",
         en: "Senior SEO Specialist & Industrial Web Administrator"
       },
       shortDesc: {
-        vi: "Quản trị hệ thống và triển khai chiến dịch SEO B2B tổng thể cho cụm 4 website thiết bị nâng hạ & cân điện tử công nghiệp: cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com. Đưa hơn 150+ từ khóa cốt lõi vào Top 1–5 Google.",
-        en: "Managed web systems and executed full-scale B2B SEO campaigns across 4 industrial websites (cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com), ranking 150+ core keywords into Google Top 1–5."
+        vi: "Quản trị hệ thống và triển khai chiến dịch SEO B2B tổng thể cho cụm 4 website thiết bị nâng hạ & cân điện tử công nghiệp: cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com. Tự lập trình theme B2B chuẩn SEO, đưa hơn 150+ từ khóa cốt lõi vào Top 1–5 Google.",
+        en: "Managed web systems and executed full-scale B2B SEO campaigns across 4 industrial websites (cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com) with custom B2B themes, ranking 150+ core keywords into Google Top 1–5."
       },
-      techStack: ["WordPress", "Technical SEO", "Local SEO Maps", "Schema Markup", "Adobe Photoshop", "Illustrator", "B2B Catalog", "cPanel"],
+      techStack: ["WordPress (Tự Code Theme B2B)", "Technical SEO", "Local SEO Maps", "Schema Markup", "Adobe Photoshop", "Illustrator", "B2B Catalog", "cPanel"],
       images: {
         hero: "assets/images/projects/hoangthien-scale.webp",
         desktop: "assets/images/projects/cautruc-thoian.webp",

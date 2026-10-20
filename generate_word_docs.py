@@ -253,7 +253,8 @@ def build_cv_seo_docx():
     add_bullet_item(doc, "Sản phẩm công nghệ: Custom WordPress Plugin Tối Ưu Content SEO", "Tự code giải pháp in-house siêu nhẹ (Zero Bloatware) tích hợp trực tiếp WordPress Editor: chấm điểm On-page thời gian thực, sinh mục lục bài viết kèm anchor text và tự nhúng Schema FAQ JSON-LD hợp lệ 100% Rich Results Test.")
     add_bullet_item(doc, "Dự án Cổng thông tin Sàn Thẩm Mỹ (santhammy.com - Laravel MVC & Directory SEO)", "Xây dựng cổng thông tin danh bạ thẩm mỹ viện trên nền tảng Laravel (PHP & MySQL): thiết kế kiến trúc MVC, tối ưu bộ định tuyến Routing phân tầng quận/huyện và chuyên khoa thẩm mỹ, tối ưu truy vấn cơ sở dữ liệu đạt TTFB < 0.4s, giúp Googlebot lập chỉ mục 100% URLs danh bạ.")
     add_bullet_item(doc, "Dự án Cụm B2B Thiết Bị Nâng Hạ & Cân Điện Tử (cautructhoian.vn · hoangthienscale.com · canhoangthien.com · thoianscale.com)", "Quản trị kỹ thuật & SEO tổng thể: 150+ từ khóa kỹ thuật Top 1-5 Google, Local Maps phủ sóng KCN phía Nam, mang lại nguồn khách hàng doanh nghiệp B2B ổn định liên tục suốt 5 năm (2017 – 2022).")
-    add_bullet_item(doc, "Dự án Viện Thẩm Mỹ WangSun Luxury (vienthammywangsun.com)", "Tối ưu Technical Audit, triển khai Schema MedicalBusiness & LocalBusiness, nén ảnh WebP tải trang < 1.8s. Kết quả: Tăng trưởng Organic Clicks 210%, lọt Top 10 Google từ khóa dịch vụ làm đẹp tại TP.HCM.")
+    add_bullet_item(doc, "Dự án Viện Thẩm Mỹ WangSun Luxury (vienthammywangsun.com)", "Tùy biến Flatsome Child Theme hoàng gia, tối ưu Technical Audit, triển khai Schema MedicalBusiness & LocalBusiness, nén ảnh WebP tải trang < 1.8s. Kết quả: Tăng trưởng Organic Clicks 210%, lọt Top 10 Google từ khóa dịch vụ làm đẹp tại TP.HCM.")
+    add_bullet_item(doc, "Dự án Smartphone E-commerce (smartphone.taichinhtaithanh.com)", "Tự lập trình WordPress Theme sạch từ đầu (Custom Theme), chuẩn hóa cấu trúc URL, Semantic Heading H1-H3, tối ưu tốc độ Core Web Vitals đạt PageSpeed 90+.")
     add_bullet_item(doc, "Dự án Thương mại Stone Sinks Vietnam (stonesinks.vn)", "Khai báo Product Schema chuẩn Google Merchant Center, nén WebP hình ảnh độ nét cao. Kết quả: Tỷ lệ hiển thị trên Google Image tăng 60%, từ khóa sản phẩm chiếm lĩnh trang nhất Google.")
 
     # Phương châm làm việc
@@ -545,7 +546,7 @@ def build_cv_general_docx():
     r_t1.font.color.rgb = COLOR_MUTED
 
     add_bullet_item(doc, "Phát triển công cụ & Tối ưu SEO", "Tự lập trình WordPress Plugin tối ưu Content SEO (chấm điểm on-page theo thời gian thực, tự sinh mục lục TOC và chèn Schema FAQ), giúp chuẩn hóa 100% bài viết và đưa hơn 30+ từ khóa vào Top 5 Google.")
-    add_bullet_item(doc, "Triển khai & Vận hành Web WordPress, Laravel & Blogspot", "Xây dựng và quản trị các website doanh nghiệp trên WordPress, hệ thống thương mại & danh bạ trên Laravel MVC (smartphone.taichinhtaithanh.com, santhammy.com), và Landing Page tư vấn tài chính trên Google Blogspot (taichinhtaithanh.com). Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
+    add_bullet_item(doc, "Triển khai & Vận hành Web WordPress, Laravel & Blogspot", "Xây dựng và quản trị các website doanh nghiệp trên WordPress tự code theme, cổng danh bạ trên Laravel MVC (santhammy.com), website thương mại điện tử tự code WordPress theme từ đầu (smartphone.taichinhtaithanh.com) và Landing Page tư vấn tài chính trên Google Blogspot (taichinhtaithanh.com). Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
     add_bullet_item(doc, "Thực hiện Chiến dịch SEO", "Lên kế hoạch bộ từ khóa, tối ưu On-page và Technical SEO, giúp website tăng trưởng lượng truy cập tự nhiên hơn 180% và đưa hơn 30+ từ khóa vào Top 5 Google.")
     add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện", "Thiết kế toàn bộ banner trang chủ, hình ảnh bài viết và ấn phẩm truyền thông mạng xã hội bằng Photoshop và Illustrator.")
 
@@ -569,10 +570,10 @@ def build_cv_general_docx():
     # Dự án tiêu biểu
     add_styled_heading(doc, "Dự Án Tiêu Biểu Đã Triển Khai (Featured Projects)")
     add_bullet_item(doc, "Cầu Trục Thới An & Cân Hoàng Thiên (cautructhoian.vn · hoangthienscale.com)", "Cụm 4 website B2B thiết bị công nghiệp nặng: 150+ từ khóa Top 1-5 Google bền vững suốt 5 năm (2017-2022), Local Maps, catalogue thông số kỹ thuật.")
-    add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Website phòng khám thẩm mỹ viện: thiết kế sang trọng, schema MedicalBusiness, tối ưu từ khóa dịch vụ tại TP.HCM, điểm PageSpeed 95+.")
+    add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Website phòng khám thẩm mỹ viện: tùy biến Flatsome Child Theme sang trọng, schema MedicalBusiness, tối ưu từ khóa dịch vụ tại TP.HCM, điểm PageSpeed 95+.")
     add_bullet_item(doc, "Tài Chính Tài Thành (taichinhtaithanh.com)", "Landing Page tài chính & vay tiêu dùng 24h trên Google Blogspot: công cụ tính khoản vay tương tác, form đăng ký tối ưu CRO, tên miền riêng.")
     add_bullet_item(doc, "Sàn Thẩm Mỹ (santhammy.com)", "Cổng danh bạ thẩm mỹ viện xây dựng trên Laravel MVC (PHP & MySQL): phân cấp quận/huyện, TTFB < 0.4s, lập chỉ mục 100% URLs trên Search Console.")
-    add_bullet_item(doc, "Smartphone E-commerce (smartphone.taichinhtaithanh.com)", "Hệ thống bán lẻ điện thoại Laravel MVC: bộ lọc sản phẩm đa tiêu chí, giỏ hàng, thanh toán và trang quản trị Admin.")
+    add_bullet_item(doc, "Smartphone E-commerce (smartphone.taichinhtaithanh.com)", "Hệ thống bán lẻ điện thoại WordPress tự code theme từ đầu: tích hợp WooCommerce, bộ lọc sản phẩm thông số/giá, giỏ hàng, tối ưu điểm PageSpeed 90+.")
     add_bullet_item(doc, "Stone Sinks Vietnam (stonesinks.vn)", "Website thương mại chậu đá tự nhiên: hình ảnh nén WebP sắc nét, Product Schema chuẩn Google Merchant, tốc độ tải trang dưới 1.8s.")
 
     save_document(doc, "CV-Le-Tran-Thanh-Uyen.docx")
@@ -714,10 +715,10 @@ def build_cv_graphic_docx():
     # Minh chứng 7 dự án
     add_styled_heading(doc, "Minh Chứng Hiệu Quả Thiết Kế Qua 7 Dự Án Thực Tế (Featured Projects)")
     add_bullet_item(doc, "Cầu Trục Thới An & Cân Hoàng Thiên (cautructhoian.vn · hoangthienscale.com)", "Xử lý hình ảnh thiết bị xưởng cơ khí, thi công cầu trục & trạm cân xe tải bằng Photoshop; thiết kế trọn bộ catalogue thông số kỹ thuật B2B sắc nét bằng Illustrator (2017-2022).")
-    add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Thiết kế phong cách thẩm mỹ viện hoàng gia, phối màu vàng kim & xanh ngọc, retouching ảnh bác sĩ và khách hàng trước sau liệu trình sắc nét.")
+    add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Thiết kế nhận diện phong cách thẩm mỹ viện hoàng gia, tùy biến giao diện Flatsome Child Theme, phối màu vàng kim & xanh ngọc, retouching ảnh bác sĩ và khách hàng trước sau liệu trình sắc nét.")
     add_bullet_item(doc, "Tài Chính Tài Thành (taichinhtaithanh.com)", "Thiết kế Landing Page tài chính vay tiêu dùng: bố cục trực quan, biểu tượng vector tài chính, công cụ tính khoản vay tương tác, form đăng ký tối ưu chuyển đổi CRO.")
     add_bullet_item(doc, "Stone Sinks Vietnam (stonesinks.vn)", "Xử lý ánh sáng và chất liệu đá tự nhiên cho hàng trăm sản phẩm chậu đá, thiết kế catalogue số và banner quảng bá chương trình ưu đãi.")
-    add_bullet_item(doc, "Smartphone E-commerce (smartphone.taichinhtaithanh.com)", "Thiết kế giao diện mua sắm điện thoại công nghệ hiện đại: phân cấp thông tin rõ ràng, thẻ sản phẩm tinh tế, bộ icon tính năng chi tiết chuẩn vector.")
+    add_bullet_item(doc, "Smartphone E-commerce (smartphone.taichinhtaithanh.com)", "Thiết kế giao diện mua sắm điện thoại công nghệ hiện đại cho website WordPress tự code theme: phân cấp thông tin rõ ràng, thẻ sản phẩm tinh tế, bộ icon tính năng chi tiết chuẩn vector.")
     add_bullet_item(doc, "Sàn Thẩm Mỹ (santhammy.com)", "Thiết kế hệ thống cổng danh bạ thẩm mỹ viện: layout danh sách cơ sở, huy hiệu chứng nhận uy tín, thanh tìm kiếm thông minh và bản đồ định vị.")
     add_bullet_item(doc, "Review Làm Đẹp (review-lamdep.com)", "Thiết kế phong cách tạp chí làm đẹp thanh lịch: typography tinh tế, khung ảnh review chân thực, huy hiệu chấm điểm sao vàng nổi bật.")
 

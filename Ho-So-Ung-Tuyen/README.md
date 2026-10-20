@@ -12,11 +12,14 @@
 
 ## 📁 Danh Mục Toàn Bộ Tài Liệu Ứng Tuyển
 
-Thư mục này tổng hợp đầy đủ các tài liệu định dạng **PDF** (chuẩn in ấn A4, typography to rõ nét, màu sắc chuyên nghiệp) và **Microsoft Word (.docx)** (dễ dàng chỉnh sửa, font chữ to rõ ràng 11–12pt). Tất cả các tài liệu đã được cập nhật đầy đủ kinh nghiệm 2017 – 2022 và dự án cụm 4 website B2B thiết bị công nghiệp nặng & trạm cân điện tử (`cautructhoian.vn`, `hoangthienscale.com`, `thoianscale.com`, `canhoangthien.com`).
+Thư mục này tổng hợp đầy đủ các tài liệu định dạng **PDF** (chuẩn in ấn A4, typography to rõ nét, màu sắc chuyên nghiệp) và **Microsoft Word (.docx)** (dễ dàng chỉnh sửa, font chữ to rõ ràng 11–12pt). Tất cả các tài liệu đã được cập nhật chuẩn xác:
+- **Kiến trúc mã nguồn WordPress & Theme:** Tất cả website WordPress (`smartphone.taichinhtaithanh.com`, `stonesinks.vn`, `review-lamdep.com`, `danhgiathammy.com`, và cụm B2B `cautructhoian.vn`, `hoangthienscale.com`, `thoianscale.com`, `canhoangthien.com`) đều **TỰ LẬP TRÌNH THEME TỪ ĐẦU (Custom Theme)** nhằm tối ưu mã nguồn sạch, loại bỏ bloatware và đạt điểm PageSpeed 90+; riêng **Viện Thẩm Mỹ WangSun** (`vienthammywangsun.com`) tùy biến chuyên sâu **Flatsome Theme (Child Theme)** cho phong cách thẩm mỹ hoàng gia.
+- **Các nền tảng chuyên biệt khác:** `santhammy.com` xây dựng trên **Laravel Framework MVC** (PHP & MySQL); `taichinhtaithanh.com` xây dựng trên **Google Blogspot (Custom XML & CRO)**.
+- **Kinh nghiệm 2017 – 2022:** Senior SEO Specialist & Industrial Web Admin quản trị 4 website B2B thiết bị công nghiệp nặng và trạm cân điện tử, đưa hơn 150+ từ khóa kỹ thuật vào Top 1–5 Google suốt 5 năm.
 
 ### 🌟 1. Hồ Sơ Xuất Riêng 1 File Duy Nhất (All-In-One Master PDF)
 - **`Ho-So-Ung-Tuyen-All-In-One-Le-Tran-Thanh-Uyen.pdf`** (5 Trang A4)
-  - *Mô tả:* File PDF trọn gói chuyên nghiệp gồm: **Trang 1-2** là CV Tổng hợp năng lực Full-Stack (Web Administrator, WordPress/Laravel/Blogspot, SEO Technical & Graphic/UI-UX Designer qua các giai đoạn 2017 – 2022 và 2022 – Hiện tại) + **Trang 3-5** là Portfolio chi tiết minh chứng 8 dự án thực tế kèm hình ảnh giao diện.
+  - *Mô tả:* File PDF trọn gói chuyên nghiệp gồm: **Trang 1-2** là CV Tổng hợp năng lực Full-Stack (Web Administrator, WordPress tự code theme, Flatsome, Laravel, Blogspot, SEO Technical & Graphic/UI-UX Designer qua các giai đoạn 2017 – 2022 và 2022 – Hiện tại) + **Trang 3-5** là Portfolio chi tiết minh chứng 8 dự án thực tế kèm hình ảnh giao diện.
   - *Mục đích:* Dành gửi nhanh cho Nhà tuyển dụng / Đối tác cần một tài liệu đầy đủ, toàn diện nhất chỉ với 1 cú click.
 
 ---
