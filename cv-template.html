@@ -22,7 +22,7 @@
       background-color: #ffffff;
       color: #1f2937;
       font-size: 9.3pt;
-      line-height: 1.36;
+      line-height: 1.48;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
@@ -149,7 +149,7 @@
     .summary-text {
       font-size: 8.9pt;
       color: #374151;
-      line-height: 1.38;
+      line-height: 1.48;
       text-align: justify;
       margin-bottom: 3px;
     }
@@ -158,23 +158,23 @@
     .skills-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
+      gap: 3.5px;
       margin-bottom: 2px;
     }
     .skill-block {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-radius: 5px;
-      padding: 4.5px 7.5px;
+      border-radius: 4px;
+      padding: 3px 6px;
     }
     .skill-block.full-width {
       grid-column: span 2;
     }
     .skill-title {
-      font-size: 8.6pt;
+      font-size: 8.5pt;
       font-weight: 700;
       color: #0b2342;
-      margin-bottom: 2.5px;
+      margin-bottom: 1.5px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -182,16 +182,16 @@
     .skill-tag-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 3.5px;
+      gap: 2.5px;
     }
     .skill-tag {
       background: #ffffff;
       border: 1px solid #cbd5e1;
       color: #1e293b;
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 500;
-      padding: 1.2px 5px;
-      border-radius: 3px;
+      padding: 0.8px 4px;
+      border-radius: 2px;
     }
     .skill-tag.highlight {
       background: #ecfdf5;
@@ -245,39 +245,41 @@
     .exp-summary {
       font-size: 8.3pt;
       color: #374151;
-      margin-bottom: 1.5px;
+      line-height: 1.44;
+      margin-bottom: 2px;
     }
     .exp-bullets {
       list-style-type: disc;
       padding-left: 14px;
       font-size: 8.2pt;
       color: #4b5563;
-      line-height: 1.34;
+      line-height: 1.44;
     }
     .exp-bullets li {
-      margin-bottom: 1.2px;
+      margin-bottom: 2px;
     }
     .exp-results {
       background: #f0fdf4;
       border: 1px solid #bbf7d0;
       color: #166534;
-      padding: 2.5px 7px;
+      padding: 3px 7px;
       border-radius: 3px;
       font-size: 8.1pt;
-      margin-top: 2px;
+      line-height: 1.40;
+      margin-top: 2.5px;
       font-weight: 600;
     }
     .exp-tags {
       display: flex;
-      gap: 3.5px;
+      gap: 2.5px;
       flex-wrap: wrap;
-      margin-top: 2px;
+      margin-top: 1.5px;
     }
     .exp-tag {
-      font-size: 7.2pt;
+      font-size: 7.0pt;
       background: #e2e8f0;
       color: #334155;
-      padding: 1px 4.5px;
+      padding: 0.5px 3.5px;
       border-radius: 2px;
     }
 
@@ -331,8 +333,8 @@
     .proj-desc {
       font-size: 7.5pt;
       color: #334155;
-      line-height: 1.22;
-      margin-bottom: 1.5px;
+      line-height: 1.38;
+      margin-bottom: 2px;
     }
     .proj-tech-wrap {
       display: flex;
@@ -377,7 +379,7 @@
     .workflow-desc, .edu-desc {
       font-size: 7.4pt;
       color: #4b5563;
-      line-height: 1.22;
+      line-height: 1.38;
     }
 
     /* FOOTER */
@@ -550,10 +552,10 @@
         <div class="exp-company">Hệ thống Website Thẩm mỹ &amp; Cổng thông tin Đánh giá (TP.HCM)</div>
         <p class="exp-summary">Chịu trách nhiệm quản trị hệ thống, tối ưu SEO kỹ thuật và thiết kế ấn phẩm đồ họa cho 4 website (WangSun Luxury, Sàn Thẩm Mỹ, Review Làm Đẹp, Đánh Giá Thẩm Mỹ).</p>
         <ul class="exp-bullets">
-          <li>Quản trị hạ tầng Hosting cPanel/VPS, Cloudflare DNS, thiết lập chứng chỉ SSL, sao lưu database tự động định kỳ và khắc phục sự cố hệ thống.</li>
-          <li>Triển khai cấu trúc dữ liệu Schema JSON-LD chuyên sâu (LocalBusiness, MedicalBusiness, Review, FAQ, Breadcrumbs), tối ưu chỉ mục Google Search Console.</li>
-          <li>Tối ưu tốc độ tải trang Core Web Vitals: nén ảnh định dạng WebP, cấu hình bộ nhớ đệm (caching), loại bỏ CSS/JS không sử dụng, điểm số đạt trên 90.</li>
-          <li>Sử dụng Adobe Photoshop &amp; Illustrator thiết kế banner marketing, xử lý hình ảnh thẩm mỹ viện và tinh chỉnh layout UI/UX trải nghiệm khách hàng.</li>
+          <li>Quản trị hạ tầng Hosting cPanel/VPS, Cloudflare DNS, SSL, sao lưu database tự động và khắc phục sự cố hệ thống.</li>
+          <li>Triển khai Schema JSON-LD chuyên sâu (LocalBusiness, MedicalBusiness, FAQ, Breadcrumbs), tối ưu chỉ mục Search Console.</li>
+          <li>Tối ưu Core Web Vitals (nén WebP, caching, tối ưu mã nguồn CSS/JS), đạt điểm số Google PageSpeed trên 90.</li>
+          <li>Sử dụng Adobe Photoshop &amp; Illustrator thiết kế banner marketing, xử lý ảnh thẩm mỹ và tối ưu layout UI/UX.</li>
         </ul>
         <div class="exp-results">
           <strong>Kết quả đạt được:</strong> Tăng 45% lưu lượng truy cập tự nhiên (Organic Traffic), 100% URLs được Google lập chỉ mục nhanh chóng, vận hành ổn định 99.9% uptime.
@@ -577,9 +579,9 @@
         <div class="exp-company">Dự án Thương mại điện tử Stone Sinks Vietnam (Chậu đá tự nhiên cao cấp)</div>
         <p class="exp-summary">Trực tiếp xây dựng website bán hàng WooCommerce, tối ưu On-page SEO sản phẩm và thiết kế hình ảnh nhận diện thương hiệu.</p>
         <ul class="exp-bullets">
-          <li>Tùy biến Child Theme, thiết lập WooCommerce, xây dựng bộ lọc sản phẩm theo chất liệu, kích thước và màu sắc.</li>
-          <li>Thiết kế banner chương trình, retouch ảnh sản phẩm độ phân giải cao bằng Photoshop và chuyển đổi đồng loạt sang WebP giảm 80% dung lượng.</li>
-          <li>Triển khai cấu trúc Schema Product, tối ưu On-page meta title/description giúp sản phẩm xuất hiện nổi bật trên Google Image &amp; Search.</li>
+          <li>Tùy biến Child Theme, thiết lập WooCommerce, xây dựng bộ lọc sản phẩm đa thuộc tính theo chất liệu và màu sắc.</li>
+          <li>Thiết kế banner chương trình, retouch ảnh sản phẩm bằng Photoshop và chuyển đổi đồng loạt sang WebP giảm 80% dung lượng.</li>
+          <li>Khai báo cấu trúc Schema Product, tối ưu On-page meta title/description đưa từ khóa sản phẩm lên top Google.</li>
         </ul>
         <div class="exp-results">
           <strong>Kết quả đạt được:</strong> Tốc độ tải trang dưới 1.8s dù chứa hàng trăm ảnh mẫu độ nét cao; tỷ lệ thoát trang (bounce rate) giảm 30%.
@@ -660,7 +662,6 @@
             <span class="proj-type">Blogspot / CRO</span>
           </div>
           <a class="proj-url" href="https://www.taichinhtaithanh.com" target="_blank">taichinhtaithanh.com</a>
-          <div class="proj-role">Vai trò: Blogspot Frontend &amp; CRO Specialist</div>
           <p class="proj-desc">Landing Page tài chính &amp; vay tín chấp nhanh 24h: tùy biến template Blogspot XML, công cụ tính khoản vay tương tác, lead form tối ưu chuyển đổi.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">Blogspot XML</span>
@@ -678,7 +679,6 @@
             <span class="proj-type">WordPress / Custom Theme</span>
           </div>
           <a class="proj-url" href="http://smartphone.taichinhtaithanh.com" target="_blank">smartphone.taichinhtaithanh.com</a>
-          <div class="proj-role">Vai trò: WordPress Developer (Tự Code Theme) &amp; UI/UX</div>
           <p class="proj-desc">Website thương mại điện tử bán lẻ điện thoại tự code theme từ đầu: bộ lọc thông số, giỏ hàng WooCommerce, chuẩn PageSpeed 90+.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">WordPress</span>
@@ -696,7 +696,6 @@
             <span class="proj-type">WordPress / Flatsome</span>
           </div>
           <a class="proj-url" href="https://vienthammywangsun.com" target="_blank">vienthammywangsun.com</a>
-          <div class="proj-role">Vai trò: WordPress Developer (Flatsome) &amp; SEO</div>
           <p class="proj-desc">Viện thẩm mỹ sang trọng với Flatsome Child Theme cao cấp, schema MedicalBusiness, tối ưu từ khóa dịch vụ tại TP.HCM.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">WordPress</span>
@@ -714,7 +713,6 @@
             <span class="proj-type">Laravel Portal</span>
           </div>
           <a class="proj-url" href="https://santhammy.com" target="_blank">santhammy.com</a>
-          <div class="proj-role">Vai trò: Laravel Backend &amp; Technical SEO</div>
           <p class="proj-desc">Cổng thông tin danh bạ thẩm mỹ viện xây dựng trên Laravel (PHP &amp; MySQL): kiến trúc MVC phân cấp theo địa bàn và dịch vụ, tối ưu query và lập chỉ mục.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">Laravel MVC</span>
@@ -732,7 +730,6 @@
             <span class="proj-type">WordPress / Custom Theme</span>
           </div>
           <a class="proj-url" href="http://review-lamdep.com" target="_blank">review-lamdep.com</a>
-          <div class="proj-role">Vai trò: WordPress Developer (Tự Code Theme) &amp; SEO</div>
           <p class="proj-desc">Tạp chí đánh giá mỹ phẩm &amp; spa tự code theme từ đầu: kiến trúc Topic Cluster, internal linking khoa học, schema Review, điểm On-page trên 95.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">WordPress</span>
@@ -750,7 +747,6 @@
             <span class="proj-type">WordPress / Custom Theme</span>
           </div>
           <a class="proj-url" href="http://danhgiathammy.com" target="_blank">danhgiathammy.com</a>
-          <div class="proj-role">Vai trò: WordPress Developer (Tự Code Theme) &amp; Admin</div>
           <p class="proj-desc">Cổng đánh giá phẫu thuật thẩm mỹ tự code theme từ đầu: thiết lập hạ tầng cPanel bảo mật cao, chống spam/bot, thời gian phản hồi máy chủ nhanh.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">WordPress</span>
@@ -768,7 +764,6 @@
             <span class="proj-type">WordPress / Custom Theme</span>
           </div>
           <a class="proj-url" href="https://stonesinks.vn" target="_blank">stonesinks.vn</a>
-          <div class="proj-role">Vai trò: WordPress Developer (Tự Code Theme) &amp; Design</div>
           <p class="proj-desc">Website thương mại chậu đá tự nhiên tự code theme: hình ảnh sản phẩm sắc nét nén WebP, Product Schema đầy đủ, chuẩn Google Shopping.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">WordPress</span>
@@ -786,7 +781,6 @@
             <span class="proj-type">WordPress / Custom B2B</span>
           </div>
           <a class="proj-url" href="https://cautructhoian.vn" target="_blank">cautructhoian.vn · hoangthienscale.com</a>
-          <div class="proj-role">Vai trò: Senior SEO Specialist &amp; Web Admin</div>
           <p class="proj-desc">Cụm 4 website B2B thiết bị nâng hạ &amp; cân điện tử (cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com): tự code theme B2B, 150+ từ khóa Top 1-5 Google.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">WordPress</span>

@@ -22,7 +22,7 @@
       background-color: #ffffff;
       color: #1f2937;
       font-size: 9.5pt;
-      line-height: 1.36;
+      line-height: 1.46;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
@@ -34,7 +34,7 @@
       width: 210mm;
       height: 297mm;
       max-height: 297mm;
-      padding: 6mm 11mm 5mm 11mm;
+      padding: 5mm 11mm 4.5mm 11mm;
       box-sizing: border-box;
       position: relative;
       background: #ffffff;
@@ -55,8 +55,8 @@
       background: linear-gradient(135deg, #0b2342 0%, #111827 100%);
       color: #ffffff;
       border-radius: 7px;
-      padding: 10px 16px;
-      margin-bottom: 5px;
+      padding: 8px 14px;
+      margin-bottom: 3.5px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -124,17 +124,17 @@
 
     /* SECTION TITLE */
     .section-title {
-      font-size: 10.5pt;
+      font-size: 10.2pt;
       font-weight: 700;
       color: #0b2342;
       text-transform: uppercase;
       letter-spacing: 0.4px;
-      margin: 5px 0 4px 0;
+      margin: 4px 0 2.5px 0;
       display: flex;
       align-items: center;
       gap: 5px;
       border-bottom: 1.5px solid #e2e8f0;
-      padding-bottom: 2px;
+      padding-bottom: 1.5px;
     }
     .section-title::before {
       content: "";
@@ -149,7 +149,7 @@
     .summary-text {
       font-size: 9.2pt;
       color: #374151;
-      line-height: 1.38;
+      line-height: 1.46;
       text-align: justify;
       margin-bottom: 3px;
     }
@@ -158,23 +158,23 @@
     .skills-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      margin-bottom: 3px;
+      gap: 3.5px;
+      margin-bottom: 2px;
     }
     .skill-block {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-radius: 5px;
-      padding: 5px 8px;
+      border-radius: 4px;
+      padding: 3px 6px;
     }
     .skill-block.full-width {
       grid-column: span 2;
     }
     .skill-title {
-      font-size: 8.9pt;
+      font-size: 8.5pt;
       font-weight: 700;
       color: #0b2342;
-      margin-bottom: 3px;
+      margin-bottom: 1.5px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -182,16 +182,16 @@
     .skill-tag-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 3.5px;
+      gap: 2.5px;
     }
     .skill-tag {
       background: #ffffff;
       border: 1px solid #cbd5e1;
       color: #1e293b;
-      font-size: 7.9pt;
+      font-size: 7.3pt;
       font-weight: 500;
-      padding: 1.2px 5px;
-      border-radius: 3px;
+      padding: 0.8px 4px;
+      border-radius: 2px;
     }
     .skill-tag.highlight {
       background: #ecfdf5;
@@ -245,17 +245,18 @@
     .exp-summary {
       font-size: 8.6pt;
       color: #374151;
-      margin-bottom: 1.5px;
+      line-height: 1.44;
+      margin-bottom: 2px;
     }
     .exp-bullets {
       list-style-type: disc;
       padding-left: 14px;
       font-size: 8.4pt;
       color: #4b5563;
-      line-height: 1.34;
+      line-height: 1.44;
     }
     .exp-bullets li {
-      margin-bottom: 1.2px;
+      margin-bottom: 2px;
     }
     .exp-results {
       background: #f0fdf4;
@@ -269,15 +270,15 @@
     }
     .exp-tags {
       display: flex;
-      gap: 3.5px;
+      gap: 2.5px;
       flex-wrap: wrap;
-      margin-top: 2.5px;
+      margin-top: 1.5px;
     }
     .exp-tag {
-      font-size: 7.5pt;
+      font-size: 7.0pt;
       background: #e2e8f0;
       color: #334155;
-      padding: 1px 4.5px;
+      padding: 0.5px 3.5px;
       border-radius: 2px;
     }
 
@@ -285,66 +286,66 @@
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      margin-bottom: 4px;
+      gap: 3.5px;
+      margin-bottom: 2.5px;
     }
     .proj-card {
       background: #ffffff;
       border: 1px solid #e2e8f0;
-      border-radius: 5px;
-      padding: 5.5px 8px;
+      border-radius: 4px;
+      padding: 3px 5.5px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.02);
     }
     .proj-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
     .proj-name {
-      font-size: 9.4pt;
+      font-size: 8.8pt;
       font-weight: 700;
       color: #0b2342;
     }
     .proj-type {
-      font-size: 7.6pt;
+      font-size: 7.0pt;
       background: #ecfdf5;
       color: #065f46;
       border: 1px solid #a7f3d0;
-      padding: 1px 5px;
+      padding: 0.5px 3.5px;
       border-radius: 2px;
       font-weight: 600;
     }
     .proj-url {
-      font-size: 8.0pt;
+      font-size: 7.3pt;
       color: #0284c7;
       display: block;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
       font-family: monospace;
     }
     .proj-role {
-      font-size: 8.1pt;
+      font-size: 7.6pt;
       color: #64748b;
       font-weight: 600;
-      margin-bottom: 1.5px;
+      margin-bottom: 1px;
     }
     .proj-desc {
-      font-size: 8.2pt;
+      font-size: 7.5pt;
       color: #334155;
-      line-height: 1.28;
-      margin-bottom: 2.5px;
+      line-height: 1.38;
+      margin-bottom: 2px;
     }
     .proj-tech-wrap {
       display: flex;
       flex-wrap: wrap;
-      gap: 2.5px;
+      gap: 2px;
     }
     .proj-tech {
-      font-size: 7.3pt;
+      font-size: 6.8pt;
       background: #f1f5f9;
       color: #475569;
       border: 1px solid #e2e8f0;
-      padding: 0.5px 4px;
+      padding: 0.5px 3.5px;
       border-radius: 2px;
     }
 
@@ -352,49 +353,52 @@
     .tools-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
-      margin-top: 2.5px;
-      margin-bottom: 3.5px;
+      gap: 3.5px;
+      margin-top: 1.5px;
+      margin-bottom: 2px;
     }
     .tools-card {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-radius: 5px;
-      padding: 5px 7px;
+      border-radius: 4px;
+      padding: 3px 5.5px;
     }
     .tools-title {
-      font-size: 8.7pt;
+      font-size: 8.3pt;
       font-weight: 700;
       color: #0b2342;
-      margin-bottom: 1.5px;
+      margin-bottom: 1px;
     }
     .tools-sub {
-      font-size: 7.8pt;
+      font-size: 7.3pt;
       font-weight: 600;
       color: #0284c7;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
     .tools-desc {
-      font-size: 7.9pt;
+      font-size: 7.4pt;
       color: #4b5563;
-      line-height: 1.28;
+      line-height: 1.38;
     }
 
     /* FOOTER */
     .cv-footer {
       border-top: 1px solid #e2e8f0;
       padding-top: 3px;
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       color: #64748b;
       display: flex;
       flex-direction: column;
-      gap: 1px;
+      gap: 1.5px;
     }
     .cv-footer-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
+    }
+    .cv-footer-row span {
+      white-space: nowrap;
     }
     .cv-footer strong {
       color: #0b2342;
@@ -651,7 +655,6 @@
             <span class="proj-type">Flatsome &amp; Medical SEO</span>
           </div>
           <a class="proj-url" href="https://vienthammywangsun.com" target="_blank">vienthammywangsun.com</a>
-          <div class="proj-role">Nhiệm vụ: Flatsome Child Theme &amp; SEO</div>
           <p class="proj-desc">Tùy biến Flatsome Child Theme sang trọng, Schema MedicalBusiness, tối ưu Local SEO dịch vụ làm đẹp tại TP.HCM, tải &lt; 2s.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">Flatsome Theme</span>
@@ -668,7 +671,6 @@
             <span class="proj-type">Laravel &amp; Directory SEO</span>
           </div>
           <a class="proj-url" href="https://santhammy.com" target="_blank">santhammy.com</a>
-          <div class="proj-role">Nhiệm vụ: Laravel Backend &amp; Technical SEO</div>
           <p class="proj-desc">Xây dựng kiến trúc cổng danh bạ trên nền tảng Laravel (PHP &amp; MySQL), phân cấp theo địa bàn và dịch vụ, tối ưu query database, index 100% URLs trên Search Console.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">Laravel MVC</span>
@@ -685,7 +687,6 @@
             <span class="proj-type">Content Silo &amp; Review SEO</span>
           </div>
           <a class="proj-url" href="http://review-lamdep.com" target="_blank">review-lamdep.com</a>
-          <div class="proj-role">Nhiệm vụ: On-page SEO &amp; Topic Cluster</div>
           <p class="proj-desc">Xây dựng kiến trúc Topic Cluster chuyên sâu về mỹ phẩm và spa, khai báo Review Schema, gắn FAQ Rich Snippet, điểm On-page trên 95.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">Topic Cluster</span>
@@ -702,7 +703,6 @@
             <span class="proj-type">E-commerce &amp; Image SEO</span>
           </div>
           <a class="proj-url" href="https://stonesinks.vn" target="_blank">stonesinks.vn</a>
-          <div class="proj-role">Nhiệm vụ: WooCommerce &amp; Product SEO</div>
           <p class="proj-desc">Khai báo cấu trúc Product Schema hiển thị giá và tình trạng hàng trên Google, tối ưu WebP hình ảnh độ phân giải cao lên Google Image.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">Product Schema</span>
@@ -719,7 +719,6 @@
             <span class="proj-type">Security &amp; Ranking Stability</span>
           </div>
           <a class="proj-url" href="http://danhgiathammy.com" target="_blank">danhgiathammy.com</a>
-          <div class="proj-role">Nhiệm vụ: Technical &amp; System Hardening</div>
           <p class="proj-desc">Thiết lập hạ tầng cPanel bảo mật cao, chống tấn công brute force và spam bot, duy trì uptime 99.9% giúp thứ hạng SEO không bị tụt dốc.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">Uptime 99.9%</span>
@@ -736,7 +735,6 @@
             <span class="proj-type">WordPress Custom Theme SEO</span>
           </div>
           <a class="proj-url" href="http://smartphone.taichinhtaithanh.com" target="_blank">smartphone.taichinhtaithanh.com</a>
-          <div class="proj-role">Nhiệm vụ: Tự Code Theme &amp; Clean Architecture</div>
           <p class="proj-desc">Tự lập trình WordPress Theme sạch từ đầu, cấu trúc URL phân cấp rõ ràng, chuẩn hóa Semantic Heading, đạt PageSpeed 90+.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">Custom Theme</span>
@@ -753,7 +751,6 @@
             <span class="proj-type">B2B Industrial &amp; Local SEO</span>
           </div>
           <a class="proj-url" href="https://cautructhoian.vn" target="_blank">cautructhoian.vn · hoangthienscale.com</a>
-          <div class="proj-role">Nhiệm vụ: Senior SEO Specialist &amp; Web Admin</div>
           <p class="proj-desc">Cụm 4 website B2B thiết bị nâng hạ &amp; cân điện tử: 150+ từ khóa Top 1-5 Google, Local Maps các KCN phía Nam, duy trì 5 năm.</p>
           <div class="proj-tech-wrap">
             <span class="proj-tech">150+ Top 1-5</span>
