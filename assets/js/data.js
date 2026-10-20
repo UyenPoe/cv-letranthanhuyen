@@ -606,6 +606,41 @@ window.PORTFOLIO_DATA = {
         en: "Ranked 150+ primary industrial keywords into Google Top 1–5, maintaining sustained organic visibility over 5 years and generating high-value B2B enterprise inquiries."
       },
       tech: ["WordPress", "B2B Technical SEO", "Local SEO Google Maps", "Adobe Photoshop", "Adobe Illustrator", "Product Catalog", "Hosting cPanel", "Keyword Research"]
+    },
+    {
+      id: "exp-5",
+      period: "2017 – Hiện tại",
+      role: {
+        vi: "IT Support & Kỹ thuật viên Phần cứng PC / Mạng Văn phòng",
+        en: "IT Support & PC Hardware / Office Network Technician"
+      },
+      company: {
+        vi: "Kiêm nhiệm hỗ trợ kỹ thuật tại các doanh nghiệp & dự án",
+        en: "Concurrent technical support across enterprises & projects"
+      },
+      summary: {
+        vi: "Đảm bảo hạ tầng máy tính, thiết bị phần cứng, mạng văn phòng và bộ phần mềm chuyên dụng vận hành liên tục, ổn định 100%.",
+        en: "Ensuring computer hardware infrastructure, office networking, and specialized software operate reliably across all business activities."
+      },
+      responsibilities: {
+        vi: [
+          "Tư vấn cấu hình, trực tiếp lắp ráp linh kiện PC/Laptop (Mainboard, CPU, RAM, SSD NVMe, card đồ họa VGA, nguồn PSU) tối ưu cho công việc thiết kế và phát triển web.",
+          "Cài đặt hệ điều hành (Windows 10/11, macOS, Linux), cài đặt trọn bộ phần mềm thiết kế Adobe (Photoshop, Illustrator) và công cụ lập trình (VS Code, Git, Docker, local servers).",
+          "Chuẩn đoán, bảo trì định kỳ và khắc phục nhanh các sự cố phần cứng, lỗi hệ điều hành và xung đột phần mềm.",
+          "Thiết lập mạng nội bộ LAN/Wi-Fi, cấu hình thiết bị định tuyến, chia sẻ máy in và bảo mật dữ liệu văn phòng."
+        ],
+        en: [
+          "Consulted, sourced, and assembled desktop PC and laptop hardware (Mainboard, CPU, RAM, NVMe SSD, GPU, PSU) optimized for design and web development.",
+          "Installed operating systems (Windows, macOS, Linux), design suites (Adobe Photoshop, Illustrator), and development toolchains (VS Code, Git, Docker, local servers).",
+          "Diagnosed and resolved hardware issues, software conflicts, and performed timely hardware maintenance to ensure maximum uptime.",
+          "Configured office LAN networks, Wi-Fi routers, network printers, and secured local data backup routines."
+        ]
+      },
+      results: {
+        vi: "Duy trì hệ thống máy trạm và mạng văn phòng hoạt động ổn định 100%, không bị gián đoạn tiến độ công việc.",
+        en: "Maintained 100% operational stability for all workstations and office networking with zero workflow downtime."
+      },
+      tech: ["Lắp ráp PC", "Cài đặt Windows/macOS/Linux", "Phần cứng Máy tính", "Adobe Creative Cloud", "Mạng LAN / Wi-Fi", "Bảo trì & Troubleshooting"]
     }
   ],
 

@@ -533,42 +533,100 @@ def build_cv_general_docx():
     add_bullet_item(doc, "Cài Đặt Phần Mềm, Sửa Chữa Phần Cứng & IT Support (Ưu Tiên)", "Lắp ráp phần cứng PC/Laptop (Mainboard, CPU, RAM, SSD, VGA, Nguồn PSU); cài đặt hệ điều hành (Windows, macOS, Linux) và phần mềm chuyên dụng (Adobe, Office, Dev tools); chuẩn đoán xử lý sự cố phần cứng/phần mềm; thiết lập mạng LAN/Wi-Fi và quản lý trang thiết bị văn phòng.")
 
     # Kinh nghiệm
-    add_styled_heading(doc, "Kinh Nghiệm Làm Việc (Work Experience)")
+    add_styled_heading(doc, "Kinh Nghiệm Làm Việc & Các Vị Trí Đã Đảm Nhiệm (Work Experience & Positions Held)")
+    create_callout(
+        doc,
+        "Tổng hợp các vị trí chuyên môn đã từng làm:",
+        "1. Senior SEO Specialist (5+ năm: 2017 – Hiện tại)\n2. Website Administrator / Quản trị Hệ thống (5+ năm: 2017 – Hiện tại)\n3. WordPress Developer / Lập trình viên Web (3+ năm: 2022 – Hiện tại)\n4. Graphic & Web UI/UX Designer (3+ năm: 2021 – Hiện tại)\n5. IT Support & Kỹ thuật viên Phần cứng PC (Xuyên suốt các giai đoạn)",
+        bg_hex="F8FAFC",
+        border_color="0284C7"
+    )
+
+    # Vị trí 1
     p_j1 = doc.add_paragraph()
     p_j1.paragraph_format.space_before = Pt(8)
     p_j1.paragraph_format.space_after = Pt(2)
-    r_j1 = p_j1.add_run("Web Administrator, SEO Specialist & Designer | Tự do & Doanh nghiệp")
+    r_j1 = p_j1.add_run("1. Vị trí: Senior SEO Specialist & Website Administrator | Cụm Website Thẩm mỹ & Cổng Đánh giá (TP.HCM)")
     r_j1.font.name = "Arial"
     r_j1.font.size = Pt(12)
     r_j1.font.bold = True
     r_j1.font.color.rgb = COLOR_NAVY
-    r_t1 = p_j1.add_run("   (2022 – Hiện tại)")
+    r_t1 = p_j1.add_run("   (2024 – Hiện tại)")
     r_t1.font.name = "Arial"
     r_t1.font.size = Pt(11)
     r_t1.font.italic = True
     r_t1.font.color.rgb = COLOR_MUTED
 
-    add_bullet_item(doc, "Phát triển công cụ & Tối ưu SEO", "Tự lập trình WordPress Plugin tối ưu Content SEO (chấm điểm on-page theo thời gian thực, tự sinh mục lục TOC và chèn Schema FAQ), giúp chuẩn hóa 100% bài viết và đưa hơn 30+ từ khóa vào Top 5 Google.")
-    add_bullet_item(doc, "Triển khai & Vận hành Web WordPress, Laravel & Blogspot", "Xây dựng và quản trị các website doanh nghiệp trên WordPress tự code theme, cổng danh bạ trên Laravel MVC (santhammy.com), website thương mại điện tử tự code WordPress theme từ đầu (smartphone.taichinhtaithanh.com) và Landing Page tư vấn tài chính trên Google Blogspot (taichinhtaithanh.com). Tối ưu tốc độ tải trang đạt điểm số 90+ trên Google PageSpeed Insights.")
-    add_bullet_item(doc, "Thực hiện Chiến dịch SEO", "Lên kế hoạch bộ từ khóa, tối ưu On-page và Technical SEO, giúp website tăng trưởng lượng truy cập tự nhiên hơn 180% và đưa hơn 30+ từ khóa vào Top 5 Google.")
-    add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện", "Thiết kế toàn bộ banner trang chủ, hình ảnh bài viết và ấn phẩm truyền thông mạng xã hội bằng Photoshop và Illustrator.")
+    add_bullet_item(doc, "Nghiên cứu từ khóa & Phân tích đối thủ", "Sử dụng Ahrefs, Semrush, Google Keyword Planner phân tích ma trận từ khóa và khoảng trống từ khóa (Keyword Gap) của đối thủ để mở rộng lưu lượng truy cập.")
+    add_bullet_item(doc, "Tối ưu On-page & Phối hợp Content", "Tối ưu cấu trúc web, meta title/desc, heading H1-H3, internal link Topic Cluster; phối hợp cùng Content Marketing xây dựng bài viết chuẩn SEO, hấp dẫn; tự lập trình WordPress Plugin chấm điểm SEO theo thời gian thực.")
+    add_bullet_item(doc, "Kiểm toán Technical SEO & Hạ tầng", "Đảm bảo crawlability, 100% indexability, cấu hình Schema JSON-LD (MedicalBusiness, Review, FAQ), sitemaps, robots.txt, xử lý lỗi crawl Screaming Frog; tối ưu Core Web Vitals xanh (LCP < 2s).")
+    add_bullet_item(doc, "Off-page & Đo lường Báo cáo", "Triển khai Guest Post chất lượng, Brand Mentions và White-Hat link building an toàn; theo dõi GA4, Search Console, cập nhật thuật toán Google và lập báo cáo định kỳ.")
 
+    # Vị trí 2
     p_j2 = doc.add_paragraph()
     p_j2.paragraph_format.space_before = Pt(10)
     p_j2.paragraph_format.space_after = Pt(2)
-    r_j2 = p_j2.add_run("Senior SEO Specialist & Industrial Web Administrator | Cụm Doanh Nghiệp Cơ Khí Thới An & Cân Hoàng Thiên")
+    r_j2 = p_j2.add_run("2. Vị trí: WordPress Developer & E-commerce Operations | Dự án Stone Sinks Vietnam (Chậu đá tự nhiên)")
     r_j2.font.name = "Arial"
     r_j2.font.size = Pt(12)
     r_j2.font.bold = True
     r_j2.font.color.rgb = COLOR_NAVY
-    r_t2 = p_j2.add_run("   (2017 – 2022)")
+    r_t2 = p_j2.add_run("   (2023 – 2024)")
     r_t2.font.name = "Arial"
     r_t2.font.size = Pt(11)
     r_t2.font.italic = True
     r_t2.font.color.rgb = COLOR_MUTED
 
+    add_bullet_item(doc, "Phát triển E-commerce & Giao diện Responsive", "Tùy biến Child Theme, thiết lập WooCommerce, xây dựng bộ lọc sản phẩm đa thuộc tính theo chất liệu và màu sắc, tối ưu luồng đặt hàng và liên hệ báo giá.")
+    add_bullet_item(doc, "Đồ họa & On-page SEO sản phẩm", "Thiết kế banner chương trình, retouch ảnh sản phẩm bằng Photoshop và nén WebP; khai báo Schema Product đầy đủ đưa từ khóa sản phẩm lên top Google.")
+
+    # Vị trí 3
+    p_j3 = doc.add_paragraph()
+    p_j3.paragraph_format.space_before = Pt(10)
+    p_j3.paragraph_format.space_after = Pt(2)
+    r_j3 = p_j3.add_run("3. Vị trí: WordPress Developer (Tự Code Theme) & UI/UX Designer | Smartphone E-commerce & Tài Chính Tài Thành")
+    r_j3.font.name = "Arial"
+    r_j3.font.size = Pt(12)
+    r_j3.font.bold = True
+    r_j3.font.color.rgb = COLOR_NAVY
+    r_t3 = p_j3.add_run("   (2022 – 2023)")
+    r_t3.font.name = "Arial"
+    r_t3.font.size = Pt(11)
+    r_t3.font.italic = True
+    r_t3.font.color.rgb = COLOR_MUTED
+
+    add_bullet_item(doc, "Tự lập trình Custom Theme WordPress từ đầu", "Tự code theme WordPress sạch 100% không dùng theme dựng sẵn, tích hợp WooCommerce, bộ lọc thông số/màu sắc/dung lượng, tối ưu Core Web Vitals đạt PageSpeed 90+.")
+    add_bullet_item(doc, "Thiết kế Landing Page Blogspot & CRO", "Xây dựng Landing Page tư vấn tài chính taichinhtaithanh.com trên nền tảng Google Blogspot với công cụ tính khoản vay tương tác, form đăng ký tối ưu CRO.")
+
+    # Vị trí 4
+    p_j4 = doc.add_paragraph()
+    p_j4.paragraph_format.space_before = Pt(10)
+    p_j4.paragraph_format.space_after = Pt(2)
+    r_j4 = p_j4.add_run("4. Vị trí: Senior SEO Specialist & Industrial Web Administrator | Cụm Doanh Nghiệp Cơ Khí Thới An & Cân Hoàng Thiên")
+    r_j4.font.name = "Arial"
+    r_j4.font.size = Pt(12)
+    r_j4.font.bold = True
+    r_j4.font.color.rgb = COLOR_NAVY
+    r_t4 = p_j4.add_run("   (2017 – 2022)")
+    r_t4.font.name = "Arial"
+    r_t4.font.size = Pt(11)
+    r_t4.font.italic = True
+    r_t4.font.color.rgb = COLOR_MUTED
+
     add_bullet_item(doc, "Quản trị hệ thống & SEO B2B tổng thể", "Phụ trách toàn bộ kỹ thuật và SEO cho 4 website công nghiệp nặng (cautructhoian.vn, hoangthienscale.com, thoianscale.com, canhoangthien.com). Đưa hơn 150+ từ khóa ngành cầu trục, cổng trục, palang, trạm cân ô tô xe tải và cảm biến lực loadcell lọt Top 1 – Top 5 Google suốt 5 năm.")
     add_bullet_item(doc, "Local SEO & Ấn phẩm Thiết kế B2B", "Tối ưu hóa Google Business Profile tại Quận 12 phủ sóng tiếp cận khách hàng doanh nghiệp tại TP.HCM và các KCN phía Nam; thiết kế trọn bộ catalogue thông số kỹ thuật (Spec Sheets) bằng Photoshop và Illustrator; vận hành cPanel bền vững.")
+
+    # Vị trí 5
+    p_j5 = doc.add_paragraph()
+    p_j5.paragraph_format.space_before = Pt(10)
+    p_j5.paragraph_format.space_after = Pt(2)
+    r_j5 = p_j5.add_run("5. Vị trí Kiêm nhiệm: IT Support & Kỹ Thuật Viên Phần Cứng PC / Mạng Văn Phòng | Xuyên suốt các giai đoạn")
+    r_j5.font.name = "Arial"
+    r_j5.font.size = Pt(12)
+    r_j5.font.bold = True
+    r_j5.font.color.rgb = COLOR_NAVY
+
+    add_bullet_item(doc, "Lắp ráp, Cài đặt & Quản lý thiết bị", "Trực tiếp lắp ráp phần cứng PC/Laptop (Mainboard, CPU, RAM, SSD, VGA, Nguồn PSU); cài đặt hệ điều hành (Windows, macOS, Linux) và phần mềm chuyên dụng; chuẩn đoán và xử lý sự cố phần cứng/phần mềm; thiết lập mạng nội bộ LAN/Wi-Fi và bảo trì trang thiết bị văn phòng.")
 
     # Dự án tiêu biểu
     add_styled_heading(doc, "Dự Án Tiêu Biểu Đã Triển Khai (8 Hệ Thống Website Thực Tế)")
