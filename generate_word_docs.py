@@ -224,7 +224,7 @@ def build_cv_seo_docx():
     r_time2.font.italic = True
     r_time2.font.color.rgb = COLOR_MUTED
     
-    add_bullet_item(doc, "Thiết kế & Tối ưu UI/UX", "Thiết kế wireframe, banner quảng cáo, giao diện website bằng Photoshop, Illustrator và Figma; cải thiện trải nghiệm điều hướng trên di động giúp giảm tỷ lệ thoát (Bounce Rate) 25%.")
+    add_bullet_item(doc, "Thiết kế & Tối ưu UI/UX", "Thiết kế banner quảng cáo, giao diện website trực quan bằng Photoshop, Illustrator và Figma; cải thiện trải nghiệm điều hướng trên di động giúp giảm tỷ lệ thoát (Bounce Rate) 25%.")
     add_bullet_item(doc, "Phát triển Website WordPress", "Xây dựng và bàn giao hệ thống website WordPress chuẩn SEO, tối ưu bảo mật, chống spam và cấu hình tự động sao lưu định kỳ.")
 
     p_job3 = doc.add_paragraph()
@@ -517,14 +517,14 @@ def build_cv_general_docx():
     create_callout(
         doc,
         "Hồ sơ năng lực tổng hợp:",
-        "Chuyên viên Graphic & Web UI/UX Specialist / Web & SEO (Tốt nghiệp chuyên ngành CNTT, hơn 3 năm kinh nghiệm thực chiến) có tư duy thẩm mỹ cao, thấu hiểu hành vi người dùng và năng lực phát triển trọn vẹn từ ý tưởng đến thành phẩm UX: Storyboard, Wireframe, Sitemaps, Flowcharts, Mockups, Prototype và Design System trên cả 3 nền tảng Desktop, Mobile và Tablet. Sở hữu lợi thế vượt trội về lập trình mã nguồn (HTML/CSS/JS, WordPress), SEO và hiệu năng giao diện; có khả năng làm việc độc lập từ A-Z dựng chạy các hệ thống web phức tạp, phối hợp nhịp nhàng cùng R&D, Marketing, Dev, QA; đồng thời đáp ứng trọn vẹn kinh nghiệm ưu tiên về cài đặt phần mềm, sửa chữa phần cứng và quản lý thiết bị IT.",
+        "Chuyên viên Graphic & Web UI/UX Specialist / Web & SEO (Tốt nghiệp chuyên ngành CNTT, hơn 3 năm kinh nghiệm thực chiến) có tư duy thẩm mỹ tốt, sáng tạo và thấu hiểu hành vi người dùng; xây dựng giao diện UI/UX trực quan, gia tăng tính thẩm mỹ cho website và nội dung số trên cả 3 nền tảng Desktop, Mobile và Tablet. Sở hữu lợi thế vượt trội về lập trình mã nguồn (HTML/CSS/JS, WordPress), SEO và hiệu năng giao diện; có khả năng làm việc độc lập từ A-Z dựng chạy các hệ thống web phức tạp, phối hợp nhịp nhàng cùng R&D, Marketing, Dev, QA; đồng thời đáp ứng trọn vẹn kinh nghiệm ưu tiên về cài đặt phần mềm, sửa chữa phần cứng và quản lý thiết bị IT.",
         bg_hex="F0FDF4",
         border_color="16A34A"
     )
 
     # Kỹ năng
     add_styled_heading(doc, "Kỹ Năng Chuyên Môn (Professional Skills)")
-    add_bullet_item(doc, "UI/UX & Graphic Design (Từ Ý Tưởng Đến Thành Phẩm)", "Storyboard, Wireframe, Sitemaps, User Flowcharts, Mockups, Interactive Prototype (Figma), Design System chuyên nghiệp; thiết kế responsive trên Desktop, Mobile và Tablet; Adobe Photoshop, Illustrator; gia tăng thẩm mỹ nội dung số website, app, phần mềm; khảo sát hành vi người dùng và tối ưu chuyển đổi CRO.")
+    add_bullet_item(doc, "UI/UX & Graphic Design", "Thiết kế giao diện người dùng (UI) trực quan, hiện đại, gia tăng tính thẩm mỹ cho website, phần mềm và ứng dụng; thiết kế responsive tối ưu trên cả 3 nền tảng Desktop, Mobile và Tablet; thành thạo Adobe Photoshop, Illustrator, Figma; khảo sát hành vi người dùng, tiếp nhận phản hồi và tối ưu trải nghiệm người dùng hiệu quả.")
     add_bullet_item(doc, "Lập Trình Web & Triển Khai A-Z", "Khả năng làm việc độc lập từ A-Z, dựng chạy website cấp độ trung bình đến phức tạp: WordPress Custom Theme & Plugin, WooCommerce, Google Blogspot (Custom XML & CRO), Laravel MVC, HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare. Phối hợp chặt chẽ với R&D, Marketing, Dev, QA.")
     add_bullet_item(doc, "SEO Website & Hiệu Suất Giao Diện", "Technical SEO, Schema JSON-LD, Topic Cluster, kiểm toán Screaming Frog, Core Web Vitals chuẩn xanh (LCP < 2s, CLS < 0.1), Google Search Console, Google Analytics 4, Rank Math.")
     add_bullet_item(doc, "Cài Đặt Phần Mềm, Sửa Chữa Phần Cứng & IT Support (Ưu Tiên)", "Lắp ráp phần cứng PC/Laptop (Mainboard, CPU, RAM, SSD, VGA, Nguồn PSU); cài đặt hệ điều hành (Windows, macOS, Linux) và phần mềm chuyên dụng (Adobe, Office, Dev tools); chuẩn đoán xử lý sự cố phần cứng/phần mềm; thiết lập mạng LAN/Wi-Fi và quản lý trang thiết bị văn phòng.")
@@ -642,9 +642,8 @@ def build_cv_graphic_docx():
     p_sum.paragraph_format.line_spacing = 1.3
     r_sum = p_sum.add_run(
         "Chuyên viên Graphic Designer & Web UI/UX Specialist (Tốt nghiệp chuyên ngành CNTT, hơn 3 năm kinh nghiệm thực chiến) "
-        "thành thạo bộ công cụ Adobe Creative Suite (Photoshop, Illustrator), tư duy thẩm mỹ cao, hiểu sâu hành vi người dùng "
-        "và có năng lực phát triển trọn vẹn từ ý tưởng đến thành phẩm UX: Storyboard, Wireframe, Sitemaps, Flowcharts, Mockups, "
-        "Interactive Prototype (Figma) và Design System. Xây dựng giao diện UI gia tăng tính thẩm mỹ cho website, phần mềm, app "
+        "thành thạo bộ công cụ Adobe Creative Suite (Photoshop, Illustrator), tư duy thẩm mỹ tốt, sáng tạo và thấu hiểu hành vi người dùng. "
+        "Xây dựng giao diện UI trực quan, hiện đại, gia tăng tính thẩm mỹ cho website, phần mềm, app "
         "trên cả 3 nền tảng Desktop, Tablet và Mobile. Sở hữu lợi thế vượt trội về lập trình mã nguồn (HTML5, CSS3, JavaScript), "
         "hiểu biết SEO và hiệu năng giao diện; có khả năng làm việc độc lập từ A-Z dựng chạy các hệ thống web phức tạp, "
         "phối hợp nhịp nhàng với R&D, Marketing, Development, QA; đồng thời đáp ứng trọn vẹn yêu cầu ưu tiên về cài đặt phần mềm, "
@@ -656,7 +655,7 @@ def build_cv_graphic_docx():
 
     # 5 Trụ cột kỹ năng
     add_styled_heading(doc, "Kỹ Năng Thiết Kế Chuyên Nghiệp (Đáp Ứng Toàn Diện Yêu Cầu Tuyển Dụng)")
-    add_bullet_item(doc, "1. Thành Phẩm UX & Quy Trình Thiết Kế", "Phát triển từ ý tưởng đến Storyboard, Wireframe, Sitemaps, User Flowcharts, Mockups độ nét cao và Interactive Prototype (Figma); xây dựng Design System và Component Library chuyên nghiệp.")
+    add_bullet_item(doc, "1. Thiết Kế UI/UX & Giao Diện Số Trực Quan", "Xây dựng giao diện người dùng (UI), gia tăng tính thẩm mỹ cho website, phần mềm, app; thiết kế responsive mượt mà trên Desktop, Tablet và Mobile; sử dụng Figma thiết kế bố cục giao diện trực quan.")
     add_bullet_item(doc, "2. Thiết Kế UI Đa Nền Tảng (Desktop, Mobile, Tablet)", "Xây dựng giao diện người dùng (UI), gia tăng tính thẩm mỹ cho website, phần mềm, app; thiết kế responsive mượt mà trên Desktop, Tablet và Mobile; tối ưu tỷ lệ chuyển đổi (CRO), khảo sát và phân tích phản hồi khách hàng để liên tục cải tiến sản phẩm.")
     add_bullet_item(doc, "3. Adobe Photoshop & Illustrator Chuyên Sâu", "Retouching chân dung thẩm mỹ viện, xử lý ảnh sản phẩm sắc nét (E-com), thiết kế Banner/Poster quảng cáo đa kênh, vẽ vector logo thương hiệu, xuất bản file in ấn CMYK và digital RGB chuẩn nét.")
     add_bullet_item(doc, "4. Lợi Thế Kỹ Thuật (HTML/CSS/JS & SEO)", "Thành thạo HTML5 Semantic, CSS3 Flexbox/Grid, JavaScript; am hiểu sâu sắc về SEO On-page và tối ưu Core Web Vitals (LCP < 2s, CLS < 0.1), nén ảnh WebP/SVG siêu nhẹ giúp giao diện đạt tốc độ tải trang cao nhất.")
@@ -683,7 +682,7 @@ def build_cv_graphic_docx():
 
     add_bullet_item(doc, "Thiết kế Bộ nhận diện & Banner", "Sử dụng Illustrator và Photoshop sáng tạo hệ thống banner trang chủ, poster dịch vụ điều trị da, phẫu thuật thẩm mỹ theo phong cách sang trọng đẳng cấp cho Viện thẩm mỹ WangSun Luxury, Sàn Thẩm Mỹ, Review Làm Đẹp.")
     add_bullet_item(doc, "Retouching ảnh thẩm mỹ chuyên sâu", "Xử lý hình ảnh trước/sau liệu trình (Before/After), khử khuyết điểm làn da tự nhiên, cân bằng ánh sáng và màu sắc đạt chuẩn y khoa thẩm mỹ.")
-    add_bullet_item(doc, "Thiết kế Giao diện UI/UX Web", "Xây dựng bố cục wireframe và layout hoàn chỉnh cho website phòng khám và cổng danh bạ, tối ưu trải nghiệm đọc trên mobile và tăng tỷ lệ click gọi tư vấn.")
+    add_bullet_item(doc, "Thiết kế Giao diện UI/UX Web", "Xây dựng bố cục và layout hoàn chỉnh cho website phòng khám và cổng danh bạ, tối ưu trải nghiệm đọc trên mobile và tăng tỷ lệ click gọi tư vấn.")
     add_bullet_item(doc, "Tối ưu hóa hình ảnh web", "Chuyển đổi toàn bộ thư viện ảnh sang định dạng WebP, giảm 75% dung lượng tải trang mà vẫn giữ nguyên độ nét chi tiết cao.")
 
     # Role 2
