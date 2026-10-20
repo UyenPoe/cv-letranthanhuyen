@@ -34,7 +34,7 @@
       width: 210mm;
       height: 297mm;
       max-height: 297mm;
-      padding: 6mm 11mm 5mm 11mm;
+      padding: 5mm 11mm 4.5mm 11mm;
       box-sizing: border-box;
       position: relative;
       background: #ffffff;
@@ -55,8 +55,8 @@
       background: linear-gradient(135deg, #0b2342 0%, #111827 100%);
       color: #ffffff;
       border-radius: 7px;
-      padding: 10px 16px;
-      margin-bottom: 5px;
+      padding: 9px 15px;
+      margin-bottom: 4px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -129,12 +129,12 @@
       color: #0b2342;
       text-transform: uppercase;
       letter-spacing: 0.4px;
-      margin: 5px 0 4px 0;
+      margin: 4px 0 3px 0;
       display: flex;
       align-items: center;
       gap: 5px;
       border-bottom: 1.5px solid #e2e8f0;
-      padding-bottom: 2px;
+      padding-bottom: 1.5px;
     }
     .section-title::before {
       content: "";
@@ -285,66 +285,66 @@
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 4.5px;
-      margin-bottom: 3.5px;
+      gap: 3.5px;
+      margin-bottom: 2.5px;
     }
     .proj-card {
       background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 4px;
-      padding: 4px 7px;
+      padding: 2.5px 5.5px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.02);
     }
     .proj-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
     .proj-name {
-      font-size: 9.1pt;
+      font-size: 8.8pt;
       font-weight: 700;
       color: #0b2342;
     }
     .proj-type {
-      font-size: 7.3pt;
+      font-size: 7.0pt;
       background: #ecfdf5;
       color: #065f46;
       border: 1px solid #a7f3d0;
-      padding: 1px 4.5px;
+      padding: 0.5px 3.5px;
       border-radius: 2px;
       font-weight: 600;
     }
     .proj-url {
-      font-size: 7.7pt;
+      font-size: 7.3pt;
       color: #0284c7;
       display: block;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
       font-family: monospace;
     }
     .proj-role {
-      font-size: 7.9pt;
+      font-size: 7.6pt;
       color: #64748b;
       font-weight: 600;
-      margin-bottom: 1.5px;
+      margin-bottom: 1px;
     }
     .proj-desc {
-      font-size: 7.9pt;
+      font-size: 7.5pt;
       color: #334155;
-      line-height: 1.28;
-      margin-bottom: 2.5px;
+      line-height: 1.22;
+      margin-bottom: 1.5px;
     }
     .proj-tech-wrap {
       display: flex;
       flex-wrap: wrap;
-      gap: 2.5px;
+      gap: 2px;
     }
     .proj-tech {
-      font-size: 7.0pt;
+      font-size: 6.8pt;
       background: #f1f5f9;
       color: #475569;
       border: 1px solid #e2e8f0;
-      padding: 0.5px 4px;
+      padding: 0.5px 3.5px;
       border-radius: 2px;
     }
 
@@ -352,32 +352,32 @@
     .workflow-grid, .edu-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
-      margin-top: 2.5px;
-      margin-bottom: 2.5px;
+      gap: 3.5px;
+      margin-top: 1.5px;
+      margin-bottom: 1.5px;
     }
     .workflow-card, .edu-card {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-radius: 5px;
-      padding: 5px 7px;
+      border-radius: 4px;
+      padding: 3px 5.5px;
     }
     .workflow-title, .edu-title {
-      font-size: 8.4pt;
+      font-size: 8.3pt;
       font-weight: 700;
       color: #0b2342;
-      margin-bottom: 1.5px;
+      margin-bottom: 1px;
     }
     .edu-sub {
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 600;
       color: #0284c7;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
     .workflow-desc, .edu-desc {
-      font-size: 7.7pt;
+      font-size: 7.4pt;
       color: #4b5563;
-      line-height: 1.28;
+      line-height: 1.22;
     }
 
     /* FOOTER */
@@ -388,13 +388,16 @@
       color: #64748b;
       display: flex;
       flex-direction: column;
-      gap: 1px;
+      gap: 1.5px;
     }
     .cv-footer-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
+    }
+    .cv-footer-row span {
+      white-space: nowrap;
     }
     .cv-footer strong {
       color: #0b2342;
@@ -594,8 +597,14 @@
 
     <!-- FOOTER PAGE 1 -->
     <div class="cv-footer">
-      <span>Ứng viên: <strong>Lê Trần Thanh Uyên</strong> | Email: <strong>thanhuyenletran@gmail.com</strong> | SĐT/Zalo: <strong>0706 700 528</strong></span>
-      <span>Trang 1 / 2 · Page Web: <strong>https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+      <div class="cv-footer-row">
+        <span>Ứng viên: <strong>Lê Trần Thanh Uyên</strong> · Vị trí: <strong>Web &amp; SEO Specialist · Graphic Designer</strong> · Hotline/Zalo: <strong>0706 700 528</strong></span>
+        <span>Trang <strong>1 / 2</strong></span>
+      </div>
+      <div class="cv-footer-row">
+        <span>Email: <strong style="color:#0284c7;">thanhuyenletran@gmail.com</strong> · Hồ sơ năng lực thực chiến</span>
+        <span>Page Web: <strong style="color:#0284c7;">https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+      </div>
     </div>
   </div>
 
@@ -835,8 +844,14 @@
 
     <!-- FOOTER PAGE 2 -->
     <div class="cv-footer">
-      <span>Ứng viên: <strong>Lê Trần Thanh Uyên</strong> | Email: <strong>thanhuyenletran@gmail.com</strong> | SĐT/Zalo: <strong>0706 700 528</strong></span>
-      <span>Trang 2 / 2 · Page Web: <strong>https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+      <div class="cv-footer-row">
+        <span>Bản CV Tổng Hợp Chuyên Nghiệp (Font Rõ Ràng) · Cập nhật mới nhất</span>
+        <span>Trang <strong>2 / 2</strong></span>
+      </div>
+      <div class="cv-footer-row">
+        <span>Ứng viên: <strong>Lê Trần Thanh Uyên</strong> · Hotline/Zalo: <strong>0706 700 528</strong></span>
+        <span>Page Web: <strong style="color:#0284c7;">https://uyenpoe.github.io/cv-letranthanhuyen/</strong></span>
+      </div>
     </div>
   </div>
 
