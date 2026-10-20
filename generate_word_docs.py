@@ -161,7 +161,7 @@ def build_cv_seo_docx():
     p_contact.paragraph_format.space_before = Pt(0)
     p_contact.paragraph_format.space_after = Pt(0)
     p_contact.paragraph_format.line_spacing = 1.3
-    r_c = p_contact.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
+    r_c = p_contact.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Page Web: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
     r_c.font.name = "Arial"
     r_c.font.size = Pt(10.5)
     r_c.font.color.rgb = RGBColor(229, 231, 235)
@@ -313,7 +313,7 @@ def build_ke_hoach_seo_docx():
     p_c = c_hdr.add_paragraph()
     p_c.paragraph_format.space_before = Pt(0)
     p_c.paragraph_format.space_after = Pt(0)
-    r_c = p_c.add_run("Chuyên viên: Lê Trần Thanh Uyên   |   Ngày sinh: 18/01/1986   |   Vị trí: SEO Specialist & Technical SEO\nLiên hệ: 0706 700 528   |   Email: thanhuyenletran@gmail.com   |   Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/")
+    r_c = p_c.add_run("Chuyên viên: Lê Trần Thanh Uyên   |   Ngày sinh: 18/01/1986   |   Vị trí: SEO Specialist & Technical SEO\nLiên hệ: 0706 700 528   |   Email: thanhuyenletran@gmail.com   |   Page Web: https://uyenpoe.github.io/cv-letranthanhuyen/")
     r_c.font.name = "Arial"
     r_c.font.size = Pt(10.5)
     r_c.font.color.rgb = RGBColor(229, 231, 235)
@@ -508,7 +508,7 @@ def build_cv_general_docx():
     p_c = c_hdr.add_paragraph()
     p_c.paragraph_format.space_before = Pt(0)
     p_c.paragraph_format.space_after = Pt(0)
-    r_c = p_c.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Website Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
+    r_c = p_c.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Page Web: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
     r_c.font.name = "Arial"
     r_c.font.size = Pt(10.5)
     r_c.font.color.rgb = RGBColor(229, 231, 235)
@@ -569,6 +569,7 @@ def build_cv_general_docx():
 
     # Dự án tiêu biểu
     add_styled_heading(doc, "Dự Án Tiêu Biểu Đã Triển Khai (Featured Projects)")
+    add_bullet_item(doc, "Page Web Cá Nhân & Hồ Sơ Năng Lực Trực Tuyến (uyenpoe.github.io/cv-letranthanhuyen)", "Website cá nhân tương tác trực tuyến xây dựng chuẩn responsive, tích hợp xem và tải hồ sơ xin việc (PDF & Word), bộ lọc dự án và minh chứng kết quả đo lường thực tế.")
     add_bullet_item(doc, "Cầu Trục Thới An & Cân Hoàng Thiên (cautructhoian.vn · hoangthienscale.com)", "Cụm 4 website B2B thiết bị công nghiệp nặng: 150+ từ khóa Top 1-5 Google bền vững suốt 5 năm (2017-2022), Local Maps, catalogue thông số kỹ thuật.")
     add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Website phòng khám thẩm mỹ viện: tùy biến Flatsome Child Theme sang trọng, schema MedicalBusiness, tối ưu từ khóa dịch vụ tại TP.HCM, điểm PageSpeed 95+.")
     add_bullet_item(doc, "Tài Chính Tài Thành (taichinhtaithanh.com)", "Landing Page tài chính & vay tiêu dùng 24h trên Google Blogspot: công cụ tính khoản vay tương tác, form đăng ký tối ưu CRO, tên miền riêng.")
@@ -622,7 +623,7 @@ def build_cv_graphic_docx():
     p_contact.paragraph_format.space_before = Pt(0)
     p_contact.paragraph_format.space_after = Pt(0)
     p_contact.paragraph_format.line_spacing = 1.3
-    r_c = p_contact.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Portfolio: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
+    r_c = p_contact.add_run("🎂 Ngày sinh: 18/01/1986   |   📍 Địa chỉ: TP. Hồ Chí Minh\n📞 Điện thoại / Zalo: 0706 700 528   |   ✉️ Email: thanhuyenletran@gmail.com\n🌐 Page Web: https://uyenpoe.github.io/cv-letranthanhuyen/   |   🐙 GitHub: https://github.com/UyenPoe")
     r_c.font.name = "Arial"
     r_c.font.size = Pt(10.5)
     r_c.font.color.rgb = RGBColor(229, 231, 235)
