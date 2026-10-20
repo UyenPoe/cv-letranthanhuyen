@@ -577,8 +577,8 @@ def build_cv_general_docx():
     r_t2.font.italic = True
     r_t2.font.color.rgb = COLOR_MUTED
 
-    add_bullet_item(doc, "Phát triển E-commerce & Giao diện Responsive", "Tùy biến Child Theme, thiết lập WooCommerce, xây dựng bộ lọc sản phẩm đa thuộc tính theo chất liệu và màu sắc, tối ưu luồng đặt hàng và liên hệ báo giá.")
-    add_bullet_item(doc, "Đồ họa & On-page SEO sản phẩm", "Thiết kế banner chương trình, retouch ảnh sản phẩm bằng Photoshop và nén WebP; khai báo Schema Product đầy đủ đưa từ khóa sản phẩm lên top Google.")
+    add_bullet_item(doc, "Phát triển E-commerce & Giao diện Responsive", "Tùy biến Child Theme, thiết lập WooCommerce, xây dựng bộ lọc sản phẩm đa thuộc tính theo chất liệu và màu sắc, tối ưu luồng đặt hàng và liên hệ báo giá trên Desktop, Mobile và Tablet.")
+    add_bullet_item(doc, "Đồ họa, On-page SEO sản phẩm & Tối ưu chuyển đổi", "Thiết kế banner chương trình, retouch ảnh sản phẩm bằng Photoshop và nén WebP; khai báo Schema Product đầy đủ đưa từ khóa sản phẩm lên top Google; tiếp nhận phản hồi khách hàng để tối ưu trải nghiệm.")
 
     # Vị trí 3
     p_j3 = doc.add_paragraph()
@@ -597,6 +597,7 @@ def build_cv_general_docx():
 
     add_bullet_item(doc, "Tự lập trình Custom Theme WordPress từ đầu", "Tự code theme WordPress sạch 100% không dùng theme dựng sẵn, tích hợp WooCommerce, bộ lọc thông số/màu sắc/dung lượng, tối ưu Core Web Vitals đạt PageSpeed 90+.")
     add_bullet_item(doc, "Thiết kế Landing Page Blogspot & CRO", "Xây dựng Landing Page tư vấn tài chính taichinhtaithanh.com trên nền tảng Google Blogspot với công cụ tính khoản vay tương tác, form đăng ký tối ưu CRO.")
+    add_bullet_item(doc, "Thiết kế Đồ họa & Nhận diện số", "Thiết kế trọn bộ banner flash sale, icon thông số kỹ thuật vector bằng Illustrator và Photoshop.")
 
     # Vị trí 4
     p_j4 = doc.add_paragraph()
@@ -626,7 +627,9 @@ def build_cv_general_docx():
     r_j5.font.bold = True
     r_j5.font.color.rgb = COLOR_NAVY
 
-    add_bullet_item(doc, "Lắp ráp, Cài đặt & Quản lý thiết bị", "Trực tiếp lắp ráp phần cứng PC/Laptop (Mainboard, CPU, RAM, SSD, VGA, Nguồn PSU); cài đặt hệ điều hành (Windows, macOS, Linux) và phần mềm chuyên dụng; chuẩn đoán và xử lý sự cố phần cứng/phần mềm; thiết lập mạng nội bộ LAN/Wi-Fi và bảo trì trang thiết bị văn phòng.")
+    add_bullet_item(doc, "Lắp ráp & Cài đặt Phần cứng PC / Laptop", "Trực tiếp tư vấn cấu hình, lắp ráp linh kiện PC/Laptop (Mainboard, CPU, RAM, SSD NVMe, card đồ họa VGA, nguồn PSU) tối ưu cho công việc thiết kế đồ họa và lập trình.")
+    add_bullet_item(doc, "Cài đặt Hệ điều hành & Phần mềm chuyên dụng", "Cài đặt hoàn chỉnh hệ điều hành (Windows 10/11, macOS, Ubuntu Linux), cài đặt trọn bộ phần mềm thiết kế Adobe (Photoshop, Illustrator) và công cụ lập trình (VS Code, Git, Docker, local servers).")
+    add_bullet_item(doc, "Bảo trì, Xử lý sự cố & Quản lý thiết bị", "Chuẩn đoán và xử lý nhanh chóng các sự cố phần cứng/phần mềm; thiết lập hệ thống mạng nội bộ LAN, cấu hình Router Wi-Fi văn phòng, chia sẻ máy in; quản lý cấp phát và bảo trì trang thiết bị kỹ thuật an toàn.")
 
     # Dự án tiêu biểu
     add_styled_heading(doc, "Dự Án Tiêu Biểu Đã Triển Khai (8 Hệ Thống Website Thực Tế)")
