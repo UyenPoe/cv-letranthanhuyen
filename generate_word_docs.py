@@ -183,8 +183,7 @@ def build_cv_seo_docx():
     add_bullet_item(doc, "Tối ưu Hiệu năng (Core Web Vitals)", "Đạt điểm xanh PageSpeed Insights (LCP < 2.5s, CLS < 0.1, INP < 200ms) bằng kỹ thuật nén WebP/AVIF, trì hoãn JS (defer/async), nén Gzip/Brotli, cấu hình bộ nhớ đệm và CDN Cloudflare.")
     add_bullet_item(doc, "Cấu trúc Thực thể (Schema JSON-LD)", "Khai báo thực thể chuẩn Google (Organization, LocalBusiness, MedicalBusiness, Product, Review/AggregateRating, FAQPage, BreadcrumbList) nhằm tăng hiển thị đoạn trích chi tiết (Rich Snippets).")
     add_bullet_item(doc, "Nghiên cứu Từ khóa & Content Cluster", "Phân tích Search Intent, xây dựng Topic Cluster hoàn chỉnh (Trang trụ cột Pillar Page kết hợp bài vệ tinh Cluster Posts), xây dựng cấu trúc liên kết nội bộ (Internal Links) logic.")
-    add_bullet_item(doc, "Công cụ chuyên ngành", "Google Search Console, Google Analytics 4, Screaming Frog SEO Spider, Ahrefs, SEMrush, Google Tag Manager, PageSpeed Insights, Rank Math SEO, Yoast SEO.")
-    add_bullet_item(doc, "Kỹ năng lập trình & Thiết kế bổ trợ", "WordPress Plugin Development, PHP, HTML5, CSS3, JavaScript; Thiết kế đồ họa & Banner website chuẩn UX với Adobe Photoshop, Illustrator, Figma.")
+    add_bullet_item(doc, "Hạ tầng IT & Kỹ năng bổ trợ", "Lắp ráp & cài đặt máy tính trạm làm việc PC/Laptop, chuẩn đoán và xử lý sự cố phần cứng, phần mềm, thiết lập mạng nội bộ LAN/Wi-Fi văn phòng; WordPress Plugin Development, PHP, HTML5, CSS3, JavaScript; Thiết kế đồ họa & Banner website chuẩn UX với Adobe Photoshop, Illustrator, Figma.")
 
     # Kinh nghiệm làm việc
     add_styled_heading(doc, "Kinh Nghiệm Thực Chiến (Professional Experience)")
@@ -526,6 +525,7 @@ def build_cv_general_docx():
     # Kỹ năng
     add_styled_heading(doc, "Kỹ Năng Chuyên Môn (Professional Skills)")
     add_bullet_item(doc, "Quản Trị & Phát Triển Web", "WordPress chuyên sâu, Elementor, WooCommerce, Google Blogspot (Custom XML & CRO), tự code WordPress Plugin tùy biến tối ưu Content SEO & Schema JSON-LD, tối ưu mã nguồn HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare.")
+    add_bullet_item(doc, "Cài Đặt, Lắp Ráp Máy Tính & IT Support", "Trực tiếp lắp ráp linh kiện phần cứng máy tính để bàn PC (Mainboard, CPU, RAM, SSD/HDD, VGA, Nguồn PSU); nâng cấp thay thế linh kiện PC/Laptop; cài đặt HĐH (Windows 10/11, macOS, Linux) và phần mềm chuyên dụng (Adobe, Office, Dev tools); chuẩn đoán và xử lý triệt để sự cố phần cứng, phần mềm, treo máy, diệt virus; thiết lập hệ thống mạng nội bộ LAN, Wi-Fi và chia sẻ máy in/scan văn phòng.")
     add_bullet_item(doc, "SEO Website & Digital Marketing", "Technical SEO, kiểm toán Screaming Frog, Core Web Vitals, Schema JSON-LD, Topic Cluster, Content SEO, Google Search Console, Google Analytics 4, Rank Math.")
     add_bullet_item(doc, "Thiết Kế Đồ Họa & UI/UX Design", "Adobe Photoshop (chỉnh sửa ảnh, thiết kế banner, poster, ấn phẩm mạng xã hội), Adobe Illustrator (thiết kế vector, logo, bộ nhận diện thương hiệu), Figma (thiết kế UI/UX giao diện website, responsive wireframe).")
 
@@ -651,7 +651,8 @@ def build_cv_graphic_docx():
     add_bullet_item(doc, "2. Adobe Illustrator & Vector Design", "Thiết kế Logo & Brand Guidelines, hệ thống Iconography Vector (SVG), Infographic & biểu đồ trực quan, Typography & bố cục chữ nghệ thuật, ấn phẩm in ấn (Namecard, Brochure, Flyer), xuất file in ấn CMYK và Digital RGB chuẩn nét.")
     add_bullet_item(doc, "3. Thiết Kế Giao Diện Web UI/UX", "Wireframing & Prototype (Figma), bố cục Mobile-First Responsive, thiết kế Landing Page tài chính/thẩm mỹ, tối ưu tỷ lệ chuyển đổi (CRO Lead Form), Design System & bảng màu chuẩn web, Micro-interactions.")
     add_bullet_item(doc, "4. Tối Ưu Đồ Họa Web & Hiệu Năng", "Nén ảnh định dạng WebP chất lượng cao, tối ưu mã nguồn SVG siêu nhẹ, cố định tỷ lệ Aspect Ratio chống CLS, xuất ảnh đa độ phân giải Retina 2x/3x, phối hợp Semantic HTML5 & CSS3 Flexbox/Grid, Core Web Vitals chuẩn xanh.")
-    add_bullet_item(doc, "5. Ứng Dụng Thực Chiến Vào Hệ Thống Web", "Thiết kế trọn gói giao diện & banner cho Viện thẩm mỹ WangSun Luxury, xây dựng Landing Page tài chính Tài Chính Tài Thành (taichinhtaithanh.com) tối ưu chuyển đổi CRO, Visual Design cho sàn thương mại điện tử chậu đá Stone Sinks Vietnam, giao diện cổng danh bạ Sàn Thẩm Mỹ (santhammy.com).")
+    add_bullet_item(doc, "5. Hạ Tầng Đồ Họa & Máy Trạm Workstation", "Tự tay lựa chọn linh kiện và lắp ráp máy trạm Workstation PC đồ họa cấu hình cao phục vụ render và thiết kế mượt mà; cài đặt hệ điều hành và bộ phần mềm Adobe Creative Cloud chuẩn xác; xử lý sự cố phần cứng, phần mềm, mạng nội bộ và cân màu màn hình.")
+    add_bullet_item(doc, "6. Ứng Dụng Thực Chiến Vào Hệ Thống Web", "Thiết kế trọn gói giao diện & banner cho Viện thẩm mỹ WangSun Luxury, xây dựng Landing Page tài chính Tài Chính Tài Thành (taichinhtaithanh.com) tối ưu chuyển đổi CRO, Visual Design cho sàn thương mại điện tử chậu đá Stone Sinks Vietnam, giao diện cổng danh bạ Sàn Thẩm Mỹ (santhammy.com).")
 
     # Kinh nghiệm
     add_styled_heading(doc, "Kinh Nghiệm Thiết Kế Đồ Họa & UI/UX Thực Tế (Experience)")

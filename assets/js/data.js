@@ -65,8 +65,8 @@ window.PORTFOLIO_DATA = {
         subtitle: "Không chỉ dừng lại ở việc tạo ra một giao diện đẹp, mình tập trung vào khả năng vận hành ổn định, tốc độ tải trang và thứ hạng tìm kiếm tự nhiên (Organic Traffic).",
         p1: "Xin chào! Mình là <strong>Lê Trần Thanh Uyên</strong>. Trong quá trình trực tiếp phát triển, vận hành và tối ưu hóa nhiều hệ thống website thuộc các lĩnh vực <strong>Thẩm mỹ viện, Sàn đánh giá & Review làm đẹp, Thương mại điện tử</strong>, mình nhận ra rằng một website thành công cần sự phối hợp chặt chẽ giữa mã nguồn sạch, hạ tầng máy chủ an toàn và cấu trúc SEO chuẩn mực.",
         p2: "Với nền tảng vừa hiểu sâu kỹ thuật <strong>WordPress / PHP / Laravel</strong>, vừa nắm vững <strong>On-page & Technical SEO</strong> cùng quy trình <strong>Quản trị Hosting, Domain, Bảo mật & Hiệu năng</strong>, mình có thể đảm nhận trọn vẹn vòng đời của một website hoặc phối hợp nhịp nhàng giữa đội ngũ Kỹ thuật (Dev) và Marketing (SEO/Content).",
-        pillar1Title: "Website Administrator – Quản trị Website",
-        pillar1Desc: "Quản lý Hosting/VPS, Domain/DNS, SSL, sao lưu định kỳ, bảo mật, khắc phục sự cố và tối ưu Core Web Vitals.",
+        pillar1Title: "Website Administrator & IT Support – Quản trị Web & Kỹ thuật IT",
+        pillar1Desc: "Quản lý Hosting/VPS, Domain/DNS, bảo mật, sao lưu. Lắp ráp, cài đặt và khắc phục sự cố máy tính PC/Laptop, thiết lập mạng văn phòng LAN/Wi-Fi và máy in.",
         pillar2Title: "SEO Specialist – Chuyên viên SEO Website",
         pillar2Desc: "Kiểm toán Technical SEO, cấu trúc Schema JSON-LD, Sitemap, tối ưu On-page, nghiên cứu từ khóa và theo dõi Search Console / GA4.",
         pillar3Title: "WordPress Developer – Lập trình viên WordPress",
@@ -98,7 +98,7 @@ window.PORTFOLIO_DATA = {
         filterWeb: "Website Development",
         filterWp: "WordPress Development",
         filterSeo: "SEO Website",
-        filterAdmin: "Website Administration",
+        filterAdmin: "Website Administration & IT Support",
         filterDesign: "Graphic & UI/UX Design"
       },
       experience: {
@@ -222,8 +222,8 @@ window.PORTFOLIO_DATA = {
         subtitle: "Beyond crafting clean interfaces, I focus on operational stability, Core Web Vitals speed, and sustainable organic search visibility.",
         p1: "Hello! I'm <strong>Le Tran Thanh Uyen</strong>. Through hands-on experience building, managing, and optimizing production websites across <strong>Beauty Clinics, Review Portals, and E-commerce platforms</strong>, I understand that real digital growth requires clean code, secure hosting infrastructure, and sound SEO architecture.",
         p2: "Combining practical expertise in <strong>WordPress / PHP / Laravel</strong> with <strong>On-page & Technical SEO</strong> and <strong>Hosting, Domain, Security & Performance Administration</strong>, I can own the full website lifecycle or bridge the gap seamlessly between Engineering and Marketing teams.",
-        pillar1Title: "Website Administrator",
-        pillar1Desc: "Managing Hosting/VPS, Domain/DNS, SSL, automated backups, security hardening, troubleshooting, and Core Web Vitals optimization.",
+        pillar1Title: "Website Administrator & IT Support",
+        pillar1Desc: "Managing Hosting/VPS, DNS, web security, combined with PC assembly, OS/software setup, internal LAN network, and IT helpdesk support.",
         pillar2Title: "SEO Specialist",
         pillar2Desc: "Executing Technical SEO audits, JSON-LD Schema, XML Sitemaps, On-page optimization, keyword mapping, and Search Console / GA4 tracking.",
         pillar3Title: "WordPress Developer",
@@ -255,7 +255,7 @@ window.PORTFOLIO_DATA = {
         filterWeb: "Website Development",
         filterWp: "WordPress Development",
         filterSeo: "SEO Website",
-        filterAdmin: "Website Administration",
+        filterAdmin: "Website Administration & IT Support",
         filterDesign: "Graphic & UI/UX Design"
       },
       experience: {
@@ -416,14 +416,18 @@ window.PORTFOLIO_DATA = {
       id: "web-admin",
       category: "admin",
       title: {
-        vi: "Website Administration",
-        en: "Website Administration"
+        vi: "Website Administration & IT Support",
+        en: "Website Administration & IT Support"
       },
       desc: {
-        vi: "Quản trị toàn diện hạ tầng Hosting, Domain, bảo mật dữ liệu, sao lưu định kỳ và tối ưu điểm số Core Web Vitals.",
-        en: "End-to-end administration of hosting environments, domains, security protocols, backups, and Core Web Vitals performance."
+        vi: "Quản trị hạ tầng Hosting, Domain, bảo mật web, kết hợp kỹ năng lắp ráp, cài đặt máy tính và hỗ trợ kỹ thuật IT nội bộ.",
+        en: "End-to-end administration of hosting environments, domains, web security, combined with PC assembly, OS installation, and internal IT support."
       },
       items: [
+        "Lắp ráp máy tính PC & Nâng cấp linh kiện (Mainboard, CPU, RAM, SSD, VGA)",
+        "Cài đặt hệ điều hành (Windows 10/11, macOS, Linux) & Phần mềm làm việc",
+        "Xử lý sự cố phần cứng, phần mềm (Troubleshooting PC/Laptop/Mạng)",
+        "Thiết lập mạng nội bộ LAN, Wi-Fi, Router & chia sẻ máy in văn phòng",
         "Hosting / cPanel / DirectAdmin / VPS",
         "Domain, DNS & Cloudflare CDN",
         "Database Management (phpMyAdmin / MySQL)",
@@ -432,7 +436,8 @@ window.PORTFOLIO_DATA = {
         "Core Web Vitals (LCP, INP, CLS)",
         "WebP/AVIF Image Optimization & Caching",
         "Uptime Monitoring & Bug Fixing"
-      ]    },
+      ]
+    },
     {
       id: "graphic-uiux",
       category: "design",
