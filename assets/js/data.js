@@ -71,8 +71,8 @@ window.PORTFOLIO_DATA = {
         pillar2Desc: "Kiểm toán Technical SEO, cấu trúc Schema JSON-LD, Sitemap, tối ưu On-page, nghiên cứu từ khóa và theo dõi Search Console / GA4.",
         pillar3Title: "WordPress Developer – Lập trình viên WordPress",
         pillar3Desc: "Tùy biến Theme/Child Theme, xây dựng Custom Post Type, ACF, tích hợp WooCommerce và tối ưu truy vấn cơ sở dữ liệu.",
-        pillar4Title: "Graphic & UI/UX Design – Thiết kế Đồ họa & Web UI/UX",
-        pillar4Desc: "Thiết kế banner marketing, xử lý ảnh bằng Adobe Photoshop, thiết kế vector/logo bằng Illustrator và xây dựng layout UI/UX website hiện đại, tối ưu trải nghiệm tương tác.",
+        pillar4Title: "Graphic & UI/UX Design – Thiết kế Đồ họa & UI/UX",
+        pillar4Desc: "Phát triển từ ý tưởng đến Storyboard, Wireframe, Sitemaps, Mockups, Prototype. Xây dựng UI website, app, phần mềm trên Desktop, Mobile, Tablet và thiết kế bộ nhận diện bằng Photoshop, Illustrator.",
         stat1Num: "7+",
         stat1Label: "Dự án Website thực tế",
         stat2Num: "3",
@@ -228,8 +228,8 @@ window.PORTFOLIO_DATA = {
         pillar2Desc: "Executing Technical SEO audits, JSON-LD Schema, XML Sitemaps, On-page optimization, keyword mapping, and Search Console / GA4 tracking.",
         pillar3Title: "WordPress Developer",
         pillar3Desc: "Developing custom themes/child themes, Custom Post Types (CPT), ACF fields, WooCommerce stores, and database query optimization.",
-        pillar4Title: "Graphic & UI/UX Web Design",
-        pillar4Desc: "Designing marketing assets, promotional banners, photo retouching with Adobe Photoshop, vector brand identity with Illustrator, and conversion-focused web UI/UX layouts.",
+        pillar4Title: "Graphic & UI/UX Design",
+        pillar4Desc: "From ideation to storyboards, wireframes, sitemaps, mockups, and interactive prototypes. Designing responsive UI for websites, software, and apps across Desktop, Tablet, and Mobile.",
         stat1Num: "7+",
         stat1Label: "Production Websites",
         stat2Num: "3",
@@ -450,14 +450,14 @@ window.PORTFOLIO_DATA = {
         en: "Designing visual brand assets, marketing campaigns, photo manipulation with Photoshop/Illustrator, and modern user-centric web UI/UX layouts."
       },
       items: [
-        "Adobe Photoshop (Banner, Poster, Retouching, Mockups)",
-        "Adobe Illustrator (Vector Logo, Icons, Brand Identity)",
-        "UI/UX Design Web (Wireframing, User Flow, Layout Design)",
-        "Responsive & Mobile-First Web Interfaces",
-        "Design System, Color Harmony & Typography Hierarchy",
-        "Banner Marketing & Social Media Visuals",
-        "Web Graphic Optimization (WebP, SVG, CSS Sprites)",
-        "Figma & Interactive Prototyping"
+        "Storyboard, Wireframe, Sitemaps & User Flowcharts",
+        "Interactive Prototype (Figma) & Mockups sản phẩm",
+        "Design System & Responsive 3 nền tảng (Desktop, Tablet, Mobile)",
+        "Xây dựng UI gia tăng tính thẩm mỹ cho website, phần mềm, app",
+        "Adobe Photoshop (Banner, Poster, Retouching, Color Grading)",
+        "Adobe Illustrator (Vector Logo, Icons, Brand Identity, In ấn)",
+        "Nghiên cứu hành vi người dùng, Usability Testing & Tối ưu CRO",
+        "Web Graphic & Core Web Vitals Optimization (WebP, SVG siêu nhẹ)"
       ]
     }
   ],

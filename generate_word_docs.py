@@ -524,10 +524,10 @@ def build_cv_general_docx():
 
     # Kỹ năng
     add_styled_heading(doc, "Kỹ Năng Chuyên Môn (Professional Skills)")
-    add_bullet_item(doc, "Quản Trị & Phát Triển Web", "WordPress chuyên sâu, Elementor, WooCommerce, Google Blogspot (Custom XML & CRO), tự code WordPress Plugin tùy biến tối ưu Content SEO & Schema JSON-LD, tối ưu mã nguồn HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare.")
-    add_bullet_item(doc, "Cài Đặt, Lắp Ráp Máy Tính & IT Support", "Trực tiếp lắp ráp linh kiện phần cứng máy tính để bàn PC (Mainboard, CPU, RAM, SSD/HDD, VGA, Nguồn PSU); nâng cấp thay thế linh kiện PC/Laptop; cài đặt HĐH (Windows 10/11, macOS, Linux) và phần mềm chuyên dụng (Adobe, Office, Dev tools); chuẩn đoán và xử lý triệt để sự cố phần cứng, phần mềm, treo máy, diệt virus; thiết lập hệ thống mạng nội bộ LAN, Wi-Fi và chia sẻ máy in/scan văn phòng.")
-    add_bullet_item(doc, "SEO Website & Digital Marketing", "Technical SEO, kiểm toán Screaming Frog, Core Web Vitals, Schema JSON-LD, Topic Cluster, Content SEO, Google Search Console, Google Analytics 4, Rank Math.")
-    add_bullet_item(doc, "Thiết Kế Đồ Họa & UI/UX Design", "Adobe Photoshop (chỉnh sửa ảnh, thiết kế banner, poster, ấn phẩm mạng xã hội), Adobe Illustrator (thiết kế vector, logo, bộ nhận diện thương hiệu), Figma (thiết kế UI/UX giao diện website, responsive wireframe).")
+    add_bullet_item(doc, "UI/UX & Graphic Design (Từ Ý Tưởng Đến Thành Phẩm)", "Storyboard, Wireframe, Sitemaps, User Flowcharts, Mockups, Interactive Prototype (Figma), Design System chuyên nghiệp; thiết kế responsive trên Desktop, Mobile và Tablet; Adobe Photoshop, Illustrator; gia tăng thẩm mỹ nội dung số website, app, phần mềm; khảo sát hành vi người dùng và tối ưu chuyển đổi CRO.")
+    add_bullet_item(doc, "Lập Trình Web & Triển Khai A-Z", "Khả năng làm việc độc lập từ A-Z, dựng chạy website cấp độ trung bình đến phức tạp: WordPress Custom Theme & Plugin, WooCommerce, Google Blogspot (Custom XML & CRO), Laravel MVC, HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare. Phối hợp chặt chẽ với R&D, Marketing, Dev, QA.")
+    add_bullet_item(doc, "SEO Website & Hiệu Suất Giao Diện", "Technical SEO, Schema JSON-LD, Topic Cluster, kiểm toán Screaming Frog, Core Web Vitals chuẩn xanh (LCP < 2s, CLS < 0.1), Google Search Console, Google Analytics 4, Rank Math.")
+    add_bullet_item(doc, "Cài Đặt Phần Mềm, Sửa Chữa Phần Cứng & IT Support (Ưu Tiên)", "Lắp ráp phần cứng PC/Laptop (Mainboard, CPU, RAM, SSD, VGA, Nguồn PSU); cài đặt hệ điều hành và phần mềm chuyên dụng (Adobe, Office, Dev tools); chuẩn đoán xử lý sự cố phần cứng/phần mềm; thiết lập mạng LAN/Wi-Fi và quản lý trang thiết bị văn phòng.")
 
     # Kinh nghiệm
     add_styled_heading(doc, "Kinh Nghiệm Làm Việc (Work Experience)")
@@ -634,25 +634,27 @@ def build_cv_graphic_docx():
     p_sum.paragraph_format.space_after = Pt(8)
     p_sum.paragraph_format.line_spacing = 1.3
     r_sum = p_sum.add_run(
-        "Chuyên viên Graphic Designer & Web UI/UX Specialist với hơn 3 năm kinh nghiệm thực chiến thành thạo "
-        "bộ công cụ Adobe Creative Suite (Adobe Photoshop, Adobe Illustrator) kết hợp tư duy thiết kế trải nghiệm "
-        "người dùng (UI/UX) và kiến thức lập trình giao diện web. Trực tiếp thiết kế bộ nhận diện thương hiệu, "
-        "hệ thống banner marketing quảng cáo, xử lý retouching hình ảnh thẩm mỹ viện / sản phẩm cao cấp, và xây dựng "
-        "layout website chuẩn responsive tối ưu chuyển đổi (CRO). Am hiểu sâu sắc kỹ thuật tối ưu đồ họa web "
-        "(WebP, SVG, nén ảnh chống vỡ layout) giúp sản phẩm số luôn giữ độ sắc nét đỉnh cao cùng tốc độ tải trang dưới 2s."
+        "Chuyên viên Graphic Designer & Web UI/UX Specialist (Tốt nghiệp chuyên ngành CNTT, hơn 3 năm kinh nghiệm thực chiến) "
+        "thành thạo bộ công cụ Adobe Creative Suite (Photoshop, Illustrator), tư duy thẩm mỹ cao, hiểu sâu hành vi người dùng "
+        "và có năng lực phát triển trọn vẹn từ ý tưởng đến thành phẩm UX: Storyboard, Wireframe, Sitemaps, Flowcharts, Mockups, "
+        "Interactive Prototype (Figma) và Design System. Xây dựng giao diện UI gia tăng tính thẩm mỹ cho website, phần mềm, app "
+        "trên cả 3 nền tảng Desktop, Tablet và Mobile. Sở hữu lợi thế vượt trội về lập trình mã nguồn (HTML5, CSS3, JavaScript), "
+        "hiểu biết SEO và hiệu năng giao diện; có khả năng làm việc độc lập từ A-Z dựng chạy các hệ thống web phức tạp, "
+        "phối hợp nhịp nhàng với R&D, Marketing, Development, QA; đồng thời đáp ứng trọn vẹn yêu cầu ưu tiên về cài đặt phần mềm, "
+        "sửa chữa phần cứng PC/Laptop và quản trị thiết bị IT."
     )
     r_sum.font.name = "Arial"
     r_sum.font.size = Pt(11)
     r_sum.font.color.rgb = COLOR_TEXT
 
     # 5 Trụ cột kỹ năng
-    add_styled_heading(doc, "Kỹ Năng Thiết Kế Chuyên Nghiệp (5 Trụ Cột Thực Chiến)")
-    add_bullet_item(doc, "1. Adobe Photoshop Chuyên Sâu", "Retouching chân dung & thẩm mỹ viện, xử lý ảnh sản phẩm sắc nét (E-commerce), thiết kế Banner quảng cáo Google/Facebook, Poster & Standee sự kiện, phối cảnh Mockups sản phẩm chân thực, Color Grading và ánh sáng nghệ thuật.")
-    add_bullet_item(doc, "2. Adobe Illustrator & Vector Design", "Thiết kế Logo & Brand Guidelines, hệ thống Iconography Vector (SVG), Infographic & biểu đồ trực quan, Typography & bố cục chữ nghệ thuật, ấn phẩm in ấn (Namecard, Brochure, Flyer), xuất file in ấn CMYK và Digital RGB chuẩn nét.")
-    add_bullet_item(doc, "3. Thiết Kế Giao Diện Web UI/UX", "Wireframing & Prototype (Figma), bố cục Mobile-First Responsive, thiết kế Landing Page tài chính/thẩm mỹ, tối ưu tỷ lệ chuyển đổi (CRO Lead Form), Design System & bảng màu chuẩn web, Micro-interactions.")
-    add_bullet_item(doc, "4. Tối Ưu Đồ Họa Web & Hiệu Năng", "Nén ảnh định dạng WebP chất lượng cao, tối ưu mã nguồn SVG siêu nhẹ, cố định tỷ lệ Aspect Ratio chống CLS, xuất ảnh đa độ phân giải Retina 2x/3x, phối hợp Semantic HTML5 & CSS3 Flexbox/Grid, Core Web Vitals chuẩn xanh.")
-    add_bullet_item(doc, "5. Hạ Tầng Đồ Họa & Máy Trạm Workstation", "Tự tay lựa chọn linh kiện và lắp ráp máy trạm Workstation PC đồ họa cấu hình cao phục vụ render và thiết kế mượt mà; cài đặt hệ điều hành và bộ phần mềm Adobe Creative Cloud chuẩn xác; xử lý sự cố phần cứng, phần mềm, mạng nội bộ và cân màu màn hình.")
-    add_bullet_item(doc, "6. Ứng Dụng Thực Chiến Vào Hệ Thống Web", "Thiết kế trọn gói giao diện & banner cho Viện thẩm mỹ WangSun Luxury, xây dựng Landing Page tài chính Tài Chính Tài Thành (taichinhtaithanh.com) tối ưu chuyển đổi CRO, Visual Design cho sàn thương mại điện tử chậu đá Stone Sinks Vietnam, giao diện cổng danh bạ Sàn Thẩm Mỹ (santhammy.com).")
+    add_styled_heading(doc, "Kỹ Năng Thiết Kế Chuyên Nghiệp (Đáp Ứng Toàn Diện Yêu Cầu Tuyển Dụng)")
+    add_bullet_item(doc, "1. Thành Phẩm UX & Quy Trình Thiết Kế", "Phát triển từ ý tưởng đến Storyboard, Wireframe, Sitemaps, User Flowcharts, Mockups độ nét cao và Interactive Prototype (Figma); xây dựng Design System và Component Library chuyên nghiệp.")
+    add_bullet_item(doc, "2. Thiết Kế UI Đa Nền Tảng (Desktop, Mobile, Tablet)", "Xây dựng giao diện người dùng (UI), gia tăng tính thẩm mỹ cho website, phần mềm, app; thiết kế responsive mượt mà trên Desktop, Tablet và Mobile; tối ưu tỷ lệ chuyển đổi (CRO), khảo sát và phân tích phản hồi khách hàng để liên tục cải tiến sản phẩm.")
+    add_bullet_item(doc, "3. Adobe Photoshop & Illustrator Chuyên Sâu", "Retouching chân dung thẩm mỹ viện, xử lý ảnh sản phẩm sắc nét (E-com), thiết kế Banner/Poster quảng cáo đa kênh, vẽ vector logo thương hiệu, xuất bản file in ấn CMYK và digital RGB chuẩn nét.")
+    add_bullet_item(doc, "4. Lợi Thế Kỹ Thuật (HTML/CSS/JS & SEO)", "Thành thạo HTML5 Semantic, CSS3 Flexbox/Grid, JavaScript; am hiểu sâu sắc về SEO On-page và tối ưu Core Web Vitals (LCP < 2s, CLS < 0.1), nén ảnh WebP/SVG siêu nhẹ giúp giao diện đạt tốc độ tải trang cao nhất.")
+    add_bullet_item(doc, "5. Độc Lập Triển Khai A-Z & Teamwork Liên Bộ Phận", "Khả năng làm việc độc lập từ A-Z, tự thiết kế và dựng chạy các hệ thống web từ trung bình đến phức tạp (WooCommerce, Laravel, Blogspot); kỹ năng giao tiếp và phối hợp chặt chẽ cùng các bộ phận R&D, Marketing, Development, QA.")
+    add_bullet_item(doc, "6. Hạ Tầng IT, Phần Cứng & Trang Thiết Bị (Ưu Tiên)", "Trực tiếp lắp ráp máy trạm Workstation PC đồ họa cấu hình cao; cài đặt hệ điều hành và bộ phần mềm chuyên dụng; chuẩn đoán và sửa chữa sự cố phần cứng, phần mềm PC/Laptop; thiết lập mạng nội bộ LAN/Wi-Fi và quản lý trang thiết bị văn phòng.")
 
     # Kinh nghiệm
     add_styled_heading(doc, "Kinh Nghiệm Thiết Kế Đồ Họa & UI/UX Thực Tế (Experience)")
