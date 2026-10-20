@@ -498,7 +498,7 @@ def build_cv_general_docx():
     p_role = c_hdr.add_paragraph()
     p_role.paragraph_format.space_before = Pt(0)
     p_role.paragraph_format.space_after = Pt(8)
-    r_role = p_role.add_run("WEB ADMINISTRATOR · WORDPRESS DEVELOPER · SEO SPECIALIST · GRAPHIC & UI/UX")
+    r_role = p_role.add_run("GRAPHIC & UI/UX DESIGNER · WEB & SEO SPECIALIST · IT SUPPORT")
     r_role.font.name = "Arial"
     r_role.font.size = Pt(11.5)
     r_role.font.bold = True
@@ -513,11 +513,11 @@ def build_cv_general_docx():
     r_c.font.color.rgb = RGBColor(229, 231, 235)
 
     # Giới thiệu
-    add_styled_heading(doc, "Giới Thiệu Bản Thân (About Me)")
+    add_styled_heading(doc, "Tóm Tắt Chuyên Môn (Professional Summary)")
     create_callout(
         doc,
-        "Hồ sơ năng lực:",
-        "Hơn 3 năm kinh nghiệm thực tế trong phát triển website WordPress, quản trị hạ tầng web, triển khai SEO On-page/Technical và thiết kế đồ họa / giao diện UI/UX. Khả năng tự chủ trọn vẹn từ khâu phác thảo ý tưởng thiết kế đồ họa (Photoshop, Illustrator, Figma), dựng mã nguồn website chuẩn Responsive đến tối ưu hóa thứ hạng công cụ tìm kiếm và đo lường chuyển đổi thực tế.",
+        "Hồ sơ năng lực tổng hợp:",
+        "Chuyên viên Graphic & Web UI/UX Specialist / Web & SEO (Tốt nghiệp chuyên ngành CNTT, hơn 3 năm kinh nghiệm thực chiến) có tư duy thẩm mỹ cao, thấu hiểu hành vi người dùng và năng lực phát triển trọn vẹn từ ý tưởng đến thành phẩm UX: Storyboard, Wireframe, Sitemaps, Flowcharts, Mockups, Prototype và Design System trên cả 3 nền tảng Desktop, Mobile và Tablet. Sở hữu lợi thế vượt trội về lập trình mã nguồn (HTML/CSS/JS, WordPress), SEO và hiệu năng giao diện; có khả năng làm việc độc lập từ A-Z dựng chạy các hệ thống web phức tạp, phối hợp nhịp nhàng cùng R&D, Marketing, Dev, QA; đồng thời đáp ứng trọn vẹn kinh nghiệm ưu tiên về cài đặt phần mềm, sửa chữa phần cứng và quản lý thiết bị IT.",
         bg_hex="F0FDF4",
         border_color="16A34A"
     )
@@ -527,7 +527,7 @@ def build_cv_general_docx():
     add_bullet_item(doc, "UI/UX & Graphic Design (Từ Ý Tưởng Đến Thành Phẩm)", "Storyboard, Wireframe, Sitemaps, User Flowcharts, Mockups, Interactive Prototype (Figma), Design System chuyên nghiệp; thiết kế responsive trên Desktop, Mobile và Tablet; Adobe Photoshop, Illustrator; gia tăng thẩm mỹ nội dung số website, app, phần mềm; khảo sát hành vi người dùng và tối ưu chuyển đổi CRO.")
     add_bullet_item(doc, "Lập Trình Web & Triển Khai A-Z", "Khả năng làm việc độc lập từ A-Z, dựng chạy website cấp độ trung bình đến phức tạp: WordPress Custom Theme & Plugin, WooCommerce, Google Blogspot (Custom XML & CRO), Laravel MVC, HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare. Phối hợp chặt chẽ với R&D, Marketing, Dev, QA.")
     add_bullet_item(doc, "SEO Website & Hiệu Suất Giao Diện", "Technical SEO, Schema JSON-LD, Topic Cluster, kiểm toán Screaming Frog, Core Web Vitals chuẩn xanh (LCP < 2s, CLS < 0.1), Google Search Console, Google Analytics 4, Rank Math.")
-    add_bullet_item(doc, "Cài Đặt Phần Mềm, Sửa Chữa Phần Cứng & IT Support (Ưu Tiên)", "Lắp ráp phần cứng PC/Laptop (Mainboard, CPU, RAM, SSD, VGA, Nguồn PSU); cài đặt hệ điều hành và phần mềm chuyên dụng (Adobe, Office, Dev tools); chuẩn đoán xử lý sự cố phần cứng/phần mềm; thiết lập mạng LAN/Wi-Fi và quản lý trang thiết bị văn phòng.")
+    add_bullet_item(doc, "Cài Đặt Phần Mềm, Sửa Chữa Phần Cứng & IT Support (Ưu Tiên)", "Lắp ráp phần cứng PC/Laptop (Mainboard, CPU, RAM, SSD, VGA, Nguồn PSU); cài đặt hệ điều hành (Windows, macOS, Linux) và phần mềm chuyên dụng (Adobe, Office, Dev tools); chuẩn đoán xử lý sự cố phần cứng/phần mềm; thiết lập mạng LAN/Wi-Fi và quản lý trang thiết bị văn phòng.")
 
     # Kinh nghiệm
     add_styled_heading(doc, "Kinh Nghiệm Làm Việc (Work Experience)")
@@ -568,7 +568,7 @@ def build_cv_general_docx():
     add_bullet_item(doc, "Local SEO & Ấn phẩm Thiết kế B2B", "Tối ưu hóa Google Business Profile tại Quận 12 phủ sóng tiếp cận khách hàng doanh nghiệp tại TP.HCM và các KCN phía Nam; thiết kế trọn bộ catalogue thông số kỹ thuật (Spec Sheets) bằng Photoshop và Illustrator; vận hành cPanel bền vững.")
 
     # Dự án tiêu biểu
-    add_styled_heading(doc, "Dự Án Tiêu Biểu Đã Triển Khai (Featured Projects)")
+    add_styled_heading(doc, "Dự Án Tiêu Biểu Đã Triển Khai (8 Hệ Thống Website Thực Tế)")
     add_bullet_item(doc, "Page Web Cá Nhân & Hồ Sơ Năng Lực Trực Tuyến (uyenpoe.github.io/cv-letranthanhuyen)", "Website cá nhân tương tác trực tuyến xây dựng chuẩn responsive, tích hợp xem và tải hồ sơ xin việc (PDF & Word), bộ lọc dự án và minh chứng kết quả đo lường thực tế.")
     add_bullet_item(doc, "Cầu Trục Thới An & Cân Hoàng Thiên (cautructhoian.vn · hoangthienscale.com)", "Cụm 4 website B2B thiết bị công nghiệp nặng: 150+ từ khóa Top 1-5 Google bền vững suốt 5 năm (2017-2022), Local Maps, catalogue thông số kỹ thuật.")
     add_bullet_item(doc, "WangSun Luxury (vienthammywangsun.com)", "Website phòng khám thẩm mỹ viện: tùy biến Flatsome Child Theme sang trọng, schema MedicalBusiness, tối ưu từ khóa dịch vụ tại TP.HCM, điểm PageSpeed 95+.")
@@ -576,6 +576,13 @@ def build_cv_general_docx():
     add_bullet_item(doc, "Sàn Thẩm Mỹ (santhammy.com)", "Cổng danh bạ thẩm mỹ viện xây dựng trên Laravel MVC (PHP & MySQL): phân cấp quận/huyện, TTFB < 0.4s, lập chỉ mục 100% URLs trên Search Console.")
     add_bullet_item(doc, "Smartphone E-commerce (smartphone.taichinhtaithanh.com)", "Hệ thống bán lẻ điện thoại WordPress tự code theme từ đầu: tích hợp WooCommerce, bộ lọc sản phẩm thông số/giá, giỏ hàng, tối ưu điểm PageSpeed 90+.")
     add_bullet_item(doc, "Stone Sinks Vietnam (stonesinks.vn)", "Website thương mại chậu đá tự nhiên: hình ảnh nén WebP sắc nét, Product Schema chuẩn Google Merchant, tốc độ tải trang dưới 1.8s.")
+    add_bullet_item(doc, "Review Làm Đẹp & Đánh Giá Thẩm Mỹ (review-lamdep.com · danhgiathammy.com)", "Cặp đôi website tạp chí & diễn đàn thẩm mỹ tự code WordPress theme từ đầu: kiến trúc Topic Cluster, Review Schema, cấu hình hạ tầng cPanel bảo mật cao và chống spam bot.")
+
+    # Học vấn & Đào tạo
+    add_styled_heading(doc, "Đào Tạo, Chứng Chỉ & Kỹ Năng Bổ Trợ (Education & Certifications)")
+    add_bullet_item(doc, "Đào Tạo Chuyên Ngành", "Công nghệ Thông tin (CNTT) - Nền tảng vững chắc về lắp ráp cài đặt máy tính, xử lý sự cố phần cứng, mạng nội bộ (LAN/Wi-Fi), cơ sở dữ liệu MySQL và kiến trúc web hiện đại.")
+    add_bullet_item(doc, "Chứng Chỉ Chuyên Môn", "Google Analytics 4 (GA4), Technical SEO & Search Console, Quản trị IT / cPanel / VPS, UI/UX Web Design & Adobe Photoshop, Illustrator.")
+    add_bullet_item(doc, "Tác Phong & Cam Kết", "Khả năng độc lập xử lý sự cố (Troubleshooting PC/Server/Network), làm việc nhóm hiệu quả cùng R&D/Marketing/Dev/QA, tinh thần học hỏi và trách nhiệm cao.")
 
     save_document(doc, "CV-Le-Tran-Thanh-Uyen.docx")
 
