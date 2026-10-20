@@ -170,20 +170,23 @@ def build_cv_seo_docx():
     add_styled_heading(doc, "Tóm Tắt Chuyên Môn (Executive Summary)")
     create_callout(
         doc,
-        "Định hướng nghề nghiệp:",
-        "Chuyên viên SEO & Quản trị Website với hơn 3 năm kinh nghiệm thực chiến trong việc tối ưu hóa công cụ tìm kiếm (White-Hat SEO), kỹ thuật lập chỉ mục (Technical SEO), tối ưu tốc độ Core Web Vitals và thiết kế kiến trúc thông tin Topic Cluster. Thế mạnh độc đáo nhờ năng lực tự lập trình WordPress Plugin tối ưu Content SEO và can thiệp trực tiếp mã nguồn web (HTML, CSS, JavaScript, WordPress, PHP) giúp triển khai đề xuất kỹ thuật nhanh chóng, chính xác mà không phụ thuộc dev.",
+        "Định hướng nghề nghiệp & Năng lực toàn diện:",
+        "Chuyên viên Senior SEO Specialist & Quản trị Website với hơn 5 năm kinh nghiệm thực chiến từ 2017 đến nay (tốt nghiệp chuyên ngành CNTT), thành thạo toàn diện On-page, Off-page và Technical SEO. Năng lực nghiên cứu & phân tích từ khóa chuyên sâu (Google Keyword Planner, Ahrefs, Semrush), phân tích đối thủ cạnh tranh xác định cơ hội thị trường; tối ưu On-page (cấu trúc web, meta tags, headings, internal linking, UX/UI hỗ trợ SEO); Technical SEO (đảm bảo crawlability, 100% indexability, cấu hình Schema JSON-LD, sitemaps, robots.txt, kiểm toán lỗi Screaming Frog); xây dựng Off-page an toàn (Guest Post, Brand Mentions, White-Hat link building); phối hợp chặt chẽ cùng Content Marketing; theo dõi GA4, Search Console, cập nhật thuật toán Google và lập báo cáo định kỳ.",
         bg_hex="F0FDF4",
         border_color="16A34A"
     )
     
     # Kỹ năng cốt lõi
-    add_styled_heading(doc, "Năng Lực & Kỹ Năng Cốt Lõi (Core Skills)")
-    add_bullet_item(doc, "Phát triển WordPress Plugin Tối Ưu Content SEO", "Tự tay lập trình plugin PHP thuần tích hợp trình soạn thảo WordPress (Gutenberg & Classic): Đo mật độ từ khóa thời gian thực (1.5–2%), tự động sinh mục lục (Table of Contents - TOC) chuẩn Semantic Anchor, gợi ý liên kết nội bộ (Internal Links) theo Cụm chủ đề và tự động nhúng Schema FAQ/Article JSON-LD. Giúp đội ngũ viết bài tiết kiệm 40% thời gian duyệt bài và đạt chuẩn On-page 100% trước khi xuất bản.")
-    add_bullet_item(doc, "Technical SEO & Crawlability", "Kiểm toán cấu trúc crawl, xử lý lỗi robots.txt, XML Sitemap, Canonical URL, chuyển hướng 301/302, mã phản hồi 404/500, tối ưu ngân sách thu thập dữ liệu (Crawl Budget).")
-    add_bullet_item(doc, "Tối ưu Hiệu năng (Core Web Vitals)", "Đạt điểm xanh PageSpeed Insights (LCP < 2.5s, CLS < 0.1, INP < 200ms) bằng kỹ thuật nén WebP/AVIF, trì hoãn JS (defer/async), nén Gzip/Brotli, cấu hình bộ nhớ đệm và CDN Cloudflare.")
-    add_bullet_item(doc, "Cấu trúc Thực thể (Schema JSON-LD)", "Khai báo thực thể chuẩn Google (Organization, LocalBusiness, MedicalBusiness, Product, Review/AggregateRating, FAQPage, BreadcrumbList) nhằm tăng hiển thị đoạn trích chi tiết (Rich Snippets).")
-    add_bullet_item(doc, "Nghiên cứu Từ khóa & Content Cluster", "Phân tích Search Intent, xây dựng Topic Cluster hoàn chỉnh (Trang trụ cột Pillar Page kết hợp bài vệ tinh Cluster Posts), xây dựng cấu trúc liên kết nội bộ (Internal Links) logic.")
-    add_bullet_item(doc, "Hạ tầng IT & Kỹ năng bổ trợ", "Lắp ráp & cài đặt máy tính trạm làm việc PC/Laptop, chuẩn đoán và xử lý sự cố phần cứng, phần mềm, thiết lập mạng nội bộ LAN/Wi-Fi văn phòng; WordPress Plugin Development, PHP, HTML5, CSS3, JavaScript; Thiết kế đồ họa & Banner website chuẩn UX với Adobe Photoshop, Illustrator, Figma.")
+    add_styled_heading(doc, "Năng Lực & Kỹ Năng Cốt Lõi (Core Skills - Đáp Ứng 100% Yêu Cầu Tuyển Dụng)")
+    add_bullet_item(doc, "Nghiên cứu Từ khóa & Phân tích Đối thủ", "Thành thạo Ahrefs, Semrush, Google Keyword Planner để nghiên cứu từ khóa chuyên sâu, phân tích Search Intent, xác định Keyword Gap của đối thủ cạnh tranh và lên chiến lược từ khóa mở rộng lưu lượng truy cập.")
+    add_bullet_item(doc, "Phân tích & Tối ưu On-page SEO", "Tối ưu cấu trúc website, thẻ meta Title & Description tăng CTR, Heading H1–H3 chuẩn ngữ nghĩa, mạng lưới liên kết nội bộ (Internal Links) theo Topic Cluster, tối ưu UX/UI giữ chân người dùng và giảm Bounce Rate.")
+    add_bullet_item(doc, "Kiểm toán Technical SEO & Crawlability", "Sử dụng Screaming Frog & Google Search Console kiểm toán định kỳ; đảm bảo crawlability, indexability, tối ưu Crawl Budget, cấu hình Robots.txt, XML Sitemap; xử lý triệt để lỗi 404, chuỗi chuyển hướng 301, trùng lặp nội dung và Canonical URL.")
+    add_bullet_item(doc, "Tối ưu Hiệu năng (Core Web Vitals)", "Đạt điểm xanh PageSpeed Insights (LCP < 2.0s, CLS < 0.1, INP < 200ms) bằng kỹ thuật nén WebP/AVIF, trì hoãn JS (defer/async), nén Gzip/Brotli, cấu hình bộ nhớ đệm và CDN Cloudflare.")
+    add_bullet_item(doc, "Cấu trúc Thực thể (Schema JSON-LD Entity)", "Khai báo thực thể chuẩn Google (Organization, LocalBusiness, MedicalBusiness, Product, Review/AggregateRating, FAQPage, BreadcrumbList) nhằm tăng hiển thị đoạn trích chi tiết (Rich Snippets).")
+    add_bullet_item(doc, "Chiến lược Off-page SEO & Link Building An Toàn", "Xây dựng và thực hiện chiến lược Off-page an toàn qua Guest Post trên các trang uy tín, Brand Mentions và White-Hat link building bền vững theo đúng hướng dẫn Google Search Essentials.")
+    add_bullet_item(doc, "Phát triển Công cụ & Phối hợp Content Marketing", "Tự tay lập trình WordPress Plugin in-house đo mật độ từ khóa thời gian thực, tự động tạo TOC và chèn Schema FAQ, giúp đội ngũ Content tiết kiệm 40% thời gian duyệt bài và đạt chuẩn On-page 100% trước khi xuất bản.")
+    add_bullet_item(doc, "Giám sát, Đo lường & Báo cáo Định kỳ", "Thiết lập sự kiện đo lường chuyển đổi (Click Zalo, Gọi điện, Điền Form) trên GA4; theo dõi chỉ mục, CTR, vị trí trung bình trên Search Console, Ahrefs, Semrush; cập nhật liên tục các thuật toán cốt lõi (Core Updates, Helpful Content) của Google và lập báo cáo định kỳ.")
+    add_bullet_item(doc, "Hạ tầng IT & Kỹ năng bổ trợ", "Lắp ráp & cài đặt máy tính trạm làm việc PC/Laptop, chuẩn đoán và xử lý sự cố phần cứng, phần mềm, thiết lập mạng nội bộ LAN/Wi-Fi văn phòng; am hiểu WordPress CMS, HTML5, CSS3, JavaScript hỗ trợ tối ưu kỹ thuật.")
 
     # Kinh nghiệm làm việc
     add_styled_heading(doc, "Kinh Nghiệm Thực Chiến (Professional Experience)")
@@ -498,7 +501,7 @@ def build_cv_general_docx():
     p_role = c_hdr.add_paragraph()
     p_role.paragraph_format.space_before = Pt(0)
     p_role.paragraph_format.space_after = Pt(8)
-    r_role = p_role.add_run("GRAPHIC & UI/UX DESIGNER · WEB & SEO SPECIALIST · IT SUPPORT")
+    r_role = p_role.add_run("SENIOR SEO SPECIALIST · WEB ADMINISTRATOR · GRAPHIC & UI/UX")
     r_role.font.name = "Arial"
     r_role.font.size = Pt(11.5)
     r_role.font.bold = True
@@ -517,16 +520,16 @@ def build_cv_general_docx():
     create_callout(
         doc,
         "Hồ sơ năng lực tổng hợp:",
-        "Chuyên viên Graphic & Web UI/UX Specialist / Web & SEO (Tốt nghiệp chuyên ngành CNTT, hơn 3 năm kinh nghiệm thực chiến) có tư duy thẩm mỹ tốt, sáng tạo và thấu hiểu hành vi người dùng; xây dựng giao diện UI/UX trực quan, gia tăng tính thẩm mỹ cho website và nội dung số trên cả 3 nền tảng Desktop, Mobile và Tablet. Sở hữu lợi thế vượt trội về lập trình mã nguồn (HTML/CSS/JS, WordPress), SEO và hiệu năng giao diện; có khả năng làm việc độc lập từ A-Z dựng chạy các hệ thống web phức tạp, phối hợp nhịp nhàng cùng R&D, Marketing, Dev, QA; đồng thời đáp ứng trọn vẹn kinh nghiệm ưu tiên về cài đặt phần mềm, sửa chữa phần cứng và quản lý thiết bị IT.",
+        "Chuyên viên Senior SEO Specialist & Web Administrator (Tốt nghiệp chuyên ngành CNTT, hơn 5 năm kinh nghiệm thực chiến từ 2017 đến nay) thành thạo toàn diện On-page, Off-page và Technical SEO. Năng lực nghiên cứu & phân tích từ khóa chuyên sâu (Google Keyword Planner, Ahrefs, Semrush), phân tích đối thủ cạnh tranh, tối ưu cấu trúc website, meta tags, headings, internal linking và UX/UI giữ chân người dùng. Chuyên gia Technical SEO (đảm bảo crawlability, indexability, tốc độ Core Web Vitals, Schema JSON-LD, XML sitemaps, robots.txt, kiểm toán Screaming Frog); xây dựng chiến lược Off-page an toàn (Guest Post, Brand Mentions, White-Hat link building). Phối hợp chặt chẽ cùng đội ngũ Content Marketing, cập nhật liên tục thuật toán Google và lập báo cáo định kỳ qua GA4, Search Console. Đồng thời sở hữu thế mạnh vượt trội về lập trình mã nguồn (HTML/CSS/JS, WordPress), làm việc độc lập A-Z và đáp ứng kinh nghiệm ưu tiên về IT Support & phần cứng.",
         bg_hex="F0FDF4",
         border_color="16A34A"
     )
 
     # Kỹ năng
     add_styled_heading(doc, "Kỹ Năng Chuyên Môn (Professional Skills)")
-    add_bullet_item(doc, "UI/UX & Graphic Design", "Thiết kế giao diện người dùng (UI) trực quan, hiện đại, gia tăng tính thẩm mỹ cho website, phần mềm và ứng dụng; thiết kế responsive tối ưu trên cả 3 nền tảng Desktop, Mobile và Tablet; thành thạo Adobe Photoshop, Illustrator, Figma; khảo sát hành vi người dùng, tiếp nhận phản hồi và tối ưu trải nghiệm người dùng hiệu quả.")
+    add_bullet_item(doc, "SEO Chuyên Sâu, Analytics & Hiệu Suất (Đáp Ứng 100% Yêu Cầu Tuyển Dụng)", "Nghiên cứu & phân tích từ khóa chuyên sâu (Ahrefs, Semrush, Google Keyword Planner); phân tích đối thủ cạnh tranh xác định Keyword Gap; tối ưu On-page (cấu trúc web, meta tags, headings H1-H3, internal links, UX/UI hỗ trợ SEO); Technical SEO (đảm bảo crawlability, 100% indexability, cấu hình Schema JSON-LD, XML sitemaps, robots.txt, kiểm toán lỗi Screaming Frog); xây dựng Off-page an toàn (Guest Post, Brand Mentions, White-Hat link building); phối hợp đội ngũ Content phát triển nội dung chuẩn SEO; giám sát, đo lường và lập báo cáo định kỳ qua Google Analytics 4 (GA4), Google Search Console; cập nhật liên tục các thuật toán cốt lõi mới nhất của Google; tối ưu Core Web Vitals chuẩn xanh (LCP < 2s, CLS < 0.1); thành thạo Rank Math, Yoast SEO.")
     add_bullet_item(doc, "Lập Trình Web & Triển Khai A-Z", "Khả năng làm việc độc lập từ A-Z, dựng chạy website cấp độ trung bình đến phức tạp: WordPress Custom Theme & Plugin, WooCommerce, Google Blogspot (Custom XML & CRO), Laravel MVC, HTML5, CSS3, JavaScript, PHP, MySQL, Hosting/cPanel, Cloudflare. Phối hợp chặt chẽ với R&D, Marketing, Dev, QA.")
-    add_bullet_item(doc, "SEO Website & Hiệu Suất Giao Diện", "Technical SEO, Schema JSON-LD, Topic Cluster, kiểm toán Screaming Frog, Core Web Vitals chuẩn xanh (LCP < 2s, CLS < 0.1), Google Search Console, Google Analytics 4, Rank Math.")
+    add_bullet_item(doc, "UI/UX & Graphic Design", "Thiết kế giao diện người dùng (UI) trực quan, hiện đại, gia tăng tính thẩm mỹ cho website, phần mềm và ứng dụng; thiết kế responsive tối ưu trên cả 3 nền tảng Desktop, Mobile và Tablet; thành thạo Adobe Photoshop, Illustrator, Figma; khảo sát hành vi người dùng, tiếp nhận phản hồi và tối ưu trải nghiệm người dùng hiệu quả.")
     add_bullet_item(doc, "Cài Đặt Phần Mềm, Sửa Chữa Phần Cứng & IT Support (Ưu Tiên)", "Lắp ráp phần cứng PC/Laptop (Mainboard, CPU, RAM, SSD, VGA, Nguồn PSU); cài đặt hệ điều hành (Windows, macOS, Linux) và phần mềm chuyên dụng (Adobe, Office, Dev tools); chuẩn đoán xử lý sự cố phần cứng/phần mềm; thiết lập mạng LAN/Wi-Fi và quản lý trang thiết bị văn phòng.")
 
     # Kinh nghiệm
