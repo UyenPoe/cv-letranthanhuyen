@@ -151,7 +151,7 @@ def build_cv_seo_docx():
     p_role = c_hdr.add_paragraph()
     p_role.paragraph_format.space_before = Pt(0)
     p_role.paragraph_format.space_after = Pt(8)
-    r_role = p_role.add_run("SEO SPECIALIST · TECHNICAL SEO · QUẢN TRỊ WEBSITE")
+    r_role = p_role.add_run("SENIOR SEO SPECIALIST · LẬP TRÌNH WEB · THIẾT KẾ ĐỒ HỌA · IT PHẦN CỨNG")
     r_role.font.name = "Arial"
     r_role.font.size = Pt(12)
     r_role.font.bold = True
@@ -501,7 +501,7 @@ def build_cv_general_docx():
     p_role = c_hdr.add_paragraph()
     p_role.paragraph_format.space_before = Pt(0)
     p_role.paragraph_format.space_after = Pt(8)
-    r_role = p_role.add_run("SENIOR SEO SPECIALIST · WEB ADMINISTRATOR · GRAPHIC & UI/UX")
+    r_role = p_role.add_run("LẬP TRÌNH WEB · SENIOR SEO · THIẾT KẾ ĐỒ HỌA · IT PHẦN CỨNG PC")
     r_role.font.name = "Arial"
     r_role.font.size = Pt(11.5)
     r_role.font.bold = True
@@ -519,8 +519,8 @@ def build_cv_general_docx():
     add_styled_heading(doc, "Tóm Tắt Chuyên Môn (Professional Summary)")
     create_callout(
         doc,
-        "Hồ sơ năng lực tổng hợp:",
-        "Chuyên viên Senior SEO Specialist & Web Administrator (Tốt nghiệp chuyên ngành CNTT, hơn 5 năm kinh nghiệm thực chiến từ 2017 đến nay) thành thạo toàn diện On-page, Off-page và Technical SEO. Năng lực nghiên cứu & phân tích từ khóa chuyên sâu (Google Keyword Planner, Ahrefs, Semrush), phân tích đối thủ cạnh tranh, tối ưu cấu trúc website, meta tags, headings, internal linking và UX/UI giữ chân người dùng. Chuyên gia Technical SEO (đảm bảo crawlability, indexability, tốc độ Core Web Vitals, Schema JSON-LD, XML sitemaps, robots.txt, kiểm toán Screaming Frog); xây dựng chiến lược Off-page an toàn (Guest Post, Brand Mentions, White-Hat link building). Phối hợp chặt chẽ cùng đội ngũ Content Marketing, cập nhật liên tục thuật toán Google và lập báo cáo định kỳ qua GA4, Search Console. Đồng thời sở hữu thế mạnh vượt trội về lập trình mã nguồn (HTML/CSS/JS, WordPress), làm việc độc lập A-Z và đáp ứng kinh nghiệm ưu tiên về IT Support & phần cứng.",
+        "Năng lực thực chiến đa nhiệm 4 trong 1:",
+        "Nhân sự công nghệ đa nhiệm sở hữu năng lực thực chiến toàn diện 4 trong 1:\n• Vừa trực tiếp Lập trình Web: WordPress Developer tự code custom theme sạch 100%, WooCommerce, HTML5/CSS3/JS, PHP/MySQL, đạt PageSpeed 90+.\n• Vừa triển khai SEO chuyên sâu: Senior SEO Specialist (5+ năm), On-page Topic Cluster, Off-page an toàn, Technical Audit Screaming Frog, Schema JSON-LD đa thực thể, đưa 150+ từ khóa lên Top 1–5 Google.\n• Vừa Thiết kế Đồ họa & Hình ảnh: Banner quảng cáo, retouch ảnh sản phẩm nén WebP siêu nhẹ, catalogue B2B bằng Photoshop và Illustrator, thiết kế UI/UX Responsive trên cả 3 nền tảng.\n• Vừa đảm nhiệm IT Phần cứng PC: Tư vấn cấu hình, trực tiếp lắp ráp PC/Laptop, cài đặt hệ điều hành (Windows, macOS, Linux), trọn bộ phần mềm chuyên dụng Adobe/Dev, sửa chữa phần cứng và thiết lập mạng nội bộ LAN/Wi-Fi.",
         bg_hex="F0FDF4",
         border_color="16A34A"
     )
@@ -536,8 +536,8 @@ def build_cv_general_docx():
     add_styled_heading(doc, "Kinh Nghiệm Làm Việc & Các Vị Trí Đã Đảm Nhiệm (Work Experience & Positions Held)")
     create_callout(
         doc,
-        "Tổng hợp các vị trí chuyên môn đã từng làm:",
-        "1. Senior SEO Specialist (5+ năm: 2017 – Hiện tại)\n2. Website Administrator / Quản trị Hệ thống (5+ năm: 2017 – Hiện tại)\n3. WordPress Developer / Lập trình viên Web (3+ năm: 2022 – Hiện tại)\n4. Graphic & Web UI/UX Designer (3+ năm: 2021 – Hiện tại)\n5. IT Support & Kỹ thuật viên Phần cứng PC (Xuyên suốt các giai đoạn)",
+        "Năng lực đảm nhiệm đồng thời (4 trong 1):",
+        "1. Lập trình Web: WordPress Developer tự code theme từ đầu, WooCommerce, tối ưu mã nguồn từ A-Z\n2. Chuyên gia SEO: On-page, Off-page, Technical Audit, Schema JSON-LD, đưa 150+ từ khóa Top 1-5 Google\n3. Thiết kế Đồ họa & Ảnh: Banner, retouch ảnh sản phẩm, WebP, catalogue B2B bằng Photoshop & Illustrator, UI/UX\n4. IT Phần cứng PC: Lắp ráp phần cứng PC/Laptop, cài đặt hệ điều hành/phần mềm, sửa chữa và mạng LAN văn phòng",
         bg_hex="F8FAFC",
         border_color="0284C7"
     )
@@ -684,7 +684,7 @@ def build_cv_graphic_docx():
     p_role = c_hdr.add_paragraph()
     p_role.paragraph_format.space_before = Pt(0)
     p_role.paragraph_format.space_after = Pt(8)
-    r_role = p_role.add_run("GRAPHIC DESIGNER · WEB UI/UX SPECIALIST · ADOBE SUITE")
+    r_role = p_role.add_run("THIẾT KẾ ĐỒ HỌA / UI-UX · LẬP TRÌNH WEB · SENIOR SEO · IT PHẦN CỨNG")
     r_role.font.name = "Arial"
     r_role.font.size = Pt(12)
     r_role.font.bold = True

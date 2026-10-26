@@ -11,8 +11,8 @@ window.PORTFOLIO_DATA = {
   profile: {
     fullName: "Lê Trần Thanh Uyên",
     shortName: "THANH UYEN",
-    roleTitle: "WEB & SEO SPECIALIST · GRAPHIC & UI/UX DESIGN",
-    subRoles: "WORDPRESS · WEB DEVELOPER · SEO · GRAPHIC & UI/UX DESIGN",
+    roleTitle: "LẬP TRÌNH WEB · SENIOR SEO · THIẾT KẾ ĐỒ HỌA · IT PHẦN CỨNG",
+    subRoles: "VỪA LÀM LẬP TRÌNH WEB · VỪA SEO · VỪA THIẾT KẾ ẢNH · VỪA IT PHẦN CỨNG",
     availableByDefault: true, // true: Sẵn sàng nhận việc | false: Đang bận dự án
     email: "thanhuyenletran@gmail.com",
     phone: "0706 700 528",

@@ -13,6 +13,7 @@
 ## 📁 Danh Mục Toàn Bộ Tài Liệu Ứng Tuyển
 
 Thư mục này tổng hợp đầy đủ các tài liệu định dạng **PDF** (chuẩn in ấn A4, typography to rõ nét, màu sắc chuyên nghiệp) và **Microsoft Word (.docx)** (dễ dàng chỉnh sửa, font chữ to rõ ràng 11–12pt). Tất cả các tài liệu đã được cập nhật chuẩn xác:
+- **Năng lực đa nhiệm 4 trong 1:** Vừa trực tiếp Lập trình Web (WordPress Custom Theme, WooCommerce, HTML5/CSS3/JS), vừa làm SEO chuyên sâu (Technical, On-page, Off-page), vừa Thiết kế Đồ họa & Hình ảnh (Photoshop, Illustrator, UI/UX, WebP), vừa đảm nhiệm IT Phần cứng PC (lắp ráp, cài đặt OS/phần mềm, sửa chữa, mạng LAN văn phòng).
 - **Kiến trúc mã nguồn WordPress & Theme:** Tất cả website WordPress (`smartphone.taichinhtaithanh.com`, `stonesinks.vn`, `review-lamdep.com`, `danhgiathammy.com`, và cụm B2B `cautructhoian.vn`, `hoangthienscale.com`, `thoianscale.com`, `canhoangthien.com`) đều **TỰ LẬP TRÌNH THEME TỪ ĐẦU (Custom Theme)** nhằm tối ưu mã nguồn sạch, loại bỏ bloatware và đạt điểm PageSpeed 90+; riêng **Viện Thẩm Mỹ WangSun** (`vienthammywangsun.com`) tùy biến chuyên sâu **Flatsome Theme (Child Theme)** cho phong cách thẩm mỹ hoàng gia.
 - **Các nền tảng chuyên biệt khác:** `santhammy.com` xây dựng trên **Laravel Framework MVC** (PHP & MySQL); `taichinhtaithanh.com` xây dựng trên **Google Blogspot (Custom XML & CRO)**.
 - **Kinh nghiệm 2017 – 2022:** Senior SEO Specialist & Industrial Web Admin quản trị 4 website B2B thiết bị công nghiệp nặng và trạm cân điện tử, đưa hơn 150+ từ khóa kỹ thuật vào Top 1–5 Google suốt 5 năm.
