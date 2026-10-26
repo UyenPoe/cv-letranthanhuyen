@@ -11,8 +11,6 @@ window.PORTFOLIO_DATA = {
   profile: {
     fullName: "Lê Trần Thanh Uyên",
     shortName: "THANH UYEN",
-    birthDate: "18/01/1986",
-    birthYear: "1986",
     roleTitle: "WEB & SEO SPECIALIST · GRAPHIC & UI/UX DESIGN",
     subRoles: "WORDPRESS · WEB DEVELOPER · SEO · GRAPHIC & UI/UX DESIGN",
     availableByDefault: true, // true: Sẵn sàng nhận việc | false: Đang bận dự án
@@ -129,7 +127,7 @@ window.PORTFOLIO_DATA = {
         eyebrow: "05 · CONTACT & CV",
         title: "Liên hệ Tuyển dụng & Hợp tác",
         subtitle: "Sẵn sàng trao đổi trực tiếp về cơ hội hợp tác ở vị trí Website Administrator, SEO Specialist hoặc WordPress Developer.",
-        birthLabel: "Ngày sinh",
+        locationLabel: "Địa chỉ",
         emailLabel: "Email liên hệ",
         phoneLabel: "Điện thoại / Zalo",
         zaloLabel: "Kênh Zalo",
@@ -286,7 +284,7 @@ window.PORTFOLIO_DATA = {
         eyebrow: "05 · CONTACT & CV",
         title: "Let's Connect for Opportunities",
         subtitle: "Open for interviews and discussions regarding Website Administrator, SEO Specialist, or WordPress Developer roles.",
-        birthLabel: "Date of Birth",
+        locationLabel: "Location",
         emailLabel: "Email Address",
         phoneLabel: "Phone / Zalo",
         zaloLabel: "Zalo Chat",

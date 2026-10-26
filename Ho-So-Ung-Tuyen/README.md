@@ -2,7 +2,7 @@
 
 > **Thông tin liên hệ:**
 > - **Họ và tên:** Lê Trần Thanh Uyên
-> - **Năm sinh:** 18/01/1986
+> - **Địa chỉ:** TP. Hồ Chí Minh
 > - **Số điện thoại / Zalo:** [0706 700 528](https://zalo.me/0706700528)
 > - **Email:** [thanhuyenletran@gmail.com](mailto:thanhuyenletran@gmail.com)
 > - **GitHub:** [https://github.com/UyenPoe](https://github.com/UyenPoe)
